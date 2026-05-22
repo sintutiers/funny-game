@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8fe4nj30ry5b"
-path="res://.godot/imported/untitled.png-65e2deba3c3520e621a73f298b36b14c.ctex"
+uid="uid://eybknaq86d6u"
+path="res://.godot/imported/final_prototype.png-45317d1e2924229366e62b795d47a663.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art chiel folder/untitled.png"
-dest_files=["res://.godot/imported/untitled.png-65e2deba3c3520e621a73f298b36b14c.ctex"]
+source_file="res://The Amazing Art Folder/final_prototype.png"
+dest_files=["res://.godot/imported/final_prototype.png-45317d1e2924229366e62b795d47a663.ctex"]
 
 [params]
 
