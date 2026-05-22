@@ -22,8 +22,10 @@ texture = ExtResource("2_gw3rf")
 [node name="main character" parent="." unique_id=621235887 instance=ExtResource("2_7g3yx")]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
+visible = false
 top_level = true
 scale = Vector2(3.65, 3.65)
+editor_draw_limits = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=459320539]
 process_priority = 300
@@ -33,3 +35,4 @@ script = ExtResource("4_uu3hw")
 [node name="PhantomCamera2D" type="Node2D" parent="." unique_id=1973500547]
 script = ExtResource("5_p3mrq")
 tween_resource = SubResource("Resource_gw3rf")
+draw_limits = true

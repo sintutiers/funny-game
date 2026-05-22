@@ -197,11 +197,9 @@ tile_set = SubResource("TileSet_kxirl")
 
 [node name="UIInventory" parent="UI" unique_id=282288460 instance=ExtResource("2_5oggv")]
 unique_name_in_owner = true
-visible = false
 
 [node name="UISign" parent="UI" unique_id=1937142301 instance=ExtResource("3_aku7q")]
 unique_name_in_owner = true
-visible = false
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=7166735]
 physics_interpolation_mode = 1

@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://b5b8w5appi7jq" path="res://addons/godotresourcecleaner/window.gd" id="1_p0mwy"]
 [ext_resource type="Script" uid="uid://cv0p2lykupdql" path="res://addons/godotresourcecleaner/grid_container.gd" id="2_rch45"]
 
-[sub_resource type="DPITexture" id="DPITexture_32p2u"]
+[sub_resource type="DPITexture" id="DPITexture_7peqy"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"M4 1 3 3l1 2v4H2v3.5a2.5 2.5 0 0 0 5 0V9H5V5l1-2-1-2zm6 .174a3 3 0 0 0 0 5.652V14a1 1 0 0 0 2 0V6.824a3 3 0 0 0 0-5.648V4a1 1 0 0 1-2 0z\"/></svg>
 "
 saturation = 2.0
@@ -13,7 +13,7 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(0.83, 0.78, 0.62, 1)
 }
 
-[sub_resource type="DPITexture" id="DPITexture_7peqy"]
+[sub_resource type="DPITexture" id="DPITexture_um2sv"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"m2 2v2h2v-2zm4 0v2h8v-2zm-4 5v2h2v-2zm4 0v2h8v-2zm-4 5v2h2v-2zm4 0v2h8v-2z\"/></svg>
 "
 saturation = 2.0
@@ -23,7 +23,7 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(0.83, 0.78, 0.62, 1)
 }
 
-[sub_resource type="DPITexture" id="DPITexture_vwdxe"]
+[sub_resource type="DPITexture" id="DPITexture_ch44y"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"M10.168 8.754a5 5 0 1 0-1.414 1.414l4.316 4.316 1.414-1.414zM6 3a3 3 0 0 1 0 6 3 3 0 0 1 0-6z\"/></svg>
 "
 saturation = 2.0
@@ -33,7 +33,7 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(0.83, 0.78, 0.62, 1)
 }
 
-[sub_resource type="DPITexture" id="DPITexture_um2sv"]
+[sub_resource type="DPITexture" id="DPITexture_ujiyn"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"m8 1a1 1 0 0 0 -1 1v5h-2c-1.108 0-2 .892-2 2v1h10v-1c0-1.108-.892-2-2-2h-2v-5a1 1 0 0 0 -1-1zm-5 10v4l10-1v-3z\"/></svg>
 "
 saturation = 2.0
@@ -43,7 +43,7 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(0.83, 0.78, 0.62, 1)
 }
 
-[sub_resource type="DPITexture" id="DPITexture_ch44y"]
+[sub_resource type="DPITexture" id="DPITexture_e2hhq"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"m4 1v1l1 1v3h6v-3l1-1v-1zm1 6-2 3h10l-2-3zm2 4v2l1 2 1-2v-2z\"/></svg>
 "
 saturation = 2.0
@@ -53,7 +53,7 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(0.83, 0.78, 0.62, 1)
 }
 
-[sub_resource type="DPITexture" id="DPITexture_ujiyn"]
+[sub_resource type="DPITexture" id="DPITexture_wxa38"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"m5 1v1h-4v2h14v-2h-4v-1zm-3 4v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-8zm1 2h2v6h-2zm4 0h2v6h-2zm4 0h2v6h-2z\"/></svg>
 "
 saturation = 2.0
@@ -63,7 +63,7 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(0.83, 0.78, 0.62, 1)
 }
 
-[sub_resource type="DPITexture" id="DPITexture_e2hhq"]
+[sub_resource type="DPITexture" id="DPITexture_slwqc"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"8\" height=\"16\"><path fill=\"none\" stroke=\"#e0e0e0\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M6 2 2 8l4 6\"/></svg>
 "
 saturation = 2.0
@@ -73,7 +73,7 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(0.83, 0.78, 0.62, 1)
 }
 
-[sub_resource type="DPITexture" id="DPITexture_wxa38"]
+[sub_resource type="DPITexture" id="DPITexture_71fj7"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"M5 8a4 4 0 1 1 4 4v2a6 6 0 1 0-6-6H1l3 4 3-4z\"/></svg>
 "
 saturation = 2.0
@@ -83,7 +83,7 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(0.83, 0.78, 0.62, 1)
 }
 
-[sub_resource type="DPITexture" id="DPITexture_slwqc"]
+[sub_resource type="DPITexture" id="DPITexture_npq5g"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#ffdd65\" d=\"M8 2a1 1 0 0 0-.85.484l-6 10A1 1 0 0 0 2 14h12a1 1 0 0 0 .857-1.514l-6-10a1 1 0 0 0-.85-.484zM7 5h2v5H7zm0 6h2v2H7z\"/></svg>
 "
 saturation = 2.0
@@ -120,14 +120,14 @@ unique_name_in_owner = true
 custom_minimum_size = Vector2(96, 48)
 layout_mode = 2
 text = "Settings"
-icon = SubResource("DPITexture_32p2u")
+icon = SubResource("DPITexture_7peqy")
 
 [node name="ButtonKeepList" type="Button" parent="Main/VBoxContainer/HBoxContainer" unique_id=1616320322]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(96, 48)
 layout_mode = 2
 text = "Keep List"
-icon = SubResource("DPITexture_7peqy")
+icon = SubResource("DPITexture_um2sv")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Main/VBoxContainer/HBoxContainer" unique_id=958082643]
 layout_mode = 2
@@ -152,14 +152,14 @@ unique_name_in_owner = true
 custom_minimum_size = Vector2(96, 48)
 layout_mode = 2
 text = "Scan"
-icon = SubResource("DPITexture_vwdxe")
+icon = SubResource("DPITexture_ch44y")
 
 [node name="ButtonClean" type="Button" parent="Main/VBoxContainer/HBoxContainer" unique_id=339721974]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(96, 48)
 layout_mode = 2
 text = "Clean"
-icon = SubResource("DPITexture_um2sv")
+icon = SubResource("DPITexture_ujiyn")
 
 [node name="Panel" type="Panel" parent="Main/VBoxContainer" unique_id=312272201]
 layout_mode = 2
@@ -244,7 +244,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 theme_override_colors/font_hover_color = Color(0.333333, 1, 0.333333, 1)
 text = "Keep"
-icon = SubResource("DPITexture_ch44y")
+icon = SubResource("DPITexture_e2hhq")
 
 [node name="ButtonDelete" type="Button" parent="Main/VBoxContainer/HBoxContainer2" unique_id=564970814]
 unique_name_in_owner = true
@@ -252,7 +252,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 theme_override_colors/font_hover_color = Color(1, 0.333333, 0.333333, 1)
 text = "Delete"
-icon = SubResource("DPITexture_ujiyn")
+icon = SubResource("DPITexture_wxa38")
 
 [node name="Setting" type="PanelContainer" parent="." unique_id=687494957]
 unique_name_in_owner = true
@@ -279,7 +279,7 @@ custom_minimum_size = Vector2(96, 48)
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Done"
-icon = SubResource("DPITexture_e2hhq")
+icon = SubResource("DPITexture_slwqc")
 
 [node name="VSeparator" type="VSeparator" parent="Setting/VBoxContainer/HBoxContainer" unique_id=161849426]
 visible = false
@@ -290,7 +290,7 @@ unique_name_in_owner = true
 visible = false
 layout_mode = 2
 text = "Reset"
-icon = SubResource("DPITexture_wxa38")
+icon = SubResource("DPITexture_71fj7")
 
 [node name="HSeparator" type="HSeparator" parent="Setting/VBoxContainer" unique_id=933216838]
 layout_mode = 2
@@ -622,7 +622,7 @@ layout_mode = 2
 size_flags_horizontal = 4
 toggle_mode = true
 text = "Show Excluded"
-icon = SubResource("DPITexture_slwqc")
+icon = SubResource("DPITexture_npq5g")
 
 [node name="VBoxExclude" type="VBoxContainer" parent="Setting/VBoxContainer/ScrollContainer/VBoxContainer" unique_id=2103728608]
 unique_name_in_owner = true
@@ -776,7 +776,7 @@ custom_minimum_size = Vector2(96, 48)
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Done"
-icon = SubResource("DPITexture_e2hhq")
+icon = SubResource("DPITexture_slwqc")
 
 [node name="VSeparator" type="VSeparator" parent="KeepList/VBoxContainer/HBoxContainer" unique_id=1735527575]
 layout_mode = 2
@@ -785,7 +785,7 @@ layout_mode = 2
 unique_name_in_owner = true
 layout_mode = 2
 text = " All "
-icon = SubResource("DPITexture_ujiyn")
+icon = SubResource("DPITexture_wxa38")
 
 [node name="HSeparator" type="HSeparator" parent="KeepList/VBoxContainer" unique_id=528546700]
 layout_mode = 2
