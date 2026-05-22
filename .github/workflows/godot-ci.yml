@@ -14,7 +14,7 @@ env:
 jobs:
   export-windows:
     name: Windows Export
-    runs-on: ubuntu-latest # Use 24.04 with godot 4
+    runs-on: ubuntu-latest
     container:
       image: barichello/godot-ci:4.6.2
     steps:
@@ -42,7 +42,7 @@ jobs:
 
   export-linux:
     name: Linux Export
-    runs-on: ubuntu-latest # Use 24.04 with godot 4
+    runs-on: ubuntu-latest
     container:
       image: barichello/godot-ci:4.6.2
     steps:
@@ -68,9 +68,12 @@ jobs:
 
   export-web:
     name: Web Export
-    runs-on: ubuntu-latest # Use 24.04 with godot 4
+    runs-on: ubuntu-latest
     container:
       image: barichello/godot-ci:4.6.2
+    permissions:
+      pages: write # Required to deploy to GitHub Pages
+      id-token: write # Required to verify the deployment
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -86,23 +89,16 @@ jobs:
           EXPORT_DIR="$(readlink -f build)"
           cd $PROJECT_PATH
           godot --headless --verbose --export-release "Web" "$EXPORT_DIR/web/index.html"
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v7
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v5
         with:
-          name: web
           path: build/web
-      - name: Install rsync 📚
-        run: |
-          apt-get update && apt-get install -y rsync
-      - name: Deploy to GitHub Pages 🚀
-        uses: JamesIves/github-pages-deploy-action@releases/v4
-        with:
-          branch: gh-pages # The branch the action should deploy to.
-          folder: build/web # The folder the action should deploy.
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v5
 
   export-mac:
     name: Mac Export
-    runs-on: ubuntu-latest # Use 24.04 with godot 4
+    runs-on: ubuntu-latest
     container:
       image: barichello/godot-ci:4.6.2
     steps:
