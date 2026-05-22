@@ -40,9 +40,6 @@ jobs:
           run-id: ${{ github.event.workflow_run.id }}
           path: artifacts
 
-      - name: List artifacts (debug)
-        run: ls -R artifacts
-
       - name: Create prerelease with assets
         uses: softprops/action-gh-release@v3
         with:
