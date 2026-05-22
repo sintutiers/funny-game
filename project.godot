@@ -24,7 +24,6 @@ config/icon="res://icon.svg"
 
 PhantomCameraManager="*uid://duq6jhf6unyis"
 DialogueManager="*uid://c3rodes2l3gxb"
-DebugMenu="*uid://cggqb75a8w8r"
 BetterTerrain="*uid://bfa68ymktrna3"
 
 [debug]
@@ -38,7 +37,7 @@ gdscript/warnings/unsafe_call_argument=1
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/YouCanDoIt/plugin.cfg", "res://addons/better-terrain/plugin.cfg", "res://addons/debug_menu/plugin.cfg", "res://addons/dialogue_manager/plugin.cfg", "res://addons/gdLinter/plugin.cfg", "res://addons/gdgdtoolkit/plugin.cfg", "res://addons/godotresourcecleaner/plugin.cfg", "res://addons/phantom_camera/plugin.cfg", "res://addons/rmsmartshape/plugin.cfg", "res://addons/script-ide/plugin.cfg", "res://addons/virtual_joystick/plugin.cfg", "res://addons/your_buil/plugin.cfg")
+enabled=PackedStringArray("res://addons/YouCanDoIt/plugin.cfg", "res://addons/better-terrain/plugin.cfg", "res://addons/dialogue_manager/plugin.cfg", "res://addons/gdLinter/plugin.cfg", "res://addons/gdgdtoolkit/plugin.cfg", "res://addons/phantom_camera/plugin.cfg", "res://addons/rmsmartshape/plugin.cfg", "res://addons/script-ide/plugin.cfg", "res://addons/virtual_joystick/plugin.cfg")
 
 [input]
 
