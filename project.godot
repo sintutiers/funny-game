@@ -23,6 +23,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 PhantomCameraManager="*uid://duq6jhf6unyis"
+
 BetterTerrain="*uid://bfa68ymktrna3"
 DialogueManager="*uid://c3rodes2l3gxb"
 
@@ -37,7 +38,7 @@ gdscript/warnings/unsafe_call_argument=1
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/YouCanDoIt/plugin.cfg", "res://addons/better-terrain/plugin.cfg", "res://addons/dialogue_manager/plugin.cfg", "res://addons/gdLinter/plugin.cfg", "res://addons/gdgdtoolkit/plugin.cfg", "res://addons/phantom_camera/plugin.cfg", "res://addons/script-ide/plugin.cfg", "res://addons/virtual_joystick/plugin.cfg")
+
 
 [input]
 
