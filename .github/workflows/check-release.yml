@@ -1,7 +1,5 @@
 name: "Check Releases"
 on:
-  schedule:
-    - cron: "27 23 * * *"
   push:
     branches:
       - master
