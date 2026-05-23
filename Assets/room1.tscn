@@ -57,7 +57,7 @@ texture = ExtResource("4_4urx3")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 top_level = true
 scale = Vector2(3.65, 3.65)
-offset = Vector2(-5.0364914, -4.940735)
+offset = Vector2(0.015651528, -0.64141065)
 editor_draw_limits = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=459320539]

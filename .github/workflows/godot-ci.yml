@@ -8,7 +8,7 @@ permissions:
 # NOTE: android export code taken and modified from `Simon Dalvai @dulvui`
 
 env:
-  GODOT_VERSION: 4.6.2
+  GODOT_VERSION: 4.6.3
   EXPORT_NAME: goon
   PROJECT_PATH: .
 
@@ -17,7 +17,7 @@ jobs:
     name: Windows Export
     runs-on: ubuntu-latest
     container:
-      image: barichello/godot-ci:4.6.2
+      image: barichello/godot-ci:4.6.3
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -45,7 +45,7 @@ jobs:
     name: Linux Export
     runs-on: ubuntu-latest
     container:
-      image: barichello/godot-ci:4.6.2
+      image: barichello/godot-ci:4.6.3
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -71,7 +71,7 @@ jobs:
     name: Web Export
     runs-on: ubuntu-latest
     container:
-      image: barichello/godot-ci:4.6.2
+      image: barichello/godot-ci:4.6.3
     permissions:
       pages: write # Required to deploy to GitHub Pages
       id-token: write # Required to verify the deployment
@@ -101,7 +101,7 @@ jobs:
     name: Mac Export
     runs-on: ubuntu-latest
     container:
-      image: barichello/godot-ci:4.6.2
+      image: barichello/godot-ci:4.6.3
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -127,7 +127,7 @@ jobs:
   #   name: Android Export
   #   runs-on: ubuntu-latest
   #   container:
-  #     image: barichello/godot-ci:4.6.2
+  #     image: barichello/godot-ci:4.6.3
   #   steps:
   #     - name: Checkout
   #       uses: actions/checkout@v6
