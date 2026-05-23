@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8fe4nj30ry5b"
-path="res://.godot/imported/piemol.png-2ad5c64438e7812615421fd313081ad8.ctex"
+uid="uid://sqts38sgtapq"
+path="res://.godot/imported/being1.png-4c839e16428bbb6fc58f9b916ea4b484.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://The Amazing Art Folder/piemol.png"
-dest_files=["res://.godot/imported/piemol.png-2ad5c64438e7812615421fd313081ad8.ctex"]
+source_file="res://The Amazing Art Folder/being1.png"
+dest_files=["res://.godot/imported/being1.png-4c839e16428bbb6fc58f9b916ea4b484.ctex"]
 
 [params]
 

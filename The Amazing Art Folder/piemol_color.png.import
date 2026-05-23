@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8fe4nj30ry5b"
-path="res://.godot/imported/piemol.png-2ad5c64438e7812615421fd313081ad8.ctex"
+uid="uid://cgtxjidxo7y8u"
+path="res://.godot/imported/piemol_color.png-b4f6c9fe8046be2de18fba3726c7f1b6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://The Amazing Art Folder/piemol.png"
-dest_files=["res://.godot/imported/piemol.png-2ad5c64438e7812615421fd313081ad8.ctex"]
+source_file="res://The Amazing Art Folder/piemol_color.png"
+dest_files=["res://.godot/imported/piemol_color.png-b4f6c9fe8046be2de18fba3726c7f1b6.ctex"]
 
 [params]
 

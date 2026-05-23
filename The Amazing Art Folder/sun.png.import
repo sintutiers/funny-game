@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8fe4nj30ry5b"
-path="res://.godot/imported/piemol.png-2ad5c64438e7812615421fd313081ad8.ctex"
+uid="uid://bhk8orfs38r2u"
+path="res://.godot/imported/sun.png-2649c8242c094cc90f6f9440224ca0d1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://The Amazing Art Folder/piemol.png"
-dest_files=["res://.godot/imported/piemol.png-2ad5c64438e7812615421fd313081ad8.ctex"]
+source_file="res://The Amazing Art Folder/sun.png"
+dest_files=["res://.godot/imported/sun.png-2649c8242c094cc90f6f9440224ca0d1.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8fe4nj30ry5b"
-path="res://.godot/imported/untitled.png-608de9d3f66fb949f83dc3f4c1c45da8.ctex"
+uid="uid://bxxj8hjodi2u0"
+path="res://.godot/imported/cube.png-330aea732947f7f34db802933b406d77.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://The Amazing Art Folder/untitled.png"
-dest_files=["res://.godot/imported/untitled.png-608de9d3f66fb949f83dc3f4c1c45da8.ctex"]
+source_file="res://The Amazing Art Folder/cube.png"
+dest_files=["res://.godot/imported/cube.png-330aea732947f7f34db802933b406d77.ctex"]
 
 [params]
 

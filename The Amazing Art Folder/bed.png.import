@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8fe4nj30ry5b"
-path="res://.godot/imported/piemol.png-2ad5c64438e7812615421fd313081ad8.ctex"
+uid="uid://coyykxb8svr7e"
+path="res://.godot/imported/bed.png-01fa7ae193100b490bdb0cfc15e7e9e0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://The Amazing Art Folder/piemol.png"
-dest_files=["res://.godot/imported/piemol.png-2ad5c64438e7812615421fd313081ad8.ctex"]
+source_file="res://The Amazing Art Folder/bed.png"
+dest_files=["res://.godot/imported/bed.png-01fa7ae193100b490bdb0cfc15e7e9e0.ctex"]
 
 [params]
 
