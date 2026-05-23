@@ -5,6 +5,7 @@ permissions:
   contents: write
 
 # NOTE: If your `project.godot` is at the repository root, set `PROJECT_PATH` below to ".".
+# NOTE: android export code taken and modified from `Simon Dalvai @dulvui`
 
 env:
   GODOT_VERSION: 4.6.2
@@ -121,3 +122,94 @@ jobs:
         with:
           name: mac
           path: build/mac
+
+  # export-android:
+  #   name: Android Export
+  #   runs-on: ubuntu-latest
+  #   container:
+  #     image: barichello/godot-ci:4.6.2
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v6
+  #       with:
+  #         lfs: true
+
+  #     - name: Install system dependencies
+  #       run: |
+  #         apt-get update
+  #         apt-get install -y libfontconfig1
+
+  #     - name: Setup export templates & config
+  #       run: |
+  #         mkdir -v -p ~/.local/share/godot/export_templates/
+  #         mkdir -v -p ~/.config/
+  #         # Move the pre-installed templates and Godot config (if any)
+  #         mv /root/.local/share/godot/export_templates/${GODOT_VERSION}.stable ~/.local/share/godot/export_templates/${GODOT_VERSION}.stable
+  #         [ -d /root/.config/godot ] && mv /root/.config/godot ~/.config/godot || true
+
+  #     - name: Import project (required before Android build template)
+  #       run: |
+  #         cd $PROJECT_PATH
+  #         godot --headless --import
+
+  #     - name: Install Android SDK, Java, and debug keystore
+  #       run: |
+  #         apt-get install -y openjdk-17-jdk wget unzip
+  #         cd /opt
+  #         wget -q https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip
+  #         unzip -q commandlinetools-linux-11076708_latest.zip
+  #         mkdir -p /opt/android-sdk/cmdline-tools
+  #         mv cmdline-tools /opt/android-sdk/cmdline-tools/latest
+  #         rm commandlinetools-linux-11076708_latest.zip
+  #         echo "ANDROID_SDK_ROOT=/opt/android-sdk" >> $GITHUB_ENV
+  #         export ANDROID_SDK_ROOT=/opt/android-sdk
+  #         yes | /opt/android-sdk/cmdline-tools/latest/bin/sdkmanager --licenses
+  #         /opt/android-sdk/cmdline-tools/latest/bin/sdkmanager "platform-tools" "platforms;android-33" "build-tools;33.0.2"
+  #         mkdir -p /root/.android
+  #         keytool -genkey -v -keystore /root/.android/debug.keystore -alias androiddebugkey -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Debug, OU=Debug, O=Debug, L=Debug, ST=Debug, C=US" -storepass android -keypass android -noprompt
+
+  #     - name: Configure editor settings
+  #       run: |
+  #         cat << EOF >> ~/.config/godot/editor_settings-4.tres
+  #         [gd_resource type="EditorSettings" format=3]
+
+  #         [resource]
+  #         export/android/android_sdk_path = "/opt/android-sdk"
+  #         export/android/jdk_path = "/usr/lib/jvm/java-17-openjdk-amd64"
+  #         export/android/shutdown_adb_on_exit = true
+  #         export/android/force_system_user = false
+  #         EOF
+
+  #     - name: Install Android build template
+  #       run: |
+  #         cd $PROJECT_PATH
+  #         godot --headless --install-android-build-template
+
+  #     - name: Inject keystore into export_presets.cfg (critical)
+  #       run: |
+  #         cd $PROJECT_PATH
+  #         # Ensure the preset exists; if not, the workflow will fail early
+  #         if ! grep -q 'name="Android"' export_presets.cfg; then
+  #           echo "ERROR: No export preset named 'Android' found in export_presets.cfg"
+  #           echo "Available preset names:"
+  #           grep 'name=' export_presets.cfg || true
+  #           exit 1
+  #         fi
+  #         # Inject debug keystore values into the "Android" preset
+  #         sed -i '/\[preset\.\*\.options\]/a keystore_debug="/root/.android/debug.keystore"\nkeystore_debug_user="androiddebugkey"\nkeystore_debug_password="android"' export_presets.cfg
+  #         # Also set the SDK path inside the preset (optional, but robust)
+  #         sed -i 's|^android_sdk_path=.*|android_sdk_path="/opt/android-sdk"|' export_presets.cfg
+
+  #     - name: Android Build
+  #       run: |
+  #         export ANDROID_SDK_ROOT=/opt/android-sdk
+  #         mkdir -v -p build/android
+  #         EXPORT_DIR="$(readlink -f build)"
+  #         cd $PROJECT_PATH
+  #         godot --headless --verbose --export-release "Android" "$EXPORT_DIR/android/$EXPORT_NAME.apk"
+
+  #     - name: Upload Artifact
+  #       uses: actions/upload-artifact@v7
+  #       with:
+  #         name: android
+  #         path: build/android
