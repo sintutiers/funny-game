@@ -9,6 +9,7 @@
 [ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="6_4urx3"]
 [ext_resource type="AudioStream" uid="uid://g0fwsur5sl26" path="res://The Amazing Art Folder/_ Sanctum of the Seraph.mp3" id="8_fw5o7"]
 [ext_resource type="Script" uid="uid://dimvdouy8g0sv" path="res://addons/phantom_camera/scripts/resources/phantom_camera_noise_2d.gd" id="8_hsdi0"]
+[ext_resource type="Script" uid="uid://busd3yfk5p1mx" path="res://addons/godot-rapier2d/custom_nodes/rapier_static_body_2d.gd" id="10_yju58"]
 
 [sub_resource type="Resource" id="Resource_gw3rf"]
 script = ExtResource("6_4urx3")
@@ -18,6 +19,12 @@ script = ExtResource("8_hsdi0")
 amplitude = 15.0
 frequency = 0.1
 metadata/_custom_type_script = "uid://dimvdouy8g0sv"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4urx3"]
+size = Vector2(21.232864, 181.36987)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vrgib"]
+size = Vector2(331.16437, 24.38356)
 
 [node name="bedroom" type="Node2D" unique_id=70873681]
 scale = Vector2(3.65, 3.65)
@@ -43,7 +50,7 @@ texture = ExtResource("2_g3spf")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 top_level = true
 scale = Vector2(3.65, 3.65)
-offset = Vector2(-0.56317854, -0.34945512)
+offset = Vector2(-0.89962906, -0.4414494)
 editor_draw_limits = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=459320539]
@@ -62,3 +69,25 @@ position = Vector2(-181.64383, -108.49315)
 stream = ExtResource("8_fw5o7")
 pitch_scale = 0.75
 autoplay = true
+
+[node name="walls" type="Node2D" parent="." unique_id=1939920780]
+
+[node name="RapierStaticBody2D" type="StaticBody2D" parent="walls" unique_id=286310053]
+script = ExtResource("10_yju58")
+metadata/_custom_type_script = "uid://busd3yfk5p1mx"
+
+[node name="ver1" type="CollisionShape2D" parent="walls/RapierStaticBody2D" unique_id=1819678603]
+position = Vector2(-166.84933, 0.8219179)
+shape = SubResource("RectangleShape2D_4urx3")
+
+[node name="ver2" type="CollisionShape2D" parent="walls/RapierStaticBody2D" unique_id=1400218097]
+position = Vector2(164.65755, 1.09589)
+shape = SubResource("RectangleShape2D_4urx3")
+
+[node name="hor1" type="CollisionShape2D" parent="walls/RapierStaticBody2D" unique_id=902432346]
+position = Vector2(1.6438355, -100)
+shape = SubResource("RectangleShape2D_vrgib")
+
+[node name="hor2" type="CollisionShape2D" parent="walls/RapierStaticBody2D" unique_id=892011529]
+position = Vector2(-1.6438357, 98.356155)
+shape = SubResource("RectangleShape2D_vrgib")
