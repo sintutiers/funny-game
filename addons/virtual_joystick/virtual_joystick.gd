@@ -37,10 +37,10 @@ enum Visibility_mode {
 ## If true, the joystick uses Input Actions (Project -> Project Settings -> Input Map)
 @export var use_input_actions := true
 
-@export var action_left := "ui_left"
-@export var action_right := "ui_right"
-@export var action_up := "ui_up"
-@export var action_down := "ui_down"
+@export var action_left := "left"
+@export var action_right := "right"
+@export var action_up := "up"
+@export var action_down := "down"
 
 # PUBLIC VARIABLES
 
