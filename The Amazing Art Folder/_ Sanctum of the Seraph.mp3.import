@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://g0fwsur5sl26"
+path="res://.godot/imported/_ Sanctum of the Seraph.mp3-1fe2d50abaa8e55a1fd3fd2c180363e3.mp3str"
+
+[deps]
+
+source_file="res://The Amazing Art Folder/_ Sanctum of the Seraph.mp3"
+dest_files=["res://.godot/imported/_ Sanctum of the Seraph.mp3-1fe2d50abaa8e55a1fd3fd2c180363e3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://bnwmdamij3ce4"]
 
 [ext_resource type="Script" uid="uid://cwwbqct805sdi" path="res://Assets/room1.gd" id="1_g3spf"]
-[ext_resource type="Texture2D" uid="uid://77bfe08qr4jt" path="res://The Amazing Art Folder/background_prototype.png" id="2_hcsxu"]
+[ext_resource type="Texture2D" uid="uid://dk75bnikglcvq" path="res://The Amazing Art Folder/black2.png" id="2_fw5o7"]
+[ext_resource type="Texture2D" uid="uid://mweivhd35l5g" path="res://The Amazing Art Folder/background_prototype_no_background.png" id="2_g3spf"]
 [ext_resource type="PackedScene" uid="uid://uqnuhcrw12d0" path="res://Assets/main_character.tscn" id="3_fw5o7"]
 [ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="4_hsdi0"]
 [ext_resource type="Script" uid="uid://bhexx6mj1xv3q" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="5_yju58"]
 [ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="6_4urx3"]
+[ext_resource type="AudioStream" uid="uid://g0fwsur5sl26" path="res://The Amazing Art Folder/_ Sanctum of the Seraph.mp3" id="8_fw5o7"]
 
 [sub_resource type="Resource" id="Resource_gw3rf"]
 script = ExtResource("6_4urx3")
@@ -14,10 +16,20 @@ script = ExtResource("6_4urx3")
 scale = Vector2(3.65, 3.65)
 script = ExtResource("1_g3spf")
 
-[node name="BackgroundPrototype" type="Sprite2D" parent="." unique_id=1801794865]
+[node name="background" type="Node2D" parent="." unique_id=325877965]
+
+[node name="Parallax2D" type="Parallax2D" parent="background" unique_id=2003550420]
+repeat_size = Vector2(32, 32)
+repeat_times = 10
+follow_viewport = false
+
+[node name="Black" type="Sprite2D" parent="background/Parallax2D" unique_id=2145853339]
+texture = ExtResource("2_fw5o7")
+
+[node name="BackgroundPrototype" type="Sprite2D" parent="background" unique_id=1801794865]
 texture_filter = 1
-scale = Vector2(1.5, 1.388)
-texture = ExtResource("2_hcsxu")
+scale = Vector2(1.5000001, 1.388)
+texture = ExtResource("2_g3spf")
 
 [node name="main character" parent="." unique_id=621235887 instance=ExtResource("3_fw5o7")]
 
@@ -36,3 +48,9 @@ visible = false
 script = ExtResource("5_yju58")
 tween_resource = SubResource("Resource_gw3rf")
 draw_limits = true
+
+[node name="SanctumOfTheSeraph" type="AudioStreamPlayer2D" parent="." unique_id=2132083565]
+position = Vector2(-181.64383, -108.49315)
+stream = ExtResource("8_fw5o7")
+pitch_scale = 0.75
+autoplay = true
