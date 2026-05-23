@@ -21,6 +21,10 @@ config/features=PackedStringArray("4.6", "GL Compatibility")
 boot_splash/image="uid://cgtxjidxo7y8u"
 config/icon="res://icon.svg"
 
+[audio]
+
+buses/default_bus_layout="res://Assets/default_bus_layout.tres"
+
 [autoload]
 
 PhantomCameraManager="*uid://duq6jhf6unyis"

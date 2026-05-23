@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://mweivhd35l5g"
-path="res://.godot/imported/background_prototype_no_background.png-b154ec91df5f0be188b9a4182bb772b2.ctex"
+path="res://.godot/imported/background_prototype_transparent.png-db3d5d61ed439004571400da8048d2be.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://The Amazing Art Folder/background_prototype_no_background.png"
-dest_files=["res://.godot/imported/background_prototype_no_background.png-b154ec91df5f0be188b9a4182bb772b2.ctex"]
+source_file="res://The Amazing Art Folder/background_prototype_transparent.png"
+dest_files=["res://.godot/imported/background_prototype_transparent.png-db3d5d61ed439004571400da8048d2be.ctex"]
 
 [params]
 

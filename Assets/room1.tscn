@@ -2,12 +2,13 @@
 
 [ext_resource type="Script" uid="uid://cwwbqct805sdi" path="res://Assets/room1.gd" id="1_g3spf"]
 [ext_resource type="Texture2D" uid="uid://dk75bnikglcvq" path="res://The Amazing Art Folder/black2.png" id="2_fw5o7"]
-[ext_resource type="Texture2D" uid="uid://mweivhd35l5g" path="res://The Amazing Art Folder/background_prototype_no_background.png" id="2_g3spf"]
+[ext_resource type="Texture2D" uid="uid://mweivhd35l5g" path="res://The Amazing Art Folder/background_prototype_transparent.png" id="2_g3spf"]
 [ext_resource type="PackedScene" uid="uid://uqnuhcrw12d0" path="res://Assets/main_character.tscn" id="3_fw5o7"]
+[ext_resource type="Texture2D" uid="uid://bh120mk66wvru" path="res://The Amazing Art Folder/door1.png" id="4_4urx3"]
 [ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="4_hsdi0"]
 [ext_resource type="Script" uid="uid://bhexx6mj1xv3q" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="5_yju58"]
 [ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="6_4urx3"]
-[ext_resource type="AudioStream" uid="uid://g0fwsur5sl26" path="res://The Amazing Art Folder/_ Sanctum of the Seraph.mp3" id="8_fw5o7"]
+[ext_resource type="AudioStream" uid="uid://g0fwsur5sl26" path="res://Assets/_ Sanctum of the Seraph.mp3" id="8_fw5o7"]
 [ext_resource type="Script" uid="uid://dimvdouy8g0sv" path="res://addons/phantom_camera/scripts/resources/phantom_camera_noise_2d.gd" id="8_hsdi0"]
 [ext_resource type="Script" uid="uid://busd3yfk5p1mx" path="res://addons/godot-rapier2d/custom_nodes/rapier_static_body_2d.gd" id="10_yju58"]
 
@@ -42,15 +43,21 @@ texture = ExtResource("2_fw5o7")
 
 [node name="BackgroundPrototype" type="Sprite2D" parent="background" unique_id=1801794865]
 texture_filter = 1
-scale = Vector2(1.5000001, 1.388)
+scale = Vector2(1.4, 1.4)
 texture = ExtResource("2_g3spf")
+
+[node name="Door1" type="Sprite2D" parent="background" unique_id=2098207431]
+texture_filter = 1
+position = Vector2(78.08219, -64.38356)
+scale = Vector2(1.5000001, 1.5000001)
+texture = ExtResource("4_4urx3")
 
 [node name="main character" parent="." unique_id=621235887 instance=ExtResource("3_fw5o7")]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 top_level = true
 scale = Vector2(3.65, 3.65)
-offset = Vector2(-0.89962906, -0.4414494)
+offset = Vector2(-5.0364914, -4.940735)
 editor_draw_limits = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=459320539]
