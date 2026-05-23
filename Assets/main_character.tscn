@@ -23,7 +23,7 @@ texture = ExtResource("2_j26dl")
 
 [node name="Virtual joystick left" parent="UI" unique_id=1828221587 instance=ExtResource("3_vtqb1")]
 joystick_mode = 2
-visibility_mode = 1
+visibility_mode = 2
 
 [node name="Virtual joystick right" parent="UI" unique_id=1490363533 instance=ExtResource("3_vtqb1")]
 visible = false
