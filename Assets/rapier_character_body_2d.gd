@@ -1,6 +1,6 @@
 extends RapierCharacterBody2D
 
-@export var speed: int = 400
+@export var speed: int = 200
 
 func _physics_process(delta: float) -> void:
 	move_and_slide()
