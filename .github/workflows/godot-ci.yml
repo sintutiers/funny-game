@@ -147,7 +147,7 @@ jobs:
   #         mv /root/.local/share/godot/export_templates/${GODOT_VERSION}.stable ~/.local/share/godot/export_templates/${GODOT_VERSION}.stable
   #         [ -d /root/.config/godot ] && mv /root/.config/godot ~/.config/godot || true
 
-  #     - name: Import project (required before Android build template)
+  #     - name: Import project
   #       run: |
   #         cd $PROJECT_PATH
   #         godot --headless --import
@@ -185,7 +185,7 @@ jobs:
   #         cd $PROJECT_PATH
   #         godot --headless --install-android-build-template
 
-  #     - name: Inject keystore into export_presets.cfg (critical)
+  #     - name: Inject keystore into export_presets.cfg
   #       run: |
   #         cd $PROJECT_PATH
   #         # Ensure the preset exists; if not, the workflow will fail early
