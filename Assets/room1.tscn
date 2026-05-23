@@ -8,9 +8,16 @@
 [ext_resource type="Script" uid="uid://bhexx6mj1xv3q" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="5_yju58"]
 [ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="6_4urx3"]
 [ext_resource type="AudioStream" uid="uid://g0fwsur5sl26" path="res://The Amazing Art Folder/_ Sanctum of the Seraph.mp3" id="8_fw5o7"]
+[ext_resource type="Script" uid="uid://dimvdouy8g0sv" path="res://addons/phantom_camera/scripts/resources/phantom_camera_noise_2d.gd" id="8_hsdi0"]
 
 [sub_resource type="Resource" id="Resource_gw3rf"]
 script = ExtResource("6_4urx3")
+
+[sub_resource type="Resource" id="Resource_yju58"]
+script = ExtResource("8_hsdi0")
+amplitude = 15.0
+frequency = 0.1
+metadata/_custom_type_script = "uid://dimvdouy8g0sv"
 
 [node name="bedroom" type="Node2D" unique_id=70873681]
 scale = Vector2(3.65, 3.65)
@@ -36,6 +43,7 @@ texture = ExtResource("2_g3spf")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 top_level = true
 scale = Vector2(3.65, 3.65)
+offset = Vector2(-0.56317854, -0.34945512)
 editor_draw_limits = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=459320539]
@@ -44,10 +52,10 @@ process_physics_priority = 300
 script = ExtResource("4_hsdi0")
 
 [node name="PhantomCamera2D" type="Node2D" parent="." unique_id=1973500547]
-visible = false
 script = ExtResource("5_yju58")
 tween_resource = SubResource("Resource_gw3rf")
 draw_limits = true
+noise = SubResource("Resource_yju58")
 
 [node name="SanctumOfTheSeraph" type="AudioStreamPlayer2D" parent="." unique_id=2132083565]
 position = Vector2(-181.64383, -108.49315)
