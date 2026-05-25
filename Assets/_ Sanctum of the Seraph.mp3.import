@@ -12,8 +12,8 @@ dest_files=["res://.godot/imported/_ Sanctum of the Seraph.mp3-a13acdd9eeb731366
 
 [params]
 
-loop=false
-loop_offset=0
-bpm=0
+loop=true
+loop_offset=0.0
+bpm=0.0
 beat_count=0
 bar_beats=4
