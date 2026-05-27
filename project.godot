@@ -16,6 +16,7 @@ ss2d/version="3.3.1"
 
 config/name="yume nikki game jam"
 config/description="Dean, Nick, and Chiel very cool game"
+config/version="0.0.20"
 run/main_scene="res://scenes/opening/opening.tscn"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 boot_splash/image="uid://cgtxjidxo7y8u"
@@ -44,6 +45,11 @@ gdscript/warnings/unsafe_property_access=1
 gdscript/warnings/unsafe_method_access=1
 gdscript/warnings/unsafe_cast=1
 gdscript/warnings/unsafe_call_argument=1
+
+[display]
+
+window/size/viewport_width=800
+window/size/viewport_height=600
 
 [editor_plugins]
 
