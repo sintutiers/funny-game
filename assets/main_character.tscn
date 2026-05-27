@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://uqnuhcrw12d0"]
 
-[ext_resource type="Script" uid="uid://ci67pm7335ijj" path="res://Assets/rapier_character_body_2d.gd" id="1_af0p7"]
+[ext_resource type="Script" uid="uid://ci67pm7335ijj" path="res://assets/rapier_character_body_2d.gd" id="1_af0p7"]
 [ext_resource type="Texture2D" uid="uid://eybknaq86d6u" path="res://The Amazing Art Folder/final_prototype.png" id="2_j26dl"]
 [ext_resource type="PackedScene" uid="uid://dmr0fcamx7t56" path="res://addons/virtual_joystick/virtual_joystick_scene.tscn" id="3_vtqb1"]
 

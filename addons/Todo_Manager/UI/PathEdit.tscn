@@ -3,6 +3,16 @@
 [ext_resource type="Script" uid="uid://phqm8fm8s3om" path="res://addons/Todo_Manager/UI/PathEdit.gd" id="1_v1uj4"]
 [ext_resource type="StyleBox" uid="uid://coyt1i52yehl7" path="res://addons/Todo_Manager/UI/PatternContainer.tres" id="1_wkkxb"]
 
+[sub_resource type="DPITexture" id="DPITexture_wkkxb"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"none\" stroke=\"#fff\" stroke-opacity=\".898\" stroke-width=\"2\" d=\"m3 3 10 10M3 13 13 3\"/></svg>
+"
+saturation = 2.0
+color_map = {
+Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
+Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
+Color(1, 0.8666667, 0.39607844, 1): Color(0.83, 0.78, 0.62, 1)
+}
+
 [node name="PathEdit" type="PanelContainer" unique_id=294956074]
 anchors_preset = -1
 anchor_right = 0.094000004
@@ -31,6 +41,7 @@ expand_to_text_length = true
 unique_name_in_owner = true
 custom_minimum_size = Vector2(32, 32)
 layout_mode = 2
+icon = SubResource("DPITexture_wkkxb")
 flat = true
 icon_alignment = 1
 expand_icon = true
