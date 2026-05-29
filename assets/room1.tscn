@@ -1,0 +1,142 @@
+[gd_scene format=3 uid="uid://bnwmdamij3ce4"]
+
+[ext_resource type="Script" uid="uid://cwwbqct805sdi" path="res://assets/room1.gd" id="1_g3spf"]
+[ext_resource type="Texture2D" uid="uid://dk75bnikglcvq" path="res://The Amazing Art Folder/black2.png" id="2_fw5o7"]
+[ext_resource type="Texture2D" uid="uid://mweivhd35l5g" path="res://The Amazing Art Folder/background_prototype_transparent.png" id="2_g3spf"]
+[ext_resource type="PackedScene" uid="uid://uqnuhcrw12d0" path="res://assets/main_character.tscn" id="3_fw5o7"]
+[ext_resource type="Texture2D" uid="uid://bh120mk66wvru" path="res://The Amazing Art Folder/door1.png" id="4_4urx3"]
+[ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="4_hsdi0"]
+[ext_resource type="Script" uid="uid://bhexx6mj1xv3q" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="5_yju58"]
+[ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="6_4urx3"]
+[ext_resource type="AudioStream" uid="uid://g0fwsur5sl26" path="res://assets/_ Sanctum of the Seraph.mp3" id="8_fw5o7"]
+[ext_resource type="Script" uid="uid://dimvdouy8g0sv" path="res://addons/phantom_camera/scripts/resources/phantom_camera_noise_2d.gd" id="8_hsdi0"]
+[ext_resource type="Texture2D" uid="uid://sqts38sgtapq" path="res://The Amazing Art Folder/being1.png" id="10_a78lt"]
+[ext_resource type="Script" uid="uid://busd3yfk5p1mx" path="res://addons/godot-rapier2d/custom_nodes/rapier_static_body_2d.gd" id="10_yju58"]
+[ext_resource type="Texture2D" uid="uid://bxxj8hjodi2u0" path="res://The Amazing Art Folder/cube.png" id="11_dlqat"]
+[ext_resource type="Texture2D" uid="uid://bhk8orfs38r2u" path="res://The Amazing Art Folder/sun.png" id="12_ghf1c"]
+[ext_resource type="Texture2D" uid="uid://coyykxb8svr7e" path="res://The Amazing Art Folder/bed.png" id="13_kjrlq"]
+
+[sub_resource type="Resource" id="Resource_gw3rf"]
+script = ExtResource("6_4urx3")
+
+[sub_resource type="Resource" id="Resource_yju58"]
+script = ExtResource("8_hsdi0")
+amplitude = 15.0
+frequency = 0.1
+metadata/_custom_type_script = "uid://dimvdouy8g0sv"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4urx3"]
+size = Vector2(21.232864, 181.36987)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vrgib"]
+size = Vector2(331.16437, 24.38356)
+
+[node name="bedroom" type="Node2D" unique_id=70873681]
+scale = Vector2(3.65, 3.65)
+script = ExtResource("1_g3spf")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
+top_level = true
+scale = Vector2(3.65, 3.65)
+offset = Vector2(-1.1314887, -1.8320559)
+editor_draw_limits = true
+
+[node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=459320539]
+process_priority = 300
+process_physics_priority = 300
+script = ExtResource("4_hsdi0")
+
+[node name="PhantomCamera2D" type="Node2D" parent="." unique_id=1973500547]
+script = ExtResource("5_yju58")
+tween_resource = SubResource("Resource_gw3rf")
+draw_limits = true
+noise = SubResource("Resource_yju58")
+
+[node name="SanctumOfTheSeraph" type="AudioStreamPlayer2D" parent="." unique_id=2132083565]
+position = Vector2(-181.64383, -108.49315)
+stream = ExtResource("8_fw5o7")
+pitch_scale = 0.75
+autoplay = true
+
+[node name="background" type="Node2D" parent="." unique_id=1939920780]
+
+[node name="Parallax2D" type="Parallax2D" parent="background" unique_id=2003550420]
+repeat_size = Vector2(32, 30)
+repeat_times = 19
+follow_viewport = false
+
+[node name="Black" type="Sprite2D" parent="background/Parallax2D" unique_id=2145853339]
+texture = ExtResource("2_fw5o7")
+
+[node name="RapierStaticBody2D" type="StaticBody2D" parent="background" unique_id=286310053]
+script = ExtResource("10_yju58")
+metadata/_custom_type_script = "uid://busd3yfk5p1mx"
+
+[node name="ver1" type="CollisionShape2D" parent="background/RapierStaticBody2D" unique_id=1819678603]
+position = Vector2(-166.84933, 0.8219179)
+shape = SubResource("RectangleShape2D_4urx3")
+
+[node name="ver2" type="CollisionShape2D" parent="background/RapierStaticBody2D" unique_id=1400218097]
+position = Vector2(164.65755, 1.09589)
+shape = SubResource("RectangleShape2D_4urx3")
+
+[node name="hor1" type="CollisionShape2D" parent="background/RapierStaticBody2D" unique_id=902432346]
+position = Vector2(1.6438355, -100)
+shape = SubResource("RectangleShape2D_vrgib")
+
+[node name="hor2" type="CollisionShape2D" parent="background/RapierStaticBody2D" unique_id=892011529]
+position = Vector2(-1.6438357, 98.356155)
+shape = SubResource("RectangleShape2D_vrgib")
+
+[node name="Being2" type="Sprite2D" parent="background" unique_id=1452415030]
+texture_filter = 1
+position = Vector2(-60.547943, 57.80822)
+texture = ExtResource("10_a78lt")
+flip_h = true
+
+[node name="Being1" type="Sprite2D" parent="background" unique_id=683833488]
+texture_filter = 1
+position = Vector2(-128.76712, -42.19178)
+scale = Vector2(1.4, 1.4)
+texture = ExtResource("10_a78lt")
+
+[node name="Cube" type="Sprite2D" parent="background" unique_id=1465646804]
+texture_filter = 1
+position = Vector2(-119.72603, 64.38356)
+texture = ExtResource("11_dlqat")
+
+[node name="Sun" type="Sprite2D" parent="background" unique_id=159025936]
+texture_filter = 1
+position = Vector2(-1.0958881, -72.60274)
+scale = Vector2(1.6, 1.6)
+texture = ExtResource("12_ghf1c")
+
+[node name="Bed" type="Sprite2D" parent="background" unique_id=240206082]
+texture_filter = 1
+position = Vector2(107.9452, 58.63013)
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("13_kjrlq")
+
+[node name="BackgroundPrototype" type="Sprite2D" parent="background" unique_id=1801794865]
+visible = false
+texture_filter = 1
+scale = Vector2(1.4, 1.4)
+texture = ExtResource("2_g3spf")
+
+[node name="Door1" type="Sprite2D" parent="background" unique_id=2098207431]
+texture_filter = 1
+position = Vector2(109.31506, -66.02739)
+scale = Vector2(1.4, 1.4)
+texture = ExtResource("4_4urx3")
+
+[node name="Cube3" type="Sprite2D" parent="background" unique_id=1726693315]
+texture_filter = 1
+position = Vector2(92.054794, 22.19178)
+texture = ExtResource("11_dlqat")
+
+[node name="Cube2" type="Sprite2D" parent="background" unique_id=1607447713]
+texture_filter = 1
+position = Vector2(-98.63014, 7.3972588)
+texture = ExtResource("11_dlqat")
+
+[node name="main character" parent="." unique_id=621235887 instance=ExtResource("3_fw5o7")]

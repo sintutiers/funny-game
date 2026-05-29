@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bgd6f2j2u1bvs"]
+
+[ext_resource type="Script" uid="uid://b83wx8f1aq2t8" path="res://assets/interactable.gd" id="1_x56f5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x56f5"]
+
+[node name="RapierArea2D" type="Area2D" unique_id=173514727]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_x56f5")
+metadata/_custom_type_script = "uid://cburu6b4ckehs"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=130377290]
+shape = SubResource("RectangleShape2D_x56f5")
