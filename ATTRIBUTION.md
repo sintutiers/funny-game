@@ -1,6 +1,9 @@
 # Attribution
 ## Collaborators
 
+[Dean](https://deanlemans.github.io/)
+[Chiel](https://github.com/Chielekkuuuh)
+
 ### Godot Game Template
 ![Maaack Plugin Icon](/addons/maaacks_game_template/assets/plugin_logo/logo.png)  
 Author: [Marek Belski and contributors](https://github.com/Maaack/Godot-Game-Template/graphs/contributors)  
@@ -24,11 +27,6 @@ License: [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)
 Author: [Juan Linietsky, Ariel Manzur, and contributors](https://godotengine.org/contact)  
 Source: [godotengine.org](https://godotengine.org/)  
 License: [MIT License](https://github.com/godotengine/godot/blob/master/LICENSE.txt)  
-
-#### Visual Studio Code
-Author: [Microsoft](https://opensource.microsoft.com/)  
-Source: [github: vscode](https://github.com/microsoft/vscode)  
-License: [MIT License](https://github.com/microsoft/vscode/blob/main/LICENSE.txt)
 
 #### Git
 ![Git Logo](/addons/maaacks_game_template/assets/git_logo/Git-Logo-2Color.png)  
