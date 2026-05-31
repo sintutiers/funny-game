@@ -4,7 +4,7 @@
 [Dean](https://deanlemans.github.io/)
 [Chiel](https://github.com/Chielekkuuuh)
 
-### Godot Game Template
+### Maaack Game Template
 ![Maaack Plugin Icon](/addons/maaacks_game_template/assets/plugin_logo/logo.png)  
 Author: [Marek Belski and contributors](https://github.com/Maaack/Godot-Game-Template/graphs/contributors)  
 Source: [github: Godot-Game-Template](https://github.com/Maaack/Godot-Game-Template)  
