@@ -1,0 +1,6 @@
+extends Node2D
+
+@export_file("*.tscn") var next_scene : String
+
+func _on_door_interacted(body: Node2D) -> void:
+	SceneLoader.load_scene(next_scene)
