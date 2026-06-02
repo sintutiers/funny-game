@@ -14,7 +14,6 @@ func _ready() -> void:
 func _physics_process(_delta: float) -> void:
 	var input_raw: Vector2 = Input.get_vector("left", "right", "up", "down")
 	var input_dir: Vector2 = input_raw.sign()
-	#var input_dir: Vector2 = Vector2(sign(input_raw.x), sign(input_raw.y))
 
 	if input_dir != Vector2.ZERO:
 		player_body.velocity = input_dir * speed_keys
@@ -31,7 +30,7 @@ func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("interact"):
 		interact()
 		print("buttonpress")
-	if event is InputEventMouseButton and event.is_action_pressed(&"interact"):
+	if event is InputEventMouseButton and event.is_action_pressed(&"interact"): # TODO remove or rework the touch events for final build
 		var mouse_event: InputEventMouseButton = event
 		target = mouse_event.global_position
 

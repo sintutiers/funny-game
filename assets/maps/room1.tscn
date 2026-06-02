@@ -38,6 +38,17 @@ size = Vector2(243.0137, 33.9726)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iwdi6"]
 size = Vector2(20, 25.890411)
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_iwdi6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_4urx3")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="bedroom" type="Node2D" unique_id=70873681]
 scale = Vector2(3.65, 3.65)
 script = ExtResource("1_g3spf")
@@ -46,7 +57,7 @@ next_scene = "uid://b80chnt43vfab"
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 top_level = true
 scale = Vector2(3.65, 3.65)
-offset = Vector2(5.9575977, 7.6829786)
+offset = Vector2(-3.6999457, -6.0146527)
 editor_draw_limits = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=459320539]
@@ -148,14 +159,12 @@ collision_mask = 3
 script = ExtResource("15_q2aba")
 metadata/_custom_type_script = "uid://cburu6b4ckehs"
 
-[node name="Door1" type="Sprite2D" parent="door" unique_id=2098207431]
-texture_filter = 1
-scale = Vector2(1.4, 1.4)
-texture = ExtResource("4_4urx3")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="door" unique_id=2089601538]
 position = Vector2(0, -3.90411)
 shape = SubResource("RectangleShape2D_iwdi6")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="door" unique_id=619086787]
+sprite_frames = SubResource("SpriteFrames_iwdi6")
 
 [connection signal="interacted" from="bed" to="." method="_on_bed_interacted"]
 [connection signal="interacted" from="door" to="." method="_on_door_interacted"]
