@@ -19,7 +19,7 @@ func _ready() -> void:
 
 func _physics_process(_delta: float) -> void:
 	var input_raw: Vector2 = Input.get_vector("left", "right", "up", "down")
-	var input_dir: Vector2 = input_raw.sign()
+	var input_dir: Vector2 = input_raw
 
 	if input_dir != Vector2.ZERO:
 		player_body.velocity = input_dir * speed_keys
@@ -30,7 +30,7 @@ func _physics_process(_delta: float) -> void:
 		
 	elif player_body.global_position.distance_to(target) > 10:
 		var direction: Vector2 = player_body.global_position.direction_to(target)
-		player_body.velocity = direction.sign() * speed_touch
+		player_body.velocity = direction * speed_touch
 		
 		_update_facing(direction)
 		_play_direction_animation()
