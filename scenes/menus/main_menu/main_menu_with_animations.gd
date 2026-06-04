@@ -10,9 +10,9 @@ extends MainMenu
 
 var animation_state_machine : AnimationNodeStateMachinePlayback
 
-@onready var continue_game_button = %ContinueGameButton
-@onready var level_select_button = %LevelSelectButton
-@onready var new_game_confirmation = %NewGameConfirmation
+@onready var continue_game_button: Button = %ContinueGameButton
+@onready var level_select_button: Button = %LevelSelectButton
+@onready var new_game_confirmation: PanelContainer = %NewGameConfirmation
 
 func load_game_scene() -> void:
 	GameState.start_game()
@@ -45,12 +45,6 @@ func _close_sub_menu() -> void:
 	super._close_sub_menu()
 	animation_state_machine.travel("OpenMainMenu")
 
-func _input(event : InputEvent) -> void:
-	if _is_in_intro() and _event_skips_intro(event):
-		intro_done()
-		return
-	super._input(event)
-
 func _show_level_select_if_set() -> void: 
 	if level_select_packed_scene == null: return
 	if GameState.get_levels_reached() <= 1 : return
@@ -65,6 +59,39 @@ func _ready() -> void:
 	_show_level_select_if_set()
 	_show_continue_if_set()
 	animation_state_machine = $MenuAnimationTree.get("parameters/playback")
+
+func _input(event: InputEvent) -> void:
+	if _is_in_intro() and _event_skips_intro(event):
+		intro_done()
+		return
+	
+	if is_visible_in_tree():
+		var current_focus: Control = get_viewport().gui_get_focus_owner()
+		if current_focus:
+			var next_control: Control = null
+			if event.is_action_pressed("down"):
+				next_control = current_focus.find_next_valid_focus()
+			elif event.is_action_pressed("up"):
+				next_control = current_focus.find_prev_valid_focus()
+			elif event.is_action_pressed("left"):
+				var left_path: NodePath = current_focus.focus_neighbor_left
+				if not left_path.is_empty():
+					next_control = get_node(left_path)
+				if not next_control:
+					next_control = current_focus.find_prev_valid_focus()
+			elif event.is_action_pressed("right"):
+				var right_path: NodePath = current_focus.focus_neighbor_right
+				if not right_path.is_empty():
+					next_control = get_node(right_path)
+				if not next_control:
+					next_control = current_focus.find_next_valid_focus()
+			
+			if next_control and next_control != current_focus:
+				next_control.grab_focus()
+				get_viewport().set_input_as_handled()
+				return
+	
+	super._input(event)
 
 func _on_continue_game_button_pressed() -> void:
 	GameState.continue_game()

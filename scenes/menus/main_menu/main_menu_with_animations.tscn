@@ -415,7 +415,6 @@ theme_override_constants/margin_bottom = 8
 [node name="MenuButtonsContainer" type="Control" parent="MenuContainer/MenuButtonsMargin" unique_id=116448484]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 2
-mouse_filter = 2
 
 [node name="PanelContainer" type="PanelContainer" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer" unique_id=271212017]
 texture_filter = 1
@@ -521,7 +520,7 @@ offset_left = -88.0
 offset_top = -26.0
 grow_horizontal = 0
 grow_vertical = 0
-text = "v0.0.23"
+text = "v0.0.30"
 horizontal_alignment = 2
 script = ExtResource("8_672y5")
 

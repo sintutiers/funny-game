@@ -18,7 +18,7 @@ script = ExtResource("1_52nx8")
 offset_left = 8.0
 offset_top = 8.0
 offset_right = 309.0
-offset_bottom = 219.0
+offset_bottom = 215.0
 columns = 2
 
 [node name="NameLabel" type="Label" parent="GridContainer" unique_id=2068228478]

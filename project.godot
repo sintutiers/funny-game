@@ -15,8 +15,8 @@ ss2d/version="3.3.1"
 [application]
 
 config/name="yume nikki game jam"
-config/description="Dean, Nick, and Chiel very cool game"
-config/version="0.0.23"
+config/description="Dean, and Chiel very cool game"
+config/version="0.0.30"
 run/main_scene="res://scenes/opening/opening.tscn"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 boot_splash/image="uid://cgtxjidxo7y8u"

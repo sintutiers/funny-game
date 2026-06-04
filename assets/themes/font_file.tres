@@ -12,6 +12,8 @@ data = {
 [resource]
 antialiasing = 0
 subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
 allow_system_fallback = false
 hinting = 0
 fixed_size = 12
