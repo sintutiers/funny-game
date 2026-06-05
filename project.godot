@@ -14,13 +14,15 @@ ss2d/version="3.3.1"
 
 [application]
 
-config/name="yume nikki game jam"
-config/description="Dean, and Chiel very cool game"
-config/version="0.0.30"
+config/name="Dream Diary gamejam"
+config/description="Dean, and Chie, and Dukel 
+very cool game"
+config/version="0.0.31"
 run/main_scene="res://scenes/opening/opening.tscn"
 config/features=PackedStringArray("4.6", "GL Compatibility")
-boot_splash/image="uid://cgtxjidxo7y8u"
-config/icon="res://icon.svg"
+boot_splash/use_filter=false
+boot_splash/image="uid://bhk8orfs38r2u"
+config/icon="uid://cgtxjidxo7y8u"
 
 [audio]
 
