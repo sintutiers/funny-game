@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b1m1fmbl0giqi"]
 
-[ext_resource type="Texture2D" uid="uid://c61rfxslbyny6" path="res://addons/YouCanDoIt/Images/SettingsCog.svg" id="1_36y18"]
+[ext_resource type="Texture2D" uid="uid://cfurar0df2pev" path="res://addons/YouCanDoIt/Images/SettingsCog.svg" id="1_36y18"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_xdbgf"]
 font_size = 24

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dnufpcdrreva3"]
 
 [ext_resource type="Script" uid="uid://dqa4a4wwoo0aa" path="res://addons/dialogue_manager/components/files_list.gd" id="1_cytii"]
-[ext_resource type="Texture2D" uid="uid://d3lr2uas6ax8v" path="res://addons/dialogue_manager/assets/icon.svg" id="2_3ijx1"]
+[ext_resource type="Texture2D" uid="uid://d1r4yf6kw7og5" path="res://addons/dialogue_manager/assets/icon.svg" id="2_3ijx1"]
 [ext_resource type="StyleBox" uid="uid://db1836yw6vlr" path="res://assets/themes/style_box.tres" id="3_2lioe"]
 
 [sub_resource type="DPITexture" id="DPITexture_nkf6h"]

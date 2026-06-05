@@ -10,8 +10,8 @@
 [ext_resource type="PackedScene" uid="uid://d0v0c01ahg7xr" path="res://scenes/windows/level_won_window.tscn" id="8_rkfhe"]
 [ext_resource type="Script" uid="uid://wjq7li836lwj" path="res://addons/maaacks_game_template/extras/scripts/scene_lister.gd" id="9_g2ndc"]
 [ext_resource type="PackedScene" uid="uid://dilw83i7s5nfm" path="res://scenes/loading_screen/level_loading_screen.tscn" id="10_0v86b"]
-[ext_resource type="Script" uid="uid://bsh4snq3ol87h" path="res://scenes/game_scene/configurable_sub_viewport.gd" id="11_ulq3g"]
-[ext_resource type="Script" uid="uid://b15xsf2qjnsbq" path="res://scenes/game_scene/game_timer.gd" id="12_gpor5"]
+[ext_resource type="Script" uid="uid://bsh4snq3ol87h" path="res://scenes/example_game_screens/configurable_sub_viewport.gd" id="11_ulq3g"]
+[ext_resource type="Script" uid="uid://b15xsf2qjnsbq" path="res://scenes/example_game_screens/game_timer.gd" id="12_gpor5"]
 
 [node name="GameUI" type="Control" unique_id=1609552811]
 layout_mode = 3

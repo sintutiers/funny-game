@@ -8,9 +8,9 @@
 [ext_resource type="Script" uid="uid://b8hhnqsugykly" path="res://addons/phantom_camera/scripts/resources/camera_3d_resource.gd" id="6_dmm4a"]
 [ext_resource type="Script" uid="uid://ccmiitq0sdh7j" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_noise_emitter_3d.gd" id="7_2vtho"]
 [ext_resource type="PackedScene" uid="uid://cixlwqycoox8h" path="res://addons/phantom_camera/examples/models/3d_cube_dark.tscn" id="8_bw5oq"]
-[ext_resource type="Texture2D" uid="uid://bj7h2fc5jx4ax" path="res://addons/phantom_camera/examples/textures/3D/checker_pattern_dark.png" id="9_jpkpr"]
-[ext_resource type="FontFile" uid="uid://dve7mgsjik4dg" path="res://addons/phantom_camera/fonts/Nunito-Regular.ttf" id="10_8pr3k"]
-[ext_resource type="FontFile" uid="uid://c4mm3of2mc8o5" path="res://addons/phantom_camera/fonts/Nunito-Black.ttf" id="11_vp57v"]
+[ext_resource type="Texture2D" uid="uid://bp50f6b5q0ihu" path="res://addons/phantom_camera/examples/textures/3D/checker_pattern_dark.png" id="9_jpkpr"]
+[ext_resource type="FontFile" uid="uid://kyajc8pmjyw" path="res://addons/phantom_camera/fonts/Nunito-Regular.ttf" id="10_8pr3k"]
+[ext_resource type="FontFile" uid="uid://bayri1j15k6jq" path="res://addons/phantom_camera/fonts/Nunito-Black.ttf" id="11_vp57v"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_yvgu3"]
 
@@ -60,7 +60,7 @@ expand_margin_bottom = 6.0
 [node name="MainCamera3D" type="Camera3D" parent="." unique_id=2079128655]
 unique_name_in_owner = true
 physics_interpolation_mode = 1
-transform = Transform3D(0.047523715, -0.007371895, 0.9988429, 0, 0.99997276, 0.0073802336, -0.99887013, -0.00035073605, 0.04752242, -16.46, 0.5, 4.249)
+transform = Transform3D(-0.017089218, 0.018156316, 0.99968916, -1.4551915e-11, 0.99983513, -0.018158967, -0.99985397, -0.00031032256, -0.0170864, -16.46, 0.5, 4.249)
 top_level = true
 
 [node name="PhantomCameraHost" type="Node" parent="MainCamera3D" unique_id=416491906]

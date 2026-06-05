@@ -15,14 +15,14 @@ ss2d/version="3.3.1"
 [application]
 
 config/name="Dream Diary gamejam"
-config/description="Dean, and Chie, and Dukel 
-very cool game"
-config/version="0.0.31"
+config/description="Dean, and Chiel, and Duke
+very cool games"
+config/version="0.0.32"
 run/main_scene="res://scenes/opening/opening.tscn"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 boot_splash/use_filter=false
 boot_splash/image="uid://bhk8orfs38r2u"
-config/icon="uid://cgtxjidxo7y8u"
+config/icon="uid://55h2f6poebdk"
 
 [audio]
 
@@ -61,6 +61,31 @@ enabled=PackedStringArray("res://addons/Todo_Manager/plugin.cfg", "res://addons/
 
 theme/custom="uid://dudh2k1jjvgdk"
 theme/custom_font="uid://bdude2uqwyrt"
+
+[importer_defaults]
+
+texture={
+&"compress/channel_pack": 1,
+&"compress/mode": 4,
+&"compress/normal_map": 2,
+&"detect_3d/compress_to": 0,
+&"process/fix_alpha_border": false,
+&"roughness/mode": 1
+}
+cubemap_texture={
+&"compress/mode": 4
+}
+cubemap_array_texture={
+&"compress/mode": 4
+}
+2d_array_texture={
+&"compress/channel_pack": 1,
+&"compress/mode": 4,
+&"mipmaps/generate": false
+}
+3d_texture={
+&"compress/mode": 4
+}
 
 [input]
 

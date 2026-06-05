@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://fdjybw6e7whr"]
 
 [ext_resource type="Script" uid="uid://ck72bbjf4iwr2" path="res://addons/better-terrain/editor/TerrainProperties.gd" id="1_52nx8"]
-[ext_resource type="Texture2D" uid="uid://d1h1p7pcwdnjk" path="res://addons/better-terrain/icons/MatchTiles.svg" id="2_ncc5p"]
-[ext_resource type="Texture2D" uid="uid://dfemy1g6okwlv" path="res://addons/better-terrain/icons/MatchVertices.svg" id="3_0nvmi"]
-[ext_resource type="Texture2D" uid="uid://1yr6yruwl63u" path="res://addons/better-terrain/icons/NonModifying.svg" id="5_awp83"]
+[ext_resource type="Texture2D" uid="uid://g50qfibbt2ss" path="res://addons/better-terrain/icons/MatchTiles.svg" id="2_ncc5p"]
+[ext_resource type="Texture2D" uid="uid://dqap3nwh3tpld" path="res://addons/better-terrain/icons/MatchVertices.svg" id="3_0nvmi"]
+[ext_resource type="Texture2D" uid="uid://brfko8lg4buk8" path="res://addons/better-terrain/icons/NonModifying.svg" id="5_awp83"]
 
 [node name="TerrainProperties" type="ConfirmationDialog" unique_id=2048069804]
 oversampling_override = 1.0

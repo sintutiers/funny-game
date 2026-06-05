@@ -5,15 +5,15 @@
 [ext_resource type="Script" uid="uid://bhexx6mj1xv3q" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="3_43bkp"]
 [ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="4_flggq"]
 [ext_resource type="Script" uid="uid://dimvdouy8g0sv" path="res://addons/phantom_camera/scripts/resources/phantom_camera_noise_2d.gd" id="5_x508u"]
-[ext_resource type="AudioStream" uid="uid://g0fwsur5sl26" path="res://assets/_ Sanctum of the Seraph.mp3" id="6_1d871"]
-[ext_resource type="Texture2D" uid="uid://dk75bnikglcvq" path="res://The Amazing Art Folder/black2.png" id="7_u7an5"]
+[ext_resource type="AudioStream" uid="uid://bo32o3q2slkii" path="res://assets/_ Sanctum of the Seraph.mp3" id="6_1d871"]
+[ext_resource type="Texture2D" uid="uid://46kr7ggre6pd" path="res://The Amazing Art Folder/black2.png" id="7_u7an5"]
 [ext_resource type="Script" uid="uid://busd3yfk5p1mx" path="res://addons/godot-rapier2d/custom_nodes/rapier_static_body_2d.gd" id="8_5irkh"]
-[ext_resource type="Texture2D" uid="uid://sqts38sgtapq" path="res://The Amazing Art Folder/being1.png" id="9_ubgv6"]
-[ext_resource type="Texture2D" uid="uid://bxxj8hjodi2u0" path="res://The Amazing Art Folder/cube.png" id="10_5whke"]
-[ext_resource type="Texture2D" uid="uid://bhk8orfs38r2u" path="res://The Amazing Art Folder/sun.png" id="11_q4eyy"]
-[ext_resource type="Texture2D" uid="uid://coyykxb8svr7e" path="res://The Amazing Art Folder/bed.png" id="12_450i1"]
-[ext_resource type="Texture2D" uid="uid://mweivhd35l5g" path="res://The Amazing Art Folder/background_prototype_transparent.png" id="13_5354l"]
-[ext_resource type="Texture2D" uid="uid://bh120mk66wvru" path="res://The Amazing Art Folder/door1.png" id="14_qsqui"]
+[ext_resource type="Texture2D" uid="uid://mkihoskon4ea" path="res://The Amazing Art Folder/being1.png" id="9_ubgv6"]
+[ext_resource type="Texture2D" uid="uid://ck1myn3avrssv" path="res://The Amazing Art Folder/cube.png" id="10_5whke"]
+[ext_resource type="Texture2D" uid="uid://de0lbndqydfuc" path="res://The Amazing Art Folder/sun.png" id="11_q4eyy"]
+[ext_resource type="Texture2D" uid="uid://bgx1slavir63w" path="res://The Amazing Art Folder/bed.png" id="12_450i1"]
+[ext_resource type="Texture2D" uid="uid://qwq8ws4ihibr" path="res://The Amazing Art Folder/background_prototype_transparent.png" id="13_5354l"]
+[ext_resource type="Texture2D" uid="uid://cqiuyacsfr7cw" path="res://The Amazing Art Folder/door1.png" id="14_qsqui"]
 [ext_resource type="PackedScene" uid="uid://uqnuhcrw12d0" path="res://assets/main_character.tscn" id="15_tpc0t"]
 
 [sub_resource type="Resource" id="Resource_gw3rf"]
@@ -38,7 +38,7 @@ script = ExtResource("1_iecb2")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 top_level = true
 scale = Vector2(3.65, 3.65)
-offset = Vector2(0.339852, 0.6419372)
+offset = Vector2(0.2687377, 2.0757563)
 editor_draw_limits = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=459320539]

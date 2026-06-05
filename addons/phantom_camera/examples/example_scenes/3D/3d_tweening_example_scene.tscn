@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://cb83in8f0tbb1" path="res://addons/phantom_camera/examples/example_scenes/3D/sub_scenes/playable_character_3d.tscn" id="6_lr46m"]
 [ext_resource type="Script" uid="uid://bnhxcejvr6wi3" path="res://addons/phantom_camera/examples/scripts/3D/3d_trigger_area.gd" id="7_istoq"]
 [ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="8_qepee"]
-[ext_resource type="FontFile" uid="uid://c4mm3of2mc8o5" path="res://addons/phantom_camera/fonts/Nunito-Black.ttf" id="9_ptb3h"]
+[ext_resource type="FontFile" uid="uid://bayri1j15k6jq" path="res://addons/phantom_camera/fonts/Nunito-Black.ttf" id="9_ptb3h"]
 
 [sub_resource type="Resource" id="Resource_0dtvs"]
 script = ExtResource("5_1sgnu")

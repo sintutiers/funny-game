@@ -2,38 +2,36 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ta2iwuf8w5x7"
-path.s3tc="res://.godot/imported/MisaAmane Algorithms.png-3442e256853370c4413979fdac5b4e6d.s3tc.ctex"
-path.etc2="res://.godot/imported/MisaAmane Algorithms.png-3442e256853370c4413979fdac5b4e6d.etc2.ctex"
+uid="uid://cx2l5o6ou7ekt"
+path="res://.godot/imported/MisaAmane Algorithms.png-3442e256853370c4413979fdac5b4e6d.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
 source_file="res://addons/YouCanDoIt/Images/Girls/Mean/MisaAmane Algorithms.png"
-dest_files=["res://.godot/imported/MisaAmane Algorithms.png-3442e256853370c4413979fdac5b4e6d.s3tc.ctex", "res://.godot/imported/MisaAmane Algorithms.png-3442e256853370c4413979fdac5b4e6d.etc2.ctex"]
+dest_files=["res://.godot/imported/MisaAmane Algorithms.png-3442e256853370c4413979fdac5b4e6d.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=4
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
-compress/normal_map=0
-compress/channel_pack=0
-mipmaps/generate=true
+compress/normal_map=2
+compress/channel_pack=1
+mipmaps/generate=false
 mipmaps/limit=-1
-roughness/mode=0
+roughness/mode=1
 roughness/src_normal=""
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2
 process/channel_remap/alpha=3
-process/fix_alpha_border=true
+process/fix_alpha_border=false
 process/premult_alpha=false
 process/normal_map_invert_y=false
 process/hdr_as_srgb=false

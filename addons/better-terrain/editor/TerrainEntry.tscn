@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://u2y444hj182c"]
 
 [ext_resource type="Script" uid="uid://mf8qmlt8g586" path="res://addons/better-terrain/editor/TerrainEntry.gd" id="1_o2na3"]
-[ext_resource type="Texture2D" uid="uid://kmypxsqhynyv" path="res://addons/better-terrain/icons/Decoration.svg" id="2_ossyj"]
+[ext_resource type="Texture2D" uid="uid://ga6dw1ejnqst" path="res://addons/better-terrain/icons/Decoration.svg" id="2_ossyj"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3pdcc"]
 content_margin_left = 4.0

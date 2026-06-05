@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dpqktaek8pr05"]
 
-[ext_resource type="Texture2D" uid="uid://bir8x1daio6qs" path="res://addons/YouCanDoIt/Images/SpeechBubble.svg" id="1_pfykn"]
-[ext_resource type="AudioStream" uid="uid://pn7jy61658eh" path="res://addons/YouCanDoIt/Sounds/Nya.wav" id="2_vqfxa"]
+[ext_resource type="Texture2D" uid="uid://v6ong4ta4y5d" path="res://addons/YouCanDoIt/Images/SpeechBubble.svg" id="1_pfykn"]
+[ext_resource type="AudioStream" uid="uid://dkxq43qfg2tac" path="res://addons/YouCanDoIt/Sounds/Nya.wav" id="2_vqfxa"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_c0lt8"]
 font_size = 18

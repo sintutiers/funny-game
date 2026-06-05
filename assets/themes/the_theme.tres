@@ -1,6 +1,6 @@
 [gd_resource type="Theme" format=3 uid="uid://dudh2k1jjvgdk"]
 
-[ext_resource type="Texture2D" uid="uid://m2ta7oqlwy3f" path="res://assets/themes/new_atlas_texture.tres" id="2_5sm08"]
+[ext_resource type="Texture2D" uid="uid://m2ta7oqlwy3f" path="res://assets/themes/atlas_texture.tres" id="2_5sm08"]
 [ext_resource type="StyleBox" uid="uid://db1836yw6vlr" path="res://assets/themes/style_box.tres" id="2_wrsb0"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fijtp"]

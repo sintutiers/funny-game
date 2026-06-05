@@ -2,7 +2,7 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://c4mm3of2mc8o5"
+uid="uid://bayri1j15k6jq"
 path="res://.godot/imported/Nunito-Black.ttf-2a374efbc207a97a99b8c70bdc4b7cbb.fontdata"
 
 [deps]
@@ -23,7 +23,7 @@ allow_system_fallback=true
 force_autohinter=false
 modulate_color_glyphs=false
 hinting=1
-subpixel_positioning=1
+subpixel_positioning=4
 keep_rounding_remainders=true
 oversampling=0.0
 Fallbacks=null
