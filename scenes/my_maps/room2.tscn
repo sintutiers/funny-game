@@ -38,7 +38,7 @@ script = ExtResource("1_iecb2")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 top_level = true
 scale = Vector2(3.65, 3.65)
-offset = Vector2(0.2687377, 2.0757563)
+offset = Vector2(0.09119293, 0.27391577)
 editor_draw_limits = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=459320539]

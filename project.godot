@@ -21,7 +21,7 @@ config/version="0.0.32"
 run/main_scene="res://scenes/opening/opening.tscn"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 boot_splash/use_filter=false
-boot_splash/image="uid://bhk8orfs38r2u"
+boot_splash/image="uid://de0lbndqydfuc"
 config/icon="uid://55h2f6poebdk"
 
 [audio]

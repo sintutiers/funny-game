@@ -29,7 +29,7 @@ texture_margin_bottom = 1.0
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8t5h1"]
 
-[sub_resource type="Image" id="Image_5sm08"]
+[sub_resource type="Image" id="Image_0vact"]
 data = {
 "data": PackedByteArray(255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255),
 "format": "RGBA8",
@@ -39,7 +39,7 @@ data = {
 }
 
 [sub_resource type="ImageTexture" id="ImageTexture_cytoj"]
-image = SubResource("Image_5sm08")
+image = SubResource("Image_0vact")
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lkf7m"]
 
