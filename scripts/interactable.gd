@@ -10,3 +10,5 @@ signal stepped_on(body: Node2D)
 
 func _on_door_interacted(body: Node2D) -> void:
 	interacted.emit(body)
+
+#TODO need to add sleep animation for this to go to second screen
