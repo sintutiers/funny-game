@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cwwbqct805sdi" path="res://scripts/room1.gd" id="1_g3spf"]
 [ext_resource type="Texture2D" uid="uid://46kr7ggre6pd" path="res://The Amazing Art Folder/black2.png" id="2_fw5o7"]
-[ext_resource type="PackedScene" uid="uid://uqnuhcrw12d0" path="res://assets/main_character.tscn" id="3_fw5o7"]
+[ext_resource type="PackedScene" uid="uid://uqnuhcrw12d0" path="res://assets/player.tscn" id="3_fw5o7"]
 [ext_resource type="Texture2D" uid="uid://cqiuyacsfr7cw" path="res://The Amazing Art Folder/door1.png" id="4_4urx3"]
 [ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="4_hsdi0"]
 [ext_resource type="Script" uid="uid://bhexx6mj1xv3q" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="5_yju58"]
@@ -60,6 +60,7 @@ autoplay = true
 
 [node name="background" type="CanvasLayer" parent="." unique_id=1914292105]
 layer = -1
+follow_viewport_enabled = true
 
 [node name="Parallax2D" type="Parallax2D" parent="background" unique_id=2003550420]
 scale = Vector2(3.65, 3.65)
@@ -123,7 +124,7 @@ shape = SubResource("RectangleShape2D_vrgib")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 top_level = true
 scale = Vector2(3.65, 3.65)
-offset = Vector2(3.585735, 3.229689)
+offset = Vector2(3.657064, 3.079418)
 editor_draw_limits = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=459320539]

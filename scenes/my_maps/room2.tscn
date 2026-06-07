@@ -13,7 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://de0lbndqydfuc" path="res://The Amazing Art Folder/sun.png" id="11_q4eyy"]
 [ext_resource type="Texture2D" uid="uid://bgx1slavir63w" path="res://The Amazing Art Folder/bed.png" id="12_450i1"]
 [ext_resource type="Texture2D" uid="uid://cqiuyacsfr7cw" path="res://The Amazing Art Folder/door1.png" id="14_qsqui"]
-[ext_resource type="PackedScene" uid="uid://uqnuhcrw12d0" path="res://assets/main_character.tscn" id="15_tpc0t"]
+[ext_resource type="PackedScene" uid="uid://uqnuhcrw12d0" path="res://assets/player.tscn" id="15_tpc0t"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4urx3"]
 size = Vector2(21.232864, 181.36987)
@@ -123,7 +123,7 @@ shape = SubResource("RectangleShape2D_vrgib")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 top_level = true
 scale = Vector2(3.65, 3.65)
-offset = Vector2(-2.4174876, -0.5635041)
+offset = Vector2(1.263499, 2.9221704)
 editor_draw_limits = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=459320539]

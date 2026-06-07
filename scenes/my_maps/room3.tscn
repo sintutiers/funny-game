@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://46kr7ggre6pd" path="res://The Amazing Art Folder/black2.png" id="7_7mk0d"]
 [ext_resource type="Script" uid="uid://cburu6b4ckehs" path="res://addons/godot-rapier2d/custom_nodes/rapier_area_2d.gd" id="7_n1sbf"]
 [ext_resource type="Texture2D" uid="uid://cqiuyacsfr7cw" path="res://The Amazing Art Folder/door1.png" id="15_qbgxe"]
-[ext_resource type="PackedScene" uid="uid://uqnuhcrw12d0" path="res://assets/main_character.tscn" id="17_rwdi6"]
+[ext_resource type="PackedScene" uid="uid://uqnuhcrw12d0" path="res://assets/player.tscn" id="17_rwdi6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iwdi6"]
 size = Vector2(20, 25.890411)
@@ -42,16 +42,16 @@ stream = ExtResource("6_j0drf")
 pitch_scale = 0.75
 autoplay = true
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=919863972]
+[node name="background" type="CanvasLayer" parent="." unique_id=919863972]
 layer = -1
 
-[node name="Parallax2D" type="Parallax2D" parent="CanvasLayer" unique_id=2003550420]
+[node name="Parallax2D" type="Parallax2D" parent="background" unique_id=2003550420]
 scale = Vector2(3.65, 3.65)
 repeat_size = Vector2(32, 30)
 repeat_times = 19
 follow_viewport = false
 
-[node name="Black" type="Sprite2D" parent="CanvasLayer/Parallax2D" unique_id=2145853339]
+[node name="Black" type="Sprite2D" parent="background/Parallax2D" unique_id=2145853339]
 texture = ExtResource("7_7mk0d")
 
 [node name="door" type="Area2D" parent="." unique_id=201148014]
@@ -71,7 +71,7 @@ sprite_frames = SubResource("SpriteFrames_iwdi6")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 physics_interpolation_mode = 1
 top_level = true
-offset = Vector2(0.07201436, 0.87640214)
+offset = Vector2(0.25171688, 0.37853974)
 editor_draw_limits = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=459320539]
