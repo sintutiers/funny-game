@@ -17,7 +17,7 @@ ss2d/version="3.3.1"
 config/name="Dream Diary gamejam"
 config/description="Dean, and Chiel, and Duke
 very cool games"
-config/version="0.0.34"
+config/version="0.0.35"
 run/main_scene="res://scenes/opening/opening.tscn"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 boot_splash/use_filter=false
