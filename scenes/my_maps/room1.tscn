@@ -124,7 +124,7 @@ shape = SubResource("RectangleShape2D_vrgib")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 top_level = true
 scale = Vector2(3.65, 3.65)
-offset = Vector2(3.657064, 3.079418)
+offset = Vector2(-0.38632908, -0.7101723)
 editor_draw_limits = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=459320539]
@@ -141,5 +141,5 @@ tween_resource = SubResource("Resource_gw3rf")
 draw_limits = true
 noise = SubResource("Resource_yju58")
 
-[connection signal="interacted" from="door" to="." method="_on_door_interacted"]
-[connection signal="interacted" from="bed" to="." method="_on_bed_interacted"]
+[connection signal="interacted_static" from="door" to="." method="_on_door_interacted_static"]
+[connection signal="interacted_static" from="bed" to="." method="_on_bed_interacted_static"]

@@ -87,10 +87,15 @@ animations = [{
 "speed": 3.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rug40"]
+size = Vector2(20, 34)
+
 [node name="main character" type="Node2D" unique_id=621235887 node_paths=PackedStringArray("player_body")]
 light_mask = 3
 visibility_layer = 3
 script = ExtResource("1_af0p7")
+speed_keys = null
+speed_touch = null
 player_body = NodePath("RapierCharacterBody2D")
 
 [node name="RapierCharacterBody2D" type="CharacterBody2D" parent="." unique_id=565934814]
@@ -106,6 +111,11 @@ shape = SubResource("CapsuleShape2D_vtqb1")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="RapierCharacterBody2D" unique_id=1720223925]
 sprite_frames = SubResource("SpriteFrames_wji7r")
 animation = &"up"
+
+[node name="Interact_player" type="Area2D" parent="RapierCharacterBody2D" unique_id=1994372348]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RapierCharacterBody2D/Interact_player" unique_id=857953603]
+shape = SubResource("RectangleShape2D_rug40")
 
 [node name="UI" type="CanvasLayer" parent="." unique_id=1750424812]
 

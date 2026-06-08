@@ -49,7 +49,7 @@ func _input(event: InputEvent) -> void:
 
 func interact() -> void:
 	if door:
-		door._on_door_interacted(player_body)
+		door._on_door_interacted($RapierCharacterBody2D/Interact_player)
 
 func _update_facing(direction: Vector2) -> void:
 	if direction.x > 0:
