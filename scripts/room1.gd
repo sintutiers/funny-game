@@ -1,6 +1,6 @@
 extends Node2D
 
-@export_file("*.tscn") var next_scene : String
+@export_file("*.tscn") var next_scene: String
 
 
 func _on_door_interacted_static(body: Area2D) -> void:

@@ -5,7 +5,7 @@ enum DIRECTION {NONE, UP, DOWN, LEFT, RIGHT}
 
 @export var speed_keys: int = 200
 @export var speed_touch: int = 180
-@export var door: Node2D 
+@export var door: Node2D
 @export var player_body: CharacterBody2D
 
 @onready var sprite: AnimatedSprite2D = $RapierCharacterBody2D/AnimatedSprite2D
