@@ -18,7 +18,7 @@ config/name="Dream Diary gamejam"
 config/description="Dean, and Chiel, and Duke
 very cool games"
 config/version="0.0.36"
-run/main_scene="res://scenes/opening/opening.tscn"
+run/main_scene="res://scenes/opening.tscn"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 boot_splash/use_filter=false
 boot_splash/image="uid://de0lbndqydfuc"

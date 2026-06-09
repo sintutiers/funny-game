@@ -4,4 +4,4 @@
 
 [node name="SceneLoader" type="Node" unique_id=1467139141]
 script = ExtResource("1_l0dhx")
-loading_screen_path = "res://scenes/loading_screen/loading_screen.tscn"
+loading_screen_path = "uid://h3p8kck0odms"
