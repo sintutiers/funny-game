@@ -15,9 +15,9 @@ dest_files=["res://.godot/imported/keyboard_f6.svg-851a577f166c4b47425a76fb97219
 
 [params]
 
-compress/mode=4
+compress/mode=1
 compress/high_quality=false
-compress/lossy_quality=0.7
+compress/lossy_quality=0.6
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1

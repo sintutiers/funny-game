@@ -15,9 +15,9 @@ dest_files=["res://.godot/imported/keyboard_semicolon.svg-4e87605c4c25bb93d90f68
 
 [params]
 
-compress/mode=4
+compress/mode=1
 compress/high_quality=false
-compress/lossy_quality=0.7
+compress/lossy_quality=0.6
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1

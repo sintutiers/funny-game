@@ -15,9 +15,9 @@ dest_files=["res://.godot/imported/switch_button_plus_outline.png-4459eb7f3d584b
 
 [params]
 
-compress/mode=4
+compress/mode=1
 compress/high_quality=false
-compress/lossy_quality=0.7
+compress/lossy_quality=0.6
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1

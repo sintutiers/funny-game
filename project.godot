@@ -68,14 +68,6 @@ theme/custom_font="uid://bdude2uqwyrt"
 
 [importer_defaults]
 
-texture={
-&"compress/channel_pack": 1,
-&"compress/mode": 4,
-&"compress/normal_map": 2,
-&"detect_3d/compress_to": 0,
-&"process/fix_alpha_border": false,
-&"roughness/mode": 1
-}
 cubemap_texture={
 &"compress/mode": 4
 }
@@ -84,14 +76,23 @@ cubemap_array_texture={
 }
 2d_array_texture={
 &"compress/channel_pack": 1,
-&"compress/mode": 4,
+&"compress/lossy_quality": 0.6,
 &"mipmaps/generate": false
 }
 3d_texture={
-&"compress/mode": 4
+&"compress/lossy_quality": 0.6
 }
 mp3={
 &"loop": true
+}
+texture={
+&"compress/channel_pack": 1,
+&"compress/lossy_quality": 0.6,
+&"compress/mode": 1,
+&"compress/normal_map": 2,
+&"detect_3d/compress_to": 0,
+&"process/fix_alpha_border": false,
+&"roughness/mode": 1
 }
 
 [input]
@@ -164,6 +165,7 @@ textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_s3tc_bptc=true
 textures/vram_compression/import_etc2_astc=true
 environment/defaults/default_clear_color=Color(0, 0, 0, 1)
 

@@ -15,9 +15,9 @@ dest_files=["res://.godot/imported/ManakaAo Algorithms.png-c37e944f5d0431a6020f8
 
 [params]
 
-compress/mode=4
+compress/mode=1
 compress/high_quality=false
-compress/lossy_quality=0.7
+compress/lossy_quality=0.6
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1

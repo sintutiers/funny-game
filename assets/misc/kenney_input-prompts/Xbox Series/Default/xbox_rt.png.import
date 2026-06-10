@@ -15,9 +15,9 @@ dest_files=["res://.godot/imported/xbox_rt.png-4a1f9d2811b7099b0f870e4b0f0002df.
 
 [params]
 
-compress/mode=4
+compress/mode=1
 compress/high_quality=false
-compress/lossy_quality=0.7
+compress/lossy_quality=0.6
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1

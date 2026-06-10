@@ -80,7 +80,7 @@ sprite_frames = SubResource("SpriteFrames_iwdi6")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 physics_interpolation_mode = 1
 top_level = true
-offset = Vector2(3.0170968, 2.2324998)
+offset = Vector2(0.48782945, -0.08142765)
 editor_draw_limits = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=459320539]
@@ -88,8 +88,7 @@ process_priority = 300
 process_physics_priority = 300
 script = ExtResource("2_og2q4")
 
-[node name="main character" parent="." unique_id=621235887 node_paths=PackedStringArray("door") instance=ExtResource("17_rwdi6")]
-door = NodePath("../Door")
+[node name="main character" parent="." unique_id=621235887 instance=ExtResource("17_rwdi6")]
 
 [node name="PhantomCamera2D" type="Node2D" parent="." unique_id=1973500547 node_paths=PackedStringArray("follow_target")]
 top_level = true
