@@ -16,6 +16,28 @@
 [ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="14_nmhs3"]
 [ext_resource type="Script" uid="uid://dimvdouy8g0sv" path="res://addons/phantom_camera/scripts/resources/phantom_camera_noise_2d.gd" id="15_lsgbm"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_i5anj"]
+atlas = ExtResource("4_djrx8")
+region = Rect2(30, 0, 30, 42)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s7wbt"]
+atlas = ExtResource("4_djrx8")
+region = Rect2(0, 0, 30, 42)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_o281e"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i5anj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s7wbt")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s7wbt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4urx3"]
@@ -57,19 +79,6 @@ follow_viewport = false
 [node name="Black" type="Sprite2D" parent="background/Parallax2D" unique_id=2145853339]
 texture = ExtResource("3_o281e")
 
-[node name="Being2" type="Sprite2D" parent="background" unique_id=1452415030]
-texture_filter = 1
-position = Vector2(-221, 211.00002)
-scale = Vector2(3.65, 3.65)
-texture = ExtResource("4_djrx8")
-flip_h = true
-
-[node name="Being1" type="Sprite2D" parent="background" unique_id=683833488]
-texture_filter = 1
-position = Vector2(-470, -154)
-scale = Vector2(5.11, 5.11)
-texture = ExtResource("4_djrx8")
-
 [node name="Cube" type="Sprite2D" parent="background" unique_id=1465646804]
 texture_filter = 1
 position = Vector2(-437, 235)
@@ -99,6 +108,21 @@ texture_filter = 1
 position = Vector2(-360.00003, 26.999994)
 scale = Vector2(3.65, 3.65)
 texture = ExtResource("5_c4r8w")
+
+[node name="being1" type="AnimatedSprite2D" parent="background" unique_id=916198894]
+position = Vector2(-457.00006, -152)
+scale = Vector2(5.11, 5.11)
+sprite_frames = SubResource("SpriteFrames_o281e")
+autoplay = "default"
+frame_progress = 0.43815607
+
+[node name="being2" type="AnimatedSprite2D" parent="background" unique_id=2019984958]
+position = Vector2(-234, 187)
+rotation = 3.1415927
+scale = Vector2(3.65, 3.65)
+sprite_frames = SubResource("SpriteFrames_o281e")
+autoplay = "default"
+frame_progress = 0.9343187
 
 [node name="Door" type="Area2D" parent="." unique_id=1384742341 groups=["interactable"]]
 unique_name_in_owner = true
@@ -138,7 +162,7 @@ shape = SubResource("RectangleShape2D_vrgib")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 top_level = true
 scale = Vector2(3.65, 3.65)
-offset = Vector2(3.52188, 2.5576751)
+offset = Vector2(0.42040703, 1.9096975)
 editor_draw_limits = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=459320539]

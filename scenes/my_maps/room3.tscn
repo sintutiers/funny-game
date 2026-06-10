@@ -17,6 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://clhhogcvmxk7x" path="res://The Amazing Art Folder/chair2 duke.png" id="16_er0vt"]
 [ext_resource type="Texture2D" uid="uid://cf47txoyf0iau" path="res://The Amazing Art Folder/chair1 duke.png" id="17_60vv4"]
 [ext_resource type="PackedScene" uid="uid://uqnuhcrw12d0" path="res://assets/player.tscn" id="17_rwdi6"]
+[ext_resource type="Script" uid="uid://busd3yfk5p1mx" path="res://addons/godot-rapier2d/custom_nodes/rapier_static_body_2d.gd" id="18_og2q4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iwdi6"]
 size = Vector2(20, 25.890411)
@@ -40,6 +41,12 @@ script = ExtResource("5_er0vt")
 amplitude = 15.0
 frequency = 0.1
 metadata/_custom_type_script = "uid://dimvdouy8g0sv"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iajhm"]
+size = Vector2(21.232864, 181.36987)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1e5pv"]
+size = Vector2(331.16437, 24.38356)
 
 [node name="weird office" type="Node2D" unique_id=70873681]
 scale = Vector2(3.65, 3.65)
@@ -65,6 +72,41 @@ follow_viewport = false
 [node name="Black" type="Sprite2D" parent="background/Parallax2D" unique_id=2145853339]
 texture = ExtResource("3_6l254")
 
+[node name="Table2Duke" type="Sprite2D" parent="background" unique_id=1852189034]
+position = Vector2(-89.00001, 182)
+scale = Vector2(3.65, 3.65)
+texture = ExtResource("11_6l254")
+
+[node name="Table1Duke" type="Sprite2D" parent="background" unique_id=393554630]
+position = Vector2(42, 127.00001)
+scale = Vector2(3.65, 3.65)
+texture = ExtResource("12_60vv4")
+
+[node name="Cabinet1Duke" type="Sprite2D" parent="background" unique_id=1652119809]
+position = Vector2(211.00002, 17)
+scale = Vector2(3.65, 3.65)
+texture = ExtResource("13_og2q4")
+
+[node name="Burau" type="Sprite2D" parent="background" unique_id=1494606993]
+position = Vector2(125.99999, -94)
+scale = Vector2(3.65, 3.65)
+texture = ExtResource("14_iajhm")
+
+[node name="Cabinet2Duke" type="Sprite2D" parent="background" unique_id=612121133]
+position = Vector2(201, 98.00001)
+scale = Vector2(3.65, 3.65)
+texture = ExtResource("15_1e5pv")
+
+[node name="Chair2Duke" type="Sprite2D" parent="background" unique_id=1868891765]
+position = Vector2(-131, 66)
+scale = Vector2(3.65, 3.65)
+texture = ExtResource("16_er0vt")
+
+[node name="Chair1Duke" type="Sprite2D" parent="background" unique_id=261765485]
+position = Vector2(-209, 15.000001)
+scale = Vector2(3.65, 3.65)
+texture = ExtResource("17_60vv4")
+
 [node name="Door" type="Area2D" parent="." unique_id=201148014 groups=["interactable"]]
 unique_name_in_owner = true
 position = Vector2(100, -60)
@@ -81,7 +123,7 @@ sprite_frames = SubResource("SpriteFrames_iwdi6")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 physics_interpolation_mode = 1
 top_level = true
-offset = Vector2(-2.375959, -1.8064158)
+offset = Vector2(0.0022183575, -0.45436773)
 editor_draw_limits = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=459320539]
@@ -101,32 +143,24 @@ tween_resource = SubResource("Resource_gw3rf")
 draw_limits = true
 noise = SubResource("Resource_yju58")
 
-[node name="Table2Duke" type="Sprite2D" parent="." unique_id=1852189034]
-position = Vector2(-24.383562, 49.863014)
-texture = ExtResource("11_6l254")
+[node name="walls" type="StaticBody2D" parent="." unique_id=1253343983]
+script = ExtResource("18_og2q4")
+metadata/_custom_type_script = "uid://busd3yfk5p1mx"
 
-[node name="Table1Duke" type="Sprite2D" parent="." unique_id=393554630]
-position = Vector2(11.506849, 34.79452)
-texture = ExtResource("12_60vv4")
+[node name="ver1" type="CollisionShape2D" parent="walls" unique_id=1482717394]
+position = Vector2(-155.61646, 0.82191783)
+shape = SubResource("RectangleShape2D_iajhm")
 
-[node name="Cabinet1Duke" type="Sprite2D" parent="." unique_id=1652119809]
-position = Vector2(57.80822, 4.657534)
-texture = ExtResource("13_og2q4")
+[node name="ver2" type="CollisionShape2D" parent="walls" unique_id=1849944601]
+position = Vector2(153.69864, 1.09589)
+shape = SubResource("RectangleShape2D_iajhm")
 
-[node name="Burau" type="Sprite2D" parent="." unique_id=1494606993]
-position = Vector2(34.520546, -25.753424)
-texture = ExtResource("14_iajhm")
+[node name="hor1" type="CollisionShape2D" parent="walls" unique_id=1219567322]
+position = Vector2(1.6438355, -100)
+shape = SubResource("RectangleShape2D_1e5pv")
 
-[node name="Cabinet2Duke" type="Sprite2D" parent="." unique_id=612121133]
-position = Vector2(55.068493, 26.849316)
-texture = ExtResource("15_1e5pv")
-
-[node name="Chair2Duke" type="Sprite2D" parent="." unique_id=1868891765]
-position = Vector2(-35.89041, 18.082191)
-texture = ExtResource("16_er0vt")
-
-[node name="Chair1Duke" type="Sprite2D" parent="." unique_id=261765485]
-position = Vector2(-57.260273, 4.109589)
-texture = ExtResource("17_60vv4")
+[node name="hor2" type="CollisionShape2D" parent="walls" unique_id=1480151767]
+position = Vector2(-1.6438357, 98.356155)
+shape = SubResource("RectangleShape2D_1e5pv")
 
 [editable path="main character"]
