@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bnwmdamij3ce4"]
 
-[ext_resource type="Script" uid="uid://cwwbqct805sdi" path="res://scripts/room1.gd" id="1_g3spf"]
+[ext_resource type="Script" uid="uid://cwwbqct805sdi" path="res://scenes/my_maps/room1.gd" id="1_g3spf"]
 [ext_resource type="Texture2D" uid="uid://46kr7ggre6pd" path="res://The Amazing Art Folder/black2.png" id="2_fw5o7"]
 [ext_resource type="PackedScene" uid="uid://uqnuhcrw12d0" path="res://assets/player.tscn" id="3_fw5o7"]
 [ext_resource type="Texture2D" uid="uid://cqiuyacsfr7cw" path="res://The Amazing Art Folder/door1.png" id="4_4urx3"]
@@ -47,7 +47,7 @@ amplitude = 15.0
 frequency = 0.1
 metadata/_custom_type_script = "uid://dimvdouy8g0sv"
 
-[node name="bedroom" type="Node2D" unique_id=70873681]
+[node name="bedroom" type="Node2D" unique_id=70873681 groups=["interactable"]]
 scale = Vector2(3.65, 3.65)
 script = ExtResource("1_g3spf")
 next_scene = "uid://b80chnt43vfab"
@@ -76,29 +76,29 @@ texture = ExtResource("2_fw5o7")
 scale = Vector2(1.0691665, 1.0691665)
 texture = ExtResource("16_q2aba")
 
-[node name="door" type="Area2D" parent="." unique_id=201148014]
+[node name="Door" type="Area2D" parent="." unique_id=201148014 groups=["interactable"]]
+unique_name_in_owner = true
 position = Vector2(100, -60)
 scale = Vector2(1.1, 1.1)
-collision_layer = 3
-collision_mask = 3
 script = ExtResource("15_q2aba")
 metadata/_custom_type_script = "uid://cburu6b4ckehs"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="door" unique_id=2089601538]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Door" unique_id=2089601538]
 position = Vector2(0, -3.90411)
 shape = SubResource("RectangleShape2D_iwdi6")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="door" unique_id=619086787]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Door" unique_id=619086787]
 sprite_frames = SubResource("SpriteFrames_iwdi6")
 
-[node name="bed" type="Area2D" parent="." unique_id=817305811]
+[node name="Bed" type="Area2D" parent="." unique_id=817305811 groups=["interactable"]]
+unique_name_in_owner = true
 position = Vector2(-78.095, -29.435)
 script = ExtResource("15_q2aba")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="bed" unique_id=1094970256]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bed" unique_id=1094970256]
 shape = SubResource("RectangleShape2D_q2aba")
 
-[node name="BedPlaceholder" type="Sprite2D" parent="bed" unique_id=431403754]
+[node name="BedPlaceholder" type="Sprite2D" parent="Bed" unique_id=431403754]
 texture = ExtResource("15_iwdi6")
 
 [node name="walls" type="StaticBody2D" parent="." unique_id=286310053]
@@ -121,10 +121,10 @@ shape = SubResource("RectangleShape2D_vrgib")
 position = Vector2(6.164379, 98.356155)
 shape = SubResource("RectangleShape2D_vrgib")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547 groups=["interactable"]]
 top_level = true
 scale = Vector2(3.65, 3.65)
-offset = Vector2(0.0996611, -1.5543004)
+offset = Vector2(2.3552153, 3.53815)
 editor_draw_limits = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=459320539]
@@ -132,8 +132,7 @@ process_priority = 300
 process_physics_priority = 300
 script = ExtResource("4_hsdi0")
 
-[node name="main character" parent="." unique_id=621235887 node_paths=PackedStringArray("door") instance=ExtResource("3_fw5o7")]
-door = NodePath("../door")
+[node name="main character" parent="." unique_id=621235887 instance=ExtResource("3_fw5o7")]
 
 [node name="PhantomCamera2D" type="Node2D" parent="." unique_id=1973500547]
 script = ExtResource("5_yju58")
@@ -141,5 +140,5 @@ tween_resource = SubResource("Resource_gw3rf")
 draw_limits = true
 noise = SubResource("Resource_yju58")
 
-[connection signal="interacted_static" from="door" to="." method="_on_door_interacted_static"]
-[connection signal="interacted_static" from="bed" to="." method="_on_bed_interacted_static"]
+[connection signal="interacted_static" from="Door" to="." method="_on_door_interacted_static"]
+[connection signal="interacted_static" from="Bed" to="." method="_on_bed_interacted_static"]

@@ -1,67 +1,80 @@
 class_name MetaPlayer
 extends Node2D
 
-enum DIRECTION {NONE, UP, DOWN, LEFT, RIGHT}
 
-@export var speed_keys: int = 200
-@export var speed_touch: int = 180
-@export var door: Node2D
+const IDLE_DELAY: float = 2.0
+
+@export var move_speed: int = 200
 @export var player_body: CharacterBody2D
 
 @onready var sprite: AnimatedSprite2D = $RapierCharacterBody2D/AnimatedSprite2D
+@onready var interact_area: RapierArea2D = %Interact_area_player
 
-var target: Vector2
-var facing: DIRECTION = DIRECTION.DOWN
+var idle_time: float = 0.0
+
 
 func _ready() -> void:
-	target = player_body.global_position
 	sprite.play("down")
 
-func _physics_process(_delta: float) -> void:
-	var input_raw: Vector2 = Input.get_vector("left", "right", "up", "down")
-	var input_dir: Vector2 = input_raw
+
+func _physics_process(delta: float) -> void:
+	var input_dir: Vector2 = Input.get_vector("left", "right", "up", "down")
 
 	if input_dir != Vector2.ZERO:
-		player_body.velocity = input_dir * speed_keys
-		target = player_body.global_position
-		
-		_update_facing(input_dir)
-		_play_direction_animation()
-		
-	elif player_body.global_position.distance_to(target) > 10:
-		var direction: Vector2 = player_body.global_position.direction_to(target)
-		player_body.velocity = direction * speed_touch
-		
-		_update_facing(direction)
-		_play_direction_animation()
+		idle_time = 0.0
+		player_body.velocity = input_dir * move_speed
+		_update_movement_animation(input_dir)
 	else:
 		player_body.velocity = Vector2.ZERO
+		idle_time += delta
+		if idle_time >= IDLE_DELAY and sprite.animation != "idle":
+			sprite.play("idle")
 
-	player_body.move_and_slide()
+	var _slide_result: bool = player_body.move_and_slide()
+
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("interact"):
 		interact()
-		print("buttonpress")
-	if event is InputEventMouseButton and event.is_action_pressed(&"interact"): # TODO remove or rework the touch events for final build
-		var mouse_event: InputEventMouseButton = event
-		target = mouse_event.global_position
+
 
 func interact() -> void:
-	if door:
-		door._on_door_interacted($RapierCharacterBody2D/Interact_player)
+	#DEBUG: print interacted stuff
+	var overlapping_areas: Array[Area2D] = interact_area.get_overlapping_areas()
+	print("Interact area: ", interact_area)
+	print("Overlapping areas: ", overlapping_areas.size())
 
-func _update_facing(direction: Vector2) -> void:
+	var closest: interaction_manager = null
+	var closest_dist_sq: float = INF
+
+	for area: RapierArea2D in overlapping_areas:
+		print("- ", area.name, " | ", area.get_class())
+		if area is interaction_manager:
+			print(" > This IS interaction_manager!")
+			var d2: float = global_position.distance_squared_to(area.global_position)
+			if d2 < closest_dist_sq:
+				closest_dist_sq = d2
+				closest = area
+
+	if closest:
+		closest.interacted_static.emit(interact_area)
+	else:
+		print("No interaction_manager found")
+
+
+func _update_movement_animation(direction: Vector2) -> void:
+	var anim_name: String
+
 	if direction.x > 0:
-		facing = DIRECTION.RIGHT
+		anim_name = "right"
 	elif direction.x < 0:
-		facing = DIRECTION.LEFT
+		anim_name = "left"
 	elif direction.y > 0:
-		facing = DIRECTION.DOWN
+		anim_name = "down"
 	elif direction.y < 0:
-		facing = DIRECTION.UP
+		anim_name = "up"
+	else:
+		return
 
-func _play_direction_animation() -> void:
-	var anim_name: String = str(DIRECTION.keys()[facing]).to_lower()
 	if sprite.animation != anim_name:
 		sprite.play(anim_name)

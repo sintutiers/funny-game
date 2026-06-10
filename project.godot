@@ -33,11 +33,11 @@ buses/default_bus_layout="uid://ojvel7qrleuj"
 PhantomCameraManager="*uid://duq6jhf6unyis"
 BetterTerrain="*uid://bfa68ymktrna3"
 DialogueManager="*uid://c3rodes2l3gxb"
-DebugMenu="*uid://cggqb75a8w8r"
 AppConfig="*uid://cjke6crjg14a0"
 SceneLoader="*uid://cbwmrnp0af35y"
 ProjectMusicController="*uid://r5t485lr3p7t"
 ProjectUISoundController="*uid://cc37235kj4384"
+DebugMenu="*uid://cggqb75a8w8r"
 
 [debug]
 
@@ -47,6 +47,8 @@ gdscript/warnings/unsafe_property_access=1
 gdscript/warnings/unsafe_method_access=1
 gdscript/warnings/unsafe_cast=1
 gdscript/warnings/unsafe_call_argument=1
+gdscript/warnings/return_value_discarded=1
+gdscript/warnings/missing_await=1
 
 [display]
 
@@ -55,7 +57,7 @@ window/size/viewport_height=600
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/Todo_Manager/plugin.cfg", "res://addons/YouCanDoIt/plugin.cfg", "res://addons/better-terrain/plugin.cfg", "res://addons/debug_menu/plugin.cfg", "res://addons/dialogue_manager/plugin.cfg", "res://addons/fancy_folder_icons/plugin.cfg", "res://addons/godotresourcecleaner/plugin.cfg", "res://addons/maaacks_game_template/plugin.cfg", "res://addons/phantom_camera/plugin.cfg", "res://addons/rmsmartshape/plugin.cfg", "res://addons/script-ide/plugin.cfg", "res://addons/virtual_joystick/plugin.cfg", "res://addons/your_buil/plugin.cfg")
+enabled=PackedStringArray("res://addons/Todo_Manager/plugin.cfg", "res://addons/YouCanDoIt/plugin.cfg", "res://addons/better-terrain/plugin.cfg", "res://addons/debug_menu/plugin.cfg", "res://addons/dialogue_manager/plugin.cfg", "res://addons/fancy_folder_icons/plugin.cfg", "res://addons/godotresourcecleaner/plugin.cfg", "res://addons/maaacks_game_template/plugin.cfg", "res://addons/phantom_camera/plugin.cfg", "res://addons/script-ide/plugin.cfg", "res://addons/virtual_joystick/plugin.cfg", "res://addons/your_buil/plugin.cfg")
 
 [gui]
 
@@ -85,6 +87,9 @@ cubemap_array_texture={
 }
 3d_texture={
 &"compress/mode": 4
+}
+mp3={
+&"loop": true
 }
 
 [input]
@@ -138,10 +143,6 @@ interact={
 [internationalization]
 
 locale/translations=PackedStringArray("res://addons/maaacks_game_template/base/translations/menus_translations.en.translation", "res://addons/maaacks_game_template/base/translations/menus_translations.fr.translation")
-
-[layer_names]
-
-2d_physics/layer_2="interaction"
 
 [maaacks_game_template]
 
