@@ -2,6 +2,8 @@ class_name MetaPlayer
 extends Node2D
 
 
+enum Direction {NONE, UP, DOWN, LEFT, RIGHT}
+
 const IDLE_DELAY: float = 2.0
 
 @export var move_speed: int = 200
@@ -11,6 +13,7 @@ const IDLE_DELAY: float = 2.0
 @onready var interact_area: RapierArea2D = %Interact_area_player
 
 var idle_time: float = 0.0
+var facing: Direction = Direction.DOWN
 
 
 func _ready() -> void:
@@ -23,7 +26,8 @@ func _physics_process(delta: float) -> void:
 	if input_dir != Vector2.ZERO:
 		idle_time = 0.0
 		player_body.velocity = input_dir * move_speed
-		_update_movement_animation(input_dir)
+		_update_facing(input_dir)
+		_play_direction_animation()
 	else:
 		player_body.velocity = Vector2.ZERO
 		idle_time += delta
@@ -62,19 +66,18 @@ func interact() -> void:
 		print("No interaction_manager found")
 
 
-func _update_movement_animation(direction: Vector2) -> void:
-	var anim_name: String
-
+func _update_facing(direction: Vector2) -> void:
 	if direction.x > 0:
-		anim_name = "right"
+		facing = Direction.RIGHT
 	elif direction.x < 0:
-		anim_name = "left"
+		facing = Direction.LEFT
 	elif direction.y > 0:
-		anim_name = "down"
+		facing = Direction.DOWN
 	elif direction.y < 0:
-		anim_name = "up"
-	else:
-		return
+		facing = Direction.UP
 
+
+func _play_direction_animation() -> void:
+	var anim_name: String = str(Direction.keys()[facing]).to_lower()
 	if sprite.animation != anim_name:
 		sprite.play(anim_name)

@@ -18,7 +18,7 @@ config/name="Dream Diary gamejam"
 config/description="Dean, and Chiel, and Duke
 very cool games"
 config/version="0.0.36"
-run/main_scene="res://scenes/opening.tscn"
+run/main_scene="uid://dxiafdb8vqcc5"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 boot_splash/use_filter=false
 boot_splash/image="uid://de0lbndqydfuc"
@@ -41,6 +41,7 @@ DebugMenu="*uid://cggqb75a8w8r"
 
 [debug]
 
+file_logging/enable_file_logging=true
 gdscript/warnings/untyped_declaration=1
 gdscript/warnings/inferred_declaration=1
 gdscript/warnings/unsafe_property_access=1
@@ -49,6 +50,7 @@ gdscript/warnings/unsafe_cast=1
 gdscript/warnings/unsafe_call_argument=1
 gdscript/warnings/return_value_discarded=1
 gdscript/warnings/missing_await=1
+shader_language/warnings/treat_warnings_as_errors=true
 
 [display]
 
