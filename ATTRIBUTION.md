@@ -3,6 +3,7 @@
 
 [Dean](https://deanlemans.github.io/)
 [Chiel](https://github.com/Chielekkuuuh)
+[Duke](https://github.com/DukeVZ)
 
 ### Maaack Game Template
 ![Maaack Plugin Icon](/addons/maaacks_game_template/assets/plugin_logo/logo.png)  
