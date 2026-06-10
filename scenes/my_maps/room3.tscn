@@ -1,13 +1,21 @@
 [gd_scene format=3 uid="uid://djkihai5rc1e3"]
 
+[ext_resource type="Script" uid="uid://lwut8vh3car1" path="res://scenes/my_maps/room3.gd" id="1_l7jjn"]
 [ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="2_og2q4"]
+[ext_resource type="Texture2D" uid="uid://bso4w46je4cwt" path="res://The Amazing Art Folder/background duke.png" id="3_6l254"]
 [ext_resource type="Script" uid="uid://bhexx6mj1xv3q" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="3_iajhm"]
 [ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="4_1e5pv"]
+[ext_resource type="Script" uid="uid://b83wx8f1aq2t8" path="res://scripts/interactable.gd" id="4_60vv4"]
 [ext_resource type="Script" uid="uid://dimvdouy8g0sv" path="res://addons/phantom_camera/scripts/resources/phantom_camera_noise_2d.gd" id="5_er0vt"]
 [ext_resource type="AudioStream" uid="uid://bo32o3q2slkii" path="res://assets/_ Sanctum of the Seraph.mp3" id="6_j0drf"]
-[ext_resource type="Texture2D" uid="uid://46kr7ggre6pd" path="res://The Amazing Art Folder/black2.png" id="7_7mk0d"]
-[ext_resource type="Script" uid="uid://cburu6b4ckehs" path="res://addons/godot-rapier2d/custom_nodes/rapier_area_2d.gd" id="7_n1sbf"]
+[ext_resource type="Texture2D" uid="uid://vs5x4ofyxkvv" path="res://The Amazing Art Folder/table2 duke.png" id="11_6l254"]
+[ext_resource type="Texture2D" uid="uid://dwg61bpcy6uv3" path="res://The Amazing Art Folder/table1 duke.png" id="12_60vv4"]
+[ext_resource type="Texture2D" uid="uid://d2h1r4aupyl0k" path="res://The Amazing Art Folder/cabinet1 duke.png" id="13_og2q4"]
+[ext_resource type="Texture2D" uid="uid://55h2f6poebdk" path="res://The Amazing Art Folder/Burau.png" id="14_iajhm"]
+[ext_resource type="Texture2D" uid="uid://dc3j0bfl5q8f7" path="res://The Amazing Art Folder/cabinet2 duke.png" id="15_1e5pv"]
 [ext_resource type="Texture2D" uid="uid://cqiuyacsfr7cw" path="res://The Amazing Art Folder/door1.png" id="15_qbgxe"]
+[ext_resource type="Texture2D" uid="uid://clhhogcvmxk7x" path="res://The Amazing Art Folder/chair2 duke.png" id="16_er0vt"]
+[ext_resource type="Texture2D" uid="uid://cf47txoyf0iau" path="res://The Amazing Art Folder/chair1 duke.png" id="17_60vv4"]
 [ext_resource type="PackedScene" uid="uid://uqnuhcrw12d0" path="res://assets/player.tscn" id="17_rwdi6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iwdi6"]
@@ -33,8 +41,9 @@ amplitude = 15.0
 frequency = 0.1
 metadata/_custom_type_script = "uid://dimvdouy8g0sv"
 
-[node name="bedroom" type="Node2D" unique_id=70873681]
+[node name="bedroom2" type="Node2D" unique_id=70873681 groups=["interactable"]]
 scale = Vector2(3.65, 3.65)
+script = ExtResource("1_l7jjn")
 
 [node name="SanctumOfTheSeraph" type="AudioStreamPlayer2D" parent="." unique_id=2132083565]
 position = Vector2(-181.64383, -108.49315)
@@ -44,34 +53,34 @@ autoplay = true
 
 [node name="background" type="CanvasLayer" parent="." unique_id=919863972]
 layer = -1
+follow_viewport_enabled = true
 
 [node name="Parallax2D" type="Parallax2D" parent="background" unique_id=2003550420]
-scale = Vector2(3.65, 3.65)
-repeat_size = Vector2(32, 30)
+scale = Vector2(3.75, 3.75)
+repeat_size = Vector2(32, 32)
 repeat_times = 19
 follow_viewport = false
 
 [node name="Black" type="Sprite2D" parent="background/Parallax2D" unique_id=2145853339]
-texture = ExtResource("7_7mk0d")
+texture = ExtResource("3_6l254")
 
-[node name="door" type="Area2D" parent="." unique_id=201148014]
+[node name="Door" type="Area2D" parent="." unique_id=201148014 groups=["interactable"]]
+unique_name_in_owner = true
 position = Vector2(100, -60)
-collision_layer = 3
-collision_mask = 3
-script = ExtResource("7_n1sbf")
+script = ExtResource("4_60vv4")
 metadata/_custom_type_script = "uid://cburu6b4ckehs"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="door" unique_id=2089601538]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Door" unique_id=2089601538]
 position = Vector2(0, -3.90411)
 shape = SubResource("RectangleShape2D_iwdi6")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="door" unique_id=619086787]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Door" unique_id=619086787]
 sprite_frames = SubResource("SpriteFrames_iwdi6")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 physics_interpolation_mode = 1
 top_level = true
-offset = Vector2(-2.4312143, -3.0033054)
+offset = Vector2(3.0170968, 2.2324998)
 editor_draw_limits = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=459320539]
@@ -80,7 +89,7 @@ process_physics_priority = 300
 script = ExtResource("2_og2q4")
 
 [node name="main character" parent="." unique_id=621235887 node_paths=PackedStringArray("door") instance=ExtResource("17_rwdi6")]
-door = NodePath("../door")
+door = NodePath("../Door")
 
 [node name="PhantomCamera2D" type="Node2D" parent="." unique_id=1973500547 node_paths=PackedStringArray("follow_target")]
 top_level = true
@@ -91,5 +100,33 @@ follow_target = NodePath("../main character/RapierCharacterBody2D")
 tween_resource = SubResource("Resource_gw3rf")
 draw_limits = true
 noise = SubResource("Resource_yju58")
+
+[node name="Table2Duke" type="Sprite2D" parent="." unique_id=1852189034]
+position = Vector2(-24.383562, 49.863014)
+texture = ExtResource("11_6l254")
+
+[node name="Table1Duke" type="Sprite2D" parent="." unique_id=393554630]
+position = Vector2(11.506849, 34.79452)
+texture = ExtResource("12_60vv4")
+
+[node name="Cabinet1Duke" type="Sprite2D" parent="." unique_id=1652119809]
+position = Vector2(57.80822, 4.657534)
+texture = ExtResource("13_og2q4")
+
+[node name="Burau" type="Sprite2D" parent="." unique_id=1494606993]
+position = Vector2(34.520546, -25.753424)
+texture = ExtResource("14_iajhm")
+
+[node name="Cabinet2Duke" type="Sprite2D" parent="." unique_id=612121133]
+position = Vector2(55.068493, 26.849316)
+texture = ExtResource("15_1e5pv")
+
+[node name="Chair2Duke" type="Sprite2D" parent="." unique_id=1868891765]
+position = Vector2(-35.89041, 18.082191)
+texture = ExtResource("16_er0vt")
+
+[node name="Chair1Duke" type="Sprite2D" parent="." unique_id=261765485]
+position = Vector2(-57.260273, 4.109589)
+texture = ExtResource("17_60vv4")
 
 [editable path="main character"]

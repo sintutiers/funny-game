@@ -367,7 +367,6 @@ grow_vertical = 2
 
 [node name="TitleMargin" type="MarginContainer" parent="MenuContainer" unique_id=2112060331]
 layout_mode = 2
-theme_override_constants/margin_top = 125
 
 [node name="TitleContainer" type="Control" parent="MenuContainer/TitleMargin" unique_id=556427956]
 modulate = Color(1, 1, 1, 0)
@@ -388,7 +387,7 @@ script = ExtResource("6_xkrf4")
 
 [node name="SubTitleMargin" type="MarginContainer" parent="MenuContainer" unique_id=1510335937]
 layout_mode = 2
-theme_override_constants/margin_top = 175
+theme_override_constants/margin_top = 50
 
 [node name="SubTitleContainer" type="Control" parent="MenuContainer/SubTitleMargin" unique_id=930520368]
 modulate = Color(1, 1, 1, 0)
@@ -409,7 +408,6 @@ vertical_alignment = 1
 
 [node name="MenuButtonsMargin" type="MarginContainer" parent="MenuContainer" unique_id=210553886]
 layout_mode = 2
-theme_override_constants/margin_top = 140
 theme_override_constants/margin_bottom = 8
 
 [node name="MenuButtonsContainer" type="Control" parent="MenuContainer/MenuButtonsMargin" unique_id=116448484]
