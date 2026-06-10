@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://djkihai5rc1e3"]
 
-[ext_resource type="Script" uid="uid://lwut8vh3car1" path="res://scenes/my_maps/room3.gd" id="1_l7jjn"]
+[ext_resource type="Script" uid="uid://n6ni6wrghmxe" path="res://scripts/room_base.gd" id="1_60vv4"]
 [ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="2_og2q4"]
 [ext_resource type="Texture2D" uid="uid://bso4w46je4cwt" path="res://The Amazing Art Folder/background duke.png" id="3_6l254"]
 [ext_resource type="Script" uid="uid://bhexx6mj1xv3q" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="3_iajhm"]
@@ -41,9 +41,10 @@ amplitude = 15.0
 frequency = 0.1
 metadata/_custom_type_script = "uid://dimvdouy8g0sv"
 
-[node name="bedroom2" type="Node2D" unique_id=70873681 groups=["interactable"]]
+[node name="weird office" type="Node2D" unique_id=70873681]
 scale = Vector2(3.65, 3.65)
-script = ExtResource("1_l7jjn")
+script = ExtResource("1_60vv4")
+next_scene1 = "uid://cxix4ie4fqe3l"
 
 [node name="SanctumOfTheSeraph" type="AudioStreamPlayer2D" parent="." unique_id=2132083565]
 position = Vector2(-181.64383, -108.49315)
@@ -80,7 +81,7 @@ sprite_frames = SubResource("SpriteFrames_iwdi6")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 physics_interpolation_mode = 1
 top_level = true
-offset = Vector2(0.48782945, -0.08142765)
+offset = Vector2(-2.375959, -1.8064158)
 editor_draw_limits = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=459320539]

@@ -50,7 +50,7 @@ metadata/_custom_type_script = "uid://dimvdouy8g0sv"
 [node name="bedroom" type="Node2D" unique_id=70873681 groups=["interactable"]]
 scale = Vector2(3.65, 3.65)
 script = ExtResource("1_g3spf")
-next_scene = "uid://b80chnt43vfab"
+next_scene1 = "uid://b80chnt43vfab"
 
 [node name="SanctumOfTheSeraph" type="AudioStreamPlayer2D" parent="." unique_id=2132083565]
 position = Vector2(-181.64383, -108.49315)
@@ -124,7 +124,7 @@ shape = SubResource("RectangleShape2D_vrgib")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547 groups=["interactable"]]
 top_level = true
 scale = Vector2(3.65, 3.65)
-offset = Vector2(-1.8513755, -3.1997745)
+offset = Vector2(-0.16417846, -0.74299014)
 editor_draw_limits = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=459320539]

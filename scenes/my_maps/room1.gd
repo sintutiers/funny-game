@@ -1,24 +1,18 @@
-extends Node2D
+#room1
+extends RoomBase
 
 
-@export_file("*.tscn") var next_scene: String
-
-@onready var door: interaction_manager = %Door
 @onready var bed: interaction_manager = %Bed
 
 
 func _ready() -> void:
-	door.interacted_static.connect(_on_door_interacted_static)
+	super()
 	bed.interacted_static.connect(_on_bed_interacted_static)
 
 
 func _exit_tree() -> void:
-	door.interacted_static.disconnect(_on_door_interacted_static)
+	super()
 	bed.interacted_static.disconnect(_on_bed_interacted_static)
-
-
-func _on_door_interacted_static(_body: RapierArea2D) -> void:
-	SceneLoader.load_scene(next_scene)
 
 
 func _on_bed_interacted_static(_body: RapierArea2D) -> void:
