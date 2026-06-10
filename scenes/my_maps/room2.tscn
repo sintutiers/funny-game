@@ -38,6 +38,28 @@ animations = [{
 "speed": 1.0
 }]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_o281e"]
+atlas = ExtResource("6_xadts")
+region = Rect2(0, 0, 85, 65)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_djrx8"]
+atlas = ExtResource("6_xadts")
+region = Rect2(85, 0, 85, 65)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_c4r8w"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o281e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_djrx8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s7wbt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4urx3"]
@@ -85,12 +107,6 @@ position = Vector2(-437, 235)
 scale = Vector2(3.65, 3.65)
 texture = ExtResource("5_c4r8w")
 
-[node name="Sun" type="Sprite2D" parent="background" unique_id=159025936]
-texture_filter = 1
-position = Vector2(-3.999992, -265)
-scale = Vector2(5.84, 5.84)
-texture = ExtResource("6_xadts")
-
 [node name="Bed" type="Sprite2D" parent="background" unique_id=240206082]
 texture_filter = 1
 position = Vector2(393.99997, 213.99998)
@@ -109,20 +125,26 @@ position = Vector2(-360.00003, 26.999994)
 scale = Vector2(3.65, 3.65)
 texture = ExtResource("5_c4r8w")
 
-[node name="being1" type="AnimatedSprite2D" parent="background" unique_id=916198894]
+[node name="Being1" type="AnimatedSprite2D" parent="background" unique_id=916198894]
 position = Vector2(-457.00006, -152)
 scale = Vector2(5.11, 5.11)
 sprite_frames = SubResource("SpriteFrames_o281e")
 autoplay = "default"
-frame_progress = 0.43815607
+frame_progress = 0.54027945
 
-[node name="being2" type="AnimatedSprite2D" parent="background" unique_id=2019984958]
+[node name="Being2" type="AnimatedSprite2D" parent="background" unique_id=2019984958]
 position = Vector2(-234, 187)
 rotation = 3.1415927
 scale = Vector2(3.65, 3.65)
 sprite_frames = SubResource("SpriteFrames_o281e")
 autoplay = "default"
-frame_progress = 0.9343187
+frame_progress = 0.036441658
+
+[node name="Sun" type="AnimatedSprite2D" parent="background" unique_id=437816652]
+position = Vector2(0, -251.99998)
+scale = Vector2(5.8, 5.8)
+sprite_frames = SubResource("SpriteFrames_c4r8w")
+autoplay = "default"
 
 [node name="Door" type="Area2D" parent="." unique_id=1384742341 groups=["interactable"]]
 unique_name_in_owner = true
@@ -162,7 +184,7 @@ shape = SubResource("RectangleShape2D_vrgib")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 top_level = true
 scale = Vector2(3.65, 3.65)
-offset = Vector2(0.42040703, 1.9096975)
+offset = Vector2(3.0073507, 2.566159)
 editor_draw_limits = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=459320539]

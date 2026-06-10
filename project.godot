@@ -21,7 +21,7 @@ config/version="0.0.42"
 run/main_scene="uid://dxiafdb8vqcc5"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 boot_splash/use_filter=false
-boot_splash/image="uid://de0lbndqydfuc"
+boot_splash/image="uid://cvflcf17h8n43"
 config/icon="uid://55h2f6poebdk"
 
 [audio]
