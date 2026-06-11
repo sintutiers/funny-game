@@ -85,6 +85,7 @@ sprite_frames = SubResource("SpriteFrames_iwdi6")
 
 [node name="Bed" type="Area2D" parent="." unique_id=817305811 groups=["interactable"]]
 unique_name_in_owner = true
+visible = false
 position = Vector2(-78.095, -29.435)
 script = ExtResource("15_q2aba")
 
@@ -117,7 +118,7 @@ shape = SubResource("RectangleShape2D_vrgib")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547 groups=["interactable"]]
 top_level = true
 scale = Vector2(3.65, 3.65)
-offset = Vector2(-0.91762906, -1.402108)
+offset = Vector2(2.2665625, 3.3442206)
 editor_draw_limits = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=459320539]
