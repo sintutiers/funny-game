@@ -4,7 +4,7 @@ extends Node2D
 
 enum Direction {NONE, UP, DOWN, LEFT, RIGHT}
 
-const IDLE_DELAY: float = 2.0
+const IDLE_DELAY: float = 3.0
 
 @export var move_speed: int = 200
 @export var player_body: CharacterBody2D
