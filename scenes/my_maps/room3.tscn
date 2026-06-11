@@ -60,15 +60,6 @@ next_scene1 = "uid://c511ki5rm8u5p"
 layer = -1
 follow_viewport_enabled = true
 
-[node name="Parallax2D" type="Parallax2D" parent="background" unique_id=2003550420]
-scale = Vector2(3.75, 3.75)
-repeat_size = Vector2(32, 32)
-repeat_times = 19
-follow_viewport = false
-
-[node name="Black" type="Sprite2D" parent="background/Parallax2D" unique_id=2145853339]
-texture = ExtResource("3_6l254")
-
 [node name="Door" type="Area2D" parent="background" unique_id=201148014 groups=["interactable"]]
 unique_name_in_owner = true
 position = Vector2(365, -219)
@@ -84,7 +75,7 @@ position = Vector2(0, -3.835617)
 shape = SubResource("RectangleShape2D_iwdi6")
 
 [node name="walls" type="StaticBody2D" parent="background" unique_id=1253343983 groups=["walls"]]
-scale = Vector2(3.5, 3.5)
+scale = Vector2(7.5, 7.5)
 script = ExtResource("18_og2q4")
 metadata/_custom_type_script = "uid://busd3yfk5p1mx"
 
@@ -156,7 +147,7 @@ texture = ExtResource("17_60vv4")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 physics_interpolation_mode = 1
 top_level = true
-offset = Vector2(-2.28936, -0.94592327)
+offset = Vector2(-0.6565212, -0.48207593)
 zoom = Vector2(1.25, 1.25)
 editor_draw_limits = true
 
@@ -166,6 +157,18 @@ process_physics_priority = 300
 script = ExtResource("2_og2q4")
 
 [node name="main character" parent="." unique_id=621235887 instance=ExtResource("17_rwdi6")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="main character/RapierCharacterBody2D" parent_id_path=PackedInt32Array(621235887, 565934814) index="0" unique_id=737843918]
+layer = -2
+
+[node name="Parallax2D" type="Parallax2D" parent="main character/RapierCharacterBody2D/CanvasLayer" unique_id=2003550420]
+scale = Vector2(3.75, 3.75)
+repeat_size = Vector2(32, 32)
+repeat_times = 19
+follow_viewport = false
+
+[node name="Black" type="Sprite2D" parent="main character/RapierCharacterBody2D/CanvasLayer/Parallax2D" unique_id=2145853339]
+texture = ExtResource("3_6l254")
 
 [node name="Virtual joystick left" parent="main character/UI" parent_id_path=PackedInt32Array(621235887, 1750424812) index="0" unique_id=1828221587]
 visible = false
@@ -178,6 +181,7 @@ follow_mode = 2
 follow_target = NodePath("../main character/RapierCharacterBody2D")
 zoom = Vector2(1.25, 1.25)
 tween_resource = SubResource("Resource_gw3rf")
+follow_damping = true
 draw_limits = true
 noise = SubResource("Resource_yju58")
 

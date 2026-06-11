@@ -137,16 +137,17 @@ scale = Vector2(0.75, 0.75)
 sprite_frames = SubResource("SpriteFrames_iwdi6")
 animation = &"open"
 autoplay = "open"
-frame_progress = 0.6647705
+frame_progress = 0.10982978
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="background/Door" unique_id=2089601538]
 position = Vector2(0, -18.005005)
 shape = SubResource("RectangleShape2D_iwdi6")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547 groups=["interactable"]]
+physics_interpolation_mode = 1
 top_level = true
-scale = Vector2(3.25, 3.25)
-offset = Vector2(-2.7320857, -4.2202077)
+offset = Vector2(-1.921067, -0.9820801)
+zoom = Vector2(1.1, 1.1)
 editor_draw_limits = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=459320539]
@@ -156,8 +157,18 @@ script = ExtResource("4_hsdi0")
 
 [node name="main character" parent="." unique_id=621235887 instance=ExtResource("3_fw5o7")]
 
-[node name="PhantomCamera2D" type="Node2D" parent="." unique_id=1973500547]
+[node name="PhantomCamera2D" type="Node2D" parent="." unique_id=1973500547 node_paths=PackedStringArray("follow_target")]
+top_level = true
 script = ExtResource("5_yju58")
+priority = 1
+follow_mode = 5
+follow_target = NodePath("../main character/RapierCharacterBody2D")
+zoom = Vector2(1.1, 1.1)
 tween_resource = SubResource("Resource_gw3rf")
+follow_damping = true
+dead_zone_width = 0.1
+dead_zone_height = 0.1
 draw_limits = true
 noise = SubResource("Resource_yju58")
+
+[editable path="main character"]
