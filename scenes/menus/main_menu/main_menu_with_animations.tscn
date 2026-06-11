@@ -333,6 +333,10 @@ script = ExtResource("2_ixa71")
 options_packed_scene = ExtResource("3_2k5l7")
 credits_packed_scene = ExtResource("4_vsp5b")
 
+[node name="BackgroundMusicPlayer" parent="." unique_id=1446051342 instance=ExtResource("5_dhrx6")]
+volume_db = -10.133
+pitch_scale = 0.8
+
 [node name="UISoundController" type="Node" parent="." unique_id=1619985599]
 script = ExtResource("4_6xh1d")
 
@@ -343,8 +347,6 @@ libraries/ = SubResource("AnimationLibrary_2kqig")
 tree_root = SubResource("AnimationNodeStateMachine_vikuh")
 anim_player = NodePath("../MenuAnimationPlayer")
 parameters/conditions/intro_done = false
-
-[node name="BackgroundMusicPlayer" parent="." unique_id=1141822549 instance=ExtResource("5_dhrx6")]
 
 [node name="BackgroundTextureRect" type="TextureRect" parent="." unique_id=1940176448]
 layout_mode = 1

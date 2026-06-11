@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" uid="uid://cwwbqct805sdi" path="res://scenes/my_maps/room1.gd" id="1_g3spf"]
 [ext_resource type="Texture2D" uid="uid://46kr7ggre6pd" path="res://The Amazing Art Folder/black2.png" id="2_fw5o7"]
-[ext_resource type="AudioStream" uid="uid://den4rgarhfqii" path="res://assets/_ Sanctum of the Seraph.ogg" id="2_vpwdg"]
 [ext_resource type="PackedScene" uid="uid://uqnuhcrw12d0" path="res://assets/player.tscn" id="3_fw5o7"]
 [ext_resource type="Texture2D" uid="uid://cqiuyacsfr7cw" path="res://The Amazing Art Folder/door1.png" id="4_4urx3"]
 [ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="4_hsdi0"]
@@ -51,13 +50,6 @@ metadata/_custom_type_script = "uid://dimvdouy8g0sv"
 scale = Vector2(3.65, 3.65)
 script = ExtResource("1_g3spf")
 next_scene1 = "uid://b80chnt43vfab"
-
-[node name="SanctumOfTheSeraph" type="AudioStreamPlayer2D" parent="." unique_id=2132083565]
-position = Vector2(-181.64383, -108.49315)
-stream = ExtResource("2_vpwdg")
-pitch_scale = 0.75
-autoplay = true
-bus = &"Music"
 
 [node name="background" type="CanvasLayer" parent="." unique_id=1914292105]
 layer = -1
@@ -125,7 +117,7 @@ shape = SubResource("RectangleShape2D_vrgib")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547 groups=["interactable"]]
 top_level = true
 scale = Vector2(3.65, 3.65)
-offset = Vector2(-0.30105165, -0.9202446)
+offset = Vector2(-0.91762906, -1.402108)
 editor_draw_limits = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=459320539]
