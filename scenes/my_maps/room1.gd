@@ -7,6 +7,8 @@ extends RoomBase
 
 func _ready() -> void:
 	super()
+	if bed.interacted_static.is_connected(_on_bed_interacted_static):
+		push_warning("room1: bed.interacted_static is already connected, duplicate connection?")
 	bed.interacted_static.connect(_on_bed_interacted_static)
 
 

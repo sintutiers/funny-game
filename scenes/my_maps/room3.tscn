@@ -123,7 +123,7 @@ sprite_frames = SubResource("SpriteFrames_iwdi6")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 physics_interpolation_mode = 1
 top_level = true
-offset = Vector2(0.0022183575, -0.45436773)
+offset = Vector2(-1.2380753, -1.6697226)
 editor_draw_limits = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=459320539]
