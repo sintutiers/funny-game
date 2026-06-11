@@ -35,6 +35,7 @@ func _physics_process(delta: float) -> void:
 			sprite.play("idle")
 
 	var _slide_result: bool = player_body.move_and_slide()
+	_check_wall_teleport()
 
 
 func _input(event: InputEvent) -> void:
@@ -81,3 +82,31 @@ func _play_direction_animation() -> void:
 	var anim_name: String = str(Direction.keys()[facing]).to_lower()
 	if sprite.animation != anim_name:
 		sprite.play(anim_name)
+		
+#HACK utter dogshit code that berely works
+func _check_wall_teleport() -> void:
+	for i: int in player_body.get_slide_collision_count():
+		var collision: KinematicCollision2D = player_body.get_slide_collision(i)
+		if collision == null:
+			continue
+		var collider: Object = collision.get_collider()
+		if collider is Node2D and (collider as Node2D).is_in_group("walls"):
+			var normal: Vector2 = collision.get_normal()
+			var camera: Camera2D = get_viewport().get_camera_2d()
+			var viewport_rect: Rect2 = get_viewport().get_visible_rect()
+			var zoom: Vector2 = camera.zoom
+			var half_width: float = (viewport_rect.size.x * 0.5) / zoom.x
+			var half_height: float = (viewport_rect.size.y * 0.5) / zoom.y
+			var left_edge: float = camera.global_position.x - half_width
+			var right_edge: float = camera.global_position.x + half_width
+			var top_edge: float = camera.global_position.y - half_height
+			var bottom_edge: float = camera.global_position.y + half_height
+			if normal.x > 0.5:
+				player_body.global_position.x = right_edge - 30.0
+			elif normal.x < -0.5:
+				player_body.global_position.x = left_edge + 30.0
+			elif normal.y > 0.5:
+				player_body.global_position.y = bottom_edge - 30.0
+			elif normal.y < -0.5:
+				player_body.global_position.y = top_edge + 30.0
+			break

@@ -42,10 +42,10 @@ frequency = 0.1
 metadata/_custom_type_script = "uid://dimvdouy8g0sv"
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iajhm"]
-size = Vector2(21.232864, 181.36987)
+size = Vector2(25, 185)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1e5pv"]
-size = Vector2(331.16437, 24.38356)
+size = Vector2(335, 25)
 
 [node name="weird office" type="Node2D" unique_id=70873681]
 scale = Vector2(3.65, 3.65)
@@ -66,27 +66,32 @@ follow_viewport = false
 texture = ExtResource("3_6l254")
 
 [node name="Table2Duke" type="Sprite2D" parent="background" unique_id=1852189034]
-position = Vector2(-89.00001, 182)
+position = Vector2(-511, 252)
 scale = Vector2(3.65, 3.65)
 texture = ExtResource("11_6l254")
 
 [node name="Table1Duke" type="Sprite2D" parent="background" unique_id=393554630]
-position = Vector2(42, 127.00001)
+position = Vector2(529, 262)
 scale = Vector2(3.65, 3.65)
 texture = ExtResource("12_60vv4")
 
 [node name="Cabinet1Duke" type="Sprite2D" parent="background" unique_id=1652119809]
-position = Vector2(211.00002, 17)
+position = Vector2(-426, -256)
 scale = Vector2(3.65, 3.65)
 texture = ExtResource("13_og2q4")
 
 [node name="Burau" type="Sprite2D" parent="background" unique_id=1494606993]
-position = Vector2(125.99999, -94)
+position = Vector2(-489, -235)
 scale = Vector2(3.65, 3.65)
 texture = ExtResource("14_iajhm")
 
+[node name="Cabinet2Duke2" type="Sprite2D" parent="background" unique_id=1369713361]
+position = Vector2(456, 243)
+scale = Vector2(3.65, 3.65)
+texture = ExtResource("15_1e5pv")
+
 [node name="Cabinet2Duke" type="Sprite2D" parent="background" unique_id=612121133]
-position = Vector2(201, 98.00001)
+position = Vector2(-434, 253)
 scale = Vector2(3.65, 3.65)
 texture = ExtResource("15_1e5pv")
 
@@ -116,7 +121,8 @@ sprite_frames = SubResource("SpriteFrames_iwdi6")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 physics_interpolation_mode = 1
 top_level = true
-offset = Vector2(-1.8440642, 0.6858368)
+offset = Vector2(-0.38497806, 0.9436946)
+zoom = Vector2(1.25, 1.25)
 editor_draw_limits = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=459320539]
@@ -126,34 +132,38 @@ script = ExtResource("2_og2q4")
 
 [node name="main character" parent="." unique_id=621235887 instance=ExtResource("17_rwdi6")]
 
+[node name="Virtual joystick left" parent="main character/UI" parent_id_path=PackedInt32Array(621235887, 1750424812) index="0" unique_id=1828221587]
+visible = false
+
 [node name="PhantomCamera2D" type="Node2D" parent="." unique_id=1973500547 node_paths=PackedStringArray("follow_target")]
 top_level = true
 script = ExtResource("3_iajhm")
 priority = 1
 follow_mode = 2
 follow_target = NodePath("../main character/RapierCharacterBody2D")
+zoom = Vector2(1.25, 1.25)
 tween_resource = SubResource("Resource_gw3rf")
 draw_limits = true
 noise = SubResource("Resource_yju58")
 
-[node name="walls" type="StaticBody2D" parent="." unique_id=1253343983]
+[node name="walls" type="StaticBody2D" parent="." unique_id=1253343983 groups=["walls"]]
 script = ExtResource("18_og2q4")
 metadata/_custom_type_script = "uid://busd3yfk5p1mx"
 
-[node name="ver1" type="CollisionShape2D" parent="walls" unique_id=1482717394]
-position = Vector2(-155.61646, 0.82191783)
+[node name="V1" type="CollisionShape2D" parent="walls" unique_id=1482717394]
+position = Vector2(-175, 0)
 shape = SubResource("RectangleShape2D_iajhm")
 
-[node name="ver2" type="CollisionShape2D" parent="walls" unique_id=1849944601]
-position = Vector2(153.69864, 1.09589)
+[node name="V2" type="CollisionShape2D" parent="walls" unique_id=1849944601]
+position = Vector2(175, 0)
 shape = SubResource("RectangleShape2D_iajhm")
 
-[node name="hor1" type="CollisionShape2D" parent="walls" unique_id=1219567322]
-position = Vector2(1.6438355, -100)
+[node name="H1" type="CollisionShape2D" parent="walls" unique_id=1219567322]
+position = Vector2(0, -100)
 shape = SubResource("RectangleShape2D_1e5pv")
 
-[node name="hor2" type="CollisionShape2D" parent="walls" unique_id=1480151767]
-position = Vector2(-1.6438357, 98.356155)
+[node name="H2" type="CollisionShape2D" parent="walls" unique_id=1480151767]
+position = Vector2(0, 100)
 shape = SubResource("RectangleShape2D_1e5pv")
 
 [editable path="main character"]

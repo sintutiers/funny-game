@@ -158,26 +158,26 @@ shape = SubResource("RectangleShape2D_s7wbt")
 script = ExtResource("10_o6thl")
 metadata/_custom_type_script = "uid://busd3yfk5p1mx"
 
-[node name="ver1" type="CollisionShape2D" parent="walls" unique_id=1819678603]
-position = Vector2(-166.84933, 0.8219179)
+[node name="V1" type="CollisionShape2D" parent="walls" unique_id=1819678603]
+position = Vector2(-166.849, 0)
 shape = SubResource("RectangleShape2D_4urx3")
 
-[node name="ver2" type="CollisionShape2D" parent="walls" unique_id=1400218097]
-position = Vector2(164.65755, 1.09589)
+[node name="V2" type="CollisionShape2D" parent="walls" unique_id=1400218097]
+position = Vector2(164.658, 0)
 shape = SubResource("RectangleShape2D_4urx3")
 
-[node name="hor1" type="CollisionShape2D" parent="walls" unique_id=902432346]
-position = Vector2(1.6438355, -100)
+[node name="H1" type="CollisionShape2D" parent="walls" unique_id=902432346]
+position = Vector2(0, -100)
 shape = SubResource("RectangleShape2D_vrgib")
 
-[node name="hor2" type="CollisionShape2D" parent="walls" unique_id=892011529]
-position = Vector2(-1.6438357, 98.356155)
+[node name="H2" type="CollisionShape2D" parent="walls" unique_id=892011529]
+position = Vector2(0, 98.356)
 shape = SubResource("RectangleShape2D_vrgib")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 top_level = true
 scale = Vector2(3.65, 3.65)
-offset = Vector2(-1.4796865, -2.6332505)
+offset = Vector2(1.4979993, 3.007912)
 editor_draw_limits = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=459320539]
