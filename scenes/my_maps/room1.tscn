@@ -2,12 +2,12 @@
 
 [ext_resource type="Script" uid="uid://cwwbqct805sdi" path="res://scenes/my_maps/room1.gd" id="1_g3spf"]
 [ext_resource type="Texture2D" uid="uid://46kr7ggre6pd" path="res://The Amazing Art Folder/black2.png" id="2_fw5o7"]
+[ext_resource type="AudioStream" uid="uid://den4rgarhfqii" path="res://assets/_ Sanctum of the Seraph.ogg" id="2_vpwdg"]
 [ext_resource type="PackedScene" uid="uid://uqnuhcrw12d0" path="res://assets/player.tscn" id="3_fw5o7"]
 [ext_resource type="Texture2D" uid="uid://cqiuyacsfr7cw" path="res://The Amazing Art Folder/door1.png" id="4_4urx3"]
 [ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="4_hsdi0"]
 [ext_resource type="Script" uid="uid://bhexx6mj1xv3q" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="5_yju58"]
 [ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="6_4urx3"]
-[ext_resource type="AudioStream" uid="uid://bo32o3q2slkii" path="res://assets/_ Sanctum of the Seraph.mp3" id="8_fw5o7"]
 [ext_resource type="Script" uid="uid://dimvdouy8g0sv" path="res://addons/phantom_camera/scripts/resources/phantom_camera_noise_2d.gd" id="8_hsdi0"]
 [ext_resource type="Script" uid="uid://busd3yfk5p1mx" path="res://addons/godot-rapier2d/custom_nodes/rapier_static_body_2d.gd" id="10_yju58"]
 [ext_resource type="Texture2D" uid="uid://b4jlykqh28s5a" path="res://The Amazing Art Folder/bed_placeholder.png" id="15_iwdi6"]
@@ -54,9 +54,10 @@ next_scene1 = "uid://b80chnt43vfab"
 
 [node name="SanctumOfTheSeraph" type="AudioStreamPlayer2D" parent="." unique_id=2132083565]
 position = Vector2(-181.64383, -108.49315)
-stream = ExtResource("8_fw5o7")
+stream = ExtResource("2_vpwdg")
 pitch_scale = 0.75
 autoplay = true
+bus = &"Music"
 
 [node name="background" type="CanvasLayer" parent="." unique_id=1914292105]
 layer = -1
@@ -124,7 +125,7 @@ shape = SubResource("RectangleShape2D_vrgib")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547 groups=["interactable"]]
 top_level = true
 scale = Vector2(3.65, 3.65)
-offset = Vector2(-4.4054885, -3.2063608)
+offset = Vector2(-0.30105165, -0.9202446)
 editor_draw_limits = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=459320539]
