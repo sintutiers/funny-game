@@ -10,6 +10,14 @@
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vtqb1"]
 height = 26.0
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_uovkd"]
+atlas = ExtResource("3_wji7r")
+region = Rect2(0, 105, 18, 35)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jeibo"]
+atlas = ExtResource("3_wji7r")
+region = Rect2(18, 105, 18, 35)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_nsdob"]
 atlas = ExtResource("4_nsdob")
 region = Rect2(0, 0, 30, 42)
@@ -44,7 +52,13 @@ region = Rect2(18, 0, 18, 35)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_wji7r"]
 animations = [{
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uovkd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jeibo")
+}],
 "loop": true,
 "name": &"down",
 "speed": 3.0
