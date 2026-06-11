@@ -118,7 +118,7 @@ shape = SubResource("RectangleShape2D_vrgib")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547 groups=["interactable"]]
 top_level = true
 scale = Vector2(3.65, 3.65)
-offset = Vector2(2.2665625, 3.3442206)
+offset = Vector2(0.3148293, -0.62439364)
 editor_draw_limits = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=459320539]

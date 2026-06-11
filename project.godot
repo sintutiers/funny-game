@@ -20,6 +20,8 @@ very cool games"
 config/version="0.0.42"
 run/main_scene="uid://dxiafdb8vqcc5"
 config/features=PackedStringArray("4.6", "GL Compatibility")
+run/max_fps=60
+run/low_processor_mode=true
 boot_splash/use_filter=false
 boot_splash/image="uid://cvflcf17h8n43"
 config/icon="uid://55h2f6poebdk"
@@ -143,6 +145,10 @@ interact={
 ]
 }
 
+[input_devices]
+
+buffering/agile_event_flushing=true
+
 [internationalization]
 
 locale/translations=PackedStringArray("res://addons/maaacks_game_template/base/translations/menus_translations.en.translation", "res://addons/maaacks_game_template/base/translations/menus_translations.fr.translation")
@@ -161,12 +167,15 @@ copy_path="res://"
 
 [rendering]
 
+occlusion_culling/bvh_build_quality=0
 textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
 textures/vram_compression/import_s3tc_bptc=true
 textures/vram_compression/import_etc2_astc=true
+environment/ssao/quality=0
+environment/ssil/quality=0
 environment/defaults/default_clear_color=Color(0, 0, 0, 1)
 
 [steam]
