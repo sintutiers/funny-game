@@ -59,13 +59,14 @@ animations = [{
 "speed": 1.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_s7wbt"]
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4urx3"]
 size = Vector2(21.232864, 181.36987)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vrgib"]
 size = Vector2(331.16437, 24.38356)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s7wbt"]
+size = Vector2(20, 21.917818)
 
 [sub_resource type="Resource" id="Resource_gw3rf"]
 script = ExtResource("14_nmhs3")
@@ -77,7 +78,7 @@ frequency = 0.1
 metadata/_custom_type_script = "uid://dimvdouy8g0sv"
 
 [node name="dream" type="Node2D" unique_id=70873681]
-scale = Vector2(3.65, 3.65)
+scale = Vector2(3.25, 3.25)
 script = ExtResource("1_i5anj")
 next_scene1 = "uid://djkihai5rc1e3"
 
@@ -96,14 +97,14 @@ texture = ExtResource("3_o281e")
 
 [node name="Cube" type="Sprite2D" parent="background" unique_id=1465646804]
 texture_filter = 1
-position = Vector2(-437, 235)
+position = Vector2(39, 247)
 scale = Vector2(3.65, 3.65)
 texture = ExtResource("5_c4r8w")
 
 [node name="Bed" type="Sprite2D" parent="background" unique_id=240206082]
 texture_filter = 1
-position = Vector2(393.99997, 213.99998)
-scale = Vector2(4.745, 4.745)
+position = Vector2(268.93, 228.395)
+scale = Vector2(4.5, 4.5)
 texture = ExtResource("7_g3f5w")
 
 [node name="Cube3" type="Sprite2D" parent="background" unique_id=1726693315]
@@ -119,8 +120,8 @@ scale = Vector2(3.65, 3.65)
 texture = ExtResource("5_c4r8w")
 
 [node name="Being1" type="AnimatedSprite2D" parent="background" unique_id=916198894]
-position = Vector2(-457.00006, -152)
-scale = Vector2(5.11, 5.11)
+position = Vector2(-306.00006, -152)
+scale = Vector2(4.5, 4.5)
 sprite_frames = SubResource("SpriteFrames_o281e")
 autoplay = "default"
 frame_progress = 0.54027945
@@ -128,56 +129,58 @@ frame_progress = 0.54027945
 [node name="Being2" type="AnimatedSprite2D" parent="background" unique_id=2019984958]
 position = Vector2(-234, 187)
 rotation = 3.1415927
-scale = Vector2(3.65, 3.65)
+scale = Vector2(3.5, 3.5)
 sprite_frames = SubResource("SpriteFrames_o281e")
 autoplay = "default"
 frame_progress = 0.036441658
 
 [node name="Sun" type="AnimatedSprite2D" parent="background" unique_id=437816652]
-position = Vector2(0, -251.99998)
-scale = Vector2(5.8, 5.8)
+position = Vector2(0, -245.405)
+scale = Vector2(5.5, 5.5)
 sprite_frames = SubResource("SpriteFrames_c4r8w")
 autoplay = "default"
 
-[node name="Door" type="Area2D" parent="." unique_id=1384742341 groups=["interactable"]]
+[node name="walls" type="StaticBody2D" parent="background" unique_id=286310053]
+scale = Vector2(3.65, 3.65)
+script = ExtResource("10_o6thl")
+metadata/_custom_type_script = "uid://busd3yfk5p1mx"
+
+[node name="V1" type="CollisionShape2D" parent="background/walls" unique_id=1819678603]
+position = Vector2(-166.849, 0)
+shape = SubResource("RectangleShape2D_4urx3")
+
+[node name="V2" type="CollisionShape2D" parent="background/walls" unique_id=1400218097]
+position = Vector2(164.658, 0)
+shape = SubResource("RectangleShape2D_4urx3")
+
+[node name="H1" type="CollisionShape2D" parent="background/walls" unique_id=902432346]
+position = Vector2(0, -100)
+shape = SubResource("RectangleShape2D_vrgib")
+
+[node name="H2" type="CollisionShape2D" parent="background/walls" unique_id=892011529]
+position = Vector2(0, 98.356)
+shape = SubResource("RectangleShape2D_vrgib")
+
+[node name="Door" type="Area2D" parent="background" unique_id=1384742341 groups=["interactable"]]
 unique_name_in_owner = true
-position = Vector2(109.31508, -66.02739)
-scale = Vector2(1.4, 1.4)
+position = Vector2(338.97552, -223.58806)
+scale = Vector2(3.65, 3.65)
 script = ExtResource("8_osv3s")
 metadata/_custom_type_script = "uid://cburu6b4ckehs"
 
-[node name="Door1" type="Sprite2D" parent="Door" unique_id=2098207431]
+[node name="Door1" type="Sprite2D" parent="background/Door" unique_id=2098207431]
 texture_filter = 1
 position = Vector2(-7.6293945e-06, 0)
 texture = ExtResource("9_88ddt")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Door" unique_id=78442009]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="background/Door" unique_id=78442009]
+position = Vector2(0, -3.1265678)
 shape = SubResource("RectangleShape2D_s7wbt")
-
-[node name="walls" type="StaticBody2D" parent="." unique_id=286310053]
-script = ExtResource("10_o6thl")
-metadata/_custom_type_script = "uid://busd3yfk5p1mx"
-
-[node name="V1" type="CollisionShape2D" parent="walls" unique_id=1819678603]
-position = Vector2(-166.849, 0)
-shape = SubResource("RectangleShape2D_4urx3")
-
-[node name="V2" type="CollisionShape2D" parent="walls" unique_id=1400218097]
-position = Vector2(164.658, 0)
-shape = SubResource("RectangleShape2D_4urx3")
-
-[node name="H1" type="CollisionShape2D" parent="walls" unique_id=902432346]
-position = Vector2(0, -100)
-shape = SubResource("RectangleShape2D_vrgib")
-
-[node name="H2" type="CollisionShape2D" parent="walls" unique_id=892011529]
-position = Vector2(0, 98.356)
-shape = SubResource("RectangleShape2D_vrgib")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 top_level = true
-scale = Vector2(3.65, 3.65)
-offset = Vector2(1.4979993, 3.007912)
+scale = Vector2(3.25, 3.25)
+offset = Vector2(3.9884648, 4.4775314)
 editor_draw_limits = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=459320539]
