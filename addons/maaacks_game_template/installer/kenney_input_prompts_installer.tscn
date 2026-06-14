@@ -21,7 +21,6 @@ oversampling_override = 1.0
 title = "Skip Installation?"
 initial_position = 2
 size = Vector2i(892, 160)
-visible = true
 ok_button_text = "Skip"
 dialog_text = "The input prompts pack appears to already be installed.
 
@@ -29,7 +28,6 @@ Do you want to force a reinstall of the pack, or skip to picking a style?"
 cancel_button_text = "Reinstall"
 
 [node name="KenneyInputPromptsDialog" parent="." unique_id=257967393 instance=ExtResource("1_pslk0")]
-visible = false
 
 [node name="InstallingDialog" type="AcceptDialog" parent="." unique_id=1047580895]
 title = "Installing..."

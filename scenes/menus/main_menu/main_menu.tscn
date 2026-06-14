@@ -7,8 +7,12 @@
 [ext_resource type="PackedScene" uid="uid://bkcsjsk2ciff" path="res://addons/maaacks_game_template/base/nodes/music_players/background_music_player.tscn" id="5_7j6ce"]
 [ext_resource type="PackedScene" uid="uid://cwt4p3bufkke5" path="res://addons/maaacks_game_template/base/nodes/windows/confirmation_overlaid_window.tscn" id="5_627ab"]
 [ext_resource type="Script" uid="uid://bkwlopi4qn32o" path="res://addons/maaacks_game_template/base/nodes/labels/config_name_label.gd" id="6_qwqm5"]
+[ext_resource type="Texture2D" uid="uid://5a5ako226e04" path="res://assets/themes/test.tres" id="7_7j6ce"]
 [ext_resource type="Script" uid="uid://1nf36h0gms3q" path="res://addons/maaacks_game_template/base/nodes/utilities/capture_focus.gd" id="7_q0yg5"]
 [ext_resource type="Script" uid="uid://dmkubt2nsnsbn" path="res://addons/maaacks_game_template/base/nodes/labels/config_version_label.gd" id="8_88r3n"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qwqm5"]
+texture = ExtResource("7_7j6ce")
 
 [node name="MainMenu2" type="Control" unique_id=869232425]
 layout_mode = 3
@@ -84,60 +88,86 @@ text = "Subtitle"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="MenuButtonsMargin" type="MarginContainer" parent="MenuContainer" unique_id=210553886]
+[node name="MenuButtonsMargin" type="MarginContainer" parent="MenuContainer" unique_id=173482645]
 layout_mode = 2
-size_flags_vertical = 3
-theme_override_constants/margin_top = 136
 theme_override_constants/margin_bottom = 8
 
-[node name="MenuButtonsContainer" type="Control" parent="MenuContainer/MenuButtonsMargin" unique_id=116448484]
+[node name="MenuButtonsContainer" type="Control" parent="MenuContainer/MenuButtonsMargin" unique_id=1886396920]
 layout_mode = 2
-mouse_filter = 2
 
-[node name="PanelContainer" type="PanelContainer" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer" unique_id=1165917109]
-layout_mode = 0
-offset_right = 4.0
-offset_bottom = 4.0
+[node name="PanelContainer" type="PanelContainer" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer" unique_id=1719953753]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -164.3078
+offset_top = -126.375
+offset_right = 164.3078
+offset_bottom = 214.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_qwqm5")
 
-[node name="MenuButtonsBoxContainer" type="BoxContainer" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/PanelContainer" unique_id=2017477786]
+[node name="VBoxContainer" type="VBoxContainer" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/PanelContainer" unique_id=255148103]
+layout_mode = 2
+alignment = 1
+
+[node name="MenuButtonsBoxContainer" type="BoxContainer" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/PanelContainer/VBoxContainer" unique_id=740798711]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 4
-theme_override_constants/separation = 16
+theme_override_constants/separation = 17
 alignment = 1
 vertical = true
 script = ExtResource("7_q0yg5")
+lock = true
 
-[node name="NewGameButton" type="Button" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/PanelContainer/MenuButtonsBoxContainer" unique_id=2044537792]
+[node name="NewGameButton" type="Button" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/PanelContainer/VBoxContainer/MenuButtonsBoxContainer" unique_id=606801946]
 unique_name_in_owner = true
+texture_filter = 2
+custom_minimum_size = Vector2(170, 38)
 layout_mode = 2
+theme_override_font_sizes/font_size = 30
 text = "New Game"
 
-[node name="ContinueGameButton" type="Button" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/PanelContainer/MenuButtonsBoxContainer" unique_id=1495566523]
+[node name="ContinueGameButton" type="Button" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/PanelContainer/VBoxContainer/MenuButtonsBoxContainer" unique_id=469081127]
 unique_name_in_owner = true
 visible = false
+texture_filter = 2
 layout_mode = 2
+theme_override_font_sizes/font_size = 30
 text = "Continue"
 
-[node name="LevelSelectButton" type="Button" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/PanelContainer/MenuButtonsBoxContainer" unique_id=1348895676]
+[node name="LevelSelectButton" type="Button" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/PanelContainer/VBoxContainer/MenuButtonsBoxContainer" unique_id=1415540126]
 unique_name_in_owner = true
 visible = false
+texture_filter = 2
 layout_mode = 2
+theme_override_font_sizes/font_size = 30
 text = "Level Select"
 
-[node name="OptionsButton" type="Button" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/PanelContainer/MenuButtonsBoxContainer" unique_id=1486236076]
+[node name="OptionsButton" type="Button" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/PanelContainer/VBoxContainer/MenuButtonsBoxContainer" unique_id=2141086450]
 unique_name_in_owner = true
+texture_filter = 2
 layout_mode = 2
+theme_override_font_sizes/font_size = 30
 text = "Options"
 
-[node name="CreditsButton" type="Button" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/PanelContainer/MenuButtonsBoxContainer" unique_id=301223169]
+[node name="CreditsButton" type="Button" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/PanelContainer/VBoxContainer/MenuButtonsBoxContainer" unique_id=2101582395]
 unique_name_in_owner = true
+texture_filter = 2
 layout_mode = 2
+theme_override_font_sizes/font_size = 30
 text = "Credits"
 
-[node name="ExitButton" type="Button" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/PanelContainer/MenuButtonsBoxContainer" unique_id=1750454379]
+[node name="ExitButton" type="Button" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/PanelContainer/VBoxContainer/MenuButtonsBoxContainer" unique_id=1912486758]
 unique_name_in_owner = true
+texture_filter = 2
 layout_mode = 2
+theme_override_font_sizes/font_size = 30
 text = "Exit"
 
 [node name="VersionMargin" type="MarginContainer" parent="." unique_id=1732528471]
@@ -168,7 +198,7 @@ offset_left = -88.0
 offset_top = -26.0
 grow_horizontal = 0
 grow_vertical = 0
-text = "v0.0.32"
+text = "v0.0.50"
 horizontal_alignment = 2
 script = ExtResource("8_88r3n")
 
@@ -199,11 +229,5 @@ ui_cancel_closes = false
 text = "Really exit the game?"
 title_visible = false
 
-[connection signal="pressed" from="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/PanelContainer/MenuButtonsBoxContainer/NewGameButton" to="." method="_on_new_game_button_pressed"]
-[connection signal="pressed" from="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/PanelContainer/MenuButtonsBoxContainer/ContinueGameButton" to="." method="_on_continue_game_button_pressed"]
-[connection signal="pressed" from="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/PanelContainer/MenuButtonsBoxContainer/LevelSelectButton" to="." method="_on_level_select_button_pressed"]
-[connection signal="pressed" from="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/PanelContainer/MenuButtonsBoxContainer/OptionsButton" to="." method="_on_options_button_pressed"]
-[connection signal="pressed" from="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/PanelContainer/MenuButtonsBoxContainer/CreditsButton" to="." method="_on_credits_button_pressed"]
-[connection signal="pressed" from="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/PanelContainer/MenuButtonsBoxContainer/ExitButton" to="." method="_on_exit_button_pressed"]
 [connection signal="confirmed" from="NewGameConfirmation" to="." method="_on_new_game_confirmation_confirmed"]
 [connection signal="confirmed" from="ExitConfirmation" to="." method="_on_exit_confirmation_confirmed"]

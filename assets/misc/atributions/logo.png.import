@@ -2,22 +2,22 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bas1s3u6es670"
-path="res://.godot/imported/logo_vertical_color_dark.png-41fd15351e02632dd9ee7740f4bb723c.ctex"
+uid="uid://dwqnpj4luno5x"
+path="res://.godot/imported/logo.png-5b0689e905deb5fd4e0892b1d3684351.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/misc/godot_engine_logo/logo_vertical_color_dark.png"
-dest_files=["res://.godot/imported/logo_vertical_color_dark.png-41fd15351e02632dd9ee7740f4bb723c.ctex"]
+source_file="res://assets/misc/atributions/logo.png"
+dest_files=["res://.godot/imported/logo.png-5b0689e905deb5fd4e0892b1d3684351.ctex"]
 
 [params]
 
-compress/mode=4
+compress/mode=1
 compress/high_quality=false
-compress/lossy_quality=0.7
+compress/lossy_quality=0.6
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1

@@ -15,9 +15,9 @@ dest_files=["res://.godot/imported/switch_stick_side_r.png-8d284530d79eddf4134bc
 
 [params]
 
-compress/mode=4
+compress/mode=1
 compress/high_quality=false
-compress/lossy_quality=0.7
+compress/lossy_quality=0.6
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1

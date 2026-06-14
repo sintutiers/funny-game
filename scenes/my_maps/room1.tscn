@@ -3,11 +3,10 @@
 [ext_resource type="Script" uid="uid://cwwbqct805sdi" path="res://scenes/my_maps/room1.gd" id="1_g3spf"]
 [ext_resource type="Texture2D" uid="uid://46kr7ggre6pd" path="res://The Amazing Art Folder/black2.png" id="2_fw5o7"]
 [ext_resource type="PackedScene" uid="uid://uqnuhcrw12d0" path="res://assets/player.tscn" id="3_fw5o7"]
-[ext_resource type="Texture2D" uid="uid://cqiuyacsfr7cw" path="res://The Amazing Art Folder/door1.png" id="4_4urx3"]
 [ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="4_hsdi0"]
 [ext_resource type="Script" uid="uid://bhexx6mj1xv3q" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="5_yju58"]
 [ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="6_4urx3"]
-[ext_resource type="AudioStream" uid="uid://bo32o3q2slkii" path="res://assets/_ Sanctum of the Seraph.mp3" id="8_fw5o7"]
+[ext_resource type="Texture2D" uid="uid://c0pmx7qfytvwv" path="res://The Amazing Art Folder/door Chiel.png" id="7_cxf8n"]
 [ext_resource type="Script" uid="uid://dimvdouy8g0sv" path="res://addons/phantom_camera/scripts/resources/phantom_camera_noise_2d.gd" id="8_hsdi0"]
 [ext_resource type="Script" uid="uid://busd3yfk5p1mx" path="res://addons/godot-rapier2d/custom_nodes/rapier_static_body_2d.gd" id="10_yju58"]
 [ext_resource type="Texture2D" uid="uid://b4jlykqh28s5a" path="res://The Amazing Art Folder/bed_placeholder.png" id="15_iwdi6"]
@@ -16,27 +15,50 @@
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_vpwdg"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_iwdi6"]
-size = Vector2(20, 25.890411)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_iwdi6"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("4_4urx3")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_q2aba"]
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4urx3"]
 size = Vector2(23.28767, 181.36987)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vrgib"]
 size = Vector2(243.0137, 33.9726)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q2aba"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vpwdg"]
+atlas = ExtResource("7_cxf8n")
+region = Rect2(0, 0, 100, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vnh7e"]
+atlas = ExtResource("7_cxf8n")
+region = Rect2(0, 0, 100, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j7vt5"]
+atlas = ExtResource("7_cxf8n")
+region = Rect2(100, 0, 100, 150)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_iwdi6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vpwdg")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vnh7e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j7vt5")
+}],
+"loop": true,
+"name": &"open",
+"speed": 1.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iwdi6"]
+size = Vector2(72, 73)
 
 [sub_resource type="Resource" id="Resource_gw3rf"]
 script = ExtResource("6_4urx3")
@@ -48,15 +70,9 @@ frequency = 0.1
 metadata/_custom_type_script = "uid://dimvdouy8g0sv"
 
 [node name="bedroom" type="Node2D" unique_id=70873681 groups=["interactable"]]
-scale = Vector2(3.65, 3.65)
+scale = Vector2(3.25, 3.25)
 script = ExtResource("1_g3spf")
-next_scene = "uid://b80chnt43vfab"
-
-[node name="SanctumOfTheSeraph" type="AudioStreamPlayer2D" parent="." unique_id=2132083565]
-position = Vector2(-181.64383, -108.49315)
-stream = ExtResource("8_fw5o7")
-pitch_scale = 0.75
-autoplay = true
+next_scene1 = "uid://b80chnt43vfab"
 
 [node name="background" type="CanvasLayer" parent="." unique_id=1914292105]
 layer = -1
@@ -72,59 +88,66 @@ follow_viewport = false
 material = SubResource("ShaderMaterial_vpwdg")
 texture = ExtResource("2_fw5o7")
 
-[node name="BaseRoom(unfinished)" type="Sprite2D" parent="background" unique_id=38803718]
-scale = Vector2(1.0691665, 1.0691665)
+[node name="base" type="Sprite2D" parent="background" unique_id=38803718]
+scale = Vector2(1.0347916, 1.0347917)
 texture = ExtResource("16_q2aba")
 
-[node name="Door" type="Area2D" parent="." unique_id=201148014 groups=["interactable"]]
-unique_name_in_owner = true
-position = Vector2(100, -60)
-scale = Vector2(1.1, 1.1)
-script = ExtResource("15_q2aba")
-metadata/_custom_type_script = "uid://cburu6b4ckehs"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Door" unique_id=2089601538]
-position = Vector2(0, -3.90411)
-shape = SubResource("RectangleShape2D_iwdi6")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Door" unique_id=619086787]
-sprite_frames = SubResource("SpriteFrames_iwdi6")
-
-[node name="Bed" type="Area2D" parent="." unique_id=817305811 groups=["interactable"]]
-unique_name_in_owner = true
-position = Vector2(-78.095, -29.435)
-script = ExtResource("15_q2aba")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Bed" unique_id=1094970256]
-shape = SubResource("RectangleShape2D_q2aba")
-
-[node name="BedPlaceholder" type="Sprite2D" parent="Bed" unique_id=431403754]
-texture = ExtResource("15_iwdi6")
-
-[node name="walls" type="StaticBody2D" parent="." unique_id=286310053]
+[node name="walls" type="StaticBody2D" parent="background" unique_id=286310053]
+scale = Vector2(3.65, 3.65)
 script = ExtResource("10_yju58")
 metadata/_custom_type_script = "uid://busd3yfk5p1mx"
 
-[node name="ver1" type="CollisionShape2D" parent="walls" unique_id=1819678603]
-position = Vector2(-120.27397, 0.821918)
+[node name="V1" type="CollisionShape2D" parent="background/walls" unique_id=1819678603]
+position = Vector2(-124.109604, 0)
 shape = SubResource("RectangleShape2D_4urx3")
 
-[node name="ver2" type="CollisionShape2D" parent="walls" unique_id=1400218097]
-position = Vector2(129.72603, 1.09589)
+[node name="V2" type="CollisionShape2D" parent="background/walls" unique_id=1400218097]
+position = Vector2(123.9726, 0)
 shape = SubResource("RectangleShape2D_4urx3")
 
-[node name="hor1" type="CollisionShape2D" parent="walls" unique_id=902432346]
-position = Vector2(1.6438355, -78.904106)
+[node name="H1" type="CollisionShape2D" parent="background/walls" unique_id=902432346]
+position = Vector2(0, -76.71221)
 shape = SubResource("RectangleShape2D_vrgib")
 
-[node name="hor2" type="CollisionShape2D" parent="walls" unique_id=892011529]
-position = Vector2(6.164379, 98.356155)
+[node name="H2" type="CollisionShape2D" parent="background/walls" unique_id=892011529]
+position = Vector2(0, 100.82175)
 shape = SubResource("RectangleShape2D_vrgib")
+
+[node name="Bed" type="Area2D" parent="background" unique_id=817305811 groups=["interactable"]]
+unique_name_in_owner = true
+visible = false
+position = Vector2(-285.04675, -107.43775)
+scale = Vector2(3.65, 3.65)
+script = ExtResource("15_q2aba")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="background/Bed" unique_id=1094970256]
+shape = SubResource("RectangleShape2D_q2aba")
+
+[node name="BedPlaceholder" type="Sprite2D" parent="background/Bed" unique_id=431403754]
+texture = ExtResource("15_iwdi6")
+
+[node name="Door" type="Area2D" parent="background" unique_id=201148014 groups=["interactable"]]
+unique_name_in_owner = true
+position = Vector2(300, -209.495)
+script = ExtResource("15_q2aba")
+metadata/_custom_type_script = "uid://cburu6b4ckehs"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="background/Door" unique_id=619086787]
+scale = Vector2(0.75, 0.75)
+sprite_frames = SubResource("SpriteFrames_iwdi6")
+animation = &"open"
+autoplay = "open"
+frame_progress = 0.10982978
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="background/Door" unique_id=2089601538]
+position = Vector2(0, -18.005005)
+shape = SubResource("RectangleShape2D_iwdi6")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547 groups=["interactable"]]
+physics_interpolation_mode = 1
 top_level = true
-scale = Vector2(3.65, 3.65)
-offset = Vector2(2.3552153, 3.53815)
+offset = Vector2(-1.921067, -0.9820801)
+zoom = Vector2(1.1, 1.1)
 editor_draw_limits = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=459320539]
@@ -134,11 +157,18 @@ script = ExtResource("4_hsdi0")
 
 [node name="main character" parent="." unique_id=621235887 instance=ExtResource("3_fw5o7")]
 
-[node name="PhantomCamera2D" type="Node2D" parent="." unique_id=1973500547]
+[node name="PhantomCamera2D" type="Node2D" parent="." unique_id=1973500547 node_paths=PackedStringArray("follow_target")]
+top_level = true
 script = ExtResource("5_yju58")
+priority = 1
+follow_mode = 5
+follow_target = NodePath("../main character/RapierCharacterBody2D")
+zoom = Vector2(1.1, 1.1)
 tween_resource = SubResource("Resource_gw3rf")
+follow_damping = true
+dead_zone_width = 0.1
+dead_zone_height = 0.1
 draw_limits = true
 noise = SubResource("Resource_yju58")
 
-[connection signal="interacted_static" from="Door" to="." method="_on_door_interacted_static"]
-[connection signal="interacted_static" from="Bed" to="." method="_on_bed_interacted_static"]
+[editable path="main character"]

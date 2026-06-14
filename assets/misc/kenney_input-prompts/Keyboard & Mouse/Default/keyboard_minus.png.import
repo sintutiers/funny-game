@@ -15,9 +15,9 @@ dest_files=["res://.godot/imported/keyboard_minus.png-44f7380e4ee40c8b9384b6600d
 
 [params]
 
-compress/mode=4
+compress/mode=1
 compress/high_quality=false
-compress/lossy_quality=0.7
+compress/lossy_quality=0.6
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1

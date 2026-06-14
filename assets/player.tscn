@@ -10,11 +10,11 @@
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vtqb1"]
 height = 26.0
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ir1yu"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_uovkd"]
 atlas = ExtResource("3_wji7r")
 region = Rect2(0, 105, 18, 35)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ma5wh"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_jeibo"]
 atlas = ExtResource("3_wji7r")
 region = Rect2(18, 105, 18, 35)
 
@@ -54,10 +54,10 @@ region = Rect2(18, 0, 18, 35)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ir1yu")
+"texture": SubResource("AtlasTexture_uovkd")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ma5wh")
+"texture": SubResource("AtlasTexture_jeibo")
 }],
 "loop": true,
 "name": &"down",
@@ -127,7 +127,7 @@ shape = SubResource("CapsuleShape2D_vtqb1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="RapierCharacterBody2D" unique_id=1720223925]
 sprite_frames = SubResource("SpriteFrames_wji7r")
-animation = &"idle"
+animation = &"down"
 
 [node name="Interact_area_player" type="Area2D" parent="RapierCharacterBody2D" unique_id=1979343329]
 unique_name_in_owner = true

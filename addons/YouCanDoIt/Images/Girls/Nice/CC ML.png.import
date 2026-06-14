@@ -15,9 +15,9 @@ dest_files=["res://.godot/imported/CC ML.png-3d2f3a258522f0cabbd1b709c2fe8988.ct
 
 [params]
 
-compress/mode=4
+compress/mode=1
 compress/high_quality=false
-compress/lossy_quality=0.7
+compress/lossy_quality=0.6
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
