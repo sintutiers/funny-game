@@ -21,7 +21,7 @@ func _ready() -> void:
 
 
 func _physics_process(delta: float) -> void:
-	var input_dir: Vector2 = Input.get_vector("left", "right", "up", "down")
+	var input_dir: Vector2 = Input.get_vector(&"left",&"right", &"up",&"down")
 
 	if input_dir != Vector2.ZERO:
 		idle_time = 0.0
@@ -36,6 +36,7 @@ func _physics_process(delta: float) -> void:
 
 	var _slide_result: bool = player_body.move_and_slide()
 	_check_wall_teleport()
+	#global_position = player_body.global_position #HACK what the fuck did i do here??
 
 
 func _input(event: InputEvent) -> void:
@@ -68,15 +69,20 @@ func interact() -> void:
 
 
 func _update_facing(direction: Vector2) -> void:
-	if direction.x > 0:
-		facing = Direction.RIGHT
-	elif direction.x < 0:
-		facing = Direction.LEFT
-	elif direction.y > 0:
-		facing = Direction.DOWN
-	elif direction.y < 0:
-		facing = Direction.UP
+	var threshold: float = 0.5
+	var new_facing: Direction = facing
+	if abs(direction.x) >= abs(direction.y):
+		if direction.x > threshold:
+			new_facing = Direction.RIGHT
+		elif direction.x < -threshold:
+			new_facing = Direction.LEFT
+	else:
+		if direction.y > threshold:
+			new_facing = Direction.DOWN
+		elif direction.y < -threshold:
+			new_facing = Direction.UP
 
+	facing = new_facing
 
 func _play_direction_animation() -> void:
 	var anim_name: String = str(Direction.keys()[facing]).to_lower()

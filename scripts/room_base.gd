@@ -8,8 +8,8 @@ func _ready() -> void:
 	door.interacted_static.connect(_on_door_interacted_static)
 	if door.interacted_static.is_connected(_on_door_interacted_static):
 		push_warning("RoomBase: door.interacted_static is already connected, duplicate connection?")
-	if next_scene1:
-		SceneLoader.load_scene(next_scene1, true)
+	else:
+		door.interacted_static.connect(_on_door_interacted_static)
 
 
 func _exit_tree() -> void:
