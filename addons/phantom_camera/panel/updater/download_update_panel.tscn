@@ -86,8 +86,8 @@ theme_override_constants/margin_top = 12
 
 [node name="Logo" type="TextureRect" parent="VBox/VBoxContainer2/MarginContainer" unique_id=254289197]
 unique_name_in_owner = true
-clip_contents = true
 custom_minimum_size = Vector2(300, 160)
+clip_contents = true
 layout_mode = 2
 texture = ExtResource("2_f3yo7")
 expand_mode = 3

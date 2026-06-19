@@ -171,8 +171,8 @@ corner_radius_top_right = 6
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w002y"]
 
 [node name="ViewfinderPanel" type="Control" unique_id=522693372]
-clip_contents = true
 custom_minimum_size = Vector2(0, 300)
+clip_contents = true
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
