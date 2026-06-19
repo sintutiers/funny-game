@@ -1,22 +1,20 @@
 #room1
-extends RoomBase
+extends MetaRoom
 
-
-@onready var bed: interaction_manager = %Bed
-
+@onready var bed: InteractionManager = %Bed
 
 func _ready() -> void:
 	super()
 	if bed.interacted_static.is_connected(_on_bed_interacted_static):
-		push_warning("room1: bed.interacted_static is already connected, duplicate connection?")
-	bed.interacted_static.connect(_on_bed_interacted_static)
-
+		push_warning("room1: bed.interacted_static already connected, duplicate connection?")
+	else:
+		bed.interacted_static.connect(_on_bed_interacted_static)
 
 func _exit_tree() -> void:
 	super()
-	bed.interacted_static.disconnect(_on_bed_interacted_static)
-
+	if bed.interacted_static.is_connected(_on_bed_interacted_static):
+		bed.interacted_static.disconnect(_on_bed_interacted_static)
 
 func _on_bed_interacted_static(_body: RapierArea2D) -> void:
-	#DEBUG:
-	print("bed_interacted")
+	bed.action()
+	#print("bed_interacted")#DEBUG

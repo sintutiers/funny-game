@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://djkihai5rc1e3"]
 
-[ext_resource type="Script" uid="uid://n6ni6wrghmxe" path="res://scripts/room_base.gd" id="1_60vv4"]
+[ext_resource type="Script" uid="uid://5m8ydesg8b27" path="res://scenes/my_maps/room3.gd" id="1_60vv4"]
 [ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="2_og2q4"]
 [ext_resource type="Texture2D" uid="uid://bso4w46je4cwt" path="res://The Amazing Art Folder/background duke.png" id="3_6l254"]
 [ext_resource type="Script" uid="uid://bhexx6mj1xv3q" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="3_iajhm"]
 [ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="4_1e5pv"]
-[ext_resource type="Script" uid="uid://b83wx8f1aq2t8" path="res://scripts/interactable.gd" id="4_60vv4"]
+[ext_resource type="Script" uid="uid://b83wx8f1aq2t8" path="res://assets/scripts/interactable.gd" id="4_60vv4"]
 [ext_resource type="Script" uid="uid://dimvdouy8g0sv" path="res://addons/phantom_camera/scripts/resources/phantom_camera_noise_2d.gd" id="5_er0vt"]
 [ext_resource type="Texture2D" uid="uid://vs5x4ofyxkvv" path="res://The Amazing Art Folder/table2 duke.png" id="11_6l254"]
 [ext_resource type="Texture2D" uid="uid://dwg61bpcy6uv3" path="res://The Amazing Art Folder/table1 duke.png" id="12_60vv4"]
@@ -24,7 +24,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("15_qbgxe")
 }],
-"loop": true,
+"loop": 1,
 "name": &"default",
 "speed": 5.0
 }]
@@ -54,7 +54,7 @@ metadata/_custom_type_script = "uid://dimvdouy8g0sv"
 [node name="weird office" type="Node2D" unique_id=70873681]
 scale = Vector2(3.25, 3.25)
 script = ExtResource("1_60vv4")
-next_scene1 = "uid://c511ki5rm8u5p"
+next_scene = "uid://4lj1r0wet3rc"
 
 [node name="background" type="CanvasLayer" parent="." unique_id=919863972]
 layer = -1
@@ -147,7 +147,7 @@ texture = ExtResource("17_60vv4")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 physics_interpolation_mode = 1
 top_level = true
-offset = Vector2(-0.6565212, -0.48207593)
+offset = Vector2(0.81913215, 1.010164)
 zoom = Vector2(1.25, 1.25)
 editor_draw_limits = true
 
@@ -158,19 +158,16 @@ script = ExtResource("2_og2q4")
 
 [node name="main character" parent="." unique_id=621235887 instance=ExtResource("17_rwdi6")]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="main character/RapierCharacterBody2D" parent_id_path=PackedInt32Array(621235887, 565934814) index="0" unique_id=737843918]
-layer = -2
-
-[node name="Parallax2D" type="Parallax2D" parent="main character/RapierCharacterBody2D/CanvasLayer" unique_id=2003550420]
-scale = Vector2(3.75, 3.75)
+[node name="Parallax2D" type="Parallax2D" parent="main character/ParallaxLayer" parent_id_path=PackedInt32Array(621235887, 792501613) index="0" unique_id=2003550420]
+scale = Vector2(4, 4)
 repeat_size = Vector2(32, 32)
 repeat_times = 19
 follow_viewport = false
 
-[node name="Black" type="Sprite2D" parent="main character/RapierCharacterBody2D/CanvasLayer/Parallax2D" unique_id=2145853339]
+[node name="Blue" type="Sprite2D" parent="main character/ParallaxLayer/Parallax2D" unique_id=2145853339]
 texture = ExtResource("3_6l254")
 
-[node name="Virtual joystick left" parent="main character/UI" parent_id_path=PackedInt32Array(621235887, 1750424812) index="0" unique_id=1828221587]
+[node name="Virtual joystick left" parent="main character/InterfaceLayer" parent_id_path=PackedInt32Array(621235887, 1750424812) index="0" unique_id=1828221587]
 visible = false
 
 [node name="PhantomCamera2D" type="Node2D" parent="." unique_id=1973500547 node_paths=PackedStringArray("follow_target")]
@@ -178,7 +175,7 @@ top_level = true
 script = ExtResource("3_iajhm")
 priority = 1
 follow_mode = 2
-follow_target = NodePath("../main character/RapierCharacterBody2D")
+follow_target = NodePath("../main character/PlayerBody")
 zoom = Vector2(1.25, 1.25)
 tween_resource = SubResource("Resource_gw3rf")
 follow_damping = true
