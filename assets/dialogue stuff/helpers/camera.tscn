@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://c4373iviuy8gy"]
+
+[ext_resource type="Script" uid="uid://ch2ux2a7w0iq3" path="res://assets/dialogue stuff/helpers/camera.gd" id="1_uvmhb"]
+
+[node name="Camera" type="Camera2D" unique_id=1314676680]
+texture_filter = 1
+zoom = Vector2(7, 7)
+script = ExtResource("1_uvmhb")

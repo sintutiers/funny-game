@@ -15,11 +15,11 @@ ss2d/version="3.3.1"
 [application]
 
 config/name="Dream Diary gamejam"
-config/description="Dean, and Chiel, and Duke
+config/description="Dean, Chiel, and Duke
 very cool games"
 config/version="0.0.55"
 run/main_scene="uid://dxiafdb8vqcc5"
-config/features=PackedStringArray("4.6", "GL Compatibility")
+config/features=PackedStringArray("4.7", "GL Compatibility")
 run/max_fps=60
 run/low_processor_mode=true
 boot_splash/use_filter=false
@@ -54,10 +54,23 @@ gdscript/warnings/return_value_discarded=1
 gdscript/warnings/missing_await=1
 shader_language/warnings/treat_warnings_as_errors=true
 
+[dialogue_manager]
+
+runtime/balloon_path="uid://covyosa222o3j"
+
 [display]
 
 window/size/viewport_width=800
 window/size/viewport_height=600
+window/size/initial_position_type=5
+window/size/borderless=true
+window/size/sharp_corners=true
+window/vsync/vsync_mode=2
+
+[editor]
+
+movie_writer/ogv/encoding_speed=1
+movie_writer/disable_vsync=true
 
 [editor_plugins]
 
@@ -148,10 +161,12 @@ interact={
 [input_devices]
 
 buffering/agile_event_flushing=true
+pointing/emulate_touch_from_mouse=true
 
 [internationalization]
 
 locale/translations=PackedStringArray("res://addons/maaacks_game_template/base/translations/menus_translations.en.translation", "res://addons/maaacks_game_template/base/translations/menus_translations.fr.translation")
+locale/translations_pot_files=PackedStringArray("res://assets/dialogue stuff/untitled.dialogue", "res://assets/dialogue stuff/bed1placeholder.dialogue")
 
 [maaacks_game_template]
 
@@ -174,9 +189,17 @@ renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
 textures/vram_compression/import_s3tc_bptc=true
 textures/vram_compression/import_etc2_astc=true
+lights_and_shadows/positional_shadow/soft_shadow_filter_quality=0
+camera/depth_of_field/depth_of_field_bokeh_shape=0
+camera/depth_of_field/depth_of_field_bokeh_quality=0
 environment/ssao/quality=0
 environment/ssil/quality=0
+environment/subsurface_scattering/subsurface_scattering_quality=0
+environment/volumetric_fog/use_filter=0
 environment/defaults/default_clear_color=Color(0, 0, 0, 1)
+viewport/transparent_background=true
+2d/snap/snap_2d_transforms_to_pixel=true
+2d/sdf/oversize=0
 
 [steam]
 
