@@ -1,15 +1,8 @@
 [gd_scene format=3 uid="uid://dmr0fcamx7t56"]
 
 [ext_resource type="Script" uid="uid://bvt6refwdx7w5" path="res://addons/virtual_joystick/virtual_joystick.gd" id="1_8x4dy"]
-[ext_resource type="Shader" uid="uid://d2gnedby8mw2e" path="res://assets/themes/touch_theme.tres" id="2_0bity"]
 [ext_resource type="Texture2D" uid="uid://3vkr6gohy4av" path="res://addons/virtual_joystick/textures/joystick_base_outline.png" id="2_jhjs2"]
 [ext_resource type="Texture2D" uid="uid://bcl61ci0gopau" path="res://addons/virtual_joystick/textures/joystick_tip_arrows.png" id="3_3etdg"]
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_3yfuy"]
-shader = ExtResource("2_0bity")
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_xq8jp"]
-shader = ExtResource("2_0bity")
 
 [node name="Virtual Joystick" type="Control" unique_id=1828221587]
 layout_mode = 3
@@ -23,7 +16,6 @@ grow_vertical = 0
 script = ExtResource("1_8x4dy")
 
 [node name="Base" type="TextureRect" parent="." unique_id=663787687]
-material = SubResource("ShaderMaterial_3yfuy")
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -42,7 +34,6 @@ texture = ExtResource("2_jhjs2")
 stretch_mode = 5
 
 [node name="Tip" type="TextureRect" parent="Base" unique_id=1115729381]
-material = SubResource("ShaderMaterial_xq8jp")
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
