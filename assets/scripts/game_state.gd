@@ -2,7 +2,8 @@ class_name GameState
 extends Resource
 
 const STATE_NAME : String = "GameState"
-const FILE_PATH = "res://scripts/game_state.gd"
+const FILE_PATH = "res://assets/scripts/game_state.gd"
+#const FILE_PATH = "res://assets/scripts/game_state.gd"
 
 @export var level_states : Dictionary = {}
 @export var current_level_path : String
