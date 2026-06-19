@@ -1,0 +1,1 @@
+folder for assets, everything that is not scenes and the art folder

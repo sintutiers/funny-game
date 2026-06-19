@@ -7,10 +7,16 @@
 export.cfg
 export_credentials.cfg
 
-# Imported translations (automatically generated from CSV files)
+# translations (automatically generated from CSV files)
 *.translation
 
 # Mono-specific ignores
 .mono/
 data_*/
 mono_crash.*.json
+
+# obsidian stuff
+content/.obsidian/workspace.json
+.obsidian/cache/
+.obsidian/workspace.json
+.obsidian/updates.json

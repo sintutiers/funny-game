@@ -1,0 +1,26 @@
+{
+  "dualConfigs": true,
+  "showConsoleLog": false,
+  "desktop": {
+    "shortDelaySeconds": 5,
+    "longDelaySeconds": 15,
+    "delayBetweenPlugins": 40,
+    "defaultStartupType": null,
+    "showDescriptions": true,
+    "enableDependencies": false,
+    "plugins": {
+      "better-markdown-links": {
+        "startupType": "instant"
+      },
+      "consistent-attachments-and-links": {
+        "startupType": "instant"
+      },
+      "obsidian-excalidraw-plugin": {
+        "startupType": "disabled"
+      },
+      "external-rename-handler": {
+        "startupType": "instant"
+      }
+    }
+  }
+}
