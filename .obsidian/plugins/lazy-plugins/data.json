@@ -20,6 +20,15 @@
       },
       "external-rename-handler": {
         "startupType": "instant"
+      },
+      "obsidian-linter": {
+        "startupType": "instant"
+      },
+      "settings-search": {
+        "startupType": "instant"
+      },
+      "smart-rename": {
+        "startupType": "instant"
       }
     }
   }
