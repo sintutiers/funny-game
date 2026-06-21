@@ -163,7 +163,7 @@ texture = ExtResource("17_60vv4")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 physics_interpolation_mode = 1
 top_level = true
-offset = Vector2(-1.6306248, -2.2804964)
+offset = Vector2(-0.8630083, -2.4967685)
 zoom = Vector2(1.25, 1.25)
 editor_draw_limits = true
 
@@ -179,7 +179,6 @@ wall_vertical_a = NodePath("../../../background/walls/V1")
 wall_vertical_b = NodePath("../../../background/walls/V2")
 wall_horizontal_a = NodePath("../../../background/walls/H1")
 wall_horizontal_b = NodePath("../../../background/walls/H2")
-teleport_margin = null
 
 [node name="Parallax2D" type="Parallax2D" parent="main character/ParallaxLayer" parent_id_path=PackedInt32Array(621235887, 792501613) index="0" unique_id=2003550420]
 scale = Vector2(4, 4)

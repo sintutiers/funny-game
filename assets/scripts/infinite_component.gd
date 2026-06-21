@@ -140,4 +140,10 @@ func _transform_rect(xform: Transform2D, local_rect: Rect2) -> Rect2:
 	var corners: Array[Vector2] = [
 		local_rect.position,
 		local_rect.position + Vector2(local_rect.size.x, 0.0),
-		local_rect.positio
+		local_rect.position + Vector2(0.0, local_rect.size.y),
+		local_rect.position + local_rect.size,
+	]
+	var result: Rect2 = Rect2(xform * corners[0], Vector2.ZERO)
+	for c: Vector2 in corners:
+		result = result.expand(xform * c)
+	return result
