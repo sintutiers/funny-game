@@ -162,7 +162,8 @@ texture = ExtResource("17_60vv4")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 physics_interpolation_mode = 1
-offset = Vector2(1.1979156, 0.22660756)
+top_level = true
+offset = Vector2(-1.6306248, -2.2804964)
 zoom = Vector2(1.25, 1.25)
 editor_draw_limits = true
 
@@ -172,6 +173,13 @@ process_physics_priority = 300
 script = ExtResource("2_og2q4")
 
 [node name="main character" parent="." unique_id=621235887 instance=ExtResource("17_rwdi6")]
+
+[node name="InfiniteComponent" parent="main character/PlayerBody" parent_id_path=PackedInt32Array(621235887, 565934814) index="6" unique_id=470563039 node_paths=PackedStringArray("wall_vertical_a", "wall_vertical_b", "wall_horizontal_a", "wall_horizontal_b")]
+wall_vertical_a = NodePath("../../../background/walls/V1")
+wall_vertical_b = NodePath("../../../background/walls/V2")
+wall_horizontal_a = NodePath("../../../background/walls/H1")
+wall_horizontal_b = NodePath("../../../background/walls/H2")
+teleport_margin = null
 
 [node name="Parallax2D" type="Parallax2D" parent="main character/ParallaxLayer" parent_id_path=PackedInt32Array(621235887, 792501613) index="0" unique_id=2003550420]
 scale = Vector2(4, 4)
