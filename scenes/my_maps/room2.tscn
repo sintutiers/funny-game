@@ -5,7 +5,7 @@
 [ext_resource type="Script" uid="uid://b83wx8f1aq2t8" path="res://assets/scripts/Interactable.gd" id="6_rsvv2"]
 [ext_resource type="Texture2D" uid="uid://de0lbndqydfuc" path="res://The Amazing Art Folder/sun.png" id="6_xadts"]
 [ext_resource type="Texture2D" uid="uid://bgx1slavir63w" path="res://The Amazing Art Folder/bed.png" id="7_g3f5w"]
-[ext_resource type="Script" uid="uid://1cjmfi5n1mvs" path="res://assets/scripts/DoorComponent.gd" id="8_2nenc"]
+[ext_resource type="Script" uid="uid://1cjmfi5n1mvs" path="res://assets/scripts/door_component.gd" id="8_2nenc"]
 [ext_resource type="Texture2D" uid="uid://cqiuyacsfr7cw" path="res://The Amazing Art Folder/door1.png" id="9_88ddt"]
 [ext_resource type="Script" uid="uid://busd3yfk5p1mx" path="res://addons/godot-rapier2d/custom_nodes/rapier_static_body_2d.gd" id="10_o6thl"]
 [ext_resource type="Texture2D" uid="uid://46kr7ggre6pd" path="res://The Amazing Art Folder/black2.png" id="11_2nenc"]
@@ -173,7 +173,7 @@ next_scene = "uid://djkihai5rc1e3"
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 physics_interpolation_mode = 1
 top_level = true
-offset = Vector2(-0.028276946, 0.0075925514)
+offset = Vector2(5.6579876, 3.4519813)
 zoom = Vector2(1.1, 1.1)
 editor_draw_limits = true
 
