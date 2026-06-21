@@ -79,10 +79,10 @@ popup/item_1/icon = SubResource("DPITexture_nkf6h")
 popup/item_1/id = 101
 popup/item_2/id = -1
 popup/item_2/separator = true
-popup/item_3/text = "res://assets/dialogue stuff/bed1placeholder.dialogue"
+popup/item_3/text = "res://room3workspace.dialogue"
 popup/item_3/icon = SubResource("DPITexture_nkf6h")
 popup/item_3/id = 3
-popup/item_4/text = "res://assets/dialogue stuff/untitled.dialogue"
+popup/item_4/text = "res://assets/dialogue stuff/bed1placeholder.dialogue"
 popup/item_4/icon = SubResource("DPITexture_nkf6h")
 popup/item_4/id = 4
 popup/item_5/text = "res://assets/dialogue stuff/bed1placeholder.dialogue"
@@ -281,15 +281,11 @@ theme_override_colors/font_color = Color(1, 1, 1, 0.75)
 theme_override_colors/background_color = Color(0.103039995, 0.103039995, 0.103039995, 1)
 theme_override_colors/current_line_color = Color(1, 1, 1, 0.07)
 theme_override_fonts/font = ExtResource("7_y6rqu")
-theme_override_font_sizes/font_size = 15
+theme_override_font_sizes/font_size = 16
 theme_override_colors/bookmark_color = Color(1, 0.333333, 0.333333, 1)
 text = "~ start
-Nathan: [[Hi|Hello|Howdy|Wazup|salutations]]. 
-Nathan: you wanna GOON????
-- yes
-	Nathan: LETS GOOOO!!!
-- no
-	Nathan: FUCKING PUSSY
+#Nathan: [[Hi|Hello|Howdy|Wazup|salutations]]. 
+You: an old workspace
 => END"
 scroll_smooth = true
 syntax_highlighter = SubResource("SyntaxHighlighter_y6rqu")
@@ -348,20 +344,20 @@ text = "Example projects..."
 
 [node name="NewDialog" type="FileDialog" parent="." unique_id=458925087]
 size = Vector2i(900, 750)
-min_size = Vector2i(600, 500)
+min_size = Vector2i(660, 550)
 dialog_hide_on_ok = true
 filters = PackedStringArray("*.dialogue ; Dialogue")
 
 [node name="SaveDialog" type="FileDialog" parent="." unique_id=325906832]
 size = Vector2i(900, 750)
-min_size = Vector2i(600, 500)
+min_size = Vector2i(660, 550)
 dialog_hide_on_ok = true
 filters = PackedStringArray("*.dialogue ; Dialogue")
 
 [node name="OpenDialog" type="FileDialog" parent="." unique_id=1252768767]
 title = "Open a File"
 size = Vector2i(900, 750)
-min_size = Vector2i(600, 500)
+min_size = Vector2i(660, 550)
 ok_button_text = "Open"
 dialog_hide_on_ok = true
 file_mode = 0
@@ -370,19 +366,19 @@ filters = PackedStringArray("*.dialogue ; Dialogue")
 [node name="QuickOpenDialog" type="ConfirmationDialog" parent="." unique_id=254740052]
 title = "Quick open"
 size = Vector2i(600, 900)
-min_size = Vector2i(400, 600)
+min_size = Vector2i(440, 660)
 ok_button_text = "Open"
 
 [node name="QuickOpenFilesList" parent="QuickOpenDialog" unique_id=1813408245 instance=ExtResource("2_npj2k")]
 
 [node name="ExportDialog" type="FileDialog" parent="." unique_id=2035775999]
 size = Vector2i(900, 750)
-min_size = Vector2i(600, 500)
+min_size = Vector2i(660, 550)
 
 [node name="ImportDialog" type="FileDialog" parent="." unique_id=1326083376]
 title = "Open a File"
 size = Vector2i(900, 750)
-min_size = Vector2i(600, 500)
+min_size = Vector2i(660, 550)
 ok_button_text = "Open"
 file_mode = 0
 filters = PackedStringArray("*.csv ; Translation CSV")

@@ -5,7 +5,7 @@
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_la2jv"]
 content_margin_left = 0.0
 content_margin_top = 0.0
-content_margin_right = 1.0
+content_margin_right = 1.1
 content_margin_bottom = 0.0
 bg_color = Color(0.07888999, 0.07888999, 0.07888999, 1)
 corner_radius_top_left = 4
