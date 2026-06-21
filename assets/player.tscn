@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://uqnuhcrw12d0"]
 
-[ext_resource type="Script" uid="uid://ci67pm7335ijj" path="res://assets/scripts/player.gd" id="1_af0p7"]
 [ext_resource type="Script" uid="uid://c5qpdmvd63ugb" path="res://addons/godot-rapier2d/custom_nodes/rapier_character_body_2d.gd" id="2_wji7r"]
 [ext_resource type="PackedScene" uid="uid://dmr0fcamx7t56" path="res://addons/virtual_joystick/virtual_joystick_scene.tscn" id="3_vtqb1"]
 [ext_resource type="Texture2D" uid="uid://cpctxwhf7axcf" path="res://The Amazing Art Folder/prototype with animations.png" id="3_wji7r"]
 [ext_resource type="Script" uid="uid://cburu6b4ckehs" path="res://addons/godot-rapier2d/custom_nodes/rapier_area_2d.gd" id="4_mxi64"]
 [ext_resource type="Texture2D" uid="uid://mkihoskon4ea" path="res://The Amazing Art Folder/being1.png" id="4_nsdob"]
+[ext_resource type="Script" uid="uid://cs0gkb6qc0b1q" path="res://assets/scripts/MovementComponent.gd" id="5_yceh7"]
+[ext_resource type="Script" uid="uid://ca51k1w1oyhen" path="res://assets/scripts/AnimationComponent.gd" id="6_uovkd"]
+[ext_resource type="Script" uid="uid://wov8nmy4xjec" path="res://assets/scripts/InteractionComponent.gd" id="7_jeibo"]
 [ext_resource type="Shader" uid="uid://2k7xjk5ryfw1" path="res://assets/themes/touch.gdshader" id="7_yceh7"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vtqb1"]
@@ -121,14 +123,8 @@ shader_parameter/aberration = 0.425
 shader_parameter/width = 0.04
 shader_parameter/feather = 0.135
 
-[node name="PlayerRoot" type="Node2D" unique_id=621235887 node_paths=PackedStringArray("player_body")]
+[node name="PlayerRoot" type="Node2D" unique_id=621235887]
 light_mask = 3
-script = ExtResource("1_af0p7")
-player_body = NodePath("PlayerBody")
-
-[node name="ParallaxLayer" type="CanvasLayer" parent="." unique_id=792501613]
-layer = -2
-follow_viewport_enabled = true
 
 [node name="PlayerBody" type="CharacterBody2D" parent="." unique_id=565934814]
 collision_mask = 3
@@ -151,6 +147,22 @@ metadata/_custom_type_script = "uid://cburu6b4ckehs"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerBody/InteractAreaPlayer" unique_id=857953603]
 shape = SubResource("RectangleShape2D_rug40")
+
+[node name="MovementComponent" type="Node" parent="PlayerBody" unique_id=1210537464]
+unique_name_in_owner = true
+script = ExtResource("5_yceh7")
+
+[node name="AnimationComponent" type="Node" parent="PlayerBody" unique_id=1249936870]
+unique_name_in_owner = true
+script = ExtResource("6_uovkd")
+
+[node name="InteractionComponent" type="Node" parent="PlayerBody" unique_id=1541205497]
+unique_name_in_owner = true
+script = ExtResource("7_jeibo")
+
+[node name="ParallaxLayer" type="CanvasLayer" parent="." unique_id=792501613]
+layer = -2
+follow_viewport_enabled = true
 
 [node name="InterfaceLayer" type="CanvasLayer" parent="." unique_id=1750424812]
 

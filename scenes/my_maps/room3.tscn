@@ -1,14 +1,16 @@
 [gd_scene format=3 uid="uid://djkihai5rc1e3"]
 
-[ext_resource type="Script" uid="uid://5m8ydesg8b27" path="res://scenes/my_maps/room3.gd" id="1_60vv4"]
 [ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="2_og2q4"]
 [ext_resource type="Texture2D" uid="uid://bso4w46je4cwt" path="res://The Amazing Art Folder/background duke.png" id="3_6l254"]
+[ext_resource type="Script" uid="uid://1cjmfi5n1mvs" path="res://assets/scripts/DoorComponent.gd" id="3_60vv4"]
 [ext_resource type="Script" uid="uid://bhexx6mj1xv3q" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="3_iajhm"]
 [ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="4_1e5pv"]
-[ext_resource type="Script" uid="uid://b83wx8f1aq2t8" path="res://assets/scripts/interactable.gd" id="4_60vv4"]
 [ext_resource type="Script" uid="uid://dimvdouy8g0sv" path="res://addons/phantom_camera/scripts/resources/phantom_camera_noise_2d.gd" id="5_er0vt"]
+[ext_resource type="Script" uid="uid://b83wx8f1aq2t8" path="res://assets/scripts/Interactable.gd" id="10_er0vt"]
 [ext_resource type="Texture2D" uid="uid://vs5x4ofyxkvv" path="res://The Amazing Art Folder/table2 duke.png" id="11_6l254"]
+[ext_resource type="Script" uid="uid://bkmkeenkt520m" path="res://assets/scripts/DialogueComponent.gd" id="11_og2q4"]
 [ext_resource type="Texture2D" uid="uid://dwg61bpcy6uv3" path="res://The Amazing Art Folder/table1 duke.png" id="12_60vv4"]
+[ext_resource type="Resource" uid="uid://dbgelmiwsp8o6" path="res://room3workspace.dialogue" id="12_iajhm"]
 [ext_resource type="Texture2D" uid="uid://d2h1r4aupyl0k" path="res://The Amazing Art Folder/cabinet1 duke.png" id="13_og2q4"]
 [ext_resource type="Texture2D" uid="uid://55h2f6poebdk" path="res://The Amazing Art Folder/Burau.png" id="14_iajhm"]
 [ext_resource type="Texture2D" uid="uid://dc3j0bfl5q8f7" path="res://The Amazing Art Folder/cabinet2 duke.png" id="15_1e5pv"]
@@ -53,8 +55,6 @@ metadata/_custom_type_script = "uid://dimvdouy8g0sv"
 
 [node name="weird office" type="Node2D" unique_id=70873681]
 scale = Vector2(3.25, 3.25)
-script = ExtResource("1_60vv4")
-next_scene = "uid://4lj1r0wet3rc"
 
 [node name="background" type="CanvasLayer" parent="." unique_id=919863972]
 layer = -1
@@ -64,7 +64,7 @@ follow_viewport_enabled = true
 unique_name_in_owner = true
 position = Vector2(365, -219)
 scale = Vector2(3.65, 3.65)
-script = ExtResource("4_60vv4")
+script = ExtResource("10_er0vt")
 metadata/_custom_type_script = "uid://cburu6b4ckehs"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="background/Door" unique_id=619086787]
@@ -73,6 +73,10 @@ sprite_frames = SubResource("SpriteFrames_iwdi6")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="background/Door" unique_id=2089601538]
 position = Vector2(0, -3.835617)
 shape = SubResource("RectangleShape2D_iwdi6")
+
+[node name="DoorComponent" type="Node" parent="background/Door" unique_id=771415327]
+script = ExtResource("3_60vv4")
+next_scene = "uid://4lj1r0wet3rc"
 
 [node name="walls" type="StaticBody2D" parent="background" unique_id=1253343983 groups=["walls"]]
 scale = Vector2(7.5, 7.5)
@@ -120,24 +124,32 @@ position = Vector2(456, 243)
 scale = Vector2(3.65, 3.65)
 texture = ExtResource("15_1e5pv")
 
+[node name="chair" type="Area2D" parent="background" unique_id=1316380514 groups=["interactable"]]
+unique_name_in_owner = true
+position = Vector2(-515, 168.00002)
+rotation = 1.5707964
+scale = Vector2(3.65, 3.65)
+script = ExtResource("10_er0vt")
+
+[node name="Chair2Duke" type="Sprite2D" parent="background/chair" unique_id=1868891765]
+position = Vector2(3.5616226, -286.8493)
+rotation = -1.5707964
+texture = ExtResource("16_er0vt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="background/chair" unique_id=1784216189]
+position = Vector2(1.095871, -286.57532)
+rotation = -1.5707964
+shape = SubResource("CapsuleShape2D_60vv4")
+
+[node name="Dialogue" type="Node" parent="background/chair" unique_id=375029260]
+script = ExtResource("11_og2q4")
+dialogue_resource = ExtResource("12_iajhm")
+
 [node name="Cabinet2Duke" type="Sprite2D" parent="background" unique_id=612121133]
 position = Vector2(-515, 168.00002)
 rotation = 1.5707964
 scale = Vector2(3.65, 3.65)
 texture = ExtResource("15_1e5pv")
-
-[node name="Chair1" type="StaticBody2D" parent="background" unique_id=1866986872]
-position = Vector2(532, 181)
-scale = Vector2(3.65, 3.65)
-script = ExtResource("18_og2q4")
-metadata/_custom_type_script = "uid://busd3yfk5p1mx"
-
-[node name="Chair2Duke" type="Sprite2D" parent="background/Chair1" unique_id=1868891765]
-texture = ExtResource("16_er0vt")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="background/Chair1" unique_id=1784216189]
-position = Vector2(-0.27397257, -2.465753)
-shape = SubResource("CapsuleShape2D_60vv4")
 
 [node name="Chair1Duke" type="Sprite2D" parent="background" unique_id=261765485]
 position = Vector2(-415, 243)
@@ -147,7 +159,7 @@ texture = ExtResource("17_60vv4")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 physics_interpolation_mode = 1
 top_level = true
-offset = Vector2(0.81913215, 1.010164)
+offset = Vector2(-3.1808453, -3.0941334)
 zoom = Vector2(1.25, 1.25)
 editor_draw_limits = true
 
