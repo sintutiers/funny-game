@@ -9,7 +9,6 @@
 [ext_resource type="Script" uid="uid://ca51k1w1oyhen" path="res://assets/scripts/animation_component.gd" id="6_uovkd"]
 [ext_resource type="Script" uid="uid://wov8nmy4xjec" path="res://assets/scripts/interaction_component.gd" id="7_jeibo"]
 [ext_resource type="Shader" uid="uid://2k7xjk5ryfw1" path="res://assets/themes/touch.gdshader" id="7_yceh7"]
-[ext_resource type="Script" uid="uid://csnxpxd7w5jv2" path="res://assets/scripts/infinite_component.gd" id="8_cn88q"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vtqb1"]
 height = 26.0
@@ -160,10 +159,6 @@ script = ExtResource("6_uovkd")
 [node name="InteractionComponent" type="Node" parent="PlayerBody" unique_id=1541205497]
 unique_name_in_owner = true
 script = ExtResource("7_jeibo")
-
-[node name="InfiniteComponent" type="Node" parent="PlayerBody" unique_id=470563039]
-unique_name_in_owner = true
-script = ExtResource("8_cn88q")
 
 [node name="ParallaxLayer" type="CanvasLayer" parent="." unique_id=792501613]
 layer = -2

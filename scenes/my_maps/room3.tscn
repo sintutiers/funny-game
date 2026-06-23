@@ -19,6 +19,7 @@
 [ext_resource type="Texture2D" uid="uid://cf47txoyf0iau" path="res://The Amazing Art Folder/chair1 duke.png" id="17_60vv4"]
 [ext_resource type="PackedScene" uid="uid://uqnuhcrw12d0" path="res://assets/player.tscn" id="17_rwdi6"]
 [ext_resource type="Script" uid="uid://busd3yfk5p1mx" path="res://addons/godot-rapier2d/custom_nodes/rapier_static_body_2d.gd" id="18_og2q4"]
+[ext_resource type="Script" uid="uid://csnxpxd7w5jv2" path="res://assets/scripts/infinite_component.gd" id="20_1e5pv"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_iwdi6"]
 animations = [{
@@ -163,7 +164,7 @@ texture = ExtResource("17_60vv4")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 physics_interpolation_mode = 1
 top_level = true
-offset = Vector2(-0.8630083, -2.4967685)
+offset = Vector2(1.7174892, 1.3500764)
 zoom = Vector2(1.25, 1.25)
 editor_draw_limits = true
 
@@ -173,12 +174,6 @@ process_physics_priority = 300
 script = ExtResource("2_og2q4")
 
 [node name="main character" parent="." unique_id=621235887 instance=ExtResource("17_rwdi6")]
-
-[node name="InfiniteComponent" parent="main character/PlayerBody" parent_id_path=PackedInt32Array(621235887, 565934814) index="6" unique_id=470563039 node_paths=PackedStringArray("wall_vertical_a", "wall_vertical_b", "wall_horizontal_a", "wall_horizontal_b")]
-wall_vertical_a = NodePath("../../../background/walls/V1")
-wall_vertical_b = NodePath("../../../background/walls/V2")
-wall_horizontal_a = NodePath("../../../background/walls/H1")
-wall_horizontal_b = NodePath("../../../background/walls/H2")
 
 [node name="Parallax2D" type="Parallax2D" parent="main character/ParallaxLayer" parent_id_path=PackedInt32Array(621235887, 792501613) index="0" unique_id=2003550420]
 scale = Vector2(4, 4)
@@ -200,8 +195,16 @@ follow_mode = 2
 follow_target = NodePath("../main character/PlayerBody")
 zoom = Vector2(1.25, 1.25)
 tween_resource = SubResource("Resource_gw3rf")
-follow_damping = true
 draw_limits = true
 noise = SubResource("Resource_yju58")
+
+[node name="InfiniteComponent" type="Node" parent="." unique_id=335953216 node_paths=PackedStringArray("player", "wall_left", "wall_right", "wall_top", "wall_bottom")]
+unique_name_in_owner = true
+script = ExtResource("20_1e5pv")
+player = NodePath("../main character/PlayerBody")
+wall_left = NodePath("../background/walls/V1")
+wall_right = NodePath("../background/walls/V2")
+wall_top = NodePath("../background/walls/H1")
+wall_bottom = NodePath("../background/walls/H2")
 
 [editable path="main character"]

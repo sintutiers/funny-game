@@ -20,7 +20,6 @@ var is_interacting: bool = false
 
 @onready var animation: AnimationComponent = %AnimationComponent
 @onready var body: CharacterBody2D = get_parent()
-@onready var infinite_component: InfiniteComponent = %InfiniteComponent
 
 
 func _physics_process(delta: float) -> void:
@@ -42,7 +41,6 @@ func _physics_process(delta: float) -> void:
 			animation.play_idle()
 
 	body.move_and_slide()
-	infinite_component.check_wall_teleport()
 
 
 func set_interacting(value: bool) -> void:
