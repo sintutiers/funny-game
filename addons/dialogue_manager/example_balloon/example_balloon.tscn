@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://d1wt4ma6055l8" path="res://addons/dialogue_manager/example_balloon/example_balloon.gd" id="1_36de5"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_a8ve6"]
+[ext_resource type="Resource" uid="uid://c57034lwi2g3h" path="res://assets/dialogue stuff/bed1placeholder.dialogue" id="2_nlsx6"]
 [ext_resource type="Script" uid="uid://bb52rsfwhkxbn" path="res://addons/dialogue_manager/dialogue_responses_menu.gd" id="3_72ixx"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_spyqn"]
@@ -102,6 +103,8 @@ _data = {
 [node name="ExampleBalloon" type="CanvasLayer" unique_id=1434168376]
 layer = 100
 script = ExtResource("1_36de5")
+dialogue_resource = ExtResource("2_nlsx6")
+start_from_title = "start"
 
 [node name="Balloon" type="Control" parent="." unique_id=359403728]
 unique_name_in_owner = true

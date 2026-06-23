@@ -135,6 +135,7 @@ unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
 text = "Dialogue example..."
+skip_action = &"ui_cancel"
 
 [node name="Responses" type="MarginContainer" parent="Balloon" unique_id=1696608449]
 layout_mode = 1

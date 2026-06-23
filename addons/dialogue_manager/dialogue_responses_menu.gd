@@ -26,6 +26,12 @@ signal response_selected(response: Control)
 ## Hide any responses where [code]is_allowed[/code] is false
 @export var hide_failed_responses: bool = false
 
+#fuck that inbuild shit
+@export var nav_up: StringName = &"up"
+@export var nav_down: StringName = &"down"
+@export var nav_left: StringName = &"left"
+@export var nav_right: StringName = &"right"
+
 ## The list of dialogue responses.
 var responses: Array = []:
 	set(value):
@@ -71,26 +77,14 @@ func configure_focus() -> void:
 
 		item.focus_mode = Control.FOCUS_ALL
 
+		# Disable the built‑in focus neighbours (they only respond to ui_* actions).
+		# Navigation is now handled by _input using the custom actions.
 		item.focus_neighbor_left = item.get_path()
 		item.focus_neighbor_right = item.get_path()
-
-		if i == 0:
-			item.focus_neighbor_top = item.get_path()
-			item.focus_neighbor_left = item.get_path()
-			item.focus_previous = item.get_path()
-		else:
-			item.focus_neighbor_top = items[i - 1].get_path()
-			item.focus_neighbor_left = items[i - 1].get_path()
-			item.focus_previous = items[i - 1].get_path()
-
-		if i == items.size() - 1:
-			item.focus_neighbor_bottom = item.get_path()
-			item.focus_neighbor_right = item.get_path()
-			item.focus_next = item.get_path()
-		else:
-			item.focus_neighbor_bottom = items[i + 1].get_path()
-			item.focus_neighbor_right = items[i + 1].get_path()
-			item.focus_next = items[i + 1].get_path()
+		item.focus_neighbor_top = item.get_path()
+		item.focus_neighbor_bottom = item.get_path()
+		item.focus_previous = item.get_path()
+		item.focus_next = item.get_path()
 
 		item.mouse_entered.connect(_on_response_mouse_entered.bind(item))
 		item.gui_input.connect(_on_response_gui_input.bind(item, item.get_meta("response")))
@@ -170,9 +164,36 @@ func _on_response_gui_input(event: InputEvent, item: Control, response) -> void:
 	if event is InputEventMouseButton and event.is_pressed() and event.button_index == MOUSE_BUTTON_LEFT:
 		get_viewport().set_input_as_handled()
 		response_selected.emit(response)
-	elif event.is_action_pressed(&"ui_accept" if next_action.is_empty() else next_action) and item in get_menu_items():
+	elif event.is_action_pressed(&"interact" if next_action.is_empty() else next_action) and item in get_menu_items():
 		get_viewport().set_input_as_handled()
 		response_selected.emit(response)
+
+
+func _input(event: InputEvent) -> void:
+	if not visible:
+		return
+
+	var items = get_menu_items()
+	if items.is_empty():
+		return
+
+	var focused = get_viewport().gui_get_focus_owner()
+	if not focused in items:
+		return
+
+	var idx = items.find(focused)
+	var new_idx = idx
+
+	if event.is_action_pressed(nav_up) or event.is_action_pressed(nav_left):
+		new_idx = max(0, idx - 1)
+	elif event.is_action_pressed(nav_down) or event.is_action_pressed(nav_right):
+		new_idx = min(items.size() - 1, idx + 1)
+	else:
+		return
+
+	if new_idx != idx:
+		get_viewport().set_input_as_handled()
+		items[new_idx].grab_focus()
 
 
 #endregion
