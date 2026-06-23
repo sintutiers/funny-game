@@ -164,7 +164,7 @@ texture = ExtResource("17_60vv4")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 physics_interpolation_mode = 1
 top_level = true
-offset = Vector2(1.7174892, 1.3500764)
+offset = Vector2(-1.0321091, -0.96760637)
 zoom = Vector2(1.25, 1.25)
 editor_draw_limits = true
 
@@ -175,13 +175,13 @@ script = ExtResource("2_og2q4")
 
 [node name="main character" parent="." unique_id=621235887 instance=ExtResource("17_rwdi6")]
 
-[node name="Parallax2D" type="Parallax2D" parent="main character/ParallaxLayer" parent_id_path=PackedInt32Array(621235887, 792501613) index="0" unique_id=2003550420]
+[node name="Parallax2D" type="Parallax2D" parent="main character/PlayerBody/ParallaxLayer" parent_id_path=PackedInt32Array(621235887, 792501613) index="0" unique_id=2003550420]
 scale = Vector2(4, 4)
 repeat_size = Vector2(32, 32)
 repeat_times = 19
 follow_viewport = false
 
-[node name="Blue" type="Sprite2D" parent="main character/ParallaxLayer/Parallax2D" unique_id=2145853339]
+[node name="Blue" type="Sprite2D" parent="main character/PlayerBody/ParallaxLayer/Parallax2D" unique_id=2145853339]
 texture = ExtResource("3_6l254")
 
 [node name="Virtual joystick left" parent="main character/InterfaceLayer" parent_id_path=PackedInt32Array(621235887, 1750424812) index="0" unique_id=1828221587]

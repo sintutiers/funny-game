@@ -131,6 +131,10 @@ collision_mask = 3
 script = ExtResource("2_wji7r")
 metadata/_custom_type_script = "uid://c5qpdmvd63ugb"
 
+[node name="ParallaxLayer" type="CanvasLayer" parent="PlayerBody" unique_id=792501613]
+layer = -2
+follow_viewport_enabled = true
+
 [node name="PlayerCollision" type="CollisionShape2D" parent="PlayerBody" unique_id=907190697]
 position = Vector2(0, 4)
 shape = SubResource("CapsuleShape2D_vtqb1")
@@ -159,10 +163,6 @@ script = ExtResource("6_uovkd")
 [node name="InteractionComponent" type="Node" parent="PlayerBody" unique_id=1541205497]
 unique_name_in_owner = true
 script = ExtResource("7_jeibo")
-
-[node name="ParallaxLayer" type="CanvasLayer" parent="." unique_id=792501613]
-layer = -2
-follow_viewport_enabled = true
 
 [node name="InterfaceLayer" type="CanvasLayer" parent="." unique_id=1750424812]
 

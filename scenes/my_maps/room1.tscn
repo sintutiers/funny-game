@@ -147,7 +147,7 @@ next_scene = "uid://b80chnt43vfab"
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547 groups=["interactable"]]
 physics_interpolation_mode = 1
 top_level = true
-offset = Vector2(3.3778982, 4.7763042)
+offset = Vector2(-1.195968, -1.4640912)
 zoom = Vector2(1.1, 1.1)
 editor_draw_limits = true
 
@@ -158,13 +158,13 @@ script = ExtResource("4_hsdi0")
 
 [node name="main character" parent="." unique_id=621235887 instance=ExtResource("3_fw5o7")]
 
-[node name="Parallax2D" type="Parallax2D" parent="main character/ParallaxLayer" parent_id_path=PackedInt32Array(621235887, 792501613) index="0" unique_id=2003550420]
+[node name="Parallax2D" type="Parallax2D" parent="main character/PlayerBody/ParallaxLayer" parent_id_path=PackedInt32Array(621235887, 792501613) index="0" unique_id=2003550420]
 scale = Vector2(3.75, 3.75)
 repeat_size = Vector2(32, 32)
 repeat_times = 19
 follow_viewport = false
 
-[node name="Black" type="Sprite2D" parent="main character/ParallaxLayer/Parallax2D" unique_id=2145853339]
+[node name="Black" type="Sprite2D" parent="main character/PlayerBody/ParallaxLayer/Parallax2D" unique_id=2145853339]
 material = SubResource("ShaderMaterial_vpwdg")
 texture = ExtResource("2_fw5o7")
 

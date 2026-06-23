@@ -173,7 +173,7 @@ next_scene = "uid://djkihai5rc1e3"
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 physics_interpolation_mode = 1
 top_level = true
-offset = Vector2(5.6579876, 3.4519813)
+offset = Vector2(-2.9952455, -2.2878015)
 zoom = Vector2(1.1, 1.1)
 editor_draw_limits = true
 
@@ -184,13 +184,13 @@ script = ExtResource("11_agv1b")
 
 [node name="main character" parent="." unique_id=621235887 instance=ExtResource("12_1gucp")]
 
-[node name="Parallax2D" type="Parallax2D" parent="main character/ParallaxLayer" parent_id_path=PackedInt32Array(621235887, 792501613) index="0" unique_id=1867869270]
+[node name="Parallax2D" type="Parallax2D" parent="main character/PlayerBody/ParallaxLayer" parent_id_path=PackedInt32Array(621235887, 792501613) index="0" unique_id=1867869270]
 scale = Vector2(3.5, 3.5)
 repeat_size = Vector2(32, 32)
 repeat_times = 19
 follow_viewport = false
 
-[node name="Black2" type="Sprite2D" parent="main character/ParallaxLayer/Parallax2D" unique_id=772387503]
+[node name="Black2" type="Sprite2D" parent="main character/PlayerBody/ParallaxLayer/Parallax2D" unique_id=772387503]
 texture = ExtResource("11_2nenc")
 
 [node name="PhantomCamera2D" type="Node2D" parent="." unique_id=1973500547 node_paths=PackedStringArray("follow_target")]
