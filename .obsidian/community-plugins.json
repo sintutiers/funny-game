@@ -5,5 +5,6 @@
   "lazy-plugins",
   "obsidian-linter",
   "smart-rename",
-  "settings-search"
+  "settings-search",
+  "obsidian-excalidraw-plugin"
 ]
