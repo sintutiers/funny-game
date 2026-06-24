@@ -1,15 +1,15 @@
 [DAT]
 
 PTH={
-"res://The Amazing Art Folder/": Resource("uid://be302idwscoj5", "res://addons/fancy_folder_icons/user/0.png"),
-"res://The Amazing Art Folder/raw/": Resource("uid://ccewpjx8xdhte", "res://addons/fancy_folder_icons/user/1.png"),
-"res://addons/": Resource("uid://ds5hjoymavry7", "res://addons/fancy_folder_icons/user/2.png"),
-"res://assets/": Resource("uid://hfkj78sni305", "res://addons/fancy_folder_icons/user/3.png"),
-"res://assets/misc/kenney_input-prompts/": Resource("uid://bqfpnubdpctxv", "res://addons/fancy_folder_icons/user/4.png"),
-"res://assets/scripts": Resource("uid://curn8yibjmhon", "res://addons/fancy_folder_icons/user/scripts0.png"),
-"res://scenes/": Resource("uid://fum8ms1v6ts6", "res://addons/fancy_folder_icons/user/5.png"),
-"res://scenes/menus/": Resource("uid://bpk2fxi4616fj", "res://addons/fancy_folder_icons/user/6.png"),
-"res://scenes/menus/credits/": Resource("uid://caqtx2wnl8wvb", "res://addons/fancy_folder_icons/user/7.png"),
-"res://scenes/menus/options_menu/": Resource("uid://h3rg3u345nh5", "res://addons/fancy_folder_icons/user/8.png"),
-"res://scenes/my_maps/": Resource("uid://lr1gysl72fi4", "res://addons/fancy_folder_icons/user/9.png")
+"res://The Amazing Art Folder/": Resource("uid://wc2jw2tw2ya4", "res://addons/fancy_folder_icons/user/10.png"),
+"res://The Amazing Art Folder/raw/": Resource("uid://dogrmosufuxl4", "res://addons/fancy_folder_icons/user/11.png"),
+"res://addons/": Resource("uid://ctub1obqsnoqy", "res://addons/fancy_folder_icons/user/12.png"),
+"res://assets/": Resource("uid://bcp8x77wco106", "res://addons/fancy_folder_icons/user/13.png"),
+"res://assets/misc/kenney_input-prompts/": Resource("uid://dxhbxauyotrhe", "res://addons/fancy_folder_icons/user/14.png"),
+"res://assets/scripts": Resource("uid://cooeuppwge4n2", "res://addons/fancy_folder_icons/user/scripts1.png"),
+"res://scenes/": Resource("uid://u5qy0m3j43d2", "res://addons/fancy_folder_icons/user/15.png"),
+"res://scenes/menus/": Resource("uid://b1hla382o83n1", "res://addons/fancy_folder_icons/user/16.png"),
+"res://scenes/menus/credits/": Resource("uid://cw728djepta7v", "res://addons/fancy_folder_icons/user/17.png"),
+"res://scenes/menus/options_menu/": Resource("uid://bnb7s5ncejhlj", "res://addons/fancy_folder_icons/user/18.png"),
+"res://scenes/my_maps/": Resource("uid://drqi6lly01nxg", "res://addons/fancy_folder_icons/user/19.png")
 }
