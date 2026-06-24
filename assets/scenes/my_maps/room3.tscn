@@ -146,7 +146,7 @@ texture = ExtResource("17_60vv4")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 physics_interpolation_mode = 1
 top_level = true
-offset = Vector2(2.6446776, 1.3474749)
+offset = Vector2(2.7801225, 1.9785744)
 zoom = Vector2(1.25, 1.25)
 editor_draw_limits = true
 
