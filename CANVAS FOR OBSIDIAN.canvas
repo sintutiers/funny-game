@@ -142,7 +142,7 @@
 		{"id":"9b7af1e83c2c3bcb","type":"text","text":"all rooms?","x":-4260,"y":-405,"width":250,"height":60},
 		{"id":"e27070a656c0c03c","type":"text","text":"you win!!!!!!!!\n(ending pending)","x":-4029,"y":-994,"width":250,"height":60},
 		{"id":"ad095f85a1599506","type":"text","text":"all rooms with secret?","x":-4252,"y":-197,"width":250,"height":60},
-		{"id":"173a71fc8756d116","type":"text","text":"secret ending with nexus\n(ending also pending)","x":-5149,"y":-1192,"width":250,"height":60},
+		{"id":"173a71fc8756d116","type":"text","text":"secret ending with nexus\n(we try to make something like the white desert)","x":-5149,"y":-1192,"width":250,"height":105},
 		{"id":"f643edbe1a67b9c9","type":"file","file":"Excalidraw/Drawing 2026-06-24 19.37.52.excalidraw.md","x":-4161,"y":498,"width":400,"height":400},
 		{"id":"1ea87e7cd088bc8c","type":"text","text":"grief","x":-5000,"y":-680,"width":250,"height":60},
 		{"id":"f2b718da29d72d99","x":-2880,"y":-480,"width":247,"height":80,"type":"text","text":"our big inspo games"},
