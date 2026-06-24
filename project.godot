@@ -33,7 +33,6 @@ buses/default_bus_layout="uid://ojvel7qrleuj"
 [autoload]
 
 PhantomCameraManager="*uid://duq6jhf6unyis"
-BetterTerrain="*uid://bfa68ymktrna3"
 DialogueManager="*uid://c3rodes2l3gxb"
 AppConfig="*uid://cjke6crjg14a0"
 SceneLoader="*uid://cbwmrnp0af35y"
@@ -74,7 +73,13 @@ movie_writer/disable_vsync=true
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/Todo_Manager/plugin.cfg", "res://addons/YouCanDoIt/plugin.cfg", "res://addons/better-terrain/plugin.cfg", "res://addons/debug_menu/plugin.cfg", "res://addons/dialogue_manager/plugin.cfg", "res://addons/fancy_folder_icons/plugin.cfg", "res://addons/godot_doctor/plugin.cfg", "res://addons/godotresourcecleaner/plugin.cfg", "res://addons/maaacks_game_template/plugin.cfg", "res://addons/phantom_camera/plugin.cfg", "res://addons/script-ide/plugin.cfg", "res://addons/virtual_joystick/plugin.cfg", "res://addons/your_buil/plugin.cfg")
+enabled=PackedStringArray("res://addons/debug_menu/plugin.cfg", "res://addons/dialogue_manager/plugin.cfg", "res://addons/godot_doctor/plugin.cfg", "res://addons/godotresourcecleaner/plugin.cfg", "res://addons/maaacks_game_template/plugin.cfg", "res://addons/phantom_camera/plugin.cfg", "res://addons/script-ide/plugin.cfg", "res://addons/virtual_joystick/plugin.cfg")
+
+[file_customization]
+
+folder_colors={
+"res://addons/": "gray"
+}
 
 [gui]
 
@@ -178,7 +183,7 @@ pointing/emulate_touch_from_mouse=true
 [internationalization]
 
 locale/translations=PackedStringArray("res://addons/maaacks_game_template/base/translations/menus_translations.en.translation", "res://addons/maaacks_game_template/base/translations/menus_translations.fr.translation")
-locale/translations_pot_files=PackedStringArray("res://assets/dialogue stuff/bed1placeholder.dialogue", "res://assets/dialogue stuff/red.dialogue", "res://assets/dialogue stuff/room3workspace.dialogue", "res://assets/dialogue stuff/white.dialogue")
+locale/translations_pot_files=PackedStringArray("res://assets/dialogue/bed1placeholder.dialogue", "res://assets/dialogue/red.dialogue", "res://assets/dialogue/room3workspace.dialogue", "res://assets/dialogue/white.dialogue")
 
 [maaacks_game_template]
 

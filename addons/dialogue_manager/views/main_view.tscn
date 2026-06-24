@@ -11,7 +11,7 @@
 [ext_resource type="FontFile" uid="uid://bdude2uqwyrt" path="res://assets/themes/font_file.tres" id="7_y6rqu"]
 [ext_resource type="Texture2D" uid="uid://n7scg3opx84w" path="res://addons/dialogue_manager/assets/banner.png" id="9_y6rqu"]
 
-[sub_resource type="DPITexture" id="DPITexture_nkf6h"]
+[sub_resource type="DPITexture" id="DPITexture_w0gko"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#ff5d5d\" d=\"M2 1v8.586l1.293-1.293a1 1 0 0 1 1.414 0L7 10.587l2.293-2.293a1 1 0 0 1 1.414 0L13 10.586l1-1V6H9V1H2zm8 0v4h4zm-6 9.414-2 2V15h12v-2.586l-.293.293a1 1 0 0 1-1.414 0L10 10.414l-2.293 2.293a1 1 0 0 1-1.414 0L4 10.414z\"/></svg>
 "
 
@@ -62,50 +62,59 @@ layout_mode = 2
 unique_name_in_owner = true
 layout_mode = 2
 tooltip_text = "Start a new file"
-icon = SubResource("DPITexture_nkf6h")
+icon = SubResource("DPITexture_w0gko")
 flat = true
 
 [node name="OpenButton" type="MenuButton" parent="Margin/Content/SidePanel/Toolbar" unique_id=880106178]
 unique_name_in_owner = true
 layout_mode = 2
 tooltip_text = "Open a file"
-icon = SubResource("DPITexture_nkf6h")
-item_count = 8
+icon = SubResource("DPITexture_w0gko")
+item_count = 11
 popup/item_0/text = "Open..."
-popup/item_0/icon = SubResource("DPITexture_nkf6h")
+popup/item_0/icon = SubResource("DPITexture_w0gko")
 popup/item_0/id = 100
 popup/item_1/text = "Quick open..."
-popup/item_1/icon = SubResource("DPITexture_nkf6h")
+popup/item_1/icon = SubResource("DPITexture_w0gko")
 popup/item_1/id = 101
 popup/item_2/id = -1
 popup/item_2/separator = true
-popup/item_3/text = "res://room3workspace.dialogue"
-popup/item_3/icon = SubResource("DPITexture_nkf6h")
+popup/item_3/text = "res://assets/dialogue/white.dialogue"
+popup/item_3/icon = SubResource("DPITexture_w0gko")
 popup/item_3/id = 3
-popup/item_4/text = "res://assets/dialogue stuff/bed1placeholder.dialogue"
-popup/item_4/icon = SubResource("DPITexture_nkf6h")
+popup/item_4/text = "res://assets/dialogue/room3workspace.dialogue"
+popup/item_4/icon = SubResource("DPITexture_w0gko")
 popup/item_4/id = 4
-popup/item_5/text = "res://assets/dialogue stuff/bed1placeholder.dialogue"
-popup/item_5/icon = SubResource("DPITexture_nkf6h")
+popup/item_5/text = "res://assets/dialogue/red.dialogue"
+popup/item_5/icon = SubResource("DPITexture_w0gko")
 popup/item_5/id = 5
-popup/item_6/id = -1
-popup/item_6/separator = true
-popup/item_7/text = "Clear recent files"
-popup/item_7/id = 102
+popup/item_6/text = "res://assets/dialogue/bed1placeholder.dialogue"
+popup/item_6/icon = SubResource("DPITexture_w0gko")
+popup/item_6/id = 6
+popup/item_7/text = "res://assets/dialogue/white.dialogue"
+popup/item_7/icon = SubResource("DPITexture_w0gko")
+popup/item_7/id = 7
+popup/item_8/text = "res://assets/dialogue/bed1placeholder.dialogue"
+popup/item_8/icon = SubResource("DPITexture_w0gko")
+popup/item_8/id = 8
+popup/item_9/id = -1
+popup/item_9/separator = true
+popup/item_10/text = "Clear recent files"
+popup/item_10/id = 102
 
 [node name="SaveAllButton" type="Button" parent="Margin/Content/SidePanel/Toolbar" unique_id=940841574]
 unique_name_in_owner = true
 layout_mode = 2
 disabled = true
 text = "All"
-icon = SubResource("DPITexture_nkf6h")
+icon = SubResource("DPITexture_w0gko")
 flat = true
 
 [node name="FindInFilesButton" type="Button" parent="Margin/Content/SidePanel/Toolbar" unique_id=213493052]
 unique_name_in_owner = true
 layout_mode = 2
 tooltip_text = "Find in Dialogue..."
-icon = SubResource("DPITexture_nkf6h")
+icon = SubResource("DPITexture_w0gko")
 flat = true
 
 [node name="Bookmarks" type="VSplitContainer" parent="Margin/Content/SidePanel" unique_id=1966503844]
@@ -135,75 +144,75 @@ layout_mode = 2
 unique_name_in_owner = true
 layout_mode = 2
 text = "Insert"
-icon = SubResource("DPITexture_nkf6h")
+icon = SubResource("DPITexture_w0gko")
 item_count = 15
 popup/item_0/text = "Wave BBCode"
-popup/item_0/icon = SubResource("DPITexture_nkf6h")
+popup/item_0/icon = SubResource("DPITexture_w0gko")
 popup/item_0/id = 0
 popup/item_1/text = "Shake BBCode"
-popup/item_1/icon = SubResource("DPITexture_nkf6h")
+popup/item_1/icon = SubResource("DPITexture_w0gko")
 popup/item_1/id = 1
 popup/item_2/id = -1
 popup/item_2/separator = true
 popup/item_3/text = "Typing pause"
-popup/item_3/icon = SubResource("DPITexture_nkf6h")
+popup/item_3/icon = SubResource("DPITexture_w0gko")
 popup/item_3/id = 3
 popup/item_4/text = "Typing speed change"
-popup/item_4/icon = SubResource("DPITexture_nkf6h")
+popup/item_4/icon = SubResource("DPITexture_w0gko")
 popup/item_4/id = 4
 popup/item_5/text = "Auto advance"
-popup/item_5/icon = SubResource("DPITexture_nkf6h")
+popup/item_5/icon = SubResource("DPITexture_w0gko")
 popup/item_5/id = 5
 popup/item_6/text = "Templates"
 popup/item_6/id = -1
 popup/item_6/separator = true
 popup/item_7/text = "Title"
-popup/item_7/icon = SubResource("DPITexture_nkf6h")
+popup/item_7/icon = SubResource("DPITexture_w0gko")
 popup/item_7/id = 6
 popup/item_8/text = "Dialogue"
-popup/item_8/icon = SubResource("DPITexture_nkf6h")
+popup/item_8/icon = SubResource("DPITexture_w0gko")
 popup/item_8/id = 7
 popup/item_9/text = "Response"
-popup/item_9/icon = SubResource("DPITexture_nkf6h")
+popup/item_9/icon = SubResource("DPITexture_w0gko")
 popup/item_9/id = 8
 popup/item_10/text = "Random lines"
-popup/item_10/icon = SubResource("DPITexture_nkf6h")
+popup/item_10/icon = SubResource("DPITexture_w0gko")
 popup/item_10/id = 9
 popup/item_11/text = "Random text"
-popup/item_11/icon = SubResource("DPITexture_nkf6h")
+popup/item_11/icon = SubResource("DPITexture_w0gko")
 popup/item_11/id = 10
 popup/item_12/text = "Actions"
 popup/item_12/id = -1
 popup/item_12/separator = true
 popup/item_13/text = "Jump to title"
-popup/item_13/icon = SubResource("DPITexture_nkf6h")
+popup/item_13/icon = SubResource("DPITexture_w0gko")
 popup/item_13/id = 11
 popup/item_14/text = "End dialogue"
-popup/item_14/icon = SubResource("DPITexture_nkf6h")
+popup/item_14/icon = SubResource("DPITexture_w0gko")
 popup/item_14/id = 12
 
 [node name="TranslationsButton" type="MenuButton" parent="Margin/Content/CodePanel/Toolbar" unique_id=2010201295]
 unique_name_in_owner = true
 layout_mode = 2
 text = "Translations"
-icon = SubResource("DPITexture_nkf6h")
+icon = SubResource("DPITexture_w0gko")
 item_count = 6
 popup/item_0/text = "Generate line IDs for file"
-popup/item_0/icon = SubResource("DPITexture_nkf6h")
+popup/item_0/icon = SubResource("DPITexture_w0gko")
 popup/item_0/id = 101
 popup/item_1/text = "Generate line IDs for project"
-popup/item_1/icon = SubResource("DPITexture_nkf6h")
+popup/item_1/icon = SubResource("DPITexture_w0gko")
 popup/item_1/id = 100
 popup/item_2/id = -1
 popup/item_2/separator = true
 popup/item_3/text = "Save character names to CSV..."
-popup/item_3/icon = SubResource("DPITexture_nkf6h")
+popup/item_3/icon = SubResource("DPITexture_w0gko")
 popup/item_3/id = 201
 popup/item_4/text = "Save lines to CSV..."
-popup/item_4/icon = SubResource("DPITexture_nkf6h")
+popup/item_4/icon = SubResource("DPITexture_w0gko")
 popup/item_4/id = 202
 popup/item_5/text = "Import line changes from CSV..."
-popup/item_5/icon = SubResource("DPITexture_nkf6h")
+popup/item_5/icon = SubResource("DPITexture_w0gko")
 popup/item_5/id = 203
 
 [node name="Separator" type="VSeparator" parent="Margin/Content/CodePanel/Toolbar" unique_id=821562382]
@@ -214,7 +223,7 @@ unique_name_in_owner = true
 layout_mode = 2
 tooltip_text = "Search for text"
 toggle_mode = true
-icon = SubResource("DPITexture_nkf6h")
+icon = SubResource("DPITexture_w0gko")
 flat = true
 
 [node name="Separator2" type="VSeparator" parent="Margin/Content/CodePanel/Toolbar" unique_id=175043853]
@@ -224,14 +233,14 @@ layout_mode = 2
 unique_name_in_owner = true
 layout_mode = 2
 tooltip_text = "Test dialogue from start of file"
-icon = SubResource("DPITexture_nkf6h")
+icon = SubResource("DPITexture_w0gko")
 flat = true
 
 [node name="TestLineButton" type="Button" parent="Margin/Content/CodePanel/Toolbar" unique_id=1575726308]
 unique_name_in_owner = true
 layout_mode = 2
 tooltip_text = "Test dialogue from current line"
-icon = SubResource("DPITexture_nkf6h")
+icon = SubResource("DPITexture_w0gko")
 flat = true
 
 [node name="Spacer2" type="Control" parent="Margin/Content/CodePanel/Toolbar" unique_id=249482575]
@@ -243,7 +252,7 @@ unique_name_in_owner = true
 layout_mode = 2
 tooltip_text = "Support Dialogue Manager"
 text = "Sponsor"
-icon = SubResource("DPITexture_nkf6h")
+icon = SubResource("DPITexture_w0gko")
 flat = true
 
 [node name="Separator4" type="VSeparator" parent="Margin/Content/CodePanel/Toolbar" unique_id=321395257]
@@ -253,7 +262,7 @@ layout_mode = 2
 unique_name_in_owner = true
 layout_mode = 2
 text = "Docs"
-icon = SubResource("DPITexture_nkf6h")
+icon = SubResource("DPITexture_w0gko")
 flat = true
 
 [node name="VersionLabel" type="Label" parent="Margin/Content/CodePanel/Toolbar" unique_id=630990714]
@@ -284,8 +293,11 @@ theme_override_fonts/font = ExtResource("7_y6rqu")
 theme_override_font_sizes/font_size = 16
 theme_override_colors/bookmark_color = Color(1, 0.333333, 0.333333, 1)
 text = "~ start
-#Nathan: [[Hi|Hello|Howdy|Wazup|salutations]]. 
-You: an old workspace
+white: wazup pookie
+- yes
+	you: ~blushes
+- no
+	you: \"aggresivly licks your out earwax\"
 => END"
 scroll_smooth = true
 syntax_highlighter = SubResource("SyntaxHighlighter_y6rqu")
@@ -327,14 +339,14 @@ unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 text = "New Dialogue..."
-icon = SubResource("DPITexture_nkf6h")
+icon = SubResource("DPITexture_w0gko")
 
 [node name="BannerQuickOpen" type="Button" parent="Banner/PanelContainer/HBoxContainer" unique_id=1614953837]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Quick open..."
-icon = SubResource("DPITexture_nkf6h")
+icon = SubResource("DPITexture_w0gko")
 
 [node name="BannerExamples" type="Button" parent="Banner/PanelContainer/HBoxContainer" unique_id=1066745213]
 unique_name_in_owner = true

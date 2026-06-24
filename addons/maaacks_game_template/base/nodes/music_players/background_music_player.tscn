@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bkcsjsk2ciff"]
 
-[ext_resource type="AudioStream" uid="uid://c4osg4hudq6y1" path="res://assets/_ Sanctum of the Seraph.mp3" id="1_gbsvc"]
+[ext_resource type="AudioStream" uid="uid://c4osg4hudq6y1" path="res://assets/audio/_ Sanctum of the Seraph.mp3" id="1_gbsvc"]
 
 [node name="BackgroundMusicPlayer" type="AudioStreamPlayer" unique_id=1446051342]
 process_mode = 3

@@ -1,0 +1,207 @@
+[gd_scene format=3 uid="uid://dcirt4ho0k7ed"]
+
+[ext_resource type="Script" uid="uid://busd3yfk5p1mx" path="res://addons/godot-rapier2d/custom_nodes/rapier_static_body_2d.gd" id="1_kxw7r"]
+[ext_resource type="Texture2D" uid="uid://bmy6203ow70ol" path="res://The Amazing Art Folder/cassie_1.png" id="2_suj5i"]
+[ext_resource type="Texture2D" uid="uid://bc4mx21fnd2hh" path="res://The Amazing Art Folder/nexus_placement.png" id="3_oj2te"]
+[ext_resource type="PackedScene" uid="uid://uqnuhcrw12d0" path="res://assets/scenes/player.tscn" id="4_itlho"]
+[ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="5_tkqse"]
+[ext_resource type="Script" uid="uid://bhexx6mj1xv3q" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="6_uc14g"]
+[ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="7_cfvbu"]
+[ext_resource type="Texture2D" uid="uid://3ucay8xhxctg" path="res://The Amazing Art Folder/cassie_white1.png" id="8_g0uxh"]
+[ext_resource type="Texture2D" uid="uid://qmkkud72jx68" path="res://The Amazing Art Folder/cassie_white2.png" id="9_6c3et"]
+[ext_resource type="Script" uid="uid://b83wx8f1aq2t8" path="res://scripts/components/Interactable.gd" id="10_270oq"]
+[ext_resource type="Script" uid="uid://bkmkeenkt520m" path="res://scripts/components/dialogue_component.gd" id="11_dkrml"]
+[ext_resource type="Resource" uid="uid://roracqen2ons" path="res://assets/dialogue/white.dialogue" id="12_i6qxi"]
+[ext_resource type="Texture2D" uid="uid://cgdoexuttam65" path="res://The Amazing Art Folder/cassie_red1.png" id="13_8cld4"]
+[ext_resource type="Texture2D" uid="uid://6yeroqsmvbna" path="res://The Amazing Art Folder/cassie_red2.png" id="14_bmoi4"]
+[ext_resource type="Resource" uid="uid://d0o5q5x067a0u" path="res://assets/dialogue/red.dialogue" id="15_awsh8"]
+[ext_resource type="Texture2D" uid="uid://cqiuyacsfr7cw" path="res://The Amazing Art Folder/door1.png" id="16_18j1w"]
+[ext_resource type="Script" uid="uid://1cjmfi5n1mvs" path="res://scripts/components/door_component.gd" id="17_b6i0a"]
+[ext_resource type="Script" uid="uid://csnxpxd7w5jv2" path="res://scripts/components/infinite_component.gd" id="18_oqf80"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iajhm"]
+size = Vector2(25, 350)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1e5pv"]
+size = Vector2(500, 25)
+
+[sub_resource type="Resource" id="Resource_4o74q"]
+script = ExtResource("7_cfvbu")
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_as6yq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_g0uxh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_6c3et")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 1.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_daalc"]
+radius = 13.000015
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_q1sf4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_8cld4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_bmoi4")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 1.0
+}]
+
+[node name="grief" type="Node2D" unique_id=70873681]
+scale = Vector2(3, 3)
+
+[node name="walls" type="StaticBody2D" parent="." unique_id=1253343983 groups=["walls"]]
+scale = Vector2(2.5, 2.5)
+script = ExtResource("1_kxw7r")
+metadata/_custom_type_script = "uid://busd3yfk5p1mx"
+
+[node name="V1" type="CollisionShape2D" parent="walls" unique_id=1482717394]
+unique_name_in_owner = true
+position = Vector2(-247.852, 0)
+shape = SubResource("RectangleShape2D_iajhm")
+
+[node name="V2" type="CollisionShape2D" parent="walls" unique_id=1849944601]
+unique_name_in_owner = true
+position = Vector2(245.282, 0)
+shape = SubResource("RectangleShape2D_iajhm")
+
+[node name="H1" type="CollisionShape2D" parent="walls" unique_id=1219567322]
+unique_name_in_owner = true
+position = Vector2(0, -178.83)
+shape = SubResource("RectangleShape2D_1e5pv")
+
+[node name="H2" type="CollisionShape2D" parent="walls" unique_id=1480151767]
+unique_name_in_owner = true
+position = Vector2(0, 176.633)
+shape = SubResource("RectangleShape2D_1e5pv")
+
+[node name="background" type="CanvasLayer" parent="." unique_id=919863972]
+layer = -2
+follow_viewport_enabled = true
+
+[node name="Parallax2D2" type="Parallax2D" parent="background" unique_id=1233405741]
+scroll_scale = Vector2(0.1, 0.1)
+repeat_size = Vector2(2048, 1499)
+autoscroll = Vector2(0.1, 0.1)
+repeat_times = 4
+follow_viewport = false
+
+[node name="Cassie1" type="Sprite2D" parent="background/Parallax2D2" unique_id=1859108533]
+position = Vector2(-18, -99)
+texture = ExtResource("2_suj5i")
+
+[node name="Parallax2D" type="Parallax2D" parent="background" unique_id=528683819]
+scale = Vector2(4, 4)
+scroll_scale = Vector2(0, 0)
+repeat_size = Vector2(200, 150)
+autoscroll = Vector2(8.5, 3.5)
+repeat_times = 12
+follow_viewport = false
+
+[node name="NexusPlacement" type="Sprite2D" parent="background/Parallax2D" unique_id=396379387]
+modulate = Color(1, 1, 1, 0.19607843)
+texture_filter = 1
+position = Vector2(0, 0.25)
+texture = ExtResource("3_oj2te")
+
+[node name="PlayerRoot" parent="." unique_id=621235887 instance=ExtResource("4_itlho")]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=560551855]
+physics_interpolation_mode = 1
+top_level = true
+editor_draw_limits = true
+
+[node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=698717255]
+process_priority = 300
+process_physics_priority = 300
+script = ExtResource("5_tkqse")
+
+[node name="PhantomCamera2D" type="Node2D" parent="." unique_id=1835159136 node_paths=PackedStringArray("follow_target")]
+top_level = true
+script = ExtResource("6_uc14g")
+follow_mode = 2
+follow_target = NodePath("../PlayerRoot/PlayerBody")
+tween_resource = SubResource("Resource_4o74q")
+draw_limits = true
+
+[node name="whitewhitewhite" type="StaticBody2D" parent="." unique_id=291582668]
+position = Vector2(-98.574, 0)
+script = ExtResource("1_kxw7r")
+metadata/_custom_type_script = "uid://busd3yfk5p1mx"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="whitewhitewhite" unique_id=159946399]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_as6yq")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="whitewhitewhite" unique_id=1543668828]
+shape = SubResource("CapsuleShape2D_daalc")
+
+[node name="Interactable" type="Node" parent="whitewhitewhite" unique_id=2050577016]
+script = ExtResource("10_270oq")
+
+[node name="dialogue" type="Node" parent="whitewhitewhite/Interactable" unique_id=1467349312]
+script = ExtResource("11_dkrml")
+dialogue_resource = ExtResource("12_i6qxi")
+
+[node name="redredredred" type="StaticBody2D" parent="." unique_id=2136613843]
+position = Vector2(80, 0)
+script = ExtResource("1_kxw7r")
+metadata/_custom_type_script = "uid://busd3yfk5p1mx"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="redredredred" unique_id=1207058950]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_q1sf4")
+autoplay = "default"
+frame_progress = 0.86313075
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="redredredred" unique_id=115384067]
+shape = SubResource("CapsuleShape2D_daalc")
+
+[node name="Interactable" type="Node" parent="redredredred" unique_id=1632388197]
+script = ExtResource("10_270oq")
+
+[node name="dialogue" type="Node" parent="redredredred/Interactable" unique_id=339257600]
+script = ExtResource("11_dkrml")
+dialogue_resource = ExtResource("15_awsh8")
+
+[node name="placeholder ending" type="StaticBody2D" parent="." unique_id=1115464959]
+position = Vector2(-283, -277.66666)
+scale = Vector2(5.133, 5.133)
+script = ExtResource("1_kxw7r")
+metadata/_custom_type_script = "uid://busd3yfk5p1mx"
+
+[node name="Chair2Duke" type="Sprite2D" parent="placeholder ending" unique_id=1226431577]
+texture = ExtResource("16_18j1w")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="placeholder ending" unique_id=1852051043]
+shape = SubResource("CapsuleShape2D_daalc")
+
+[node name="Interactable" type="Node" parent="placeholder ending" unique_id=570837775]
+script = ExtResource("10_270oq")
+
+[node name="door" type="Node" parent="placeholder ending/Interactable" unique_id=46485846]
+script = ExtResource("17_b6i0a")
+next_scene = "uid://5un3240o6uy1"
+
+[node name="infinity" type="Node" parent="." unique_id=335953216 node_paths=PackedStringArray("player", "wall_left", "wall_right", "wall_top", "wall_bottom")]
+script = ExtResource("18_oqf80")
+player = NodePath("../PlayerRoot/PlayerBody")
+wall_left = NodePath("../walls/V1")
+wall_right = NodePath("../walls/V2")
+wall_top = NodePath("../walls/H1")
+wall_bottom = NodePath("../walls/H2")
+
+[editable path="PlayerRoot"]

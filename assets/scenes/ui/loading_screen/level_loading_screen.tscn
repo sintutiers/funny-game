@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dilw83i7s5nfm"]
+
+[ext_resource type="PackedScene" uid="uid://cd0jbh4metflb" path="res://addons/maaacks_game_template/base/nodes/loading_screen/loading_screen.tscn" id="1_akme8"]
+[ext_resource type="Script" uid="uid://br1xqil563fao" path="res://assets/scenes/ui/loading_screen/loading_screen.gd" id="2_kl30i"]
+
+[node name="LevelLoadingScreen" unique_id=1716792690 instance=ExtResource("1_akme8")]
+script = ExtResource("2_kl30i")
+_in_progress = "Loading Level..."
+_in_progress_waiting = "Still Loading Level..."
+_in_progress_still_waiting = "Still Loading Level... (%d seconds)"
+_complete = "Loading Level Complete!"
