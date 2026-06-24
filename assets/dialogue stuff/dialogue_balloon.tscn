@@ -4,21 +4,31 @@
 [ext_resource type="AudioStream" uid="uid://oqqmbm8k1cbl" path="res://assets/dialogue stuff/talk.wav" id="2_73577"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_hudaw"]
 [ext_resource type="Script" uid="uid://bb52rsfwhkxbn" path="res://addons/dialogue_manager/dialogue_responses_menu.gd" id="3_2hpv4"]
-[ext_resource type="Theme" uid="uid://dudh2k1jjvgdk" path="res://assets/themes/the_theme.tres" id="3_av2hy"]
-[ext_resource type="StyleBox" uid="uid://db1836yw6vlr" path="res://assets/themes/style_box.tres" id="6_8uae4"]
-[ext_resource type="Texture2D" uid="uid://m2ta7oqlwy3f" path="res://assets/themes/atlas_texture.tres" id="7_tsh42"]
+[ext_resource type="Theme" uid="uid://c843m1ifds0b8" path="res://assets/themes/dialogue_theme.tres" id="3_tsh42"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tsh42"]
-texture = ExtResource("7_tsh42")
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y8lqn"]
 texture_margin_left = 4.0
 texture_margin_top = 4.0
 texture_margin_right = 4.0
 texture_margin_bottom = 4.0
-expand_margin_left = 10.0
-expand_margin_top = 5.0
-expand_margin_right = 5.0
-expand_margin_bottom = 5.0
-modulate_color = Color(0.6650598, 0.00035048812, 0.66993535, 1)
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8uae4"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tsh42"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_iu888"]
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
 
 [sub_resource type="Animation" id="Animation_xp3hu"]
 length = 0.001
@@ -84,7 +94,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("3_av2hy")
+theme = ExtResource("3_tsh42")
 
 [node name="Panel" type="Panel" parent="Balloon" unique_id=1923629676]
 clip_children = 2
@@ -100,6 +110,8 @@ offset_bottom = -19.0
 grow_horizontal = 2
 grow_vertical = 0
 mouse_filter = 1
+theme = ExtResource("3_tsh42")
+theme_override_styles/panel = SubResource("StyleBoxTexture_y8lqn")
 
 [node name="Dialogue" type="MarginContainer" parent="Balloon/Panel" unique_id=1163090921]
 layout_mode = 1
@@ -108,23 +120,28 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("3_tsh42")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Balloon/Panel/Dialogue" unique_id=588943838]
 layout_mode = 2
+theme = ExtResource("3_tsh42")
 
 [node name="Control" type="Control" parent="Balloon/Panel/Dialogue/HBoxContainer" unique_id=1128026514]
 custom_minimum_size = Vector2(15, 0)
 layout_mode = 2
+theme = ExtResource("3_tsh42")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Balloon/Panel/Dialogue/HBoxContainer" unique_id=1441725784]
 layout_mode = 2
 size_flags_horizontal = 3
+theme = ExtResource("3_tsh42")
 
 [node name="CharacterLabel" type="RichTextLabel" parent="Balloon/Panel/Dialogue/HBoxContainer/VBoxContainer" unique_id=859997144]
 unique_name_in_owner = true
 modulate = Color(1, 1, 1, 0.501961)
 layout_mode = 2
 mouse_filter = 1
+theme = ExtResource("3_tsh42")
 bbcode_enabled = true
 text = "Character"
 fit_content = true
@@ -134,6 +151,8 @@ scroll_active = false
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxEmpty_8uae4")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_tsh42")
 text = "Dialogue example..."
 skip_action = &"ui_cancel"
 
@@ -150,19 +169,19 @@ offset_right = 494.0
 offset_bottom = -154.0
 grow_horizontal = 2
 grow_vertical = 0
+theme = ExtResource("3_tsh42")
 
 [node name="ResponsesMenu" type="VBoxContainer" parent="Balloon/Responses" unique_id=512766515 node_paths=PackedStringArray("response_template")]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 8
-theme_override_constants/separation = 15
+theme = ExtResource("3_tsh42")
 script = ExtResource("3_2hpv4")
 response_template = NodePath("ResponseExample")
 
 [node name="ResponseExample" type="Button" parent="Balloon/Responses/ResponsesMenu" unique_id=1308888272]
 layout_mode = 2
-theme_override_styles/normal = ExtResource("6_8uae4")
-theme_override_styles/focus = SubResource("StyleBoxTexture_tsh42")
+theme = ExtResource("3_tsh42")
 text = "Response example"
 
 [node name="Notification" type="Control" parent="." unique_id=256867451]
@@ -173,6 +192,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("3_tsh42")
 
 [node name="Panel" type="Panel" parent="Notification" unique_id=1291307049]
 custom_minimum_size = Vector2(600, 0)
@@ -183,11 +203,13 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -300.0
-offset_top = -48.0
+offset_top = -32.0
 offset_right = 300.0
 offset_bottom = 48.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("3_tsh42")
+theme_override_styles/panel = SubResource("StyleBoxTexture_iu888")
 
 [node name="CenterContainer" type="CenterContainer" parent="Notification/Panel" unique_id=954810154]
 custom_minimum_size = Vector2(600, 0)
@@ -197,11 +219,13 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("3_tsh42")
 
 [node name="NotificationLabel" type="RichTextLabel" parent="Notification/Panel/CenterContainer" unique_id=469616027]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(560, 35)
 layout_mode = 2
+theme = ExtResource("3_tsh42")
 bbcode_enabled = true
 text = "[center]Notification example..."
 fit_content = true

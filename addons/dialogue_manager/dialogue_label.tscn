@@ -1,12 +1,14 @@
 [gd_scene format=3 uid="uid://ckvgyvclnwggo"]
 
 [ext_resource type="Script" uid="uid://g32um0mltv5d" path="res://addons/dialogue_manager/dialogue_label.gd" id="1_cital"]
+[ext_resource type="Theme" uid="uid://c843m1ifds0b8" path="res://assets/themes/dialogue_theme.tres" id="1_vdugj"]
 
 [node name="DialogueLabel" type="RichTextLabel" unique_id=94286035]
 anchors_preset = 10
 anchor_right = 1.0
 grow_horizontal = 2
 mouse_filter = 1
+theme = ExtResource("1_vdugj")
 bbcode_enabled = true
 fit_content = true
 scroll_active = false
