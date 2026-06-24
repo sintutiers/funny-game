@@ -1,5 +1,5 @@
 @tool
-extends "res://scenes/menus/credits/scrolling_credits.gd"
+extends "res://assets/scenes/menus/credits/scrollable_credits.gd"
 
 ## Defines the path to the main menu. Hides the Main Menu button if not set.
 ## Will attempt to read from AppConfig if left empty.

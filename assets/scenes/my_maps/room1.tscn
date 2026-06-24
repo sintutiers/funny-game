@@ -1,21 +1,21 @@
 [gd_scene format=3 uid="uid://bnwmdamij3ce4"]
 
-[ext_resource type="Texture2D" uid="uid://46kr7ggre6pd" path="res://The Amazing Art Folder/black2.png" id="2_fw5o7"]
-[ext_resource type="Script" uid="uid://2w14ajep5aac" path="res://assets/scripts/bed_component.gd" id="3_cxf8n"]
-[ext_resource type="PackedScene" uid="uid://uqnuhcrw12d0" path="res://assets/player.tscn" id="3_fw5o7"]
-[ext_resource type="Script" uid="uid://b83wx8f1aq2t8" path="res://assets/scripts/Interactable.gd" id="4_cxf8n"]
-[ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="4_hsdi0"]
-[ext_resource type="Script" uid="uid://1cjmfi5n1mvs" path="res://assets/scripts/door_component.gd" id="5_cxf8n"]
-[ext_resource type="Script" uid="uid://bhexx6mj1xv3q" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="5_yju58"]
-[ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="6_4urx3"]
-[ext_resource type="Script" uid="uid://bkmkeenkt520m" path="res://assets/scripts/dialogue_component.gd" id="6_j7vt5"]
-[ext_resource type="Texture2D" uid="uid://c0pmx7qfytvwv" path="res://The Amazing Art Folder/door Chiel.png" id="7_cxf8n"]
-[ext_resource type="Resource" uid="uid://c57034lwi2g3h" path="res://assets/dialogue stuff/bed1placeholder.dialogue" id="7_e6ceu"]
-[ext_resource type="Script" uid="uid://cburu6b4ckehs" path="res://addons/godot-rapier2d/custom_nodes/rapier_area_2d.gd" id="7_j7vt5"]
-[ext_resource type="Script" uid="uid://dimvdouy8g0sv" path="res://addons/phantom_camera/scripts/resources/phantom_camera_noise_2d.gd" id="8_hsdi0"]
-[ext_resource type="Script" uid="uid://busd3yfk5p1mx" path="res://addons/godot-rapier2d/custom_nodes/rapier_static_body_2d.gd" id="10_yju58"]
-[ext_resource type="Texture2D" uid="uid://b4jlykqh28s5a" path="res://The Amazing Art Folder/bed_placeholder.png" id="15_iwdi6"]
-[ext_resource type="Texture2D" uid="uid://db3sukyle8pmw" path="res://The Amazing Art Folder/base room (unfinished).png" id="16_q2aba"]
+[ext_resource type="Texture2D" uid="uid://db3sukyle8pmw" path="res://The Amazing Art Folder/base room (unfinished).png" id="1_mo8ip"]
+[ext_resource type="Script" uid="uid://busd3yfk5p1mx" path="res://addons/godot-rapier2d/custom_nodes/rapier_static_body_2d.gd" id="2_g15of"]
+[ext_resource type="Texture2D" uid="uid://b4jlykqh28s5a" path="res://The Amazing Art Folder/bed_placeholder.png" id="3_chwx7"]
+[ext_resource type="Script" uid="uid://b83wx8f1aq2t8" path="res://assets/scripts/Interactable.gd" id="4_hgxcf"]
+[ext_resource type="Script" uid="uid://bkmkeenkt520m" path="res://assets/scripts/dialogue_component.gd" id="5_nqmkg"]
+[ext_resource type="Resource" uid="uid://c57034lwi2g3h" path="res://assets/dialogue stuff/bed1placeholder.dialogue" id="6_ju7iu"]
+[ext_resource type="Script" uid="uid://2w14ajep5aac" path="res://assets/scripts/bed_component.gd" id="7_yrpop"]
+[ext_resource type="Script" uid="uid://cburu6b4ckehs" path="res://addons/godot-rapier2d/custom_nodes/rapier_area_2d.gd" id="8_3glv0"]
+[ext_resource type="Texture2D" uid="uid://c0pmx7qfytvwv" path="res://The Amazing Art Folder/door Chiel.png" id="9_nmpqs"]
+[ext_resource type="Script" uid="uid://1cjmfi5n1mvs" path="res://assets/scripts/door_component.gd" id="10_m5ff4"]
+[ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="11_iuge3"]
+[ext_resource type="PackedScene" uid="uid://uqnuhcrw12d0" path="res://assets/player.tscn" id="12_f378q"]
+[ext_resource type="Texture2D" uid="uid://46kr7ggre6pd" path="res://The Amazing Art Folder/black2.png" id="13_vpm4o"]
+[ext_resource type="Script" uid="uid://bhexx6mj1xv3q" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="14_p866g"]
+[ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="15_kk2tw"]
+[ext_resource type="Script" uid="uid://dimvdouy8g0sv" path="res://addons/phantom_camera/scripts/resources/phantom_camera_noise_2d.gd" id="16_etctq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4urx3"]
 size = Vector2(25, 185)
@@ -26,15 +26,15 @@ size = Vector2(250, 30)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q2aba"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vpwdg"]
-atlas = ExtResource("7_cxf8n")
+atlas = ExtResource("9_nmpqs")
 region = Rect2(0, 0, 100, 150)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vnh7e"]
-atlas = ExtResource("7_cxf8n")
+atlas = ExtResource("9_nmpqs")
 region = Rect2(0, 0, 100, 150)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_j7vt5"]
-atlas = ExtResource("7_cxf8n")
+atlas = ExtResource("9_nmpqs")
 region = Rect2(100, 0, 100, 150)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_iwdi6"]
@@ -60,15 +60,15 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iwdi6"]
-size = Vector2(72, 73)
+size = Vector2(72, 79)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_vpwdg"]
 
 [sub_resource type="Resource" id="Resource_gw3rf"]
-script = ExtResource("6_4urx3")
+script = ExtResource("15_kk2tw")
 
 [sub_resource type="Resource" id="Resource_yju58"]
-script = ExtResource("8_hsdi0")
+script = ExtResource("16_etctq")
 amplitude = 15.0
 frequency = 0.1
 metadata/_custom_type_script = "uid://dimvdouy8g0sv"
@@ -82,11 +82,11 @@ follow_viewport_enabled = true
 
 [node name="base" type="Sprite2D" parent="background" unique_id=38803718]
 scale = Vector2(1.0347916, 1.0347917)
-texture = ExtResource("16_q2aba")
+texture = ExtResource("1_mo8ip")
 
 [node name="walls" type="StaticBody2D" parent="background" unique_id=286310053]
 scale = Vector2(3.65, 3.65)
-script = ExtResource("10_yju58")
+script = ExtResource("2_g15of")
 metadata/_custom_type_script = "uid://busd3yfk5p1mx"
 
 [node name="V1" type="CollisionShape2D" parent="background/walls" unique_id=1819678603]
@@ -114,22 +114,22 @@ scale = Vector2(3.65, 3.65)
 shape = SubResource("RectangleShape2D_q2aba")
 
 [node name="BedPlaceholder" type="Sprite2D" parent="background/Bed" unique_id=431403754]
-texture = ExtResource("15_iwdi6")
+texture = ExtResource("3_chwx7")
 
 [node name="Interactable" type="Node" parent="background/Bed" unique_id=556855328]
-script = ExtResource("4_cxf8n")
+script = ExtResource("4_hgxcf")
 
 [node name="Dialogue" type="Node" parent="background/Bed/Interactable" unique_id=1270080268]
-script = ExtResource("6_j7vt5")
-dialogue_resource = ExtResource("7_e6ceu")
+script = ExtResource("5_nqmkg")
+dialogue_resource = ExtResource("6_ju7iu")
 
 [node name="BedComponent" type="Node" parent="background/Bed/Interactable" unique_id=1769169764]
-script = ExtResource("3_cxf8n")
+script = ExtResource("7_yrpop")
 
 [node name="Door" type="Area2D" parent="background" unique_id=201148014]
 unique_name_in_owner = true
 position = Vector2(300, -210.495)
-script = ExtResource("7_j7vt5")
+script = ExtResource("8_3glv0")
 metadata/_custom_type_script = "uid://cburu6b4ckehs"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="background/Door" unique_id=619086787]
@@ -140,29 +140,29 @@ autoplay = "open"
 frame_progress = 0.10982978
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="background/Door" unique_id=2089601538]
-position = Vector2(0, -18.005005)
+position = Vector2(0, -15.005005)
 shape = SubResource("RectangleShape2D_iwdi6")
 
 [node name="Interactable" type="Node" parent="background/Door" unique_id=302476965]
-script = ExtResource("4_cxf8n")
+script = ExtResource("4_hgxcf")
 
 [node name="DoorComponent" type="Node" parent="background/Door/Interactable" unique_id=2022789368]
-script = ExtResource("5_cxf8n")
+script = ExtResource("10_m5ff4")
 next_scene = "uid://b80chnt43vfab"
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 physics_interpolation_mode = 1
 top_level = true
-offset = Vector2(-3.0381496, -4.711389)
+offset = Vector2(0.030961717, -2.1735778)
 zoom = Vector2(1.1, 1.1)
 editor_draw_limits = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=459320539]
 process_priority = 300
 process_physics_priority = 300
-script = ExtResource("4_hsdi0")
+script = ExtResource("11_iuge3")
 
-[node name="main character" parent="." unique_id=621235887 instance=ExtResource("3_fw5o7")]
+[node name="main character" parent="." unique_id=621235887 instance=ExtResource("12_f378q")]
 
 [node name="Parallax2D" type="Parallax2D" parent="main character/PlayerBody/ParallaxLayer" parent_id_path=PackedInt32Array(621235887, 792501613) index="0" unique_id=2003550420]
 scale = Vector2(3.75, 3.75)
@@ -172,11 +172,11 @@ follow_viewport = false
 
 [node name="Black" type="Sprite2D" parent="main character/PlayerBody/ParallaxLayer/Parallax2D" unique_id=2145853339]
 material = SubResource("ShaderMaterial_vpwdg")
-texture = ExtResource("2_fw5o7")
+texture = ExtResource("13_vpm4o")
 
 [node name="PhantomCamera2D" type="Node2D" parent="." unique_id=1973500547 node_paths=PackedStringArray("follow_target")]
 top_level = true
-script = ExtResource("5_yju58")
+script = ExtResource("14_p866g")
 priority = 1
 follow_mode = 5
 follow_target = NodePath("../main character/PlayerBody")
