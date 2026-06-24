@@ -2,22 +2,22 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c82g7f7mgpiep"
-path="res://.godot/imported/final_prototype.png-e969a412cf4766a03acfb47d4f1d570d.ctex"
+uid="uid://bc4mx21fnd2hh"
+path="res://.godot/imported/nexus_placement.png-d15f896ec077083d6d6601ffebc27bfb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://The Amazing Art Folder/raw/final_prototype.png"
-dest_files=["res://.godot/imported/final_prototype.png-e969a412cf4766a03acfb47d4f1d570d.ctex"]
+source_file="res://The Amazing Art Folder/nexus_placement.png"
+dest_files=["res://.godot/imported/nexus_placement.png-d15f896ec077083d6d6601ffebc27bfb.ctex"]
 
 [params]
 
-compress/mode=4
+compress/mode=1
 compress/high_quality=false
-compress/lossy_quality=0.7
+compress/lossy_quality=0.6
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
