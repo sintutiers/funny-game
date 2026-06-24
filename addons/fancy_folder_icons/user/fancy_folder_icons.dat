@@ -6,10 +6,10 @@ PTH={
 "res://addons/": Resource("uid://ctub1obqsnoqy", "res://addons/fancy_folder_icons/user/12.png"),
 "res://assets/": Resource("uid://bcp8x77wco106", "res://addons/fancy_folder_icons/user/13.png"),
 "res://assets/misc/kenney_input-prompts/": Resource("uid://dxhbxauyotrhe", "res://addons/fancy_folder_icons/user/14.png"),
-"res://assets/scripts": Resource("uid://cooeuppwge4n2", "res://addons/fancy_folder_icons/user/scripts1.png"),
-"res://scenes/": Resource("uid://u5qy0m3j43d2", "res://addons/fancy_folder_icons/user/15.png"),
-"res://scenes/menus/": Resource("uid://b1hla382o83n1", "res://addons/fancy_folder_icons/user/16.png"),
-"res://scenes/menus/credits/": Resource("uid://cw728djepta7v", "res://addons/fancy_folder_icons/user/17.png"),
-"res://scenes/menus/options_menu/": Resource("uid://bnb7s5ncejhlj", "res://addons/fancy_folder_icons/user/18.png"),
-"res://scenes/my_maps/": Resource("uid://drqi6lly01nxg", "res://addons/fancy_folder_icons/user/19.png")
+"res://assets/scenes": Resource("uid://u5qy0m3j43d2", "res://addons/fancy_folder_icons/user/15.png"),
+"res://assets/scenes/menus": Resource("uid://b1hla382o83n1", "res://addons/fancy_folder_icons/user/16.png"),
+"res://assets/scenes/menus/credits": Resource("uid://cw728djepta7v", "res://addons/fancy_folder_icons/user/17.png"),
+"res://assets/scenes/menus/options_menu": Resource("uid://bnb7s5ncejhlj", "res://addons/fancy_folder_icons/user/18.png"),
+"res://assets/scenes/my_maps": Resource("uid://drqi6lly01nxg", "res://addons/fancy_folder_icons/user/19.png"),
+"res://assets/scripts": Resource("uid://cooeuppwge4n2", "res://addons/fancy_folder_icons/user/scripts1.png")
 }
