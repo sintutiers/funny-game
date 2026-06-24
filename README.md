@@ -6,7 +6,7 @@
 
 - [Addons](<addons/README.md>)
 - [Assets](<assets/README.md>)
-- [Scenes](<scenes/README.md>)
+- [Scenes](<assets/scenes/README.md>)
 - [Art Folder](<The Amazing Art Folder/README.md>)
 ---
 - [attribution](<ATTRIBUTION.md>)

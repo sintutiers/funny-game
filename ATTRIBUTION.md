@@ -1,8 +1,9 @@
 ## Collaborators
 
-- [Dean](https://deanlemans.github.io/)
-- [Chiel](https://github.com/Chielekkuuuh)
-- [Duke](https://github.com/DukeVZ)  
+###  [Dean](https://deanlemans.github.io/)
+### [Chiel](https://github.com/Chielekkuuuh)
+### [Cassie](https://www.tiktok.com/@cassiesnamel)
+### [Duke](https://github.com/DukeVZ)  
 
 ## Plugins
 #### Maaack Game Template

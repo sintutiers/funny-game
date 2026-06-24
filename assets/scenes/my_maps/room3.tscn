@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://vs5x4ofyxkvv" path="res://The Amazing Art Folder/table2 duke.png" id="11_6l254"]
 [ext_resource type="Script" uid="uid://bkmkeenkt520m" path="res://assets/scripts/dialogue_component.gd" id="11_og2q4"]
 [ext_resource type="Texture2D" uid="uid://dwg61bpcy6uv3" path="res://The Amazing Art Folder/table1 duke.png" id="12_60vv4"]
-[ext_resource type="Resource" uid="uid://dbgelmiwsp8o6" path="res://room3workspace.dialogue" id="12_iajhm"]
+[ext_resource type="Resource" uid="uid://dbgelmiwsp8o6" path="res://assets/dialogue stuff/room3workspace.dialogue" id="12_iajhm"]
 [ext_resource type="Texture2D" uid="uid://d2h1r4aupyl0k" path="res://The Amazing Art Folder/cabinet1 duke.png" id="13_og2q4"]
 [ext_resource type="Texture2D" uid="uid://55h2f6poebdk" path="res://The Amazing Art Folder/Burau.png" id="14_iajhm"]
 [ext_resource type="Texture2D" uid="uid://dc3j0bfl5q8f7" path="res://The Amazing Art Folder/cabinet2 duke.png" id="15_1e5pv"]
@@ -126,7 +126,6 @@ texture = ExtResource("17_60vv4")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 physics_interpolation_mode = 1
 top_level = true
-offset = Vector2(0.8282054, 0.00630199)
 zoom = Vector2(1.25, 1.25)
 editor_draw_limits = true
 

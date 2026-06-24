@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://j6y5vfrlyold"
-path="res://.godot/imported/Pasted image 20260624202746.png-a10905bfcfe3fbd7d86e5b9a5955c929.ctex"
+uid="uid://6yeroqsmvbna"
+path="res://.godot/imported/cassie_red2.png-9f77a77a6296ce4ddc25e5c0094865cd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Pasted image 20260624202746.png"
-dest_files=["res://.godot/imported/Pasted image 20260624202746.png-a10905bfcfe3fbd7d86e5b9a5955c929.ctex"]
+source_file="res://The Amazing Art Folder/cassie_red2.png"
+dest_files=["res://.godot/imported/cassie_red2.png-9f77a77a6296ce4ddc25e5c0094865cd.ctex"]
 
 [params]
 

@@ -9,8 +9,13 @@
 [ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="6_v0iy0"]
 [ext_resource type="Texture2D" uid="uid://ck1myn3avrssv" path="res://The Amazing Art Folder/cube.png" id="7_yawxr"]
 [ext_resource type="Script" uid="uid://b83wx8f1aq2t8" path="res://assets/scripts/Interactable.gd" id="8_tkocv"]
+[ext_resource type="Texture2D" uid="uid://bso4w46je4cwt" path="res://The Amazing Art Folder/background duke.png" id="8_v0iy0"]
 [ext_resource type="Script" uid="uid://1cjmfi5n1mvs" path="res://assets/scripts/door_component.gd" id="9_as6yq"]
+[ext_resource type="Script" uid="uid://bkmkeenkt520m" path="res://assets/scripts/dialogue_component.gd" id="11_0ddpg"]
 [ext_resource type="Script" uid="uid://csnxpxd7w5jv2" path="res://assets/scripts/infinite_component.gd" id="11_5va2u"]
+[ext_resource type="Texture2D" uid="uid://cgdoexuttam65" path="res://The Amazing Art Folder/cassie_red1.png" id="12_cso6i"]
+[ext_resource type="Resource" uid="uid://d0o5q5x067a0u" path="res://assets/dialogue stuff/red.dialogue" id="12_eg4rc"]
+[ext_resource type="Texture2D" uid="uid://6yeroqsmvbna" path="res://The Amazing Art Folder/cassie_red2.png" id="13_0ddpg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iajhm"]
 size = Vector2(25, 350)
@@ -23,6 +28,20 @@ script = ExtResource("6_v0iy0")
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_daalc"]
 radius = 13.000015
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_q1sf4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_cso6i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_0ddpg")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 1.0
+}]
 
 [node name="weird office" type="Node2D" unique_id=70873681]
 scale = Vector2(3, 3)
@@ -100,6 +119,46 @@ follow_mode = 2
 follow_target = NodePath("../PlayerRoot/PlayerBody")
 tween_resource = SubResource("Resource_4o74q")
 draw_limits = true
+
+[node name="PLACEHOLDER NEXUS" type="StaticBody2D" parent="." unique_id=212434922]
+position = Vector2(375.66663, -216.66663)
+scale = Vector2(3, 3)
+script = ExtResource("1_ctymk")
+metadata/_custom_type_script = "uid://busd3yfk5p1mx"
+
+[node name="Chair2Duke" type="Sprite2D" parent="PLACEHOLDER NEXUS" unique_id=954762380]
+texture = ExtResource("8_v0iy0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PLACEHOLDER NEXUS" unique_id=587327857]
+shape = SubResource("CapsuleShape2D_daalc")
+
+[node name="Interactable" type="Node" parent="PLACEHOLDER NEXUS" unique_id=1854710712]
+script = ExtResource("8_tkocv")
+
+[node name="door" type="Node" parent="PLACEHOLDER NEXUS/Interactable" unique_id=2142243647]
+script = ExtResource("9_as6yq")
+next_scene = "uid://c2motx642twyr"
+
+[node name="redredredred" type="StaticBody2D" parent="." unique_id=2136613843]
+position = Vector2(49.287, 0)
+script = ExtResource("1_ctymk")
+metadata/_custom_type_script = "uid://busd3yfk5p1mx"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="redredredred" unique_id=1207058950]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_q1sf4")
+autoplay = "default"
+frame_progress = 0.86313075
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="redredredred" unique_id=115384067]
+shape = SubResource("CapsuleShape2D_daalc")
+
+[node name="Interactable" type="Node" parent="redredredred" unique_id=1632388197]
+script = ExtResource("8_tkocv")
+
+[node name="dialogue" type="Node" parent="redredredred/Interactable" unique_id=339257600]
+script = ExtResource("11_0ddpg")
+dialogue_resource = ExtResource("12_eg4rc")
 
 [node name="placeholder ending" type="StaticBody2D" parent="." unique_id=1115464959]
 position = Vector2(-283, -277.66666)

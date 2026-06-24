@@ -145,8 +145,9 @@
 		{"id":"173a71fc8756d116","type":"text","text":"secret ending with nexus\n(we try to make something like the white desert)","x":-5149,"y":-1192,"width":250,"height":105},
 		{"id":"f643edbe1a67b9c9","type":"file","file":"Excalidraw/Drawing 2026-06-24 19.37.52.excalidraw.md","x":-4161,"y":498,"width":400,"height":400},
 		{"id":"1ea87e7cd088bc8c","type":"text","text":"grief","x":-5000,"y":-680,"width":250,"height":60},
-		{"id":"f2b718da29d72d99","x":-2880,"y":-480,"width":247,"height":80,"type":"text","text":"our big inspo games"},
-		{"id":"cdfd73f047834109","x":-2700,"y":-280,"width":285,"height":415,"type":"file","file":"Pasted image 20260624202746.png"}
+		{"id":"f2b718da29d72d99","type":"text","text":"our big inspo games","x":-2880,"y":-480,"width":247,"height":80},
+		{"id":"cdfd73f047834109","type":"file","file":"assets/misc/canvas/Pasted image 20260624202746.png","x":-2700,"y":-280,"width":285,"height":415},
+		{"id":"1d5a5ebb4149a882","x":-3240,"y":-329,"width":425,"height":325,"type":"text","text":"# usefull links\n\n- https://ynfg.yume.wiki/Yume_Nikki_Fangames_Wiki\n- https://yume.wiki/Main_Page\n- https://ynoproject.net/"}
 	],
 	"edges":[
 		{"id":"1f2a3c666be92d5b","fromNode":"acf7f0a6d4cfa0dd","fromSide":"bottom","toNode":"71daa9985ccd3d4d","toSide":"top"},
