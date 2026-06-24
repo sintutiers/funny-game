@@ -17,10 +17,10 @@
 [ext_resource type="Texture2D" uid="uid://db3sukyle8pmw" path="res://The Amazing Art Folder/base room (unfinished).png" id="16_q2aba"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4urx3"]
-size = Vector2(23.28767, 181.36987)
+size = Vector2(25, 185)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vrgib"]
-size = Vector2(243.0137, 33.9726)
+size = Vector2(250, 30)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q2aba"]
 
@@ -73,7 +73,7 @@ frequency = 0.1
 metadata/_custom_type_script = "uid://dimvdouy8g0sv"
 
 [node name="bedroom" type="Node2D" unique_id=70873681]
-scale = Vector2(3.25, 3.25)
+scale = Vector2(3, 3)
 
 [node name="background" type="CanvasLayer" parent="." unique_id=1914292105]
 layer = -1
@@ -147,7 +147,7 @@ next_scene = "uid://b80chnt43vfab"
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547 groups=["interactable"]]
 physics_interpolation_mode = 1
 top_level = true
-offset = Vector2(-1.195968, -1.4640912)
+offset = Vector2(-1.0267802, 2.560188)
 zoom = Vector2(1.1, 1.1)
 editor_draw_limits = true
 

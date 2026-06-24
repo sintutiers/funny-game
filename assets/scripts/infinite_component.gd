@@ -24,8 +24,9 @@ func _physics_process(_delta: float) -> void:
 		if not collision:
 			continue
 		var collider: Object = collision.get_collider()
-		if not (collider is Node2D and (collider as Node2D).is_in_group("walls")):
-			continue
+		#HACK can add this back in future for enemys
+		#if not (collider is Node2D and (collider as Node2D).is_in_group("walls")):
+			#continue  
 
 		var normal: Vector2 = collision.get_normal()
 		var left: float = level_bounds.position.x

@@ -55,15 +55,15 @@ frequency = 0.1
 metadata/_custom_type_script = "uid://dimvdouy8g0sv"
 
 [node name="weird office" type="Node2D" unique_id=70873681]
-scale = Vector2(3.25, 3.25)
+scale = Vector2(3, 3)
 
 [node name="background" type="CanvasLayer" parent="." unique_id=919863972]
 layer = -1
 follow_viewport_enabled = true
 
-[node name="Door" type="Area2D" parent="background" unique_id=201148014 groups=["interactable"]]
+[node name="Door" type="Area2D" parent="background" unique_id=201148014]
 unique_name_in_owner = true
-position = Vector2(365, -219)
+position = Vector2(918, -440)
 scale = Vector2(3.65, 3.65)
 script = ExtResource("10_er0vt")
 metadata/_custom_type_script = "uid://cburu6b4ckehs"
@@ -79,7 +79,7 @@ shape = SubResource("RectangleShape2D_iwdi6")
 script = ExtResource("3_60vv4")
 next_scene = "uid://4lj1r0wet3rc"
 
-[node name="walls" type="StaticBody2D" parent="background" unique_id=1253343983 groups=["walls"]]
+[node name="walls" type="StaticBody2D" parent="background" unique_id=1253343983]
 scale = Vector2(7.5, 7.5)
 script = ExtResource("18_og2q4")
 metadata/_custom_type_script = "uid://busd3yfk5p1mx"
@@ -105,44 +105,42 @@ position = Vector2(0, 100)
 shape = SubResource("RectangleShape2D_1e5pv")
 
 [node name="Table2Duke" type="Sprite2D" parent="background" unique_id=1852189034]
-position = Vector2(-511, 252)
+position = Vector2(-1036.5, 480.94998)
 scale = Vector2(3.65, 3.65)
 texture = ExtResource("11_6l254")
 
 [node name="Table1Duke" type="Sprite2D" parent="background" unique_id=393554630]
-position = Vector2(529, 262)
+position = Vector2(773.847, 541.85)
 scale = Vector2(3.65, 3.65)
 texture = ExtResource("12_60vv4")
 
 [node name="Cabinet1Duke" type="Sprite2D" parent="background" unique_id=1652119809]
-position = Vector2(-426, -256)
+position = Vector2(-588.6, -522.2)
 scale = Vector2(3.65, 3.65)
 texture = ExtResource("13_og2q4")
 
 [node name="Burau" type="Sprite2D" parent="background" unique_id=1494606993]
-position = Vector2(-489, -235)
+position = Vector2(-651.6, -501.2)
 scale = Vector2(3.65, 3.65)
 texture = ExtResource("14_iajhm")
 
 [node name="Cabinet2Duke2" type="Sprite2D" parent="background" unique_id=1369713361]
-position = Vector2(456, 243)
+position = Vector2(700.847, 522.85)
 scale = Vector2(3.65, 3.65)
 texture = ExtResource("15_1e5pv")
 
-[node name="chair" type="Area2D" parent="background" unique_id=1316380514 groups=["interactable"]]
+[node name="chair" type="Area2D" parent="background" unique_id=1316380514]
 unique_name_in_owner = true
-position = Vector2(-515, 168.00002)
+position = Vector2(777.00006, 469)
 rotation = 1.5707964
 scale = Vector2(3.65, 3.65)
 script = ExtResource("10_er0vt")
 
 [node name="Chair2Duke" type="Sprite2D" parent="background/chair" unique_id=1868891765]
-position = Vector2(3.5616226, -286.8493)
 rotation = -1.5707964
 texture = ExtResource("16_er0vt")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="background/chair" unique_id=1784216189]
-position = Vector2(1.095871, -286.57532)
 rotation = -1.5707964
 shape = SubResource("CapsuleShape2D_60vv4")
 
@@ -151,20 +149,20 @@ script = ExtResource("11_og2q4")
 dialogue_resource = ExtResource("12_iajhm")
 
 [node name="Cabinet2Duke" type="Sprite2D" parent="background" unique_id=612121133]
-position = Vector2(-515, 168.00002)
+position = Vector2(-1040.5, 396.95)
 rotation = 1.5707964
 scale = Vector2(3.65, 3.65)
 texture = ExtResource("15_1e5pv")
 
 [node name="Chair1Duke" type="Sprite2D" parent="background" unique_id=261765485]
-position = Vector2(-415, 243)
+position = Vector2(-940.5, 471.94998)
 scale = Vector2(3.65, 3.65)
 texture = ExtResource("17_60vv4")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 physics_interpolation_mode = 1
 top_level = true
-offset = Vector2(-1.0321091, -0.96760637)
+offset = Vector2(0.5639077, 0.90291804)
 zoom = Vector2(1.25, 1.25)
 editor_draw_limits = true
 
@@ -177,8 +175,10 @@ script = ExtResource("2_og2q4")
 
 [node name="Parallax2D" type="Parallax2D" parent="main character/PlayerBody/ParallaxLayer" parent_id_path=PackedInt32Array(621235887, 792501613) index="0" unique_id=2003550420]
 scale = Vector2(4, 4)
+scroll_scale = Vector2(0, 0)
 repeat_size = Vector2(32, 32)
-repeat_times = 19
+autoscroll = Vector2(1, 1)
+repeat_times = 30
 follow_viewport = false
 
 [node name="Blue" type="Sprite2D" parent="main character/PlayerBody/ParallaxLayer/Parallax2D" unique_id=2145853339]
