@@ -1,10 +1,14 @@
 [gd_scene format=3 uid="uid://c2motx642twyr"]
 
+[ext_resource type="Texture2D" uid="uid://46kr7ggre6pd" path="res://The Amazing Art Folder/black2.png" id="2_j2iih"]
 [ext_resource type="Script" uid="uid://b83wx8f1aq2t8" path="res://assets/scripts/Interactable.gd" id="3_6cead"]
 [ext_resource type="Script" uid="uid://1cjmfi5n1mvs" path="res://assets/scripts/door_component.gd" id="4_dvaiv"]
 [ext_resource type="Texture2D" uid="uid://bc4mx21fnd2hh" path="res://The Amazing Art Folder/nexus_placement.png" id="4_lf2id"]
 [ext_resource type="Script" uid="uid://busd3yfk5p1mx" path="res://addons/godot-rapier2d/custom_nodes/rapier_static_body_2d.gd" id="5_ahart"]
+[ext_resource type="Texture2D" uid="uid://hsfpscymp7i5" path="res://The Amazing Art Folder/Floortile_blankspace_light.png" id="7_mr0ms"]
+[ext_resource type="Texture2D" uid="uid://c0pmx7qfytvwv" path="res://The Amazing Art Folder/door Chiel.png" id="7_xpwch"]
 [ext_resource type="Texture2D" uid="uid://ck1myn3avrssv" path="res://The Amazing Art Folder/cube.png" id="8_3c5vh"]
+[ext_resource type="Texture2D" uid="uid://3ucay8xhxctg" path="res://The Amazing Art Folder/cassie_white1.png" id="11_450hu"]
 [ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="12_gdav5"]
 [ext_resource type="PackedScene" uid="uid://uqnuhcrw12d0" path="res://assets/player.tscn" id="13_vk3o7"]
 [ext_resource type="Script" uid="uid://bhexx6mj1xv3q" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="15_pkmv3"]
@@ -21,12 +25,14 @@ size = Vector2(500, 25)
 [sub_resource type="Resource" id="Resource_4o74q"]
 script = ExtResource("16_vcjqw")
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_q1sf4"]
+radius = 19.666668
+height = 39.333336
+
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_daalc"]
 radius = 13.000015
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_q1sf4"]
-
-[node name="weird office" type="Node2D" unique_id=70873681]
+[node name="nexus?" type="Node2D" unique_id=70873681]
 scale = Vector2(3, 3)
 
 [node name="walls" type="StaticBody2D" parent="." unique_id=1253343983 groups=["walls"]]
@@ -58,6 +64,16 @@ shape = SubResource("RectangleShape2D_1e5pv")
 layer = -2
 follow_viewport_enabled = true
 
+[node name="Parallax2D2" type="Parallax2D" parent="background" unique_id=1233405741]
+scale = Vector2(4, 4)
+scroll_scale = Vector2(0, 0)
+repeat_size = Vector2(32, 32)
+autoscroll = Vector2(4, 2)
+repeat_times = 45
+
+[node name="Black2" type="Sprite2D" parent="background/Parallax2D2" unique_id=1079470608]
+texture = ExtResource("2_j2iih")
+
 [node name="Parallax2D" type="Parallax2D" parent="background" unique_id=528683819]
 scale = Vector2(4, 4)
 scroll_scale = Vector2(0, 0)
@@ -68,8 +84,6 @@ follow_viewport = false
 [node name="NexusPlacement" type="Sprite2D" parent="background/Parallax2D" unique_id=396379387]
 texture_filter = 1
 texture = ExtResource("4_lf2id")
-
-[node name="Parallax2D2" type="Parallax2D" parent="background" unique_id=1233405741]
 
 [node name="PlayerRoot" parent="." unique_id=621235887 instance=ExtResource("13_vk3o7")]
 
@@ -91,12 +105,70 @@ follow_target = NodePath("../PlayerRoot/PlayerBody")
 tween_resource = SubResource("Resource_4o74q")
 draw_limits = true
 
+[node name="obmil" type="StaticBody2D" parent="." unique_id=1552011543]
+position = Vector2(-266.6667, 134.33333)
+script = ExtResource("5_ahart")
+metadata/_custom_type_script = "uid://busd3yfk5p1mx"
+
+[node name="Chair2Duke" type="Sprite2D" parent="obmil" unique_id=921058078]
+scale = Vector2(0.378, 0.378)
+texture = ExtResource("7_mr0ms")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="obmil" unique_id=696458496]
+shape = SubResource("CapsuleShape2D_q1sf4")
+
+[node name="Interactable" type="Node" parent="obmil" unique_id=295549263]
+script = ExtResource("3_6cead")
+
+[node name="door" type="Node" parent="obmil/Interactable" unique_id=1564732455]
+script = ExtResource("4_dvaiv")
+next_scene = "uid://5un3240o6uy1"
+
+[node name="bedroom" type="StaticBody2D" parent="." unique_id=1999692155]
+position = Vector2(4.7683716e-07, 134.33334)
+script = ExtResource("5_ahart")
+metadata/_custom_type_script = "uid://busd3yfk5p1mx"
+
+[node name="Chair2Duke" type="Sprite2D" parent="bedroom" unique_id=42860486]
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("7_xpwch")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bedroom" unique_id=2039023542]
+shape = SubResource("CapsuleShape2D_q1sf4")
+
+[node name="Interactable" type="Node" parent="bedroom" unique_id=21776646]
+script = ExtResource("3_6cead")
+
+[node name="door" type="Node" parent="bedroom/Interactable" unique_id=1768464972]
+script = ExtResource("4_dvaiv")
+next_scene = "uid://bnwmdamij3ce4"
+
+[node name="grief" type="StaticBody2D" parent="." unique_id=1326101256]
+position = Vector2(267.33334, 130)
+script = ExtResource("5_ahart")
+metadata/_custom_type_script = "uid://busd3yfk5p1mx"
+
+[node name="Chair2Duke" type="Sprite2D" parent="grief" unique_id=1688147101]
+scale = Vector2(1.144, 1.144)
+texture = ExtResource("11_450hu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grief" unique_id=596643424]
+shape = SubResource("CapsuleShape2D_q1sf4")
+
+[node name="Interactable" type="Node" parent="grief" unique_id=1859360707]
+script = ExtResource("3_6cead")
+
+[node name="door" type="Node" parent="grief/Interactable" unique_id=659312095]
+script = ExtResource("4_dvaiv")
+next_scene = "uid://dcirt4ho0k7ed"
+
 [node name="judgement" type="StaticBody2D" parent="." unique_id=1115464959]
 position = Vector2(-266.6667, -0.6666667)
 script = ExtResource("5_ahart")
 metadata/_custom_type_script = "uid://busd3yfk5p1mx"
 
 [node name="Chair2Duke" type="Sprite2D" parent="judgement" unique_id=1226431577]
+scale = Vector2(1.501, 1.501)
 texture = ExtResource("8_3c5vh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="judgement" unique_id=1852051043]
@@ -109,21 +181,22 @@ script = ExtResource("3_6cead")
 script = ExtResource("4_dvaiv")
 next_scene = "uid://b80chnt43vfab"
 
-[node name="weird office" type="StaticBody2D" parent="." unique_id=709007275]
+[node name="limbo" type="StaticBody2D" parent="." unique_id=709007275]
 position = Vector2(266.171, 0)
 script = ExtResource("5_ahart")
 metadata/_custom_type_script = "uid://busd3yfk5p1mx"
 
-[node name="Chair2Duke" type="Sprite2D" parent="weird office" unique_id=1326598204]
+[node name="Chair2Duke" type="Sprite2D" parent="limbo" unique_id=1326598204]
+scale = Vector2(1.489, 1.489)
 texture = ExtResource("19_am8yf")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="weird office" unique_id=2064319061]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="limbo" unique_id=2064319061]
 shape = SubResource("CapsuleShape2D_q1sf4")
 
-[node name="Interactable" type="Node" parent="weird office" unique_id=859071163]
+[node name="Interactable" type="Node" parent="limbo" unique_id=859071163]
 script = ExtResource("3_6cead")
 
-[node name="door" type="Node" parent="weird office/Interactable" unique_id=1164398838]
+[node name="door" type="Node" parent="limbo/Interactable" unique_id=1164398838]
 script = ExtResource("4_dvaiv")
 next_scene = "uid://djkihai5rc1e3"
 

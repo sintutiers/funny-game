@@ -79,7 +79,7 @@ amplitude = 15.0
 frequency = 0.1
 metadata/_custom_type_script = "uid://dimvdouy8g0sv"
 
-[node name="dream" type="Node2D" unique_id=70873681]
+[node name="judgement" type="Node2D" unique_id=70873681]
 scale = Vector2(3, 3)
 
 [node name="background" type="CanvasLayer" parent="." unique_id=290373541]
@@ -177,12 +177,12 @@ script = ExtResource("6_rsvv2")
 
 [node name="DoorComponent" type="Node" parent="background/Door/Interactable" unique_id=1494105584]
 script = ExtResource("8_2nenc")
-next_scene = "uid://djkihai5rc1e3"
+next_scene = "uid://c2motx642twyr"
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 physics_interpolation_mode = 1
 top_level = true
-offset = Vector2(-1.2384175, 0.56942093)
+offset = Vector2(1.5686015, 0.25234395)
 zoom = Vector2(1.1, 1.1)
 editor_draw_limits = true
 
