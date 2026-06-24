@@ -22,20 +22,6 @@
 [ext_resource type="Script" uid="uid://busd3yfk5p1mx" path="res://addons/godot-rapier2d/custom_nodes/rapier_static_body_2d.gd" id="18_og2q4"]
 [ext_resource type="Script" uid="uid://csnxpxd7w5jv2" path="res://assets/scripts/infinite_component.gd" id="20_1e5pv"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_iwdi6"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("15_qbgxe")
-}],
-"loop": 1,
-"name": &"default",
-"speed": 5.0
-}]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_iwdi6"]
-size = Vector2(16.438354, 23.0137)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iajhm"]
 size = Vector2(25, 185)
 
@@ -51,36 +37,30 @@ amplitude = 15.0
 frequency = 0.1
 metadata/_custom_type_script = "uid://dimvdouy8g0sv"
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_iwdi6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_qbgxe")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iwdi6"]
+size = Vector2(16.438354, 23.0137)
+
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_60vv4"]
 radius = 4.931473
 height = 19.726013
 
-[node name="weird office" type="Node2D" unique_id=70873681]
+[node name="limbo" type="Node2D" unique_id=70873681]
 scale = Vector2(3, 3)
 
 [node name="background" type="CanvasLayer" parent="." unique_id=919863972]
 layer = -1
 follow_viewport_enabled = true
-
-[node name="Door" type="Area2D" parent="background" unique_id=201148014]
-position = Vector2(918, -440)
-scale = Vector2(3.65, 3.65)
-script = ExtResource("1_er0vt")
-metadata/_custom_type_script = "uid://cburu6b4ckehs"
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="background/Door" unique_id=619086787]
-sprite_frames = SubResource("SpriteFrames_iwdi6")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="background/Door" unique_id=2089601538]
-position = Vector2(0, -3.835617)
-shape = SubResource("RectangleShape2D_iwdi6")
-
-[node name="Interactable" type="Node" parent="background/Door" unique_id=832383881]
-script = ExtResource("10_er0vt")
-
-[node name="DoorComponent" type="Node" parent="background/Door/Interactable" unique_id=771415327]
-script = ExtResource("3_60vv4")
-next_scene = "uid://4lj1r0wet3rc"
 
 [node name="walls" type="StaticBody2D" parent="background" unique_id=1253343983 groups=["walls"]]
 scale = Vector2(7.5, 7.5)
@@ -146,7 +126,7 @@ texture = ExtResource("17_60vv4")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 physics_interpolation_mode = 1
 top_level = true
-offset = Vector2(2.7801225, 1.9785744)
+offset = Vector2(0.8282054, 0.00630199)
 zoom = Vector2(1.25, 1.25)
 editor_draw_limits = true
 
@@ -189,6 +169,26 @@ wall_left = NodePath("../background/walls/V1")
 wall_right = NodePath("../background/walls/V2")
 wall_top = NodePath("../background/walls/H1")
 wall_bottom = NodePath("../background/walls/H2")
+
+[node name="Door" type="Area2D" parent="." unique_id=201148014]
+position = Vector2(306, -146.66667)
+scale = Vector2(1.2166667, 1.2166667)
+script = ExtResource("1_er0vt")
+metadata/_custom_type_script = "uid://cburu6b4ckehs"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Door" unique_id=619086787]
+sprite_frames = SubResource("SpriteFrames_iwdi6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Door" unique_id=2089601538]
+position = Vector2(0, -3.835617)
+shape = SubResource("RectangleShape2D_iwdi6")
+
+[node name="Interactable" type="Node" parent="Door" unique_id=832383881]
+script = ExtResource("10_er0vt")
+
+[node name="DoorComponent" type="Node" parent="Door/Interactable" unique_id=771415327]
+script = ExtResource("3_60vv4")
+next_scene = "uid://dcirt4ho0k7ed"
 
 [node name="chair1" type="StaticBody2D" parent="." unique_id=638744043]
 script = ExtResource("18_og2q4")
