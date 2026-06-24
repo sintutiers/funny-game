@@ -14,14 +14,6 @@ texture_margin_bottom = 4.0
 axis_stretch_horizontal = 1
 axis_stretch_vertical = 1
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8uae4"]
-content_margin_left = 0.0
-content_margin_top = 0.0
-content_margin_right = 0.0
-content_margin_bottom = 0.0
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tsh42"]
-
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_iu888"]
 texture_margin_left = 4.0
 texture_margin_top = 4.0
@@ -151,8 +143,6 @@ scroll_active = false
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_styles/normal = SubResource("StyleBoxEmpty_8uae4")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_tsh42")
 text = "Dialogue example..."
 skip_action = &"ui_cancel"
 
@@ -163,9 +153,9 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -147.0
+offset_left = -170.0
 offset_top = -558.0
-offset_right = 494.0
+offset_right = 330.0
 offset_bottom = -154.0
 grow_horizontal = 2
 grow_vertical = 0
