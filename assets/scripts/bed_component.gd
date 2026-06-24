@@ -1,4 +1,4 @@
-# BedComponent.gd
+# bed_component.gd
 class_name BedComponent
 extends Node
 @onready var interactable: Interactable = get_parent()

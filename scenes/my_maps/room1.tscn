@@ -153,7 +153,7 @@ next_scene = "uid://b80chnt43vfab"
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 physics_interpolation_mode = 1
 top_level = true
-offset = Vector2(2.5343392, 1.1410115)
+offset = Vector2(-3.0381496, -4.711389)
 zoom = Vector2(1.1, 1.1)
 editor_draw_limits = true
 

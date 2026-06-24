@@ -1,3 +1,4 @@
+# movement_component.gd
 class_name MovementComponent
 extends Node
 

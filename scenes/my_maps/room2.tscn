@@ -94,8 +94,8 @@ texture = ExtResource("5_c4r8w")
 
 [node name="Bed" type="Sprite2D" parent="background" unique_id=240206082]
 texture_filter = 1
-position = Vector2(473, 383)
-scale = Vector2(4.5, 4.5)
+position = Vector2(474, 392)
+scale = Vector2(4, 4)
 texture = ExtResource("7_g3f5w")
 
 [node name="Cube3" type="Sprite2D" parent="background" unique_id=1726693315]
@@ -131,7 +131,7 @@ scale = Vector2(5.5, 5.5)
 sprite_frames = SubResource("SpriteFrames_c4r8w")
 autoplay = "default"
 
-[node name="walls" type="StaticBody2D" parent="background" unique_id=286310053]
+[node name="walls" type="StaticBody2D" parent="background" unique_id=286310053 groups=["walls"]]
 scale = Vector2(3.65, 3.65)
 script = ExtResource("10_o6thl")
 metadata/_custom_type_script = "uid://busd3yfk5p1mx"
@@ -182,7 +182,7 @@ next_scene = "uid://djkihai5rc1e3"
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 physics_interpolation_mode = 1
 top_level = true
-offset = Vector2(-0.7926841, -3.0349216)
+offset = Vector2(0.22197348, 0.94565415)
 zoom = Vector2(1.1, 1.1)
 editor_draw_limits = true
 

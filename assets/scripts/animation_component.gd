@@ -1,3 +1,4 @@
+# animation_component.gd
 class_name AnimationComponent
 extends Node
 

@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://djkihai5rc1e3"]
 
+[ext_resource type="Script" uid="uid://cburu6b4ckehs" path="res://addons/godot-rapier2d/custom_nodes/rapier_area_2d.gd" id="1_er0vt"]
 [ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="2_og2q4"]
 [ext_resource type="Texture2D" uid="uid://bso4w46je4cwt" path="res://The Amazing Art Folder/background duke.png" id="3_6l254"]
 [ext_resource type="Script" uid="uid://1cjmfi5n1mvs" path="res://assets/scripts/door_component.gd" id="3_60vv4"]
@@ -64,7 +65,7 @@ follow_viewport_enabled = true
 [node name="Door" type="Area2D" parent="background" unique_id=201148014]
 position = Vector2(918, -440)
 scale = Vector2(3.65, 3.65)
-script = ExtResource("10_er0vt")
+script = ExtResource("1_er0vt")
 metadata/_custom_type_script = "uid://cburu6b4ckehs"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="background/Door" unique_id=619086787]
@@ -145,7 +146,7 @@ texture = ExtResource("17_60vv4")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 physics_interpolation_mode = 1
 top_level = true
-offset = Vector2(0.9284372, 1.6707408)
+offset = Vector2(2.6446776, 1.3474749)
 zoom = Vector2(1.25, 1.25)
 editor_draw_limits = true
 
@@ -181,8 +182,7 @@ tween_resource = SubResource("Resource_gw3rf")
 draw_limits = true
 noise = SubResource("Resource_yju58")
 
-[node name="InfiniteComponent" type="Node" parent="." unique_id=335953216 node_paths=PackedStringArray("player", "wall_left", "wall_right", "wall_top", "wall_bottom")]
-unique_name_in_owner = true
+[node name="infinity" type="Node" parent="." unique_id=335953216 node_paths=PackedStringArray("player", "wall_left", "wall_right", "wall_top", "wall_bottom")]
 script = ExtResource("20_1e5pv")
 player = NodePath("../main character/PlayerBody")
 wall_left = NodePath("../background/walls/V1")

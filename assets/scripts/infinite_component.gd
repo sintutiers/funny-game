@@ -1,3 +1,4 @@
+# infinite_component.gd
 class_name InfiniteRoom
 extends Node
 

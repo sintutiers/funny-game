@@ -1,4 +1,4 @@
-# DialogueComponent.gd
+# dialogue_domponent.gd
 class_name DialogueComponent
 extends Node
 @onready var interactable: Interactable = get_parent()

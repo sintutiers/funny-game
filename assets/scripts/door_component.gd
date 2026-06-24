@@ -1,4 +1,4 @@
-# DoorComponent.gd
+# door_component.gd
 class_name DoorComponent
 extends Node
 @onready var interactable: Interactable = get_parent()
