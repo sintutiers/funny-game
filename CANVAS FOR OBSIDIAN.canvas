@@ -144,7 +144,9 @@
 		{"id":"ad095f85a1599506","type":"text","text":"all rooms with secret?","x":-4252,"y":-197,"width":250,"height":60},
 		{"id":"173a71fc8756d116","type":"text","text":"secret ending with nexus\n(ending also pending)","x":-5149,"y":-1192,"width":250,"height":60},
 		{"id":"f643edbe1a67b9c9","type":"file","file":"Excalidraw/Drawing 2026-06-24 19.37.52.excalidraw.md","x":-4161,"y":498,"width":400,"height":400},
-		{"id":"1ea87e7cd088bc8c","type":"text","text":"grief","x":-5000,"y":-680,"width":250,"height":60}
+		{"id":"1ea87e7cd088bc8c","type":"text","text":"grief","x":-5000,"y":-680,"width":250,"height":60},
+		{"id":"f2b718da29d72d99","x":-2880,"y":-480,"width":247,"height":80,"type":"text","text":"our big inspo games"},
+		{"id":"cdfd73f047834109","x":-2700,"y":-280,"width":285,"height":415,"type":"file","file":"Pasted image 20260624202746.png"}
 	],
 	"edges":[
 		{"id":"1f2a3c666be92d5b","fromNode":"acf7f0a6d4cfa0dd","fromSide":"bottom","toNode":"71daa9985ccd3d4d","toSide":"top"},
@@ -300,7 +302,8 @@
 		{"id":"85a993ffe03dc82d","fromNode":"1ea87e7cd088bc8c","fromSide":"right","toNode":"1801d85d1db1bec6","toSide":"left"},
 		{"id":"12f5bdbcddfd9d6c","fromNode":"1ea87e7cd088bc8c","fromSide":"bottom","toNode":"9b7af1e83c2c3bcb","toSide":"left"},
 		{"id":"6779f9a57d1f0dc7","fromNode":"1ea87e7cd088bc8c","fromSide":"bottom","toNode":"ad095f85a1599506","toSide":"left"},
-		{"id":"436e6e8de64325b5","fromNode":"70792a6501397d84","fromSide":"bottom","toNode":"f643edbe1a67b9c9","toSide":"top"}
+		{"id":"436e6e8de64325b5","fromNode":"70792a6501397d84","fromSide":"bottom","toNode":"f643edbe1a67b9c9","toSide":"top"},
+		{"id":"fe807204e9e6b221","fromNode":"f2b718da29d72d99","fromSide":"bottom","toNode":"cdfd73f047834109","toSide":"top"}
 	],
 	"metadata":{
 		"version":"1.0-1.0",
