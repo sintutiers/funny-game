@@ -137,15 +137,16 @@
 		{"id":"1d5a5ebb4149a882","type":"text","text":"# usefull links\n\n- https://ynfg.yume.wiki/Yume_Nikki_Fangames_Wiki\n- https://yume.wiki/Main_Page\n- https://ynoproject.net/","x":-3240,"y":-329,"width":425,"height":325},
 		{"id":"1801d85d1db1bec6","type":"text","text":"dead, game over or special event?","x":-4190,"y":-940,"width":250,"height":60},
 		{"id":"1ea87e7cd088bc8c","type":"text","text":"grief","x":-5260,"y":-680,"width":250,"height":60},
-		{"id":"19e5ca16b128adaa","x":-4905,"y":-680,"width":250,"height":60,"type":"text","text":"remorse"},
+		{"id":"19e5ca16b128adaa","type":"text","text":"remorse","x":-4905,"y":-680,"width":250,"height":60},
 		{"id":"fdae238eb2f1b302","type":"text","text":"limbo","x":-4530,"y":-680,"width":250,"height":60},
-		{"id":"560b8e1aca1cf55c","x":-4160,"y":-680,"width":250,"height":60,"type":"text","text":"lust"},
-		{"id":"f643edbe1a67b9c9","type":"file","file":"Excalidraw/Drawing 2026-06-24 19.37.52.excalidraw.md","x":-4560,"y":-404,"width":400,"height":400},
+		{"id":"560b8e1aca1cf55c","type":"text","text":"lust","x":-4160,"y":-680,"width":250,"height":60},
 		{"id":"784b2a3cc85f17a9","type":"file","file":"Excalidraw/Drawing 2026-06-24 19.28.53.excalidraw.png","x":-5210,"y":-1127,"width":400,"height":247},
 		{"id":"9b7af1e83c2c3bcb","type":"text","text":"all rooms?","x":-6040,"y":-480,"width":250,"height":60},
 		{"id":"e27070a656c0c03c","type":"text","text":"you win!!!!!!!!\n(ending pending)","x":-6080,"y":-4,"width":250,"height":60},
 		{"id":"ad095f85a1599506","type":"text","text":"all rooms with secret?","x":-5700,"y":-480,"width":250,"height":60},
-		{"id":"173a71fc8756d116","type":"text","text":"secret ending with nexus\n(we try to make something like the white desert)","x":-5510,"y":-4,"width":250,"height":109}
+		{"id":"f643edbe1a67b9c9","type":"file","file":"Excalidraw/Drawing 2026-06-24 19.37.52.excalidraw.md","x":-4530,"y":-404,"width":400,"height":400},
+		{"id":"173a71fc8756d116","type":"text","text":"secret ending with nexus\n(we try to make something like the white desert)","x":-5760,"y":-4,"width":250,"height":109},
+		{"id":"785161483b98e6d4","x":-5410,"y":-450,"width":400,"height":400,"type":"file","file":"Excalidraw/Drawing 2026-06-24 22.24.50.excalidraw.md"}
 	],
 	"edges":[
 		{"id":"1f2a3c666be92d5b","fromNode":"acf7f0a6d4cfa0dd","fromSide":"bottom","toNode":"71daa9985ccd3d4d","toSide":"top"},
@@ -295,7 +296,8 @@
 		{"id":"bbbdca267bebcd37","fromNode":"9b7af1e83c2c3bcb","fromSide":"bottom","toNode":"e27070a656c0c03c","toSide":"top"},
 		{"id":"39cea6437d095919","fromNode":"32a359d24ad3f4c2","fromSide":"bottom","toNode":"19e5ca16b128adaa","toSide":"top"},
 		{"id":"e6ac18543290c5f6","fromNode":"fdae238eb2f1b302","fromSide":"bottom","toNode":"f643edbe1a67b9c9","toSide":"top"},
-		{"id":"079a0bb0a67a7290","fromNode":"32a359d24ad3f4c2","fromSide":"left","toNode":"784b2a3cc85f17a9","toSide":"right"}
+		{"id":"079a0bb0a67a7290","fromNode":"32a359d24ad3f4c2","fromSide":"left","toNode":"784b2a3cc85f17a9","toSide":"right"},
+		{"id":"7874dbdc0e21346b","fromNode":"1ea87e7cd088bc8c","fromSide":"bottom","toNode":"785161483b98e6d4","toSide":"top"}
 	],
 	"metadata":{
 		"version":"1.0-1.0",
