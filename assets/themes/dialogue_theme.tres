@@ -1,5 +1,8 @@
 [gd_resource type="Theme" format=3 uid="uid://c843m1ifds0b8"]
 
+[ext_resource type="StyleBox" uid="uid://djgrjrivhqkpc" path="res://assets/themes/new_style_box_flat.tres" id="1_tx3iq"]
+[ext_resource type="FontFile" uid="uid://bdude2uqwyrt" path="res://assets/themes/font_file.tres" id="2_xsnil"]
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_spyqn"]
 bg_color = Color(0, 0, 0, 1)
 border_width_left = 3
@@ -24,18 +27,6 @@ corner_radius_top_right = 5
 corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e0njw"]
-bg_color = Color(0, 0, 0, 1)
-border_width_left = 3
-border_width_top = 3
-border_width_right = 3
-border_width_bottom = 3
-border_color = Color(0.6, 0.6, 0.6, 1)
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qkmqt"]
 bg_color = Color(0, 0, 0, 1)
 border_width_left = 3
@@ -48,11 +39,12 @@ corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
 
 [resource]
+default_font = ExtResource("2_xsnil")
 default_font_size = 20
 Button/styles/disabled = SubResource("StyleBoxFlat_spyqn")
 Button/styles/focus = SubResource("StyleBoxFlat_ri4m3")
-Button/styles/hover = SubResource("StyleBoxFlat_e0njw")
-Button/styles/normal = SubResource("StyleBoxFlat_e0njw")
+Button/styles/hover = ExtResource("1_tx3iq")
+Button/styles/normal = ExtResource("1_tx3iq")
 MarginContainer/constants/margin_bottom = 15
 MarginContainer/constants/margin_left = 30
 MarginContainer/constants/margin_right = 30

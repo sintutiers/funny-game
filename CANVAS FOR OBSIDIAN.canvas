@@ -1,5 +1,7 @@
 {
 	"nodes":[
+		{"id":"194a33e8b0364c84","x":-6120,"y":-1280,"width":2320,"height":2540,"type":"group","label":"level disign"},
+		{"id":"18cc52e3b7f32d24","x":-3440,"y":200,"width":1303,"height":1334,"type":"group","label":"legacy layout"},
 		{
 			"id":"b6df6ece97246821",
 			"type":"text",
@@ -113,16 +115,6 @@
 			"width":260,
 			"height":124
 		},
-		{"id":"a5a860080d51ac22","type":"file","file":"GDD.md","x":-1472,"y":1920,"width":632,"height":541},
-		{"id":"ccc559fa0864ca86","type":"file","file":"TDD.md","x":-796,"y":1920,"width":536,"height":541},
-		{"id":"b89c02df2c5f0db1","type":"text","text":"bedroom\n","x":-2451,"y":589,"width":250,"height":60},
-		{"id":"6ef99e278b95992d","type":"text","text":"balcony","x":-2340,"y":320,"width":250,"height":60},
-		{"id":"c667fb1768e872df","type":"text","text":"dream bedroom","x":-2477,"y":717,"width":250,"height":60},
-		{"id":"4e65dea7fca3192b","type":"text","text":"star room","x":-2551,"y":1031,"width":250,"height":60},
-		{"id":"76e080fbad05c769","type":"text","text":"nexus","x":-2602,"y":840,"width":250,"height":60},
-		{"id":"e72393ac6d19335d","type":"text","text":"eye room","x":-2227,"y":860,"width":250,"height":60},
-		{"id":"e27117741a93dd09","type":"text","text":"void","x":-2508,"y":1220,"width":250,"height":60},
-		{"id":"0c900b0a3197f4f8","type":"text","text":"maniac/mania","x":-3160,"y":868,"width":250,"height":60},
 		{"id":"d3eefc34ca73ec27","type":"text","text":"everything is now a seperate img","x":-59,"y":1429,"width":250,"height":60},
 		{"id":"e95886f479d1b7e9","type":"file","file":"assets/misc/canvas/Pasted image 20260506204621.png","x":-895,"y":955,"width":120,"height":208},
 		{"id":"149e135e0c611f1c","type":"file","file":"assets/misc/canvas/Pasted image 20260507002818.png","x":-225,"y":940,"width":126,"height":221},
@@ -134,7 +126,6 @@
 		{"id":"3307a775d72062a9","type":"file","file":"Excalidraw/Drawing 2026-06-24 19.34.51.excalidraw.md","x":-9600,"y":6480,"width":400,"height":400},
 		{"id":"2c4c1b915d7496ab","type":"text","text":"bedroom","x":-4622,"y":-1087,"width":250,"height":60},
 		{"id":"32a359d24ad3f4c2","type":"text","text":"judgement","x":-4720,"y":-880,"width":250,"height":60},
-		{"id":"1d5a5ebb4149a882","type":"text","text":"# usefull links\n\n- https://ynfg.yume.wiki/Yume_Nikki_Fangames_Wiki\n- https://yume.wiki/Main_Page\n- https://ynoproject.net/","x":-3240,"y":-329,"width":425,"height":325},
 		{"id":"1801d85d1db1bec6","type":"text","text":"dead, game over or special event?","x":-4190,"y":-940,"width":250,"height":60},
 		{"id":"784b2a3cc85f17a9","type":"file","file":"Excalidraw/Drawing 2026-06-24 19.28.53.excalidraw.png","x":-5210,"y":-1127,"width":400,"height":247},
 		{"id":"9b7af1e83c2c3bcb","type":"text","text":"all rooms?","x":-6040,"y":-480,"width":250,"height":60},
@@ -147,7 +138,18 @@
 		{"id":"785161483b98e6d4","type":"file","file":"Excalidraw/Drawing 2026-06-24 22.24.50.excalidraw.md","x":-5450,"y":40,"width":400,"height":400},
 		{"id":"1ea87e7cd088bc8c","type":"text","text":"grief","x":-5300,"y":-359,"width":250,"height":60},
 		{"id":"19e5ca16b128adaa","type":"text","text":"obmil","x":-4900,"y":-359,"width":250,"height":60},
-		{"id":"5d0ef9e96bd22731","x":-4848,"y":35,"width":250,"height":60,"type":"text","text":"broken obmil"}
+		{"id":"5d0ef9e96bd22731","type":"text","text":"broken obmil","x":-4848,"y":35,"width":250,"height":60},
+		{"id":"1d5a5ebb4149a882","type":"text","text":"# usefull links\n\n- https://ynfg.yume.wiki/Yume_Nikki_Fangames_Wiki\n- https://yume.wiki/Main_Page\n- https://ynoproject.net/","x":-1393,"y":-600,"width":425,"height":325},
+		{"id":"c667fb1768e872df","type":"text","text":"dream bedroom","x":-2717,"y":715,"width":250,"height":60},
+		{"id":"b89c02df2c5f0db1","type":"text","text":"bedroom\n","x":-2691,"y":587,"width":250,"height":60},
+		{"id":"6ef99e278b95992d","type":"text","text":"balcony","x":-2580,"y":318,"width":250,"height":60},
+		{"id":"e72393ac6d19335d","type":"text","text":"eye room","x":-2467,"y":858,"width":250,"height":60},
+		{"id":"0c900b0a3197f4f8","type":"text","text":"maniac/mania","x":-3320,"y":969,"width":250,"height":60},
+		{"id":"76e080fbad05c769","type":"text","text":"nexus","x":-2842,"y":838,"width":250,"height":60},
+		{"id":"4e65dea7fca3192b","type":"text","text":"star room","x":-2791,"y":1029,"width":250,"height":60},
+		{"id":"e27117741a93dd09","type":"text","text":"void","x":-2748,"y":1218,"width":250,"height":60},
+		{"id":"ccc559fa0864ca86","type":"file","file":"TDD.md","x":-2592,"y":1864,"width":536,"height":541},
+		{"id":"a5a860080d51ac22","type":"file","file":"GDD.md","x":-3268,"y":1864,"width":632,"height":541}
 	],
 	"edges":[
 		{"id":"1f2a3c666be92d5b","fromNode":"acf7f0a6d4cfa0dd","fromSide":"bottom","toNode":"71daa9985ccd3d4d","toSide":"top"},
