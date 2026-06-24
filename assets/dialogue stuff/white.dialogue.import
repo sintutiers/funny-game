@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://roracqen2ons"
+path="res://.godot/imported/white.dialogue-eb2c12c1c7b7af8e10e3e915213f3d7a.tres"
+
+[deps]
+
+source_file="res://assets/dialogue stuff/white.dialogue"
+dest_files=["res://.godot/imported/white.dialogue-eb2c12c1c7b7af8e10e3e915213f3d7a.tres"]
+
+[params]
+
+defaults=true
