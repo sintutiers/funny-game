@@ -11,6 +11,7 @@
 [ext_resource type="Script" uid="uid://bkmkeenkt520m" path="res://assets/scripts/dialogue_component.gd" id="6_j7vt5"]
 [ext_resource type="Texture2D" uid="uid://c0pmx7qfytvwv" path="res://The Amazing Art Folder/door Chiel.png" id="7_cxf8n"]
 [ext_resource type="Resource" uid="uid://c57034lwi2g3h" path="res://assets/dialogue stuff/bed1placeholder.dialogue" id="7_e6ceu"]
+[ext_resource type="Script" uid="uid://cburu6b4ckehs" path="res://addons/godot-rapier2d/custom_nodes/rapier_area_2d.gd" id="7_j7vt5"]
 [ext_resource type="Script" uid="uid://dimvdouy8g0sv" path="res://addons/phantom_camera/scripts/resources/phantom_camera_noise_2d.gd" id="8_hsdi0"]
 [ext_resource type="Script" uid="uid://busd3yfk5p1mx" path="res://addons/godot-rapier2d/custom_nodes/rapier_static_body_2d.gd" id="10_yju58"]
 [ext_resource type="Texture2D" uid="uid://b4jlykqh28s5a" path="res://The Amazing Art Folder/bed_placeholder.png" id="15_iwdi6"]
@@ -104,11 +105,10 @@ shape = SubResource("RectangleShape2D_vrgib")
 position = Vector2(0, 100.82175)
 shape = SubResource("RectangleShape2D_vrgib")
 
-[node name="Bed" type="Area2D" parent="background" unique_id=817305811 groups=["interactable"]]
+[node name="Bed" type="Area2D" parent="background" unique_id=817305811]
 unique_name_in_owner = true
 position = Vector2(-285.04675, -107.43775)
 scale = Vector2(3.65, 3.65)
-script = ExtResource("4_cxf8n")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="background/Bed" unique_id=1094970256]
 shape = SubResource("RectangleShape2D_q2aba")
@@ -116,17 +116,20 @@ shape = SubResource("RectangleShape2D_q2aba")
 [node name="BedPlaceholder" type="Sprite2D" parent="background/Bed" unique_id=431403754]
 texture = ExtResource("15_iwdi6")
 
-[node name="BedComponent" type="Node" parent="background/Bed" unique_id=1769169764]
-script = ExtResource("3_cxf8n")
+[node name="Interactable" type="Node" parent="background/Bed" unique_id=556855328]
+script = ExtResource("4_cxf8n")
 
-[node name="Dialogue" type="Node" parent="background/Bed" unique_id=1270080268]
+[node name="Dialogue" type="Node" parent="background/Bed/Interactable" unique_id=1270080268]
 script = ExtResource("6_j7vt5")
 dialogue_resource = ExtResource("7_e6ceu")
 
-[node name="Door" type="Area2D" parent="background" unique_id=201148014 groups=["interactable"]]
+[node name="BedComponent" type="Node" parent="background/Bed/Interactable" unique_id=1769169764]
+script = ExtResource("3_cxf8n")
+
+[node name="Door" type="Area2D" parent="background" unique_id=201148014]
 unique_name_in_owner = true
-position = Vector2(300, -209.495)
-script = ExtResource("4_cxf8n")
+position = Vector2(300, -210.495)
+script = ExtResource("7_j7vt5")
 metadata/_custom_type_script = "uid://cburu6b4ckehs"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="background/Door" unique_id=619086787]
@@ -140,14 +143,17 @@ frame_progress = 0.10982978
 position = Vector2(0, -18.005005)
 shape = SubResource("RectangleShape2D_iwdi6")
 
-[node name="DoorComponent" type="Node" parent="background/Door" unique_id=2022789368]
+[node name="Interactable" type="Node" parent="background/Door" unique_id=302476965]
+script = ExtResource("4_cxf8n")
+
+[node name="DoorComponent" type="Node" parent="background/Door/Interactable" unique_id=2022789368]
 script = ExtResource("5_cxf8n")
 next_scene = "uid://b80chnt43vfab"
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547 groups=["interactable"]]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 physics_interpolation_mode = 1
 top_level = true
-offset = Vector2(-1.0267802, 2.560188)
+offset = Vector2(2.5343392, 1.1410115)
 zoom = Vector2(1.1, 1.1)
 editor_draw_limits = true
 

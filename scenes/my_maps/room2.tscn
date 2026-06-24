@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://mkihoskon4ea" path="res://The Amazing Art Folder/being1.png" id="4_djrx8"]
 [ext_resource type="Texture2D" uid="uid://ck1myn3avrssv" path="res://The Amazing Art Folder/cube.png" id="5_c4r8w"]
+[ext_resource type="Script" uid="uid://cburu6b4ckehs" path="res://addons/godot-rapier2d/custom_nodes/rapier_area_2d.gd" id="6_i5anj"]
 [ext_resource type="Script" uid="uid://b83wx8f1aq2t8" path="res://assets/scripts/Interactable.gd" id="6_rsvv2"]
 [ext_resource type="Texture2D" uid="uid://de0lbndqydfuc" path="res://The Amazing Art Folder/sun.png" id="6_xadts"]
 [ext_resource type="Texture2D" uid="uid://bgx1slavir63w" path="res://The Amazing Art Folder/bed.png" id="7_g3f5w"]
@@ -159,7 +160,7 @@ shape = SubResource("RectangleShape2D_vrgib")
 unique_name_in_owner = true
 position = Vector2(528, -224)
 scale = Vector2(3.65, 3.65)
-script = ExtResource("6_rsvv2")
+script = ExtResource("6_i5anj")
 metadata/_custom_type_script = "uid://cburu6b4ckehs"
 
 [node name="Door1" type="Sprite2D" parent="background/Door" unique_id=2098207431]
@@ -171,14 +172,17 @@ texture = ExtResource("9_88ddt")
 position = Vector2(0, -3.1265678)
 shape = SubResource("RectangleShape2D_s7wbt")
 
-[node name="DoorComponent" type="Node" parent="background/Door" unique_id=1494105584]
+[node name="Interactable" type="Node" parent="background/Door" unique_id=452022143]
+script = ExtResource("6_rsvv2")
+
+[node name="DoorComponent" type="Node" parent="background/Door/Interactable" unique_id=1494105584]
 script = ExtResource("8_2nenc")
 next_scene = "uid://djkihai5rc1e3"
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 physics_interpolation_mode = 1
 top_level = true
-offset = Vector2(5.7087536, 4.1203485)
+offset = Vector2(-0.7926841, -3.0349216)
 zoom = Vector2(1.1, 1.1)
 editor_draw_limits = true
 

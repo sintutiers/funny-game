@@ -41,10 +41,6 @@ size = Vector2(25, 185)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1e5pv"]
 size = Vector2(335, 25)
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_60vv4"]
-radius = 6.027405
-height = 15.342468
-
 [sub_resource type="Resource" id="Resource_gw3rf"]
 script = ExtResource("4_1e5pv")
 
@@ -54,6 +50,10 @@ amplitude = 15.0
 frequency = 0.1
 metadata/_custom_type_script = "uid://dimvdouy8g0sv"
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_60vv4"]
+radius = 4.931473
+height = 19.726013
+
 [node name="weird office" type="Node2D" unique_id=70873681]
 scale = Vector2(3, 3)
 
@@ -62,7 +62,6 @@ layer = -1
 follow_viewport_enabled = true
 
 [node name="Door" type="Area2D" parent="background" unique_id=201148014]
-unique_name_in_owner = true
 position = Vector2(918, -440)
 scale = Vector2(3.65, 3.65)
 script = ExtResource("10_er0vt")
@@ -75,11 +74,14 @@ sprite_frames = SubResource("SpriteFrames_iwdi6")
 position = Vector2(0, -3.835617)
 shape = SubResource("RectangleShape2D_iwdi6")
 
-[node name="DoorComponent" type="Node" parent="background/Door" unique_id=771415327]
+[node name="Interactable" type="Node" parent="background/Door" unique_id=832383881]
+script = ExtResource("10_er0vt")
+
+[node name="DoorComponent" type="Node" parent="background/Door/Interactable" unique_id=771415327]
 script = ExtResource("3_60vv4")
 next_scene = "uid://4lj1r0wet3rc"
 
-[node name="walls" type="StaticBody2D" parent="background" unique_id=1253343983]
+[node name="walls" type="StaticBody2D" parent="background" unique_id=1253343983 groups=["walls"]]
 scale = Vector2(7.5, 7.5)
 script = ExtResource("18_og2q4")
 metadata/_custom_type_script = "uid://busd3yfk5p1mx"
@@ -129,25 +131,6 @@ position = Vector2(700.847, 522.85)
 scale = Vector2(3.65, 3.65)
 texture = ExtResource("15_1e5pv")
 
-[node name="chair" type="Area2D" parent="background" unique_id=1316380514]
-unique_name_in_owner = true
-position = Vector2(777.00006, 469)
-rotation = 1.5707964
-scale = Vector2(3.65, 3.65)
-script = ExtResource("10_er0vt")
-
-[node name="Chair2Duke" type="Sprite2D" parent="background/chair" unique_id=1868891765]
-rotation = -1.5707964
-texture = ExtResource("16_er0vt")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="background/chair" unique_id=1784216189]
-rotation = -1.5707964
-shape = SubResource("CapsuleShape2D_60vv4")
-
-[node name="Dialogue" type="Node" parent="background/chair" unique_id=375029260]
-script = ExtResource("11_og2q4")
-dialogue_resource = ExtResource("12_iajhm")
-
 [node name="Cabinet2Duke" type="Sprite2D" parent="background" unique_id=612121133]
 position = Vector2(-1040.5, 396.95)
 rotation = 1.5707964
@@ -162,7 +145,7 @@ texture = ExtResource("17_60vv4")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 physics_interpolation_mode = 1
 top_level = true
-offset = Vector2(0.5639077, 0.90291804)
+offset = Vector2(0.9284372, 1.6707408)
 zoom = Vector2(1.25, 1.25)
 editor_draw_limits = true
 
@@ -206,5 +189,26 @@ wall_left = NodePath("../background/walls/V1")
 wall_right = NodePath("../background/walls/V2")
 wall_top = NodePath("../background/walls/H1")
 wall_bottom = NodePath("../background/walls/H2")
+
+[node name="chair1" type="StaticBody2D" parent="." unique_id=638744043]
+script = ExtResource("18_og2q4")
+metadata/_custom_type_script = "uid://busd3yfk5p1mx"
+
+[node name="Chair2Duke" type="Sprite2D" parent="chair1" unique_id=1868891765]
+position = Vector2(259.00003, 156.33334)
+scale = Vector2(1.2166667, 1.2166667)
+texture = ExtResource("16_er0vt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="chair1" unique_id=1784216189]
+position = Vector2(258.66675, 157.00003)
+scale = Vector2(1.2166667, 1.2166667)
+shape = SubResource("CapsuleShape2D_60vv4")
+
+[node name="Interactable" type="Node" parent="chair1" unique_id=2013351415]
+script = ExtResource("10_er0vt")
+
+[node name="Dialogue" type="Node" parent="chair1/Interactable" unique_id=375029260]
+script = ExtResource("11_og2q4")
+dialogue_resource = ExtResource("12_iajhm")
 
 [editable path="main character"]
