@@ -1,24 +1,24 @@
 [gd_scene format=3 uid="uid://dcirt4ho0k7ed"]
 
-[ext_resource type="Script" uid="uid://busd3yfk5p1mx" path="res://addons/godot-rapier2d/custom_nodes/rapier_static_body_2d.gd" id="1_kxw7r"]
-[ext_resource type="Texture2D" uid="uid://bmy6203ow70ol" path="res://The Amazing Art Folder/cassie_1.png" id="2_suj5i"]
-[ext_resource type="Texture2D" uid="uid://bc4mx21fnd2hh" path="res://The Amazing Art Folder/nexus_placement.png" id="3_oj2te"]
-[ext_resource type="PackedScene" uid="uid://uqnuhcrw12d0" path="res://assets/scenes/player.tscn" id="4_itlho"]
-[ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="5_tkqse"]
-[ext_resource type="Script" uid="uid://bhexx6mj1xv3q" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="6_uc14g"]
-[ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="7_cfvbu"]
-[ext_resource type="Texture2D" uid="uid://3ucay8xhxctg" path="res://The Amazing Art Folder/cassie_white1.png" id="8_g0uxh"]
-[ext_resource type="Texture2D" uid="uid://qmkkud72jx68" path="res://The Amazing Art Folder/cassie_white2.png" id="9_6c3et"]
-[ext_resource type="Script" uid="uid://b83wx8f1aq2t8" path="res://scripts/components/Interactable.gd" id="10_270oq"]
-[ext_resource type="Script" uid="uid://bkmkeenkt520m" path="res://scripts/components/dialogue_component.gd" id="11_dkrml"]
-[ext_resource type="Resource" uid="uid://roracqen2ons" path="res://assets/dialogue/entity2grief.dialogue" id="12_i6qxi"]
-[ext_resource type="Texture2D" uid="uid://cgdoexuttam65" path="res://The Amazing Art Folder/cassie_red1.png" id="13_8cld4"]
-[ext_resource type="Texture2D" uid="uid://6yeroqsmvbna" path="res://The Amazing Art Folder/cassie_red2.png" id="14_bmoi4"]
-[ext_resource type="Resource" uid="uid://d0o5q5x067a0u" path="res://assets/dialogue/entity1grief.dialogue" id="15_awsh8"]
-[ext_resource type="Texture2D" uid="uid://cqiuyacsfr7cw" path="res://The Amazing Art Folder/door1.png" id="16_18j1w"]
-[ext_resource type="Script" uid="uid://1cjmfi5n1mvs" path="res://scripts/components/door_component.gd" id="17_b6i0a"]
-[ext_resource type="Script" uid="uid://csnxpxd7w5jv2" path="res://scripts/components/infinite_component.gd" id="18_oqf80"]
-[ext_resource type="Texture2D" uid="uid://b1hhqiedxtx81" path="res://The Amazing Art Folder/entity1_grief.png" id="18_suj5i"]
+[ext_resource type="Script" uid="uid://busd3yfk5p1mx" path="res://addons/godot-rapier2d/custom_nodes/rapier_static_body_2d.gd" id="1_bov0m"]
+[ext_resource type="Texture2D" uid="uid://bmy6203ow70ol" path="res://The Amazing Art Folder/cassie_1.png" id="2_s3age"]
+[ext_resource type="Texture2D" uid="uid://bc4mx21fnd2hh" path="res://The Amazing Art Folder/nexus_placement.png" id="3_irwne"]
+[ext_resource type="PackedScene" uid="uid://uqnuhcrw12d0" path="res://assets/scenes/player.tscn" id="4_8r6i5"]
+[ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="5_ax3mt"]
+[ext_resource type="Script" uid="uid://bhexx6mj1xv3q" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="6_0gps1"]
+[ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="7_nbknl"]
+[ext_resource type="Texture2D" uid="uid://3ucay8xhxctg" path="res://The Amazing Art Folder/cassie_white1.png" id="8_li4si"]
+[ext_resource type="Texture2D" uid="uid://qmkkud72jx68" path="res://The Amazing Art Folder/cassie_white2.png" id="9_wfk0o"]
+[ext_resource type="Script" uid="uid://b83wx8f1aq2t8" path="res://scripts/components/Interactable.gd" id="10_exkrv"]
+[ext_resource type="Script" uid="uid://bkmkeenkt520m" path="res://scripts/components/dialogue_component.gd" id="11_8uxws"]
+[ext_resource type="Resource" uid="uid://roracqen2ons" path="res://assets/dialogue/entity2grief.dialogue" id="12_gaaia"]
+[ext_resource type="Texture2D" uid="uid://cgdoexuttam65" path="res://The Amazing Art Folder/cassie_red1.png" id="13_ha2yr"]
+[ext_resource type="Texture2D" uid="uid://6yeroqsmvbna" path="res://The Amazing Art Folder/cassie_red2.png" id="14_i7wko"]
+[ext_resource type="Resource" uid="uid://d0o5q5x067a0u" path="res://assets/dialogue/entity1grief.dialogue" id="15_nvlvn"]
+[ext_resource type="Texture2D" uid="uid://cqiuyacsfr7cw" path="res://The Amazing Art Folder/door1.png" id="16_62tfj"]
+[ext_resource type="Script" uid="uid://1cjmfi5n1mvs" path="res://scripts/components/door_component.gd" id="17_grd15"]
+[ext_resource type="Texture2D" uid="uid://b1hhqiedxtx81" path="res://The Amazing Art Folder/entity1_grief.png" id="18_48uqn"]
+[ext_resource type="Script" uid="uid://csnxpxd7w5jv2" path="res://scripts/components/infinite_component.gd" id="19_t5da0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iajhm"]
 size = Vector2(25, 350)
@@ -27,16 +27,16 @@ size = Vector2(25, 350)
 size = Vector2(500, 25)
 
 [sub_resource type="Resource" id="Resource_4o74q"]
-script = ExtResource("7_cfvbu")
+script = ExtResource("7_nbknl")
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_as6yq"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("8_g0uxh")
+"texture": ExtResource("8_li4si")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_6c3et")
+"texture": ExtResource("9_wfk0o")
 }],
 "loop": 1,
 "name": &"default",
@@ -51,10 +51,10 @@ height = 31.333298
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("13_8cld4")
+"texture": ExtResource("13_ha2yr")
 }, {
 "duration": 1.0,
-"texture": ExtResource("14_bmoi4")
+"texture": ExtResource("14_i7wko")
 }],
 "loop": 1,
 "name": &"default",
@@ -70,7 +70,7 @@ scale = Vector2(3, 3)
 
 [node name="walls" type="StaticBody2D" parent="." unique_id=1253343983 groups=["walls"]]
 scale = Vector2(2.5, 2.5)
-script = ExtResource("1_kxw7r")
+script = ExtResource("1_bov0m")
 metadata/_custom_type_script = "uid://busd3yfk5p1mx"
 
 [node name="V1" type="CollisionShape2D" parent="walls" unique_id=1482717394]
@@ -106,7 +106,7 @@ follow_viewport = false
 
 [node name="Cassie1" type="Sprite2D" parent="background/Parallax2D2" unique_id=1859108533]
 position = Vector2(-18, -99)
-texture = ExtResource("2_suj5i")
+texture = ExtResource("2_s3age")
 
 [node name="Parallax2D" type="Parallax2D" parent="background" unique_id=528683819]
 scale = Vector2(4, 4)
@@ -120,9 +120,9 @@ follow_viewport = false
 modulate = Color(1, 1, 1, 0.19607843)
 texture_filter = 1
 position = Vector2(0, 0.25)
-texture = ExtResource("3_oj2te")
+texture = ExtResource("3_irwne")
 
-[node name="PlayerRoot" parent="." unique_id=621235887 instance=ExtResource("4_itlho")]
+[node name="PlayerRoot" parent="." unique_id=621235887 instance=ExtResource("4_8r6i5")]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=560551855]
 physics_interpolation_mode = 1
@@ -132,11 +132,11 @@ editor_draw_limits = true
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=698717255]
 process_priority = 300
 process_physics_priority = 300
-script = ExtResource("5_tkqse")
+script = ExtResource("5_ax3mt")
 
 [node name="PhantomCamera2D" type="Node2D" parent="." unique_id=1835159136 node_paths=PackedStringArray("follow_target")]
 top_level = true
-script = ExtResource("6_uc14g")
+script = ExtResource("6_0gps1")
 follow_mode = 2
 follow_target = NodePath("../PlayerRoot/PlayerBody")
 tween_resource = SubResource("Resource_4o74q")
@@ -144,7 +144,7 @@ draw_limits = true
 
 [node name="whitewhitewhite" type="StaticBody2D" parent="." unique_id=291582668]
 position = Vector2(-264.119, 158.517)
-script = ExtResource("1_kxw7r")
+script = ExtResource("1_bov0m")
 metadata/_custom_type_script = "uid://busd3yfk5p1mx"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="whitewhitewhite" unique_id=159946399]
@@ -156,15 +156,15 @@ autoplay = "default"
 shape = SubResource("CapsuleShape2D_daalc")
 
 [node name="Interactable" type="Node" parent="whitewhitewhite" unique_id=2050577016]
-script = ExtResource("10_270oq")
+script = ExtResource("10_exkrv")
 
 [node name="dialogue" type="Node" parent="whitewhitewhite/Interactable" unique_id=1467349312]
-script = ExtResource("11_dkrml")
-dialogue_resource = ExtResource("12_i6qxi")
+script = ExtResource("11_8uxws")
+dialogue_resource = ExtResource("12_gaaia")
 
 [node name="redredredred" type="StaticBody2D" parent="." unique_id=2136613843]
 position = Vector2(154.777, 0)
-script = ExtResource("1_kxw7r")
+script = ExtResource("1_bov0m")
 metadata/_custom_type_script = "uid://busd3yfk5p1mx"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="redredredred" unique_id=1207058950]
@@ -177,53 +177,53 @@ frame_progress = 0.86313075
 shape = SubResource("CapsuleShape2D_daalc")
 
 [node name="Interactable" type="Node" parent="redredredred" unique_id=1632388197]
-script = ExtResource("10_270oq")
+script = ExtResource("10_exkrv")
 
 [node name="dialogue" type="Node" parent="redredredred/Interactable" unique_id=339257600]
-script = ExtResource("11_dkrml")
-dialogue_resource = ExtResource("15_awsh8")
+script = ExtResource("11_8uxws")
+dialogue_resource = ExtResource("15_nvlvn")
 
 [node name="placeholder ending" type="StaticBody2D" parent="." unique_id=1115464959]
 position = Vector2(434.33337, -297.66663)
 scale = Vector2(3, 3)
-script = ExtResource("1_kxw7r")
+script = ExtResource("1_bov0m")
 metadata/_custom_type_script = "uid://busd3yfk5p1mx"
 
 [node name="sprite" type="Sprite2D" parent="placeholder ending" unique_id=1226431577]
-texture = ExtResource("16_18j1w")
+texture = ExtResource("16_62tfj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="placeholder ending" unique_id=1852051043]
 shape = SubResource("CapsuleShape2D_daalc")
 
 [node name="Interactable" type="Node" parent="placeholder ending" unique_id=570837775]
-script = ExtResource("10_270oq")
+script = ExtResource("10_exkrv")
 
 [node name="door" type="Node" parent="placeholder ending/Interactable" unique_id=46485846]
-script = ExtResource("17_b6i0a")
+script = ExtResource("17_grd15")
 next_scene = "uid://5un3240o6uy1"
 
 [node name="entity1" type="StaticBody2D" parent="." unique_id=194323410]
 position = Vector2(-442, -313.6667)
-script = ExtResource("1_kxw7r")
+script = ExtResource("1_bov0m")
 metadata/_custom_type_script = "uid://busd3yfk5p1mx"
 
 [node name="Sprite2D" type="Sprite2D" parent="entity1" unique_id=1631779118]
 scale = Vector2(0.7, 0.7)
-texture = ExtResource("18_suj5i")
+texture = ExtResource("18_48uqn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="entity1" unique_id=725428509]
 position = Vector2(0, 4.245)
 shape = SubResource("CapsuleShape2D_suj5i")
 
 [node name="Interactable" type="Node" parent="entity1" unique_id=869572845]
-script = ExtResource("10_270oq")
+script = ExtResource("10_exkrv")
 
 [node name="dialogue" type="Node" parent="entity1/Interactable" unique_id=1596353486]
-script = ExtResource("11_dkrml")
-dialogue_resource = ExtResource("15_awsh8")
+script = ExtResource("11_8uxws")
+dialogue_resource = ExtResource("15_nvlvn")
 
 [node name="infinity" type="Node" parent="." unique_id=335953216 node_paths=PackedStringArray("player", "wall_left", "wall_right", "wall_top", "wall_bottom")]
-script = ExtResource("18_oqf80")
+script = ExtResource("19_t5da0")
 player = NodePath("../PlayerRoot/PlayerBody")
 wall_left = NodePath("../walls/V1")
 wall_right = NodePath("../walls/V2")
