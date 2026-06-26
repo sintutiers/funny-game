@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bxypuutup1fo6"]
 
 [ext_resource type="Script" uid="uid://busd3yfk5p1mx" path="res://addons/godot-rapier2d/custom_nodes/rapier_static_body_2d.gd" id="1_at1de"]
-[ext_resource type="Texture2D" uid="uid://bmy6203ow70ol" path="res://The Amazing Art Folder/cassie_1.png" id="2_eb5vv"]
+[ext_resource type="Texture2D" uid="uid://u3jtefkhs1x" path="res://The Amazing Art Folder/grief_floortile.png" id="2_at1de"]
 [ext_resource type="Texture2D" uid="uid://bc4mx21fnd2hh" path="res://The Amazing Art Folder/nexus_placement.png" id="3_b6cir"]
 [ext_resource type="PackedScene" uid="uid://uqnuhcrw12d0" path="res://assets/scenes/player.tscn" id="4_grwrk"]
 [ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="5_f8ill"]
@@ -98,15 +98,15 @@ layer = -2
 follow_viewport_enabled = true
 
 [node name="Parallax2D2" type="Parallax2D" parent="background" unique_id=1233405741]
+scale = Vector2(4, 4)
 scroll_scale = Vector2(0.1, 0.1)
-repeat_size = Vector2(2048, 1499)
+repeat_size = Vector2(50, 50)
 autoscroll = Vector2(0.1, 0.1)
-repeat_times = 4
+repeat_times = 24
 follow_viewport = false
 
-[node name="Cassie1" type="Sprite2D" parent="background/Parallax2D2" unique_id=1859108533]
-position = Vector2(-18, -99)
-texture = ExtResource("2_eb5vv")
+[node name="sprite" type="Sprite2D" parent="background/Parallax2D2" unique_id=1859108533]
+texture = ExtResource("2_at1de")
 
 [node name="Parallax2D" type="Parallax2D" parent="background" unique_id=528683819]
 scale = Vector2(4, 4)
@@ -116,7 +116,7 @@ autoscroll = Vector2(8.5, 3.5)
 repeat_times = 12
 follow_viewport = false
 
-[node name="NexusPlacement" type="Sprite2D" parent="background/Parallax2D" unique_id=396379387]
+[node name="sprite" type="Sprite2D" parent="background/Parallax2D" unique_id=396379387]
 modulate = Color(1, 1, 1, 0.19607843)
 texture_filter = 1
 position = Vector2(0, 0.25)

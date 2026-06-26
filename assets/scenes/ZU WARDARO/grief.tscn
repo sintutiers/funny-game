@@ -104,7 +104,7 @@ autoscroll = Vector2(0.1, 0.1)
 repeat_times = 4
 follow_viewport = false
 
-[node name="Cassie1" type="Sprite2D" parent="background/Parallax2D2" unique_id=1859108533]
+[node name="sprite" type="Sprite2D" parent="background/Parallax2D2" unique_id=1859108533]
 position = Vector2(-18, -99)
 texture = ExtResource("2_s3age")
 
@@ -116,7 +116,7 @@ autoscroll = Vector2(8.5, 3.5)
 repeat_times = 12
 follow_viewport = false
 
-[node name="NexusPlacement" type="Sprite2D" parent="background/Parallax2D" unique_id=396379387]
+[node name="sprite" type="Sprite2D" parent="background/Parallax2D" unique_id=396379387]
 modulate = Color(1, 1, 1, 0.19607843)
 texture_filter = 1
 position = Vector2(0, 0.25)
@@ -221,6 +221,10 @@ script = ExtResource("10_exkrv")
 [node name="dialogue" type="Node" parent="entity1/Interactable" unique_id=1596353486]
 script = ExtResource("11_8uxws")
 dialogue_resource = ExtResource("15_nvlvn")
+
+[node name="door" type="Node" parent="entity1/Interactable" unique_id=260240384]
+script = ExtResource("17_grd15")
+next_scene = "uid://bxypuutup1fo6"
 
 [node name="infinity" type="Node" parent="." unique_id=335953216 node_paths=PackedStringArray("player", "wall_left", "wall_right", "wall_top", "wall_bottom")]
 script = ExtResource("19_t5da0")

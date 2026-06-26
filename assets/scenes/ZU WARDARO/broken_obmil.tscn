@@ -1,26 +1,36 @@
-[gd_scene format=3 uid="uid://5un3240o6uy1"]
+[gd_scene format=3 uid="uid://gqwi1etgbpuo"]
 
-[ext_resource type="Script" uid="uid://busd3yfk5p1mx" path="res://addons/godot-rapier2d/custom_nodes/rapier_static_body_2d.gd" id="1_e1k7w"]
-[ext_resource type="Texture2D" uid="uid://hsfpscymp7i5" path="res://The Amazing Art Folder/Floortile_blankspace_light.png" id="2_y2pee"]
-[ext_resource type="Texture2D" uid="uid://cexcf7xpv684h" path="res://The Amazing Art Folder/lamp_on.png" id="3_v7ugf"]
-[ext_resource type="PackedScene" uid="uid://uqnuhcrw12d0" path="res://assets/scenes/player.tscn" id="4_wlej1"]
-[ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="5_01eim"]
-[ext_resource type="Script" uid="uid://bhexx6mj1xv3q" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="6_mreg8"]
-[ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="7_rbpth"]
-[ext_resource type="Texture2D" uid="uid://crmih01m3g7fj" path="res://The Amazing Art Folder/obmil_entity.png" id="8_4wmsh"]
-[ext_resource type="Script" uid="uid://b83wx8f1aq2t8" path="res://scripts/components/Interactable.gd" id="9_k4o2j"]
-[ext_resource type="Script" uid="uid://bkmkeenkt520m" path="res://scripts/components/dialogue_component.gd" id="10_2vxm7"]
-[ext_resource type="Resource" uid="uid://bpgp06xbve3ue" path="res://assets/dialogue/entity1obmil.dialogue" id="11_qakl3"]
-[ext_resource type="Texture2D" uid="uid://bso4w46je4cwt" path="res://The Amazing Art Folder/background duke.png" id="12_ubamr"]
-[ext_resource type="Script" uid="uid://1cjmfi5n1mvs" path="res://scripts/components/door_component.gd" id="13_7mpf0"]
-[ext_resource type="Texture2D" uid="uid://ck1myn3avrssv" path="res://The Amazing Art Folder/cube.png" id="14_tkeo3"]
-[ext_resource type="Script" uid="uid://csnxpxd7w5jv2" path="res://scripts/components/infinite_component.gd" id="15_jypdg"]
+[ext_resource type="Script" uid="uid://busd3yfk5p1mx" path="res://addons/godot-rapier2d/custom_nodes/rapier_static_body_2d.gd" id="1_avy7k"]
+[ext_resource type="Shader" uid="uid://o16jj7hjwyqc" path="res://assets/scenes/ZU WARDARO/broken_obmil.gdshader" id="1_cr1ly"]
+[ext_resource type="Texture2D" uid="uid://hsfpscymp7i5" path="res://The Amazing Art Folder/Floortile_blankspace_light.png" id="2_cr1ly"]
+[ext_resource type="Texture2D" uid="uid://cexcf7xpv684h" path="res://The Amazing Art Folder/lamp_on.png" id="3_5eg5d"]
+[ext_resource type="Material" uid="uid://h4yrp14cnk0o" path="res://assets/themes/inverst colours.tres" id="3_o5yvq"]
+[ext_resource type="PackedScene" uid="uid://uqnuhcrw12d0" path="res://assets/scenes/player.tscn" id="4_o5yvq"]
+[ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="5_xntig"]
+[ext_resource type="Script" uid="uid://bhexx6mj1xv3q" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="6_4oqqy"]
+[ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="7_n054a"]
+[ext_resource type="Texture2D" uid="uid://crmih01m3g7fj" path="res://The Amazing Art Folder/obmil_entity.png" id="8_65tmj"]
+[ext_resource type="Script" uid="uid://b83wx8f1aq2t8" path="res://scripts/components/Interactable.gd" id="9_myafq"]
+[ext_resource type="Script" uid="uid://bkmkeenkt520m" path="res://scripts/components/dialogue_component.gd" id="10_fms16"]
+[ext_resource type="Resource" uid="uid://bpgp06xbve3ue" path="res://assets/dialogue/entity1obmil.dialogue" id="11_wx4gp"]
+[ext_resource type="Texture2D" uid="uid://bso4w46je4cwt" path="res://The Amazing Art Folder/background duke.png" id="12_30uhy"]
+[ext_resource type="Script" uid="uid://1cjmfi5n1mvs" path="res://scripts/components/door_component.gd" id="13_efp18"]
+[ext_resource type="Script" uid="uid://csnxpxd7w5jv2" path="res://scripts/components/infinite_component.gd" id="15_dy030"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_s1bc0"]
+shader = ExtResource("1_cr1ly")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iajhm"]
 size = Vector2(25, 350)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1e5pv"]
 size = Vector2(500, 25)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5eg5d"]
+shader = ExtResource("1_cr1ly")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cr1ly"]
+shader = ExtResource("1_cr1ly")
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jrli6"]
 load_path = "res://.godot/imported/Floortile_blankspace_darkshadow.png-0f1d51d0a8cba64a12e8d4bb8a1463fd.ctex"
@@ -32,21 +42,18 @@ load_path = "res://.godot/imported/Floortile_blankspace_light.png-aefa2c1a23b9d9
 load_path = "res://.godot/imported/Floortile_blankspace_light.png-aefa2c1a23b9d91527c3178e58782a71.ctex"
 
 [sub_resource type="Resource" id="Resource_4o74q"]
-script = ExtResource("7_rbpth")
+script = ExtResource("7_n054a")
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_daalc"]
 radius = 13.000015
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jrli6"]
-radius = 8.0
-height = 21.777786
-
 [node name="obmil" type="Node2D" unique_id=70873681]
+material = SubResource("ShaderMaterial_s1bc0")
 scale = Vector2(3, 3)
 
 [node name="walls" type="StaticBody2D" parent="." unique_id=1253343983 groups=["walls"]]
 scale = Vector2(2.5, 2.5)
-script = ExtResource("1_e1k7w")
+script = ExtResource("1_avy7k")
 metadata/_custom_type_script = "uid://busd3yfk5p1mx"
 
 [node name="V1" type="CollisionShape2D" parent="walls" unique_id=1482717394]
@@ -76,6 +83,7 @@ transform = Transform2D(1.05, 0, 0, 1.05, 0, 0)
 follow_viewport_enabled = true
 
 [node name="floor" type="Parallax2D" parent="background" unique_id=1233405741]
+material = SubResource("ShaderMaterial_5eg5d")
 scale = Vector2(1.3, 1.3)
 scroll_scale = Vector2(0.05, 0.05)
 repeat_size = Vector2(50, 50)
@@ -83,6 +91,7 @@ repeat_times = 85
 follow_viewport = false
 
 [node name="floor" type="Sprite2D" parent="background/floor" unique_id=1859108533]
+material = SubResource("ShaderMaterial_cr1ly")
 texture = SubResource("CompressedTexture2D_jrli6")
 
 [node name="floorlight" type="Parallax2D" parent="background" unique_id=955533484]
@@ -94,22 +103,26 @@ follow_viewport = false
 
 [node name="floorlight4" type="Sprite2D" parent="background/floorlight" unique_id=434485094]
 texture_filter = 1
+material = ExtResource("3_o5yvq")
 texture = SubResource("CompressedTexture2D_ptr41")
 offset = Vector2(50, 50)
 
 [node name="floorlight3" type="Sprite2D" parent="background/floorlight" unique_id=212220215]
 texture_filter = 1
+material = ExtResource("3_o5yvq")
 texture = SubResource("CompressedTexture2D_2v0c3")
 offset = Vector2(0, 50)
 
 [node name="floorlight2" type="Sprite2D" parent="background/floorlight" unique_id=1422717734]
 texture_filter = 1
+material = ExtResource("3_o5yvq")
 texture = SubResource("CompressedTexture2D_2v0c3")
 offset = Vector2(50, 0)
 
 [node name="floorlight" type="Sprite2D" parent="background/floorlight" unique_id=1452853122]
 texture_filter = 1
-texture = ExtResource("2_y2pee")
+material = ExtResource("3_o5yvq")
+texture = ExtResource("2_cr1ly")
 
 [node name="lamp" type="Parallax2D" parent="background" unique_id=528683819]
 scale = Vector2(1.3, 1.3)
@@ -120,11 +133,12 @@ follow_viewport = false
 
 [node name="lamplight" type="Sprite2D" parent="background/lamp" unique_id=634895303]
 modulate = Color(1, 1, 1, 0.8117647)
+material = ExtResource("3_o5yvq")
 scale = Vector2(2, 2)
-texture = ExtResource("3_v7ugf")
+texture = ExtResource("3_5eg5d")
 offset = Vector2(12.528, -20.338)
 
-[node name="PlayerRoot" parent="." unique_id=621235887 instance=ExtResource("4_wlej1")]
+[node name="PlayerRoot" parent="." unique_id=621235887 instance=ExtResource("4_o5yvq")]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=560551855]
 physics_interpolation_mode = 1
@@ -134,79 +148,61 @@ editor_draw_limits = true
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=698717255]
 process_priority = 300
 process_physics_priority = 300
-script = ExtResource("5_01eim")
+script = ExtResource("5_xntig")
 
 [node name="PhantomCamera2D" type="Node2D" parent="." unique_id=1835159136 node_paths=PackedStringArray("follow_target")]
 top_level = true
-script = ExtResource("6_mreg8")
+script = ExtResource("6_4oqqy")
 follow_mode = 2
 follow_target = NodePath("../PlayerRoot/PlayerBody")
 tween_resource = SubResource("Resource_4o74q")
 draw_limits = true
 
-[node name="redredredred" type="StaticBody2D" parent="." unique_id=2136613843]
+[node name="entity1" type="StaticBody2D" parent="." unique_id=2136613843]
 position = Vector2(-428.33334, -33.333336)
-script = ExtResource("1_e1k7w")
+script = ExtResource("1_avy7k")
 metadata/_custom_type_script = "uid://busd3yfk5p1mx"
 
-[node name="ObmilEntity" type="Sprite2D" parent="redredredred" unique_id=1394960406]
+[node name="ObmilEntity" type="Sprite2D" parent="entity1" unique_id=1394960406]
+material = ExtResource("3_o5yvq")
 scale = Vector2(0.7, 0.7)
-texture = ExtResource("8_4wmsh")
+texture = ExtResource("8_65tmj")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="redredredred" unique_id=115384067]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="entity1" unique_id=115384067]
 shape = SubResource("CapsuleShape2D_daalc")
 
-[node name="Interactable" type="Node" parent="redredredred" unique_id=1632388197]
-script = ExtResource("9_k4o2j")
+[node name="Interactable" type="Node" parent="entity1" unique_id=1632388197]
+script = ExtResource("9_myafq")
 
-[node name="dialogue" type="Node" parent="redredredred/Interactable" unique_id=339257600]
-script = ExtResource("10_2vxm7")
-dialogue_resource = ExtResource("11_qakl3")
+[node name="dialogue" type="Node" parent="entity1/Interactable" unique_id=339257600]
+script = ExtResource("10_fms16")
+dialogue_resource = ExtResource("11_wx4gp")
 
-[node name="next" type="Node" parent="redredredred/Interactable" unique_id=80290623]
-script = ExtResource("13_7mpf0")
-next_scene = "uid://gqwi1etgbpuo"
+[node name="next" type="Node" parent="entity1/Interactable" unique_id=1952659820]
+script = ExtResource("13_efp18")
+next_scene = "uid://djkihai5rc1e3"
 
 [node name="PLACEHOLDER NEXUS" type="StaticBody2D" parent="." unique_id=212434922]
 position = Vector2(375.66663, -216.66663)
 scale = Vector2(2, 2)
-script = ExtResource("1_e1k7w")
+script = ExtResource("1_avy7k")
 metadata/_custom_type_script = "uid://busd3yfk5p1mx"
 
 [node name="sprite" type="Sprite2D" parent="PLACEHOLDER NEXUS" unique_id=954762380]
-texture = ExtResource("12_ubamr")
+texture = ExtResource("12_30uhy")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PLACEHOLDER NEXUS" unique_id=587327857]
 shape = SubResource("CapsuleShape2D_daalc")
 
 [node name="Interactable" type="Node" parent="PLACEHOLDER NEXUS" unique_id=1854710712]
-script = ExtResource("9_k4o2j")
+script = ExtResource("9_myafq")
 
 [node name="door" type="Node" parent="PLACEHOLDER NEXUS/Interactable" unique_id=2142243647]
-script = ExtResource("13_7mpf0")
+script = ExtResource("13_efp18")
 next_scene = "uid://c2motx642twyr"
 
-[node name="PLACEHOLDER ENDING" type="StaticBody2D" parent="." unique_id=1115464959]
-position = Vector2(-283, -277.66666)
-scale = Vector2(3, 3)
-script = ExtResource("1_e1k7w")
-metadata/_custom_type_script = "uid://busd3yfk5p1mx"
-
-[node name="sprite" type="Sprite2D" parent="PLACEHOLDER ENDING" unique_id=1226431577]
-texture = ExtResource("14_tkeo3")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PLACEHOLDER ENDING" unique_id=1852051043]
-shape = SubResource("CapsuleShape2D_jrli6")
-
-[node name="Interactable" type="Node" parent="PLACEHOLDER ENDING" unique_id=570837775]
-script = ExtResource("9_k4o2j")
-
-[node name="door" type="Node" parent="PLACEHOLDER ENDING/Interactable" unique_id=46485846]
-script = ExtResource("13_7mpf0")
-next_scene = "uid://4lj1r0wet3rc"
-
 [node name="infinity" type="Node" parent="." unique_id=335953216 node_paths=PackedStringArray("player", "wall_left", "wall_right", "wall_top", "wall_bottom")]
-script = ExtResource("15_jypdg")
+script = ExtResource("15_dy030")
 player = NodePath("../PlayerRoot/PlayerBody")
 wall_left = NodePath("../walls/V1")
 wall_right = NodePath("../walls/V2")

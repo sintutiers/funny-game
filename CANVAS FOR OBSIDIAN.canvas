@@ -137,7 +137,6 @@
 		{"id":"b3d823bd6dbf465a","type":"text","text":"# feedback mink\n- have more to do\n- improve porportions\n- bug with [infinite_component](infinite_component.gd)","x":-2953,"y":2777,"width":473,"height":243},
 		{"id":"f643edbe1a67b9c9","type":"file","file":"assets/misc/Excalidraw/Drawing 2026-06-24 19.37.52.excalidraw.md","x":-4375,"y":112,"width":400,"height":400},
 		{"id":"560b8e1aca1cf55c","type":"text","text":"[nexus](nexus.tscn)","x":-4667,"y":-488,"width":250,"height":60},
-		{"id":"5d0ef9e96bd22731","type":"text","text":"broken obmil","x":-4768,"y":107,"width":250,"height":60},
 		{
 			"id":"b6df6ece97246821",
 			"type":"text",
@@ -151,7 +150,8 @@
 		{"id":"19e5ca16b128adaa","type":"text","text":"[obmil](obmil.tscn)","x":-4820,"y":-287,"width":250,"height":60},
 		{"id":"784b2a3cc85f17a9","type":"file","file":"assets/misc/Excalidraw/Drawing 2026-06-24 19.28.53.excalidraw.png","x":-5170,"y":-955,"width":400,"height":247},
 		{"id":"785161483b98e6d4","type":"file","file":"assets/misc/Excalidraw/Drawing 2026-06-24 22.24.50.excalidraw.md","x":-5320,"y":-33,"width":410,"height":400},
-		{"id":"3b74055fce934110","x":-5240,"y":560,"width":250,"height":60,"type":"text","text":"[deep_grief](deep_grief.tscn)"}
+		{"id":"3b74055fce934110","x":-5240,"y":560,"width":250,"height":60,"type":"text","text":"[deep_grief](deep_grief.tscn)"},
+		{"id":"5d0ef9e96bd22731","type":"text","text":"[broken_obmil](broken_obmil.tscn)","x":-4780,"y":63,"width":250,"height":60}
 	],
 	"edges":[
 		{"id":"3261b4b1b41d4dc2","fromNode":"85bfa3a811c5d3ba","fromSide":"right","toNode":"132829902f5db8de","toSide":"left"},
