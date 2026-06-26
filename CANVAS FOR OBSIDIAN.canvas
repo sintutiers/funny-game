@@ -3,11 +3,10 @@
 		{"id":"194a33e8b0364c84","type":"group","x":-6120,"y":-1280,"width":2720,"height":2540,"label":"level disign"},
 		{"id":"18cc52e3b7f32d24","type":"group","x":-3160,"y":120,"width":1131,"height":1140,"label":"legacy layout"},
 		{"id":"3307a775d72062a9","type":"file","file":"Excalidraw/Drawing 2026-06-24 19.34.51.excalidraw.md","x":-9600,"y":6480,"width":400,"height":400},
-		{"id":"32a359d24ad3f4c2","type":"text","text":"judgement","x":-4640,"y":-808,"width":250,"height":60},
+		{"id":"32a359d24ad3f4c2","type":"text","text":"[judgement](judgement.tscn)","x":-4640,"y":-808,"width":250,"height":60},
 		{"id":"1801d85d1db1bec6","type":"text","text":"dead, game over or special event?","x":-4110,"y":-868,"width":250,"height":60},
-		{"id":"1ea87e7cd088bc8c","type":"text","text":"grief","x":-5220,"y":-287,"width":250,"height":60},
-		{"id":"785161483b98e6d4","type":"file","file":"assets/misc/Excalidraw/Drawing 2026-06-24 22.24.50.excalidraw.md","x":-5370,"y":112,"width":410,"height":400},
-		{"id":"2c4c1b915d7496ab","type":"text","text":"bedroom","x":-4542,"y":-1015,"width":250,"height":60},
+		{"id":"1ea87e7cd088bc8c","type":"text","text":"[grief](grief.tscn)","x":-5220,"y":-287,"width":250,"height":60},
+		{"id":"2c4c1b915d7496ab","type":"text","text":"[judgement](judgement.tscn)","x":-4542,"y":-1015,"width":250,"height":60},
 		{"id":"ad095f85a1599506","type":"text","text":"all rooms with secret?","x":-5620,"y":-408,"width":250,"height":60},
 		{"id":"173a71fc8756d116","type":"text","text":"secret ending with nexus\n(we try to make something like the white desert)","x":-5680,"y":68,"width":250,"height":109},
 		{"id":"9b7af1e83c2c3bcb","type":"text","text":"all rooms?","x":-5960,"y":-408,"width":250,"height":60},
@@ -132,12 +131,12 @@
 		{"id":"0c900b0a3197f4f8","type":"text","text":"maniac/mania","x":-3052,"y":567,"width":250,"height":60},
 		{"id":"76e080fbad05c769","type":"text","text":"nexus","x":-2734,"y":758,"width":250,"height":60},
 		{"id":"4e65dea7fca3192b","type":"text","text":"star room","x":-2683,"y":949,"width":250,"height":60},
-		{"id":"fdae238eb2f1b302","type":"text","text":"limbo","x":-4375,"y":-287,"width":250,"height":60},
+		{"id":"fdae238eb2f1b302","type":"text","text":"[limbo](limbo.tscn)","x":-4375,"y":-287,"width":250,"height":60},
 		{"id":"1d5a5ebb4149a882","type":"text","text":"# usefull links\n\n- https://ynfg.yume.wiki/Yume_Nikki_Fangames_Wiki\n- https://yume.wiki/Main_Page\n- https://ynoproject.net/","x":-1765,"y":-600,"width":425,"height":325},
 		{"id":"a5a860080d51ac22","type":"file","file":"GDD.md","x":-3268,"y":1864,"width":632,"height":541},
 		{"id":"b3d823bd6dbf465a","type":"text","text":"# feedback mink\n- have more to do\n- improve porportions\n- bug with [infinite_component](infinite_component.gd)","x":-2953,"y":2777,"width":473,"height":243},
 		{"id":"f643edbe1a67b9c9","type":"file","file":"assets/misc/Excalidraw/Drawing 2026-06-24 19.37.52.excalidraw.md","x":-4375,"y":112,"width":400,"height":400},
-		{"id":"560b8e1aca1cf55c","type":"text","text":"nexus","x":-4667,"y":-488,"width":250,"height":60},
+		{"id":"560b8e1aca1cf55c","type":"text","text":"[nexus](nexus.tscn)","x":-4667,"y":-488,"width":250,"height":60},
 		{"id":"5d0ef9e96bd22731","type":"text","text":"broken obmil","x":-4768,"y":107,"width":250,"height":60},
 		{
 			"id":"b6df6ece97246821",
@@ -149,12 +148,12 @@
 			"width":701,
 			"height":160
 		},
-		{"id":"19e5ca16b128adaa","type":"text","text":"obmil","x":-4820,"y":-287,"width":250,"height":60},
-		{"id":"784b2a3cc85f17a9","type":"file","file":"assets/misc/Excalidraw/Drawing 2026-06-24 19.28.53.excalidraw.png","x":-5170,"y":-955,"width":400,"height":247}
+		{"id":"19e5ca16b128adaa","type":"text","text":"[obmil](obmil.tscn)","x":-4820,"y":-287,"width":250,"height":60},
+		{"id":"784b2a3cc85f17a9","type":"file","file":"assets/misc/Excalidraw/Drawing 2026-06-24 19.28.53.excalidraw.png","x":-5170,"y":-955,"width":400,"height":247},
+		{"id":"785161483b98e6d4","type":"file","file":"assets/misc/Excalidraw/Drawing 2026-06-24 22.24.50.excalidraw.md","x":-5320,"y":-33,"width":410,"height":400},
+		{"id":"3b74055fce934110","x":-5240,"y":560,"width":250,"height":60,"type":"text","text":"[deep_grief](deep_grief.tscn)"}
 	],
 	"edges":[
-		{"id":"d870093eb20e645b","fromNode":"6fae194ab8d0512a","fromSide":"right","toNode":"7d5593b96d6ebc59","toSide":"left"},
-		{"id":"d830046bd1b0d400","fromNode":"7d5593b96d6ebc59","fromSide":"right","toNode":"85bfa3a811c5d3ba","toSide":"left"},
 		{"id":"3261b4b1b41d4dc2","fromNode":"85bfa3a811c5d3ba","fromSide":"right","toNode":"132829902f5db8de","toSide":"left"},
 		{"id":"f0c02a5aa9f18fcf","fromNode":"d7cd0020ccd7072e","fromSide":"left","toNode":"d3a0c6918ba633a7","toSide":"right"},
 		{"id":"1f0175114a192384","fromNode":"d3a0c6918ba633a7","fromSide":"left","toNode":"804ccd6009ca38d6","toSide":"right"},
@@ -165,14 +164,7 @@
 		{"id":"0b3ce1798b0a9e25","fromNode":"d2aa7494f5b39c5e","fromSide":"bottom","toNode":"85bfa3a811c5d3ba","toSide":"top"},
 		{"id":"390f53efa1a63825","fromNode":"43a2e8107eb43e67","fromSide":"top","toNode":"804ccd6009ca38d6","toSide":"bottom"},
 		{"id":"82a69d18cab98497","fromFloating":false,"fromNode":"f841ee989dc7aae1","fromSide":"top","toNode":"79cd52838cd1980b","toSide":"bottom"},
-		{"id":"3e1d42bcf0628dc3","fromNode":"79cd52838cd1980b","fromSide":"left","toNode":"29b0e9dafbf278f2","toSide":"right"},
-		{"id":"1b3e5fbbd0784577","fromNode":"dec226d094fde3e1","fromSide":"right","toNode":"6fae194ab8d0512a","toSide":"left"},
 		{"id":"6b707c67c510879e","fromNode":"491cfcd97437d445","fromSide":"right","toNode":"ae32f4758327e946","toSide":"top"},
-		{"id":"b26139c3e48789f8","toFloating":false,"fromFloating":false,"fromNode":"3d7e88f823f9d1b2","fromSide":"top","toNode":"4aec8042b061e704","toSide":"bottom"},
-		{"id":"36f4bc070b1407fd","fromNode":"29b0e9dafbf278f2","fromSide":"left","toNode":"4aec8042b061e704","toSide":"right"},
-		{"id":"61e6f456195f975b","fromFloating":false,"toFloating":false,"fromNode":"4aec8042b061e704","fromSide":"left","toNode":"4d0044040252a914","toSide":"right"},
-		{"id":"ecfb5d3a5fee0ea4","toFloating":false,"fromFloating":false,"fromNode":"1db3f69c246998ee","fromSide":"bottom","toNode":"4d0044040252a914","toSide":"top"},
-		{"id":"338a04198533d0e2","fromNode":"8b82f491ea7cfe06","fromSide":"top","toNode":"2fe707f89fc9254a","toSide":"bottom"},
 		{
 			"id":"826cd909fb97d986",
 			"styleAttributes":{},
@@ -181,43 +173,6 @@
 			"fromNode":"c181a96a15935cac",
 			"fromSide":"right",
 			"toNode":"dec226d094fde3e1",
-			"toSide":"left"
-		},
-		{
-			"id":"6d0a20383be9577b",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromFloating":false,
-			"fromNode":"4d0044040252a914",
-			"fromSide":"bottom",
-			"toNode":"2fe707f89fc9254a",
-			"toSide":"left"
-		},
-		{
-			"id":"7bf7696988d6e33b",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"2fe707f89fc9254a",
-			"fromSide":"right",
-			"toNode":"e95886f479d1b7e9",
-			"toSide":"left"
-		},
-		{
-			"id":"f6aec67e3957a24d",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"2ad57d62f88b6ef7",
-			"fromSide":"top",
-			"toNode":"e95886f479d1b7e9",
-			"toSide":"bottom"
-		},
-		{
-			"id":"d0826506efe72455",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"e95886f479d1b7e9",
-			"fromSide":"right",
-			"toNode":"d8e1c51c7c9bfa4d",
 			"toSide":"left"
 		},
 		{
@@ -305,7 +260,54 @@
 		{"id":"628b2f23df913980","fromNode":"638a96194ba99536","fromSide":"top","toNode":"acf7f0a6d4cfa0dd","toSide":"right"},
 		{"id":"da009b9631c6f496","fromNode":"26198be189a63e67","fromSide":"top","toNode":"acf7f0a6d4cfa0dd","toSide":"right"},
 		{"id":"ef8dfa5b092ecb69","fromNode":"71daa9985ccd3d4d","fromSide":"top","toNode":"acf7f0a6d4cfa0dd","toSide":"right"},
-		{"id":"23107a790afaa6de","fromNode":"acf7f0a6d4cfa0dd","fromSide":"left","toNode":"dec226d094fde3e1","toSide":"top"}
+		{"id":"23107a790afaa6de","fromNode":"acf7f0a6d4cfa0dd","fromSide":"left","toNode":"dec226d094fde3e1","toSide":"top"},
+		{"id":"d870093eb20e645b","fromNode":"6fae194ab8d0512a","fromSide":"right","toNode":"7d5593b96d6ebc59","toSide":"left"},
+		{"id":"d830046bd1b0d400","fromNode":"7d5593b96d6ebc59","fromSide":"right","toNode":"85bfa3a811c5d3ba","toSide":"left"},
+		{"id":"3e1d42bcf0628dc3","fromNode":"79cd52838cd1980b","fromSide":"left","toNode":"29b0e9dafbf278f2","toSide":"right"},
+		{"id":"1b3e5fbbd0784577","fromNode":"dec226d094fde3e1","fromSide":"right","toNode":"6fae194ab8d0512a","toSide":"left"},
+		{"id":"b26139c3e48789f8","toFloating":false,"fromFloating":false,"fromNode":"3d7e88f823f9d1b2","fromSide":"top","toNode":"4aec8042b061e704","toSide":"bottom"},
+		{"id":"36f4bc070b1407fd","fromNode":"29b0e9dafbf278f2","fromSide":"left","toNode":"4aec8042b061e704","toSide":"right"},
+		{"id":"61e6f456195f975b","fromFloating":false,"toFloating":false,"fromNode":"4aec8042b061e704","fromSide":"left","toNode":"4d0044040252a914","toSide":"right"},
+		{"id":"ecfb5d3a5fee0ea4","toFloating":false,"fromFloating":false,"fromNode":"1db3f69c246998ee","fromSide":"bottom","toNode":"4d0044040252a914","toSide":"top"},
+		{"id":"338a04198533d0e2","fromNode":"8b82f491ea7cfe06","fromSide":"top","toNode":"2fe707f89fc9254a","toSide":"bottom"},
+		{
+			"id":"6d0a20383be9577b",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"4d0044040252a914",
+			"fromSide":"bottom",
+			"toNode":"2fe707f89fc9254a",
+			"toSide":"left"
+		},
+		{
+			"id":"7bf7696988d6e33b",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"2fe707f89fc9254a",
+			"fromSide":"right",
+			"toNode":"e95886f479d1b7e9",
+			"toSide":"left"
+		},
+		{
+			"id":"f6aec67e3957a24d",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"2ad57d62f88b6ef7",
+			"fromSide":"top",
+			"toNode":"e95886f479d1b7e9",
+			"toSide":"bottom"
+		},
+		{
+			"id":"d0826506efe72455",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"e95886f479d1b7e9",
+			"fromSide":"right",
+			"toNode":"d8e1c51c7c9bfa4d",
+			"toSide":"left"
+		},
+		{"id":"e1cc2556b1c162b2","fromNode":"785161483b98e6d4","fromSide":"bottom","toNode":"3b74055fce934110","toSide":"top"}
 	],
 	"metadata":{
 		"version":"1.0-1.0",
