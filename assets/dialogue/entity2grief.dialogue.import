@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://roracqen2ons"
+path="res://.godot/imported/entity2grief.dialogue-aae140dda8731046d1cacf3302b0eb39.tres"
+
+[deps]
+
+source_file="res://assets/dialogue/entity2grief.dialogue"
+dest_files=["res://.godot/imported/entity2grief.dialogue-aae140dda8731046d1cacf3302b0eb39.tres"]
+
+[params]
+
+defaults=true

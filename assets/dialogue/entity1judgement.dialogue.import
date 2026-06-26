@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://ue8snbdun800"
+path="res://.godot/imported/entity1judgement.dialogue-ebb38121fcd27cb57e4999775ba7b81c.tres"
+
+[deps]
+
+source_file="res://assets/dialogue/entity1judgement.dialogue"
+dest_files=["res://.godot/imported/entity1judgement.dialogue-ebb38121fcd27cb57e4999775ba7b81c.tres"]
+
+[params]
+
+defaults=true

@@ -11,10 +11,10 @@
 [ext_resource type="Texture2D" uid="uid://qmkkud72jx68" path="res://The Amazing Art Folder/cassie_white2.png" id="9_6c3et"]
 [ext_resource type="Script" uid="uid://b83wx8f1aq2t8" path="res://scripts/components/Interactable.gd" id="10_270oq"]
 [ext_resource type="Script" uid="uid://bkmkeenkt520m" path="res://scripts/components/dialogue_component.gd" id="11_dkrml"]
-[ext_resource type="Resource" uid="uid://roracqen2ons" path="res://assets/dialogue/white.dialogue" id="12_i6qxi"]
+[ext_resource type="Resource" uid="uid://roracqen2ons" path="res://assets/dialogue/entity2grief.dialogue" id="12_i6qxi"]
 [ext_resource type="Texture2D" uid="uid://cgdoexuttam65" path="res://The Amazing Art Folder/cassie_red1.png" id="13_8cld4"]
 [ext_resource type="Texture2D" uid="uid://6yeroqsmvbna" path="res://The Amazing Art Folder/cassie_red2.png" id="14_bmoi4"]
-[ext_resource type="Resource" uid="uid://d0o5q5x067a0u" path="res://assets/dialogue/red.dialogue" id="15_awsh8"]
+[ext_resource type="Resource" uid="uid://d0o5q5x067a0u" path="res://assets/dialogue/entity1grief.dialogue" id="15_awsh8"]
 [ext_resource type="Texture2D" uid="uid://cqiuyacsfr7cw" path="res://The Amazing Art Folder/door1.png" id="16_18j1w"]
 [ext_resource type="Script" uid="uid://1cjmfi5n1mvs" path="res://scripts/components/door_component.gd" id="17_b6i0a"]
 [ext_resource type="Script" uid="uid://csnxpxd7w5jv2" path="res://scripts/components/infinite_component.gd" id="18_oqf80"]
@@ -189,7 +189,7 @@ scale = Vector2(3, 3)
 script = ExtResource("1_kxw7r")
 metadata/_custom_type_script = "uid://busd3yfk5p1mx"
 
-[node name="Chair2Duke" type="Sprite2D" parent="placeholder ending" unique_id=1226431577]
+[node name="sprite" type="Sprite2D" parent="placeholder ending" unique_id=1226431577]
 texture = ExtResource("16_18j1w")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="placeholder ending" unique_id=1852051043]

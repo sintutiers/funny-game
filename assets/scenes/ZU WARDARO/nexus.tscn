@@ -5,9 +5,9 @@
 [ext_resource type="Script" uid="uid://1cjmfi5n1mvs" path="res://scripts/components/door_component.gd" id="4_dvaiv"]
 [ext_resource type="Texture2D" uid="uid://bc4mx21fnd2hh" path="res://The Amazing Art Folder/nexus_placement.png" id="4_lf2id"]
 [ext_resource type="Script" uid="uid://busd3yfk5p1mx" path="res://addons/godot-rapier2d/custom_nodes/rapier_static_body_2d.gd" id="5_ahart"]
-[ext_resource type="Texture2D" uid="uid://hsfpscymp7i5" path="res://The Amazing Art Folder/Floortile_blankspace_light.png" id="7_mr0ms"]
 [ext_resource type="Texture2D" uid="uid://c0pmx7qfytvwv" path="res://The Amazing Art Folder/door Chiel.png" id="7_xpwch"]
 [ext_resource type="Texture2D" uid="uid://ck1myn3avrssv" path="res://The Amazing Art Folder/cube.png" id="8_3c5vh"]
+[ext_resource type="Texture2D" uid="uid://beid8tma5wi5x" path="res://The Amazing Art Folder/Floortile_blankspace_darkshadow.png" id="8_thqdp"]
 [ext_resource type="Texture2D" uid="uid://3ucay8xhxctg" path="res://The Amazing Art Folder/cassie_white1.png" id="11_450hu"]
 [ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="12_gdav5"]
 [ext_resource type="PackedScene" uid="uid://uqnuhcrw12d0" path="res://assets/scenes/player.tscn" id="13_vk3o7"]
@@ -110,9 +110,9 @@ position = Vector2(-266.6667, 134.33333)
 script = ExtResource("5_ahart")
 metadata/_custom_type_script = "uid://busd3yfk5p1mx"
 
-[node name="Chair2Duke" type="Sprite2D" parent="obmil" unique_id=921058078]
+[node name="sprite" type="Sprite2D" parent="obmil" unique_id=921058078]
 scale = Vector2(0.378, 0.378)
-texture = ExtResource("7_mr0ms")
+texture = ExtResource("8_thqdp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="obmil" unique_id=696458496]
 shape = SubResource("CapsuleShape2D_q1sf4")
@@ -129,7 +129,7 @@ position = Vector2(4.7683716e-07, 134.33334)
 script = ExtResource("5_ahart")
 metadata/_custom_type_script = "uid://busd3yfk5p1mx"
 
-[node name="Chair2Duke" type="Sprite2D" parent="bedroom" unique_id=42860486]
+[node name="sprite" type="Sprite2D" parent="bedroom" unique_id=42860486]
 scale = Vector2(0.15, 0.15)
 texture = ExtResource("7_xpwch")
 
@@ -148,7 +148,7 @@ position = Vector2(267.33334, 130)
 script = ExtResource("5_ahart")
 metadata/_custom_type_script = "uid://busd3yfk5p1mx"
 
-[node name="Chair2Duke" type="Sprite2D" parent="grief" unique_id=1688147101]
+[node name="sprite" type="Sprite2D" parent="grief" unique_id=1688147101]
 scale = Vector2(1.144, 1.144)
 texture = ExtResource("11_450hu")
 
@@ -167,7 +167,7 @@ position = Vector2(-266.6667, -0.6666667)
 script = ExtResource("5_ahart")
 metadata/_custom_type_script = "uid://busd3yfk5p1mx"
 
-[node name="Chair2Duke" type="Sprite2D" parent="judgement" unique_id=1226431577]
+[node name="sprite" type="Sprite2D" parent="judgement" unique_id=1226431577]
 scale = Vector2(1.501, 1.501)
 texture = ExtResource("8_3c5vh")
 
@@ -186,7 +186,7 @@ position = Vector2(266.171, 0)
 script = ExtResource("5_ahart")
 metadata/_custom_type_script = "uid://busd3yfk5p1mx"
 
-[node name="Chair2Duke" type="Sprite2D" parent="limbo" unique_id=1326598204]
+[node name="sprite" type="Sprite2D" parent="limbo" unique_id=1326598204]
 scale = Vector2(1.489, 1.489)
 texture = ExtResource("19_am8yf")
 

@@ -4,15 +4,14 @@
 [ext_resource type="Texture2D" uid="uid://hsfpscymp7i5" path="res://The Amazing Art Folder/Floortile_blankspace_light.png" id="2_2v0c3"]
 [ext_resource type="Texture2D" uid="uid://cexcf7xpv684h" path="res://The Amazing Art Folder/lamp_on.png" id="4_2v0c3"]
 [ext_resource type="PackedScene" uid="uid://uqnuhcrw12d0" path="res://assets/scenes/player.tscn" id="4_8qcvp"]
+[ext_resource type="Texture2D" uid="uid://crmih01m3g7fj" path="res://The Amazing Art Folder/obmil_entity.png" id="4_ptr41"]
 [ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="5_paq4j"]
 [ext_resource type="Script" uid="uid://bhexx6mj1xv3q" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="6_7t0y2"]
 [ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="7_0mcpk"]
 [ext_resource type="Texture2D" uid="uid://bso4w46je4cwt" path="res://The Amazing Art Folder/background duke.png" id="8_3was0"]
 [ext_resource type="Script" uid="uid://b83wx8f1aq2t8" path="res://scripts/components/Interactable.gd" id="9_awejn"]
 [ext_resource type="Script" uid="uid://1cjmfi5n1mvs" path="res://scripts/components/door_component.gd" id="10_16kiw"]
-[ext_resource type="Texture2D" uid="uid://cgdoexuttam65" path="res://The Amazing Art Folder/cassie_red1.png" id="11_rohi2"]
-[ext_resource type="Texture2D" uid="uid://6yeroqsmvbna" path="res://The Amazing Art Folder/cassie_red2.png" id="12_0uwdg"]
-[ext_resource type="Resource" uid="uid://bpgp06xbve3ue" path="res://assets/dialogue/obmil1.dialogue" id="12_jrli6"]
+[ext_resource type="Resource" uid="uid://bpgp06xbve3ue" path="res://assets/dialogue/entity1obmil.dialogue" id="12_jrli6"]
 [ext_resource type="Script" uid="uid://bkmkeenkt520m" path="res://scripts/components/dialogue_component.gd" id="13_3rrup"]
 [ext_resource type="Texture2D" uid="uid://ck1myn3avrssv" path="res://The Amazing Art Folder/cube.png" id="15_jsljt"]
 [ext_resource type="Script" uid="uid://csnxpxd7w5jv2" path="res://scripts/components/infinite_component.gd" id="16_ewkjj"]
@@ -34,20 +33,6 @@ load_path = "res://.godot/imported/Floortile_blankspace_light.png-aefa2c1a23b9d9
 
 [sub_resource type="Resource" id="Resource_4o74q"]
 script = ExtResource("7_0mcpk")
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_q1sf4"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("11_rohi2")
-}, {
-"duration": 1.0,
-"texture": ExtResource("12_0uwdg")
-}],
-"loop": 1,
-"name": &"default",
-"speed": 1.0
-}]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_daalc"]
 radius = 13.000015
@@ -90,50 +75,50 @@ scale = Vector2(1.05, 1.05)
 transform = Transform2D(1.05, 0, 0, 1.05, 0, 0)
 follow_viewport_enabled = true
 
-[node name="Parallax2D2" type="Parallax2D" parent="background" unique_id=1233405741]
+[node name="floor" type="Parallax2D" parent="background" unique_id=1233405741]
 scale = Vector2(1.3, 1.3)
 scroll_scale = Vector2(0.05, 0.05)
 repeat_size = Vector2(50, 50)
-repeat_times = 79
+repeat_times = 85
 follow_viewport = false
 
-[node name="floor" type="Sprite2D" parent="background/Parallax2D2" unique_id=1859108533]
+[node name="floor" type="Sprite2D" parent="background/floor" unique_id=1859108533]
 texture = SubResource("CompressedTexture2D_jrli6")
 
-[node name="Parallax2D3" type="Parallax2D" parent="background" unique_id=955533484]
+[node name="floorlight" type="Parallax2D" parent="background" unique_id=955533484]
 scale = Vector2(1.3, 1.3)
 scroll_scale = Vector2(0.05, 0.05)
 repeat_size = Vector2(550, 500)
-repeat_times = 12
+repeat_times = 8
 follow_viewport = false
 
-[node name="floorlight4" type="Sprite2D" parent="background/Parallax2D3" unique_id=434485094]
+[node name="floorlight4" type="Sprite2D" parent="background/floorlight" unique_id=434485094]
 texture_filter = 1
 texture = SubResource("CompressedTexture2D_ptr41")
 offset = Vector2(50, 50)
 
-[node name="floorlight3" type="Sprite2D" parent="background/Parallax2D3" unique_id=212220215]
+[node name="floorlight3" type="Sprite2D" parent="background/floorlight" unique_id=212220215]
 texture_filter = 1
 texture = SubResource("CompressedTexture2D_2v0c3")
 offset = Vector2(0, 50)
 
-[node name="floorlight2" type="Sprite2D" parent="background/Parallax2D3" unique_id=1422717734]
+[node name="floorlight2" type="Sprite2D" parent="background/floorlight" unique_id=1422717734]
 texture_filter = 1
 texture = SubResource("CompressedTexture2D_2v0c3")
 offset = Vector2(50, 0)
 
-[node name="floorlight" type="Sprite2D" parent="background/Parallax2D3" unique_id=1452853122]
+[node name="floorlight" type="Sprite2D" parent="background/floorlight" unique_id=1452853122]
 texture_filter = 1
 texture = ExtResource("2_2v0c3")
 
-[node name="Parallax2D" type="Parallax2D" parent="background" unique_id=528683819]
+[node name="lamp" type="Parallax2D" parent="background" unique_id=528683819]
 scale = Vector2(1.3, 1.3)
 scroll_scale = Vector2(0.05, 0.05)
 repeat_size = Vector2(550, 500)
-repeat_times = 12
+repeat_times = 10
 follow_viewport = false
 
-[node name="lamplight" type="Sprite2D" parent="background/Parallax2D" unique_id=634895303]
+[node name="lamplight" type="Sprite2D" parent="background/lamp" unique_id=634895303]
 modulate = Color(1, 1, 1, 0.8117647)
 scale = Vector2(2, 2)
 texture = ExtResource("4_2v0c3")
@@ -160,15 +145,13 @@ tween_resource = SubResource("Resource_4o74q")
 draw_limits = true
 
 [node name="redredredred" type="StaticBody2D" parent="." unique_id=2136613843]
-position = Vector2(49.287, 0)
+position = Vector2(-428.33334, -33.333336)
 script = ExtResource("1_jrli6")
 metadata/_custom_type_script = "uid://busd3yfk5p1mx"
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="redredredred" unique_id=1207058950]
-texture_filter = 1
-sprite_frames = SubResource("SpriteFrames_q1sf4")
-autoplay = "default"
-frame_progress = 0.86313075
+[node name="ObmilEntity" type="Sprite2D" parent="redredredred" unique_id=1394960406]
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_ptr41")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="redredredred" unique_id=115384067]
 shape = SubResource("CapsuleShape2D_daalc")
@@ -186,7 +169,7 @@ scale = Vector2(2, 2)
 script = ExtResource("1_jrli6")
 metadata/_custom_type_script = "uid://busd3yfk5p1mx"
 
-[node name="Chair2Duke" type="Sprite2D" parent="PLACEHOLDER NEXUS" unique_id=954762380]
+[node name="sprite" type="Sprite2D" parent="PLACEHOLDER NEXUS" unique_id=954762380]
 texture = ExtResource("8_3was0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PLACEHOLDER NEXUS" unique_id=587327857]
@@ -205,7 +188,7 @@ scale = Vector2(3, 3)
 script = ExtResource("1_jrli6")
 metadata/_custom_type_script = "uid://busd3yfk5p1mx"
 
-[node name="Chair2Duke" type="Sprite2D" parent="PLACEHOLDER ENDING" unique_id=1226431577]
+[node name="sprite" type="Sprite2D" parent="PLACEHOLDER ENDING" unique_id=1226431577]
 texture = ExtResource("15_jsljt")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PLACEHOLDER ENDING" unique_id=1852051043]

@@ -21,15 +21,15 @@
 [ext_resource type="Texture2D" uid="uid://b4ycndej3qdxv" path="res://The Amazing Art Folder/entity1_limbo.png" id="19_aiw3i"]
 [ext_resource type="Texture2D" uid="uid://clhhogcvmxk7x" path="res://The Amazing Art Folder/chair2 duke.png" id="19_iolbx"]
 [ext_resource type="Script" uid="uid://bkmkeenkt520m" path="res://scripts/components/dialogue_component.gd" id="20_61l61"]
-[ext_resource type="Resource" uid="uid://bmbilwm0d85w3" path="res://assets/dialogue/limbo1.dialogue" id="21_cuec4"]
+[ext_resource type="Resource" uid="uid://bmbilwm0d85w3" path="res://assets/dialogue/entity1limbo.dialogue" id="21_cuec4"]
 [ext_resource type="Resource" uid="uid://dbgelmiwsp8o6" path="res://assets/dialogue/chair1limbo.dialogue" id="21_sc5bu"]
 [ext_resource type="Resource" uid="uid://jy3qbei6d8yi" path="res://assets/dialogue/chair2limbo.dialogue" id="24_l60oi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iajhm"]
-size = Vector2(25, 250)
+size = Vector2(25, 300)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1e5pv"]
-size = Vector2(335, 25)
+size = Vector2(350, 25)
 
 [sub_resource type="Resource" id="Resource_gw3rf"]
 script = ExtResource("12_8jdle")
@@ -73,31 +73,6 @@ scale = Vector2(3, 3)
 layer = -1
 follow_viewport_enabled = true
 
-[node name="walls" type="StaticBody2D" parent="background" unique_id=1253343983 groups=["walls"]]
-scale = Vector2(7.5, 7.5)
-script = ExtResource("1_glm5v")
-metadata/_custom_type_script = "uid://busd3yfk5p1mx"
-
-[node name="V1" type="CollisionShape2D" parent="background/walls" unique_id=1482717394]
-unique_name_in_owner = true
-position = Vector2(-175, 0)
-shape = SubResource("RectangleShape2D_iajhm")
-
-[node name="V2" type="CollisionShape2D" parent="background/walls" unique_id=1849944601]
-unique_name_in_owner = true
-position = Vector2(175, 0)
-shape = SubResource("RectangleShape2D_iajhm")
-
-[node name="H1" type="CollisionShape2D" parent="background/walls" unique_id=1219567322]
-unique_name_in_owner = true
-position = Vector2(0, -129.764)
-shape = SubResource("RectangleShape2D_1e5pv")
-
-[node name="H2" type="CollisionShape2D" parent="background/walls" unique_id=1480151767]
-unique_name_in_owner = true
-position = Vector2(0, 126.696)
-shape = SubResource("RectangleShape2D_1e5pv")
-
 [node name="Table2Duke" type="Sprite2D" parent="background" unique_id=1852189034]
 position = Vector2(-1036.5, 480.94998)
 scale = Vector2(3.65, 3.65)
@@ -129,11 +104,35 @@ rotation = 1.5707964
 scale = Vector2(3.65, 3.65)
 texture = ExtResource("6_jsjqj")
 
+[node name="walls" type="StaticBody2D" parent="." unique_id=1253343983 groups=["walls"]]
+scale = Vector2(2.5, 2.5)
+script = ExtResource("1_glm5v")
+metadata/_custom_type_script = "uid://busd3yfk5p1mx"
+
+[node name="V1" type="CollisionShape2D" parent="walls" unique_id=1482717394]
+unique_name_in_owner = true
+position = Vector2(-175, 0)
+shape = SubResource("RectangleShape2D_iajhm")
+
+[node name="V2" type="CollisionShape2D" parent="walls" unique_id=1849944601]
+unique_name_in_owner = true
+position = Vector2(178.93, 0)
+shape = SubResource("RectangleShape2D_iajhm")
+
+[node name="H1" type="CollisionShape2D" parent="walls" unique_id=1219567322]
+unique_name_in_owner = true
+position = Vector2(0, -148.273)
+shape = SubResource("RectangleShape2D_1e5pv")
+
+[node name="H2" type="CollisionShape2D" parent="walls" unique_id=1480151767]
+unique_name_in_owner = true
+position = Vector2(0, 147.09601)
+shape = SubResource("RectangleShape2D_1e5pv")
+
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 physics_interpolation_mode = 1
 top_level = true
-offset = Vector2(-2.173285, -2.1229656)
-zoom = Vector2(1.25, 1.25)
+offset = Vector2(1.7058196, 1.3984472)
 editor_draw_limits = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=459320539]
@@ -163,7 +162,6 @@ script = ExtResource("11_fs63n")
 priority = 1
 follow_mode = 2
 follow_target = NodePath("../main character/PlayerBody")
-zoom = Vector2(1.25, 1.25)
 tween_resource = SubResource("Resource_gw3rf")
 draw_limits = true
 noise = SubResource("Resource_yju58")
@@ -171,10 +169,10 @@ noise = SubResource("Resource_yju58")
 [node name="infinity" type="Node" parent="." unique_id=335953216 node_paths=PackedStringArray("player", "wall_left", "wall_right", "wall_top", "wall_bottom")]
 script = ExtResource("14_orsrl")
 player = NodePath("../main character/PlayerBody")
-wall_left = NodePath("../background/walls/V1")
-wall_right = NodePath("../background/walls/V2")
-wall_top = NodePath("../background/walls/H1")
-wall_bottom = NodePath("../background/walls/H2")
+wall_left = NodePath("../walls/V1")
+wall_right = NodePath("../walls/V2")
+wall_top = NodePath("../walls/H1")
+wall_bottom = NodePath("../walls/H2")
 
 [node name="Door" type="Area2D" parent="." unique_id=201148014]
 position = Vector2(286.66666, -215.66667)
@@ -202,7 +200,7 @@ scale = Vector2(0.9, 0.9)
 script = ExtResource("1_glm5v")
 metadata/_custom_type_script = "uid://busd3yfk5p1mx"
 
-[node name="Chair2Duke" type="Sprite2D" parent="being1" unique_id=305923221]
+[node name="sprite" type="Sprite2D" parent="being1" unique_id=305923221]
 texture = ExtResource("19_aiw3i")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="being1" unique_id=1965892606]
@@ -220,7 +218,7 @@ dialogue_resource = ExtResource("21_cuec4")
 script = ExtResource("1_glm5v")
 metadata/_custom_type_script = "uid://busd3yfk5p1mx"
 
-[node name="Chair2Duke" type="Sprite2D" parent="chair1" unique_id=1868891765]
+[node name="sprite" type="Sprite2D" parent="chair1" unique_id=1868891765]
 position = Vector2(262.70105, 172.5)
 scale = Vector2(1.2166667, 1.2166667)
 texture = ExtResource("19_iolbx")
@@ -242,7 +240,7 @@ position = Vector2(-323.674, 158)
 script = ExtResource("1_glm5v")
 metadata/_custom_type_script = "uid://busd3yfk5p1mx"
 
-[node name="Chair2Duke" type="Sprite2D" parent="chair2" unique_id=422216777]
+[node name="sprite" type="Sprite2D" parent="chair2" unique_id=422216777]
 texture = ExtResource("7_xkqxe")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="chair2" unique_id=970682038]

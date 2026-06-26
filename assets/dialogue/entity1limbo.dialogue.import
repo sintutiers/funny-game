@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bmbilwm0d85w3"
+path="res://.godot/imported/entity1limbo.dialogue-0410ab40cea761141587213d1e9de331.tres"
+
+[deps]
+
+source_file="res://assets/dialogue/entity1limbo.dialogue"
+dest_files=["res://.godot/imported/entity1limbo.dialogue-0410ab40cea761141587213d1e9de331.tres"]
+
+[params]
+
+defaults=true
