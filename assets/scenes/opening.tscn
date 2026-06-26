@@ -12,6 +12,9 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_l1wh1")
 images = Array[Texture2D]([ExtResource("2_gafq3")])
+visible_time = 0.5
+end_delay = 0.3
+show_loading_screen = true
 
 [node name="BackgroundMusicPlayer" type="AudioStreamPlayer" parent="." unique_id=1317385298]
 process_mode = 3

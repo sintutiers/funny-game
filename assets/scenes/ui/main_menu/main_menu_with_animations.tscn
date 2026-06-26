@@ -7,13 +7,13 @@
 [ext_resource type="PackedScene" uid="uid://cwt4p3bufkke5" path="res://addons/maaacks_game_template/base/nodes/windows/confirmation_overlaid_window.tscn" id="5_6xh1d"]
 [ext_resource type="PackedScene" uid="uid://bkcsjsk2ciff" path="res://addons/maaacks_game_template/base/nodes/music_players/background_music_player.tscn" id="5_dhrx6"]
 [ext_resource type="Script" uid="uid://bkwlopi4qn32o" path="res://addons/maaacks_game_template/base/nodes/labels/config_name_label.gd" id="6_xkrf4"]
-[ext_resource type="Texture2D" uid="uid://5a5ako226e04" path="res://assets/themes/test.tres" id="7_dhrx6"]
+[ext_resource type="Texture2D" uid="uid://5a5ako226e04" path="res://assets/material/test.tres" id="7_dhrx6"]
 [ext_resource type="Script" uid="uid://1nf36h0gms3q" path="res://addons/maaacks_game_template/base/nodes/utilities/capture_focus.gd" id="7_x5bcm"]
 [ext_resource type="Script" uid="uid://dmkubt2nsnsbn" path="res://addons/maaacks_game_template/base/nodes/labels/config_version_label.gd" id="8_672y5"]
 
 [sub_resource type="Animation" id="1"]
 resource_name = "Intro"
-length = 2.4
+length = 1.5
 tracks/0/type = "method"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -47,7 +47,7 @@ tracks/2/path = NodePath("MenuContainer/SubTitleMargin/SubTitleContainer:modulat
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.8, 1.6),
+"times": PackedFloat32Array(0, 0.7, 1.3),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -59,7 +59,7 @@ tracks/3/path = NodePath("MenuContainer/MenuButtonsMargin/MenuButtonsContainer:m
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0, 1.6, 2.4),
+"times": PackedFloat32Array(0, 0.7, 1.3),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -71,7 +71,7 @@ tracks/4/path = NodePath("MouseFilter:mouse_filter")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"times": PackedFloat32Array(0, 2.4),
+"times": PackedFloat32Array(0, 2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [0, 2]
@@ -83,7 +83,7 @@ tracks/5/path = NodePath("VersionMargin/VersionContainer:modulate")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
-"times": PackedFloat32Array(0, 1.6, 2.4),
+"times": PackedFloat32Array(0, 0.9, 1.5),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -310,7 +310,7 @@ advance_mode = 2
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_vikuh"]
 states/End/position = Vector2(958, 123)
 states/Intro/node = SubResource("7")
-states/Intro/position = Vector2(259, 123)
+states/Intro/position = Vector2(259, 123.03374)
 states/OpenMainMenu/node = SubResource("10")
 states/OpenMainMenu/position = Vector2(472, 123)
 states/OpenSubMenu/node = SubResource("13")

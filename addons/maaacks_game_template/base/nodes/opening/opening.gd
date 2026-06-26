@@ -10,9 +10,9 @@ extends Control
 ## The time to fade-in the next image.
 @export var fade_in_time : float = 0.2
 ## The time to fade-out the previous image.
-@export var fade_out_time : float = 0.2
+@export var fade_out_time : float = 0.4
 ## The time to keep an image visible after fade-in and before fade-out.
-@export var visible_time : float = 1.6
+@export var visible_time : float = 0.8
 @export_group("Transition")
 ## The delay before starting the first fade-in animation once ready.
 @export var start_delay : float = 0.5
