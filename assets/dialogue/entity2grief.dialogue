@@ -1,7 +1,7 @@
 ~ start
-white: wazup pookie
+white: You might want to go back from here.
 - yes
-	you: ~blushes
+	white: Good choice.
 - no
-	you: "aggresivly licks your out earwax"
+	white: Think about it twice.
 => END

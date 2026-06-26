@@ -1,0 +1,16 @@
+~ start
+Sunton: so you have come to disturb me? Again...
+- yes
+	Sunton: Well beside me is a door to a place called the nexus.
+	Sunton: Are you familiar with it?
+	- yes
+		Sunton: Then i'll leave your jourey to your own.
+	- no
+		Sunton: The nexus is a place where you could access different interactable worlds.
+		Sunton: With those worlds you could access more different worlds and go back to the other ones.
+		Sunton: Even here...
+		Sunton: Is that clear?
+- no
+	Sunton: Then buzz off.
+Sunton: So long, annoying human.
+=> END

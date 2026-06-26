@@ -183,7 +183,7 @@ pointing/emulate_touch_from_mouse=true
 [internationalization]
 
 locale/translations=PackedStringArray("res://addons/maaacks_game_template/base/translations/menus_translations.en.translation", "res://addons/maaacks_game_template/base/translations/menus_translations.fr.translation")
-locale/translations_pot_files=PackedStringArray("res://assets/dialogue/chair1limbo.dialogue", "res://assets/dialogue/chair2limbo.dialogue", "res://assets/dialogue/bed1bedroom.dialogue", "res://assets/dialogue/entity1judgement.dialogue", "res://assets/dialogue/entity2judgement.dialogue", "res://assets/dialogue/entity1grief.dialogue", "res://assets/dialogue/entity2grief.dialogue", "res://assets/dialogue/entity1obmil.dialogue", "res://assets/dialogue/entity1limbo.dialogue")
+locale/translations_pot_files=PackedStringArray("res://assets/dialogue/chair1limbo.dialogue", "res://assets/dialogue/chair2limbo.dialogue", "res://assets/dialogue/bed1bedroom.dialogue", "res://assets/dialogue/entity1judgement.dialogue", "res://assets/dialogue/entity2judgement.dialogue", "res://assets/dialogue/entity1grief.dialogue", "res://assets/dialogue/entity2grief.dialogue", "res://assets/dialogue/entity1obmil.dialogue", "res://assets/dialogue/entity1limbo.dialogue", "res://assets/dialogue/Sunton.dialogue")
 
 [maaacks_game_template]
 

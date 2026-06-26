@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dhk4sjd4uw4a"
+path="res://.godot/imported/Sunton.dialogue-5b841480b9912e2a71981ff73261936c.tres"
+
+[deps]
+
+source_file="res://assets/dialogue/Sunton.dialogue"
+dest_files=["res://.godot/imported/Sunton.dialogue-5b841480b9912e2a71981ff73261936c.tres"]
+
+[params]
+
+defaults=true
