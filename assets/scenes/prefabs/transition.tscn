@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://b5ox6crxqvmbt"]
+
+[ext_resource type="Script" uid="uid://cppwdxcogbwyt" path="res://scripts/components/transition_component.gd" id="1_y1jnn"]
+
+[node name="Transition" type="Node" unique_id=889213244]
+script = ExtResource("1_y1jnn")
