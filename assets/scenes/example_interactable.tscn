@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://5h1m2ienqal7"]
+
+[ext_resource type="Script" uid="uid://b83wx8f1aq2t8" path="res://scripts/components/Interactable.gd" id="1_5nmdc"]
+[ext_resource type="Script" uid="uid://cppwdxcogbwyt" path="res://scripts/components/transition_component.gd" id="2_fqrwi"]
+[ext_resource type="Script" uid="uid://1cjmfi5n1mvs" path="res://scripts/components/door_component.gd" id="3_c1n75"]
+[ext_resource type="Script" uid="uid://bkmkeenkt520m" path="res://scripts/components/dialogue_component.gd" id="4_ss03k"]
+
+[node name="ExampleInteractable" type="Node" unique_id=899066143]
+script = ExtResource("1_5nmdc")
+
+[node name="transition" type="Node" parent="." unique_id=608613584]
+script = ExtResource("2_fqrwi")
+
+[node name="door" type="Node" parent="." unique_id=1170813229]
+script = ExtResource("3_c1n75")
+
+[node name="dialogue" type="Node" parent="." unique_id=1970841124]
+script = ExtResource("4_ss03k")

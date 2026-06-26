@@ -1,7 +1,7 @@
 [gd_resource type="Theme" format=3 uid="uid://c843m1ifds0b8"]
 
-[ext_resource type="StyleBox" uid="uid://djgrjrivhqkpc" path="res://assets/themes/new_style_box_flat.tres" id="1_tx3iq"]
-[ext_resource type="FontFile" uid="uid://bdude2uqwyrt" path="res://assets/themes/font_file.tres" id="2_xsnil"]
+[ext_resource type="StyleBox" uid="uid://djgrjrivhqkpc" path="res://assets/material/new_style_box_flat.tres" id="1_tx3iq"]
+[ext_resource type="FontFile" uid="uid://bdude2uqwyrt" path="res://assets/material/font_file.tres" id="2_xsnil"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_spyqn"]
 bg_color = Color(0, 0, 0, 1)

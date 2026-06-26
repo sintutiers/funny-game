@@ -39,6 +39,7 @@ SceneLoader="*uid://cbwmrnp0af35y"
 ProjectMusicController="*uid://r5t485lr3p7t"
 ProjectUISoundController="*uid://cc37235kj4384"
 DebugMenu="*uid://cggqb75a8w8r"
+TransitionHandler="*uid://wb2ts4mbp5vg"
 
 [debug]
 

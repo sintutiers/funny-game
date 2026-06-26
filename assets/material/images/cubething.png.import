@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djj6oquaoq8yr"
-path="res://.godot/imported/emoji_font.png-88f517f7360ee2291a283de7a50109e2.ctex"
+uid="uid://byq1u8vuu5udh"
+path="res://.godot/imported/cubething.png-995c608080abac3bfe05f670398a251b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/themes/images/emoji_font.png"
-dest_files=["res://.godot/imported/emoji_font.png-88f517f7360ee2291a283de7a50109e2.ctex"]
+source_file="res://assets/material/images/cubething.png"
+dest_files=["res://.godot/imported/cubething.png-995c608080abac3bfe05f670398a251b.ctex"]
 
 [params]
 
