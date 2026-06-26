@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dbgelmiwsp8o6"
+path="res://.godot/imported/chair1limbo.dialogue-d3eb5b1db50e9c174759c9fac1a5ba65.tres"
+
+[deps]
+
+source_file="res://assets/dialogue/chair1limbo.dialogue"
+dest_files=["res://.godot/imported/chair1limbo.dialogue-d3eb5b1db50e9c174759c9fac1a5ba65.tres"]
+
+[params]
+
+defaults=true

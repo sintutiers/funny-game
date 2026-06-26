@@ -5,8 +5,11 @@
 [ext_resource type="Texture2D" uid="uid://mkihoskon4ea" path="res://The Amazing Art Folder/being1.png" id="3_hlyxm"]
 [ext_resource type="Texture2D" uid="uid://de0lbndqydfuc" path="res://The Amazing Art Folder/sun.png" id="4_uldpc"]
 [ext_resource type="Script" uid="uid://busd3yfk5p1mx" path="res://addons/godot-rapier2d/custom_nodes/rapier_static_body_2d.gd" id="5_7s1vu"]
+[ext_resource type="Resource" uid="uid://c3be05qf2fqlw" path="res://assets/dialogue/judgement2.dialogue" id="5_uldpc"]
 [ext_resource type="Script" uid="uid://cburu6b4ckehs" path="res://addons/godot-rapier2d/custom_nodes/rapier_area_2d.gd" id="6_1wsan"]
+[ext_resource type="Script" uid="uid://bkmkeenkt520m" path="res://scripts/components/dialogue_component.gd" id="6_hlyxm"]
 [ext_resource type="Texture2D" uid="uid://cqiuyacsfr7cw" path="res://The Amazing Art Folder/door1.png" id="7_7123j"]
+[ext_resource type="Resource" uid="uid://ue8snbdun800" path="res://assets/dialogue/judgement.dialogue" id="7_hlyxm"]
 [ext_resource type="Script" uid="uid://b83wx8f1aq2t8" path="res://scripts/components/Interactable.gd" id="8_rtdho"]
 [ext_resource type="Script" uid="uid://1cjmfi5n1mvs" path="res://scripts/components/door_component.gd" id="9_epyt0"]
 [ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="10_5f3tx"]
@@ -38,6 +41,12 @@ animations = [{
 "name": &"default",
 "speed": 1.0
 }]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hlyxm"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_q1sf4"]
+radius = 17.111115
+height = 42.666664
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_o281e"]
 atlas = ExtResource("4_uldpc")
@@ -86,6 +95,29 @@ scale = Vector2(3, 3)
 layer = -1
 follow_viewport_enabled = true
 
+[node name="2" type="StaticBody2D" parent="background" unique_id=668370180]
+position = Vector2(-475, 294)
+scale = Vector2(4.5, 4.5)
+script = ExtResource("5_7s1vu")
+metadata/_custom_type_script = "uid://busd3yfk5p1mx"
+
+[node name="Being2" type="AnimatedSprite2D" parent="background/2" unique_id=2019984958]
+rotation = -3.1415925
+scale = Vector2(0.6, 0.6)
+sprite_frames = SubResource("SpriteFrames_o281e")
+autoplay = "default"
+frame_progress = 0.036441658
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="background/2" unique_id=991188021]
+shape = SubResource("CapsuleShape2D_hlyxm")
+
+[node name="interactable" type="Node" parent="background/2" unique_id=8643772]
+script = ExtResource("8_rtdho")
+
+[node name="dialogue" type="Node" parent="background/2/interactable" unique_id=517772589]
+script = ExtResource("6_hlyxm")
+dialogue_resource = ExtResource("5_uldpc")
+
 [node name="Cube" type="Sprite2D" parent="background" unique_id=1465646804]
 texture_filter = 1
 position = Vector2(5.000004, 375)
@@ -110,20 +142,26 @@ position = Vector2(-304, 146)
 scale = Vector2(3.65, 3.65)
 texture = ExtResource("1_ic7ha")
 
-[node name="Being1" type="AnimatedSprite2D" parent="background" unique_id=916198894]
+[node name="1" type="StaticBody2D" parent="background" unique_id=1499285959]
 position = Vector2(-474, -185)
 scale = Vector2(4.5, 4.5)
+script = ExtResource("5_7s1vu")
+metadata/_custom_type_script = "uid://busd3yfk5p1mx"
+
+[node name="Being1" type="AnimatedSprite2D" parent="background/1" unique_id=916198894]
 sprite_frames = SubResource("SpriteFrames_o281e")
 autoplay = "default"
 frame_progress = 0.54027945
 
-[node name="Being2" type="AnimatedSprite2D" parent="background" unique_id=2019984958]
-position = Vector2(-490, 281)
-rotation = 3.1415927
-scale = Vector2(3.5, 3.5)
-sprite_frames = SubResource("SpriteFrames_o281e")
-autoplay = "default"
-frame_progress = 0.036441658
+[node name="CollisionShape2D" type="CollisionShape2D" parent="background/1" unique_id=692051104]
+shape = SubResource("CapsuleShape2D_q1sf4")
+
+[node name="interactable" type="Node" parent="background/1" unique_id=131021663]
+script = ExtResource("8_rtdho")
+
+[node name="dialogue" type="Node" parent="background/1/interactable" unique_id=836886615]
+script = ExtResource("6_hlyxm")
+dialogue_resource = ExtResource("7_hlyxm")
 
 [node name="Sun" type="AnimatedSprite2D" parent="background" unique_id=437816652]
 position = Vector2(0, -350.40497)
@@ -182,7 +220,7 @@ next_scene = "uid://c2motx642twyr"
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 physics_interpolation_mode = 1
 top_level = true
-offset = Vector2(-0.009355915, -0.41219932)
+offset = Vector2(3.102331, 1.6350348)
 zoom = Vector2(1.1, 1.1)
 editor_draw_limits = true
 

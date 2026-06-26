@@ -18,6 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://cqiuyacsfr7cw" path="res://The Amazing Art Folder/door1.png" id="16_18j1w"]
 [ext_resource type="Script" uid="uid://1cjmfi5n1mvs" path="res://scripts/components/door_component.gd" id="17_b6i0a"]
 [ext_resource type="Script" uid="uid://csnxpxd7w5jv2" path="res://scripts/components/infinite_component.gd" id="18_oqf80"]
+[ext_resource type="Texture2D" uid="uid://b1hhqiedxtx81" path="res://The Amazing Art Folder/entity1_grief.png" id="18_suj5i"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iajhm"]
 size = Vector2(25, 350)
@@ -43,7 +44,8 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_daalc"]
-radius = 13.000015
+radius = 10.6666565
+height = 31.333298
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_q1sf4"]
 animations = [{
@@ -58,6 +60,10 @@ animations = [{
 "name": &"default",
 "speed": 1.0
 }]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_suj5i"]
+radius = 20.0
+height = 40.0
 
 [node name="grief" type="Node2D" unique_id=70873681]
 scale = Vector2(3, 3)
@@ -137,7 +143,7 @@ tween_resource = SubResource("Resource_4o74q")
 draw_limits = true
 
 [node name="whitewhitewhite" type="StaticBody2D" parent="." unique_id=291582668]
-position = Vector2(-98.574, 0)
+position = Vector2(-264.119, 158.517)
 script = ExtResource("1_kxw7r")
 metadata/_custom_type_script = "uid://busd3yfk5p1mx"
 
@@ -157,7 +163,7 @@ script = ExtResource("11_dkrml")
 dialogue_resource = ExtResource("12_i6qxi")
 
 [node name="redredredred" type="StaticBody2D" parent="." unique_id=2136613843]
-position = Vector2(80, 0)
+position = Vector2(154.777, 0)
 script = ExtResource("1_kxw7r")
 metadata/_custom_type_script = "uid://busd3yfk5p1mx"
 
@@ -178,8 +184,8 @@ script = ExtResource("11_dkrml")
 dialogue_resource = ExtResource("15_awsh8")
 
 [node name="placeholder ending" type="StaticBody2D" parent="." unique_id=1115464959]
-position = Vector2(-283, -277.66666)
-scale = Vector2(5.133, 5.133)
+position = Vector2(434.33337, -297.66663)
+scale = Vector2(3, 3)
 script = ExtResource("1_kxw7r")
 metadata/_custom_type_script = "uid://busd3yfk5p1mx"
 
@@ -195,6 +201,26 @@ script = ExtResource("10_270oq")
 [node name="door" type="Node" parent="placeholder ending/Interactable" unique_id=46485846]
 script = ExtResource("17_b6i0a")
 next_scene = "uid://5un3240o6uy1"
+
+[node name="entity1" type="StaticBody2D" parent="." unique_id=194323410]
+position = Vector2(-442, -313.6667)
+script = ExtResource("1_kxw7r")
+metadata/_custom_type_script = "uid://busd3yfk5p1mx"
+
+[node name="Sprite2D" type="Sprite2D" parent="entity1" unique_id=1631779118]
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("18_suj5i")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="entity1" unique_id=725428509]
+position = Vector2(0, 4.245)
+shape = SubResource("CapsuleShape2D_suj5i")
+
+[node name="Interactable" type="Node" parent="entity1" unique_id=869572845]
+script = ExtResource("10_270oq")
+
+[node name="dialogue" type="Node" parent="entity1/Interactable" unique_id=1596353486]
+script = ExtResource("11_dkrml")
+dialogue_resource = ExtResource("15_awsh8")
 
 [node name="infinity" type="Node" parent="." unique_id=335953216 node_paths=PackedStringArray("player", "wall_left", "wall_right", "wall_top", "wall_bottom")]
 script = ExtResource("18_oqf80")

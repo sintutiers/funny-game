@@ -18,12 +18,15 @@
 [ext_resource type="Texture2D" uid="uid://cqiuyacsfr7cw" path="res://The Amazing Art Folder/door1.png" id="16_geysa"]
 [ext_resource type="Script" uid="uid://b83wx8f1aq2t8" path="res://scripts/components/Interactable.gd" id="17_jhqau"]
 [ext_resource type="Script" uid="uid://1cjmfi5n1mvs" path="res://scripts/components/door_component.gd" id="18_nqdun"]
+[ext_resource type="Texture2D" uid="uid://b4ycndej3qdxv" path="res://The Amazing Art Folder/entity1_limbo.png" id="19_aiw3i"]
 [ext_resource type="Texture2D" uid="uid://clhhogcvmxk7x" path="res://The Amazing Art Folder/chair2 duke.png" id="19_iolbx"]
 [ext_resource type="Script" uid="uid://bkmkeenkt520m" path="res://scripts/components/dialogue_component.gd" id="20_61l61"]
-[ext_resource type="Resource" uid="uid://dbgelmiwsp8o6" path="res://assets/dialogue/room3workspace.dialogue" id="21_sc5bu"]
+[ext_resource type="Resource" uid="uid://bmbilwm0d85w3" path="res://assets/dialogue/limbo1.dialogue" id="21_cuec4"]
+[ext_resource type="Resource" uid="uid://dbgelmiwsp8o6" path="res://assets/dialogue/chair1limbo.dialogue" id="21_sc5bu"]
+[ext_resource type="Resource" uid="uid://jy3qbei6d8yi" path="res://assets/dialogue/chair2limbo.dialogue" id="24_l60oi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iajhm"]
-size = Vector2(25, 185)
+size = Vector2(25, 250)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1e5pv"]
 size = Vector2(335, 25)
@@ -51,9 +54,17 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iwdi6"]
 size = Vector2(16.438354, 23.0137)
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cuec4"]
+radius = 29.59935
+height = 61.333336
+
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_60vv4"]
 radius = 4.931473
 height = 19.726013
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_l60oi"]
+radius = 10.3333435
+height = 26.666687
 
 [node name="limbo" type="Node2D" unique_id=70873681]
 scale = Vector2(3, 3)
@@ -79,12 +90,12 @@ shape = SubResource("RectangleShape2D_iajhm")
 
 [node name="H1" type="CollisionShape2D" parent="background/walls" unique_id=1219567322]
 unique_name_in_owner = true
-position = Vector2(0, -100)
+position = Vector2(0, -129.764)
 shape = SubResource("RectangleShape2D_1e5pv")
 
 [node name="H2" type="CollisionShape2D" parent="background/walls" unique_id=1480151767]
 unique_name_in_owner = true
-position = Vector2(0, 100)
+position = Vector2(0, 126.696)
 shape = SubResource("RectangleShape2D_1e5pv")
 
 [node name="Table2Duke" type="Sprite2D" parent="background" unique_id=1852189034]
@@ -93,7 +104,7 @@ scale = Vector2(3.65, 3.65)
 texture = ExtResource("2_aiw3i")
 
 [node name="Table1Duke" type="Sprite2D" parent="background" unique_id=393554630]
-position = Vector2(773.847, 541.85)
+position = Vector2(784.95, 590.35)
 scale = Vector2(3.65, 3.65)
 texture = ExtResource("3_cuec4")
 
@@ -108,7 +119,7 @@ scale = Vector2(3.65, 3.65)
 texture = ExtResource("5_gv87q")
 
 [node name="Cabinet2Duke2" type="Sprite2D" parent="background" unique_id=1369713361]
-position = Vector2(700.847, 522.85)
+position = Vector2(711.95, 571.35)
 scale = Vector2(3.65, 3.65)
 texture = ExtResource("6_jsjqj")
 
@@ -118,15 +129,10 @@ rotation = 1.5707964
 scale = Vector2(3.65, 3.65)
 texture = ExtResource("6_jsjqj")
 
-[node name="Chair1Duke" type="Sprite2D" parent="background" unique_id=261765485]
-position = Vector2(-940.5, 471.94998)
-scale = Vector2(3.65, 3.65)
-texture = ExtResource("7_xkqxe")
-
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 physics_interpolation_mode = 1
 top_level = true
-offset = Vector2(-0.062786356, 2.4301717)
+offset = Vector2(-2.173285, -2.1229656)
 zoom = Vector2(1.25, 1.25)
 editor_draw_limits = true
 
@@ -171,7 +177,7 @@ wall_top = NodePath("../background/walls/H1")
 wall_bottom = NodePath("../background/walls/H2")
 
 [node name="Door" type="Area2D" parent="." unique_id=201148014]
-position = Vector2(306, -146.66667)
+position = Vector2(286.66666, -215.66667)
 scale = Vector2(1.2166667, 1.2166667)
 script = ExtResource("15_rxp6a")
 metadata/_custom_type_script = "uid://cburu6b4ckehs"
@@ -190,17 +196,37 @@ script = ExtResource("17_jhqau")
 script = ExtResource("18_nqdun")
 next_scene = "uid://dcirt4ho0k7ed"
 
+[node name="being1" type="StaticBody2D" parent="." unique_id=231971129]
+position = Vector2(213.734, 0)
+scale = Vector2(0.9, 0.9)
+script = ExtResource("1_glm5v")
+metadata/_custom_type_script = "uid://busd3yfk5p1mx"
+
+[node name="Chair2Duke" type="Sprite2D" parent="being1" unique_id=305923221]
+texture = ExtResource("19_aiw3i")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="being1" unique_id=1965892606]
+position = Vector2(2.3333282, 0)
+shape = SubResource("CapsuleShape2D_cuec4")
+
+[node name="Interactable" type="Node" parent="being1" unique_id=1648082668]
+script = ExtResource("17_jhqau")
+
+[node name="Dialogue" type="Node" parent="being1/Interactable" unique_id=1888444315]
+script = ExtResource("20_61l61")
+dialogue_resource = ExtResource("21_cuec4")
+
 [node name="chair1" type="StaticBody2D" parent="." unique_id=638744043]
 script = ExtResource("1_glm5v")
 metadata/_custom_type_script = "uid://busd3yfk5p1mx"
 
 [node name="Chair2Duke" type="Sprite2D" parent="chair1" unique_id=1868891765]
-position = Vector2(259.00003, 156.33334)
+position = Vector2(262.70105, 172.5)
 scale = Vector2(1.2166667, 1.2166667)
 texture = ExtResource("19_iolbx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="chair1" unique_id=1784216189]
-position = Vector2(258.66675, 157.00003)
+position = Vector2(262.36777, 173.16669)
 scale = Vector2(1.2166667, 1.2166667)
 shape = SubResource("CapsuleShape2D_60vv4")
 
@@ -210,5 +236,23 @@ script = ExtResource("17_jhqau")
 [node name="Dialogue" type="Node" parent="chair1/Interactable" unique_id=375029260]
 script = ExtResource("20_61l61")
 dialogue_resource = ExtResource("21_sc5bu")
+
+[node name="chair2" type="StaticBody2D" parent="." unique_id=414064699]
+position = Vector2(-323.674, 158)
+script = ExtResource("1_glm5v")
+metadata/_custom_type_script = "uid://busd3yfk5p1mx"
+
+[node name="Chair2Duke" type="Sprite2D" parent="chair2" unique_id=422216777]
+texture = ExtResource("7_xkqxe")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="chair2" unique_id=970682038]
+shape = SubResource("CapsuleShape2D_l60oi")
+
+[node name="Interactable" type="Node" parent="chair2" unique_id=1254332332]
+script = ExtResource("17_jhqau")
+
+[node name="Dialogue" type="Node" parent="chair2/Interactable" unique_id=1009466970]
+script = ExtResource("20_61l61")
+dialogue_resource = ExtResource("24_l60oi")
 
 [editable path="main character"]

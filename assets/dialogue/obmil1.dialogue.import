@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bpgp06xbve3ue"
+path="res://.godot/imported/obmil1.dialogue-1d6662e915176f654137f2d71bfa5b61.tres"
+
+[deps]
+
+source_file="res://assets/dialogue/obmil1.dialogue"
+dest_files=["res://.godot/imported/obmil1.dialogue-1d6662e915176f654137f2d71bfa5b61.tres"]
+
+[params]
+
+defaults=true
