@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://b4jlykqh28s5a" path="res://The Amazing Art Folder/bed_placeholder.png" id="3_tddhr"]
 [ext_resource type="Script" uid="uid://b83wx8f1aq2t8" path="res://scripts/components/Interactable.gd" id="4_eyteb"]
 [ext_resource type="Script" uid="uid://bkmkeenkt520m" path="res://scripts/components/dialogue_component.gd" id="5_4l2w5"]
+[ext_resource type="Script" uid="uid://cppwdxcogbwyt" path="res://scripts/components/transition_component.gd" id="5_5qkd0"]
 [ext_resource type="Resource" uid="uid://c57034lwi2g3h" path="res://assets/dialogue/bed1bedroom.dialogue" id="6_o24vg"]
 [ext_resource type="Script" uid="uid://2w14ajep5aac" path="res://scripts/components/bed_component.gd" id="7_a3hpv"]
 [ext_resource type="Script" uid="uid://cburu6b4ckehs" path="res://addons/godot-rapier2d/custom_nodes/rapier_area_2d.gd" id="8_i5qy1"]
@@ -101,6 +102,10 @@ script = ExtResource("4_eyteb")
 script = ExtResource("10_43iby")
 next_scene = "uid://b80chnt43vfab"
 
+[node name="transition" type="Node" parent="Door/Interactable" unique_id=317579272]
+script = ExtResource("5_5qkd0")
+transition = &"pixelate_in"
+
 [node name="Bed" type="Area2D" parent="." unique_id=817305811]
 unique_name_in_owner = true
 position = Vector2(-95.01559, -35.812584)
@@ -154,7 +159,7 @@ texture = ExtResource("1_ieope")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 physics_interpolation_mode = 1
 top_level = true
-offset = Vector2(-4.241181, -4.2313933)
+offset = Vector2(-0.33048904, 0.64301753)
 zoom = Vector2(1.1, 1.1)
 editor_draw_limits = true
 
