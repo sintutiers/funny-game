@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://gr8nakpbrhby" path="res://addons/dialogue_manager/components/search_and_replace.tscn" id="6_ylh0t"]
 [ext_resource type="PackedScene" uid="uid://cs8pwrxr5vxix" path="res://addons/dialogue_manager/components/errors_panel.tscn" id="7_5cvl4"]
 [ext_resource type="Script" uid="uid://klpiq4tk3t7a" path="res://addons/dialogue_manager/components/code_edit_syntax_highlighter.gd" id="7_necsa"]
-[ext_resource type="FontFile" uid="uid://bdude2uqwyrt" path="res://assets/themes/font_file.tres" id="7_y6rqu"]
+[ext_resource type="FontFile" uid="uid://bdude2uqwyrt" path="res://assets/material/font_file.tres" id="7_y6rqu"]
 [ext_resource type="Texture2D" uid="uid://n7scg3opx84w" path="res://addons/dialogue_manager/assets/banner.png" id="9_y6rqu"]
 
 [sub_resource type="DPITexture" id="DPITexture_w0gko"]
@@ -70,7 +70,7 @@ unique_name_in_owner = true
 layout_mode = 2
 tooltip_text = "Open a file"
 icon = SubResource("DPITexture_w0gko")
-item_count = 11
+item_count = 24
 popup/item_0/text = "Open..."
 popup/item_0/icon = SubResource("DPITexture_w0gko")
 popup/item_0/id = 100
@@ -79,28 +79,67 @@ popup/item_1/icon = SubResource("DPITexture_w0gko")
 popup/item_1/id = 101
 popup/item_2/id = -1
 popup/item_2/separator = true
-popup/item_3/text = "res://assets/dialogue/white.dialogue"
+popup/item_3/text = "res://assets/dialogue/entity1limbo.dialogue"
 popup/item_3/icon = SubResource("DPITexture_w0gko")
 popup/item_3/id = 3
-popup/item_4/text = "res://assets/dialogue/room3workspace.dialogue"
+popup/item_4/text = "res://assets/dialogue/entity1obmil.dialogue"
 popup/item_4/icon = SubResource("DPITexture_w0gko")
 popup/item_4/id = 4
-popup/item_5/text = "res://assets/dialogue/red.dialogue"
+popup/item_5/text = "res://assets/dialogue/entity2grief.dialogue"
 popup/item_5/icon = SubResource("DPITexture_w0gko")
 popup/item_5/id = 5
-popup/item_6/text = "res://assets/dialogue/bed1placeholder.dialogue"
+popup/item_6/text = "res://assets/dialogue/entity1grief.dialogue"
 popup/item_6/icon = SubResource("DPITexture_w0gko")
 popup/item_6/id = 6
-popup/item_7/text = "res://assets/dialogue/white.dialogue"
+popup/item_7/text = "res://assets/dialogue/entity2judgement.dialogue"
 popup/item_7/icon = SubResource("DPITexture_w0gko")
 popup/item_7/id = 7
-popup/item_8/text = "res://assets/dialogue/bed1placeholder.dialogue"
+popup/item_8/text = "res://assets/dialogue/entity1judgement.dialogue"
 popup/item_8/icon = SubResource("DPITexture_w0gko")
 popup/item_8/id = 8
-popup/item_9/id = -1
-popup/item_9/separator = true
-popup/item_10/text = "Clear recent files"
-popup/item_10/id = 102
+popup/item_9/text = "res://assets/dialogue/bed1bedroom.dialogue"
+popup/item_9/icon = SubResource("DPITexture_w0gko")
+popup/item_9/id = 9
+popup/item_10/text = "res://assets/dialogue/chair2limbo.dialogue"
+popup/item_10/icon = SubResource("DPITexture_w0gko")
+popup/item_10/id = 10
+popup/item_11/text = "res://assets/dialogue/chair1limbo.dialogue"
+popup/item_11/icon = SubResource("DPITexture_w0gko")
+popup/item_11/id = 11
+popup/item_12/text = "res://assets/dialogue/entity1obmil.dialogue"
+popup/item_12/icon = SubResource("DPITexture_w0gko")
+popup/item_12/id = 12
+popup/item_13/text = "res://assets/dialogue/entity1obmil.dialogue"
+popup/item_13/icon = SubResource("DPITexture_w0gko")
+popup/item_13/id = 13
+popup/item_14/text = "res://assets/dialogue/entity1obmil.dialogue"
+popup/item_14/icon = SubResource("DPITexture_w0gko")
+popup/item_14/id = 14
+popup/item_15/text = "res://assets/dialogue/bed1bedroom.dialogue"
+popup/item_15/icon = SubResource("DPITexture_w0gko")
+popup/item_15/id = 15
+popup/item_16/text = "res://assets/dialogue/chair1limbo.dialogue"
+popup/item_16/icon = SubResource("DPITexture_w0gko")
+popup/item_16/id = 16
+popup/item_17/text = "res://assets/dialogue/chair1limbo.dialogue"
+popup/item_17/icon = SubResource("DPITexture_w0gko")
+popup/item_17/id = 17
+popup/item_18/text = "res://assets/dialogue/chair1limbo.dialogue"
+popup/item_18/icon = SubResource("DPITexture_w0gko")
+popup/item_18/id = 18
+popup/item_19/text = "res://assets/dialogue/entity2judgement.dialogue"
+popup/item_19/icon = SubResource("DPITexture_w0gko")
+popup/item_19/id = 19
+popup/item_20/text = "res://assets/dialogue/entity2grief.dialogue"
+popup/item_20/icon = SubResource("DPITexture_w0gko")
+popup/item_20/id = 20
+popup/item_21/text = "res://assets/dialogue/bed1bedroom.dialogue"
+popup/item_21/icon = SubResource("DPITexture_w0gko")
+popup/item_21/id = 21
+popup/item_22/id = -1
+popup/item_22/separator = true
+popup/item_23/text = "Clear recent files"
+popup/item_23/id = 102
 
 [node name="SaveAllButton" type="Button" parent="Margin/Content/SidePanel/Toolbar" unique_id=940841574]
 unique_name_in_owner = true
@@ -293,11 +332,7 @@ theme_override_fonts/font = ExtResource("7_y6rqu")
 theme_override_font_sizes/font_size = 16
 theme_override_colors/bookmark_color = Color(1, 0.333333, 0.333333, 1)
 text = "~ start
-white: wazup pookie
-- yes
-	you: ~blushes
-- no
-	you: \"aggresivly licks your out earwax\"
+You: an old workspace from a familiar of yours but you don't know who.
 => END"
 scroll_smooth = true
 syntax_highlighter = SubResource("SyntaxHighlighter_y6rqu")

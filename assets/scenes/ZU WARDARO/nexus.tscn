@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://46kr7ggre6pd" path="res://The Amazing Art Folder/black2.png" id="2_j2iih"]
 [ext_resource type="Script" uid="uid://b83wx8f1aq2t8" path="res://scripts/components/Interactable.gd" id="3_6cead"]
-[ext_resource type="Script" uid="uid://1cjmfi5n1mvs" path="res://scripts/components/door_component.gd" id="4_dvaiv"]
+[ext_resource type="Script" uid="uid://1cjmfi5n1mvs" path="res://scripts/components/door_component_player.gd" id="4_dvaiv"]
 [ext_resource type="Texture2D" uid="uid://bc4mx21fnd2hh" path="res://The Amazing Art Folder/nexus_placement.png" id="4_lf2id"]
 [ext_resource type="Script" uid="uid://busd3yfk5p1mx" path="res://addons/godot-rapier2d/custom_nodes/rapier_static_body_2d.gd" id="5_ahart"]
 [ext_resource type="Texture2D" uid="uid://c0pmx7qfytvwv" path="res://The Amazing Art Folder/door Chiel.png" id="7_xpwch"]

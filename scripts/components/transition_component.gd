@@ -3,11 +3,15 @@
 class_name TransitionComponent
 extends Node
 
-const TRANSITION_SCENE: String = "res://assets/scenes/transition_handler.tscn"
+const TRANSITION_SCENE: String = "res://assets/scenes/ui/transition_handler.tscn"
 var transition: StringName = &"pixelate_in"
 
 func _get_property_list() -> Array[Dictionary]:
+	if not ResourceLoader.exists(TRANSITION_SCENE):
+		return []
 	var packed: PackedScene = load(TRANSITION_SCENE) as PackedScene
+	if not packed:
+		return []
 	var instance: Node = packed.instantiate()
 	var handler: AnimationPlayer = instance.get_node_or_null("Handler") as AnimationPlayer
 	var anims: PackedStringArray = handler.get_animation_list() if handler else PackedStringArray()

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://ckvgyvclnwggo"]
 
 [ext_resource type="Script" uid="uid://g32um0mltv5d" path="res://addons/dialogue_manager/dialogue_label.gd" id="1_cital"]
-[ext_resource type="Theme" uid="uid://c843m1ifds0b8" path="res://assets/themes/dialogue_theme.tres" id="1_vdugj"]
+[ext_resource type="Theme" uid="uid://c843m1ifds0b8" path="res://assets/material/dialogue_theme.tres" id="1_vdugj"]
 
 [node name="DialogueLabel" type="RichTextLabel" unique_id=94286035]
 anchors_preset = 10

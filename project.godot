@@ -17,7 +17,7 @@ ss2d/version="3.3.1"
 config/name="Dream Diary gamejam"
 config/description="Dean, Chiel, and Duke
 very cool games"
-config/version="0.0.81"
+config/version="0.0.95"
 run/main_scene="uid://dxiafdb8vqcc5"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 run/max_fps=60

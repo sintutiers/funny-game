@@ -17,7 +17,7 @@
 [ext_resource type="Script" uid="uid://cburu6b4ckehs" path="res://addons/godot-rapier2d/custom_nodes/rapier_area_2d.gd" id="15_rxp6a"]
 [ext_resource type="Texture2D" uid="uid://cqiuyacsfr7cw" path="res://The Amazing Art Folder/door1.png" id="16_geysa"]
 [ext_resource type="Script" uid="uid://b83wx8f1aq2t8" path="res://scripts/components/Interactable.gd" id="17_jhqau"]
-[ext_resource type="Script" uid="uid://1cjmfi5n1mvs" path="res://scripts/components/door_component.gd" id="18_nqdun"]
+[ext_resource type="Script" uid="uid://1cjmfi5n1mvs" path="res://scripts/components/door_component_player.gd" id="18_nqdun"]
 [ext_resource type="Texture2D" uid="uid://b4ycndej3qdxv" path="res://The Amazing Art Folder/entity1_limbo.png" id="19_aiw3i"]
 [ext_resource type="Texture2D" uid="uid://clhhogcvmxk7x" path="res://The Amazing Art Folder/chair2 duke.png" id="19_iolbx"]
 [ext_resource type="Script" uid="uid://bkmkeenkt520m" path="res://scripts/components/dialogue_component.gd" id="20_61l61"]
@@ -132,7 +132,7 @@ shape = SubResource("RectangleShape2D_1e5pv")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 physics_interpolation_mode = 1
 top_level = true
-offset = Vector2(-3.3338366, -6.2219234)
+offset = Vector2(-0.055431105, -2.0207305)
 editor_draw_limits = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=459320539]

@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://gqwi1etgbpuo"]
 
 [ext_resource type="Script" uid="uid://busd3yfk5p1mx" path="res://addons/godot-rapier2d/custom_nodes/rapier_static_body_2d.gd" id="1_avy7k"]
-[ext_resource type="Shader" uid="uid://o16jj7hjwyqc" path="res://assets/scenes/ZU WARDARO/broken_obmil.gdshader" id="1_cr1ly"]
+[ext_resource type="Shader" uid="uid://o16jj7hjwyqc" path="res://assets/material/broken_obmil.gdshader" id="1_cr1ly"]
 [ext_resource type="Texture2D" uid="uid://hsfpscymp7i5" path="res://The Amazing Art Folder/Floortile_blankspace_light.png" id="2_cr1ly"]
 [ext_resource type="Texture2D" uid="uid://cexcf7xpv684h" path="res://The Amazing Art Folder/lamp_on.png" id="3_5eg5d"]
-[ext_resource type="Material" uid="uid://h4yrp14cnk0o" path="res://assets/themes/inverst colours.tres" id="3_o5yvq"]
+[ext_resource type="Material" uid="uid://h4yrp14cnk0o" path="res://assets/material/inverst colours.tres" id="3_o5yvq"]
 [ext_resource type="PackedScene" uid="uid://uqnuhcrw12d0" path="res://assets/scenes/player.tscn" id="4_o5yvq"]
 [ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="5_xntig"]
 [ext_resource type="Script" uid="uid://bhexx6mj1xv3q" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="6_4oqqy"]
@@ -14,7 +14,7 @@
 [ext_resource type="Script" uid="uid://bkmkeenkt520m" path="res://scripts/components/dialogue_component.gd" id="10_fms16"]
 [ext_resource type="Resource" uid="uid://bpgp06xbve3ue" path="res://assets/dialogue/entity1obmil.dialogue" id="11_wx4gp"]
 [ext_resource type="Texture2D" uid="uid://bso4w46je4cwt" path="res://The Amazing Art Folder/background duke.png" id="12_30uhy"]
-[ext_resource type="Script" uid="uid://1cjmfi5n1mvs" path="res://scripts/components/door_component.gd" id="13_efp18"]
+[ext_resource type="Script" uid="uid://1cjmfi5n1mvs" path="res://scripts/components/door_component_player.gd" id="13_efp18"]
 [ext_resource type="Script" uid="uid://csnxpxd7w5jv2" path="res://scripts/components/infinite_component.gd" id="15_dy030"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_s1bc0"]

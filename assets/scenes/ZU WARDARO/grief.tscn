@@ -16,7 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://6yeroqsmvbna" path="res://The Amazing Art Folder/cassie_red2.png" id="14_i7wko"]
 [ext_resource type="Resource" uid="uid://d0o5q5x067a0u" path="res://assets/dialogue/entity1grief.dialogue" id="15_nvlvn"]
 [ext_resource type="Texture2D" uid="uid://cqiuyacsfr7cw" path="res://The Amazing Art Folder/door1.png" id="16_62tfj"]
-[ext_resource type="Script" uid="uid://1cjmfi5n1mvs" path="res://scripts/components/door_component.gd" id="17_grd15"]
+[ext_resource type="Script" uid="uid://1cjmfi5n1mvs" path="res://scripts/components/door_component_player.gd" id="17_grd15"]
 [ext_resource type="Texture2D" uid="uid://b1hhqiedxtx81" path="res://The Amazing Art Folder/entity1_grief.png" id="18_48uqn"]
 [ext_resource type="Script" uid="uid://csnxpxd7w5jv2" path="res://scripts/components/infinite_component.gd" id="19_t5da0"]
 

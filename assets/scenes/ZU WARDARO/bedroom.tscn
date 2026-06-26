@@ -10,7 +10,7 @@
 [ext_resource type="Script" uid="uid://2w14ajep5aac" path="res://scripts/components/bed_component.gd" id="7_a3hpv"]
 [ext_resource type="Script" uid="uid://cburu6b4ckehs" path="res://addons/godot-rapier2d/custom_nodes/rapier_area_2d.gd" id="8_i5qy1"]
 [ext_resource type="Texture2D" uid="uid://c0pmx7qfytvwv" path="res://The Amazing Art Folder/door Chiel.png" id="9_vs070"]
-[ext_resource type="Script" uid="uid://1cjmfi5n1mvs" path="res://scripts/components/door_component.gd" id="10_43iby"]
+[ext_resource type="Script" uid="uid://1cjmfi5n1mvs" path="res://scripts/components/door_component_player.gd" id="10_43iby"]
 [ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="11_208uq"]
 [ext_resource type="PackedScene" uid="uid://uqnuhcrw12d0" path="res://assets/scenes/player.tscn" id="12_cx603"]
 [ext_resource type="Texture2D" uid="uid://46kr7ggre6pd" path="res://The Amazing Art Folder/black2.png" id="13_mg3oq"]
@@ -104,7 +104,6 @@ next_scene = "uid://b80chnt43vfab"
 
 [node name="transition" type="Node" parent="Door/Interactable" unique_id=317579272]
 script = ExtResource("5_5qkd0")
-transition = &"pixelate_in"
 
 [node name="Bed" type="Area2D" parent="." unique_id=817305811]
 unique_name_in_owner = true
