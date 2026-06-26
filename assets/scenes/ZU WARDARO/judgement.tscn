@@ -12,9 +12,10 @@
 [ext_resource type="Texture2D" uid="uid://cqiuyacsfr7cw" path="res://The Amazing Art Folder/door1.png" id="7_7123j"]
 [ext_resource type="Resource" uid="uid://ue8snbdun800" path="res://assets/dialogue/entity1judgement.dialogue" id="7_hlyxm"]
 [ext_resource type="Script" uid="uid://b83wx8f1aq2t8" path="res://scripts/components/Interactable.gd" id="8_rtdho"]
-[ext_resource type="Script" uid="uid://1cjmfi5n1mvs" path="res://scripts/components/door_component_player.gd" id="9_epyt0"]
+[ext_resource type="Script" uid="uid://1cjmfi5n1mvs" path="res://scripts/components/door_component.gd" id="9_epyt0"]
 [ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="10_5f3tx"]
 [ext_resource type="PackedScene" uid="uid://uqnuhcrw12d0" path="res://assets/scenes/player.tscn" id="11_1ylle"]
+[ext_resource type="Script" uid="uid://cppwdxcogbwyt" path="res://scripts/components/transition_component.gd" id="12_3yt31"]
 [ext_resource type="Texture2D" uid="uid://46kr7ggre6pd" path="res://The Amazing Art Folder/black2.png" id="12_a6emv"]
 [ext_resource type="Script" uid="uid://bhexx6mj1xv3q" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="13_7e3ab"]
 [ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="14_lbkp8"]
@@ -181,7 +182,10 @@ script = ExtResource("8_rtdho")
 [node name="DoorComponent" type="Node" parent="Door/Interactable" unique_id=1494105584]
 script = ExtResource("9_epyt0")
 next_scene = "uid://c2motx642twyr"
-transition = &"pixelate_in"
+
+[node name="transition" type="Node" parent="Door/Interactable" unique_id=889213244]
+script = ExtResource("12_3yt31")
+transition_name = &"pixelate_in"
 
 [node name="walls" type="StaticBody2D" parent="." unique_id=286310053 groups=["walls"]]
 scale = Vector2(1.2166667, 1.2166667)
@@ -250,7 +254,7 @@ texture = ExtResource("1_ic7ha")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 physics_interpolation_mode = 1
 top_level = true
-offset = Vector2(0.120616525, 2.840673)
+offset = Vector2(0.76129496, 2.0813942)
 editor_draw_limits = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=459320539]

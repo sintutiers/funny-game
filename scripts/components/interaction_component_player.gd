@@ -1,4 +1,4 @@
-# interaction_component.gd
+# interaction_component_player.gd
 class_name InteractionComponent
 extends Node
 

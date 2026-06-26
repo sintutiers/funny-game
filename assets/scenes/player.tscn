@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://mkihoskon4ea" path="res://The Amazing Art Folder/being1.png" id="4_nsdob"]
 [ext_resource type="Script" uid="uid://cs0gkb6qc0b1q" path="res://scripts/components/movement_component.gd" id="5_yceh7"]
 [ext_resource type="Script" uid="uid://ca51k1w1oyhen" path="res://scripts/components/animation_component.gd" id="6_uovkd"]
-[ext_resource type="Script" uid="uid://wov8nmy4xjec" path="res://scripts/components/interaction_component.gd" id="7_tc801"]
+[ext_resource type="Script" uid="uid://wov8nmy4xjec" path="res://scripts/components/interaction_component_player.gd" id="7_tc801"]
 [ext_resource type="Shader" uid="uid://2k7xjk5ryfw1" path="res://assets/material/touch.gdshader" id="7_yceh7"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vtqb1"]

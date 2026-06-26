@@ -16,8 +16,9 @@
 [ext_resource type="Texture2D" uid="uid://6yeroqsmvbna" path="res://The Amazing Art Folder/cassie_red2.png" id="14_i7wko"]
 [ext_resource type="Resource" uid="uid://d0o5q5x067a0u" path="res://assets/dialogue/entity1grief.dialogue" id="15_nvlvn"]
 [ext_resource type="Texture2D" uid="uid://cqiuyacsfr7cw" path="res://The Amazing Art Folder/door1.png" id="16_62tfj"]
-[ext_resource type="Script" uid="uid://1cjmfi5n1mvs" path="res://scripts/components/door_component_player.gd" id="17_grd15"]
+[ext_resource type="Script" uid="uid://1cjmfi5n1mvs" path="res://scripts/components/door_component.gd" id="17_grd15"]
 [ext_resource type="Texture2D" uid="uid://b1hhqiedxtx81" path="res://The Amazing Art Folder/entity1_grief.png" id="18_48uqn"]
+[ext_resource type="Script" uid="uid://cppwdxcogbwyt" path="res://scripts/components/transition_component.gd" id="19_s3age"]
 [ext_resource type="Script" uid="uid://csnxpxd7w5jv2" path="res://scripts/components/infinite_component.gd" id="19_t5da0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iajhm"]
@@ -122,8 +123,6 @@ texture_filter = 1
 position = Vector2(0, 0.25)
 texture = ExtResource("3_irwne")
 
-[node name="PlayerRoot" parent="." unique_id=621235887 instance=ExtResource("4_8r6i5")]
-
 [node name="Camera2D" type="Camera2D" parent="." unique_id=560551855]
 physics_interpolation_mode = 1
 top_level = true
@@ -185,7 +184,7 @@ dialogue_resource = ExtResource("15_nvlvn")
 
 [node name="placeholder ending" type="StaticBody2D" parent="." unique_id=1115464959]
 position = Vector2(434.33337, -297.66663)
-scale = Vector2(3, 3)
+scale = Vector2(2, 2)
 script = ExtResource("1_bov0m")
 metadata/_custom_type_script = "uid://busd3yfk5p1mx"
 
@@ -197,6 +196,10 @@ shape = SubResource("CapsuleShape2D_daalc")
 
 [node name="Interactable" type="Node" parent="placeholder ending" unique_id=570837775]
 script = ExtResource("10_exkrv")
+
+[node name="Transition" type="Node" parent="placeholder ending/Interactable" unique_id=889213244]
+script = ExtResource("19_s3age")
+transition_name = &"pixelate_in"
 
 [node name="door" type="Node" parent="placeholder ending/Interactable" unique_id=46485846]
 script = ExtResource("17_grd15")
@@ -218,6 +221,10 @@ shape = SubResource("CapsuleShape2D_suj5i")
 [node name="Interactable" type="Node" parent="entity1" unique_id=869572845]
 script = ExtResource("10_exkrv")
 
+[node name="Transition" type="Node" parent="entity1/Interactable" unique_id=1864725504]
+script = ExtResource("19_s3age")
+transition_name = &"pixelate_in"
+
 [node name="dialogue" type="Node" parent="entity1/Interactable" unique_id=1596353486]
 script = ExtResource("11_8uxws")
 dialogue_resource = ExtResource("15_nvlvn")
@@ -233,5 +240,7 @@ wall_left = NodePath("../walls/V1")
 wall_right = NodePath("../walls/V2")
 wall_top = NodePath("../walls/H1")
 wall_bottom = NodePath("../walls/H2")
+
+[node name="PlayerRoot" parent="." unique_id=621235887 instance=ExtResource("4_8r6i5")]
 
 [editable path="PlayerRoot"]

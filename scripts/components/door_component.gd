@@ -1,10 +1,16 @@
-#door_component.gd
+# door_component.gd
 class_name DoorComponent
 extends Node
 
 @onready var interactable: Interactable = get_parent()
-@onready var transition_component: TransitionComponent = get_parent().get_node_or_null("transition") as TransitionComponent
+@onready var transition_component: TransitionComponent = _find_transition()
 @export_file("*.tscn") var next_scene: String
+
+func _find_transition() -> TransitionComponent:
+	for child in get_parent().get_children():
+		if child is TransitionComponent:
+			return child
+	return null
 
 func _ready() -> void:
 	interactable.interacted.connect(_on_interacted)

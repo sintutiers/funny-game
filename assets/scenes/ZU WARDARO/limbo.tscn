@@ -17,7 +17,8 @@
 [ext_resource type="Script" uid="uid://cburu6b4ckehs" path="res://addons/godot-rapier2d/custom_nodes/rapier_area_2d.gd" id="15_rxp6a"]
 [ext_resource type="Texture2D" uid="uid://cqiuyacsfr7cw" path="res://The Amazing Art Folder/door1.png" id="16_geysa"]
 [ext_resource type="Script" uid="uid://b83wx8f1aq2t8" path="res://scripts/components/Interactable.gd" id="17_jhqau"]
-[ext_resource type="Script" uid="uid://1cjmfi5n1mvs" path="res://scripts/components/door_component_player.gd" id="18_nqdun"]
+[ext_resource type="Script" uid="uid://cppwdxcogbwyt" path="res://scripts/components/transition_component.gd" id="18_fd64f"]
+[ext_resource type="Script" uid="uid://1cjmfi5n1mvs" path="res://scripts/components/door_component.gd" id="18_nqdun"]
 [ext_resource type="Texture2D" uid="uid://b4ycndej3qdxv" path="res://The Amazing Art Folder/entity1_limbo.png" id="19_aiw3i"]
 [ext_resource type="Texture2D" uid="uid://clhhogcvmxk7x" path="res://The Amazing Art Folder/chair2 duke.png" id="19_iolbx"]
 [ext_resource type="Script" uid="uid://bkmkeenkt520m" path="res://scripts/components/dialogue_component.gd" id="20_61l61"]
@@ -132,29 +133,13 @@ shape = SubResource("RectangleShape2D_1e5pv")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 physics_interpolation_mode = 1
 top_level = true
-offset = Vector2(-0.055431105, -2.0207305)
+offset = Vector2(1.5906054, 1.5630238)
 editor_draw_limits = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=459320539]
 process_priority = 300
 process_physics_priority = 300
 script = ExtResource("8_f66k8")
-
-[node name="main character" parent="." unique_id=621235887 instance=ExtResource("9_4iimv")]
-
-[node name="Parallax2D" type="Parallax2D" parent="main character/PlayerBody/ParallaxLayer" parent_id_path=PackedInt32Array(621235887, 792501613) index="0" unique_id=2003550420]
-scale = Vector2(4, 4)
-scroll_scale = Vector2(0, 0)
-repeat_size = Vector2(32, 32)
-autoscroll = Vector2(1, 1)
-repeat_times = 30
-follow_viewport = false
-
-[node name="Blue" type="Sprite2D" parent="main character/PlayerBody/ParallaxLayer/Parallax2D" unique_id=2145853339]
-texture = ExtResource("10_4iegp")
-
-[node name="Virtual joystick left" parent="main character/InterfaceLayer" parent_id_path=PackedInt32Array(621235887, 1750424812) index="0" unique_id=1828221587]
-visible = false
 
 [node name="PhantomCamera2D" type="Node2D" parent="." unique_id=1973500547 node_paths=PackedStringArray("follow_target")]
 top_level = true
@@ -194,8 +179,12 @@ script = ExtResource("17_jhqau")
 script = ExtResource("18_nqdun")
 next_scene = "uid://dcirt4ho0k7ed"
 
+[node name="transition" type="Node" parent="Door/Interactable" unique_id=1847191518]
+script = ExtResource("18_fd64f")
+transition_name = &"pixelate_in"
+
 [node name="being1" type="StaticBody2D" parent="." unique_id=231971129]
-position = Vector2(213.734, 0)
+position = Vector2(252.33334, -0.66666675)
 scale = Vector2(0.9, 0.9)
 script = ExtResource("1_glm5v")
 metadata/_custom_type_script = "uid://busd3yfk5p1mx"
@@ -252,5 +241,21 @@ script = ExtResource("17_jhqau")
 [node name="Dialogue" type="Node" parent="chair2/Interactable" unique_id=1009466970]
 script = ExtResource("20_61l61")
 dialogue_resource = ExtResource("24_l60oi")
+
+[node name="main character" parent="." unique_id=621235887 instance=ExtResource("9_4iimv")]
+
+[node name="Parallax2D" type="Parallax2D" parent="main character/PlayerBody/ParallaxLayer" parent_id_path=PackedInt32Array(621235887, 792501613) index="0" unique_id=2003550420]
+scale = Vector2(4, 4)
+scroll_scale = Vector2(0, 0)
+repeat_size = Vector2(32, 32)
+autoscroll = Vector2(1, 1)
+repeat_times = 30
+follow_viewport = false
+
+[node name="Blue" type="Sprite2D" parent="main character/PlayerBody/ParallaxLayer/Parallax2D" unique_id=2145853339]
+texture = ExtResource("10_4iegp")
+
+[node name="Virtual joystick left" parent="main character/InterfaceLayer" parent_id_path=PackedInt32Array(621235887, 1750424812) index="0" unique_id=1828221587]
+visible = false
 
 [editable path="main character"]

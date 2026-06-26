@@ -13,8 +13,9 @@
 [ext_resource type="Script" uid="uid://b83wx8f1aq2t8" path="res://scripts/components/Interactable.gd" id="9_myafq"]
 [ext_resource type="Script" uid="uid://bkmkeenkt520m" path="res://scripts/components/dialogue_component.gd" id="10_fms16"]
 [ext_resource type="Resource" uid="uid://bpgp06xbve3ue" path="res://assets/dialogue/entity1obmil.dialogue" id="11_wx4gp"]
+[ext_resource type="Script" uid="uid://cppwdxcogbwyt" path="res://scripts/components/transition_component.gd" id="12_5eg5d"]
 [ext_resource type="Texture2D" uid="uid://bso4w46je4cwt" path="res://The Amazing Art Folder/background duke.png" id="12_30uhy"]
-[ext_resource type="Script" uid="uid://1cjmfi5n1mvs" path="res://scripts/components/door_component_player.gd" id="13_efp18"]
+[ext_resource type="Script" uid="uid://1cjmfi5n1mvs" path="res://scripts/components/door_component.gd" id="13_efp18"]
 [ext_resource type="Script" uid="uid://csnxpxd7w5jv2" path="res://scripts/components/infinite_component.gd" id="15_dy030"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_s1bc0"]
@@ -174,6 +175,10 @@ shape = SubResource("CapsuleShape2D_daalc")
 [node name="Interactable" type="Node" parent="entity1" unique_id=1632388197]
 script = ExtResource("9_myafq")
 
+[node name="Transition" type="Node" parent="entity1/Interactable" unique_id=889213244]
+script = ExtResource("12_5eg5d")
+transition_name = &"pixelate_out"
+
 [node name="dialogue" type="Node" parent="entity1/Interactable" unique_id=339257600]
 script = ExtResource("10_fms16")
 dialogue_resource = ExtResource("11_wx4gp")
@@ -184,7 +189,6 @@ next_scene = "uid://djkihai5rc1e3"
 
 [node name="PLACEHOLDER NEXUS" type="StaticBody2D" parent="." unique_id=212434922]
 position = Vector2(375.66663, -216.66663)
-scale = Vector2(2, 2)
 script = ExtResource("1_avy7k")
 metadata/_custom_type_script = "uid://busd3yfk5p1mx"
 
@@ -196,6 +200,10 @@ shape = SubResource("CapsuleShape2D_daalc")
 
 [node name="Interactable" type="Node" parent="PLACEHOLDER NEXUS" unique_id=1854710712]
 script = ExtResource("9_myafq")
+
+[node name="Transition" type="Node" parent="PLACEHOLDER NEXUS/Interactable" unique_id=899476188]
+script = ExtResource("12_5eg5d")
+transition_name = &"pixelate_in"
 
 [node name="door" type="Node" parent="PLACEHOLDER NEXUS/Interactable" unique_id=2142243647]
 script = ExtResource("13_efp18")

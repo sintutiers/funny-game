@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b5ncw8rkav2qo"]
 
-[ext_resource type="Script" uid="uid://1cjmfi5n1mvs" path="res://scripts/components/door_component_player.gd" id="1_krtn1"]
+[ext_resource type="Script" uid="uid://1cjmfi5n1mvs" path="res://scripts/components/door_component.gd" id="1_krtn1"]
 
 [node name="Door" type="Node" unique_id=735391937]
 script = ExtResource("1_krtn1")
