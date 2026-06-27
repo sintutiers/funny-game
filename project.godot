@@ -79,7 +79,10 @@ enabled=PackedStringArray("res://addons/debug_menu/plugin.cfg", "res://addons/di
 [file_customization]
 
 folder_colors={
-"res://addons/": "gray"
+"res://addons/": "gray",
+"res://assets/scenes/ZU WARDARO/": "blue",
+"res://assets/scenes/prefabs/": "red",
+"res://assets/scenes/ui/": "red"
 }
 
 [gui]

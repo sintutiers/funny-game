@@ -26,9 +26,13 @@ region = Rect2(0, 0, 100, 150)
 atlas = ExtResource("9_vs070")
 region = Rect2(0, 0, 100, 150)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_j7vt5"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_5qkd0"]
 atlas = ExtResource("9_vs070")
-region = Rect2(100, 0, 100, 150)
+region = Rect2(0, 150, 100, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ketx8"]
+atlas = ExtResource("9_vs070")
+region = Rect2(0, 300, 100, 150)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_iwdi6"]
 animations = [{
@@ -45,7 +49,10 @@ animations = [{
 "texture": SubResource("AtlasTexture_vnh7e")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_j7vt5")
+"texture": SubResource("AtlasTexture_5qkd0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ketx8")
 }],
 "loop": 1,
 "name": &"open",
@@ -89,7 +96,6 @@ scale = Vector2(0.75, 0.75)
 sprite_frames = SubResource("SpriteFrames_iwdi6")
 animation = &"open"
 autoplay = "open"
-frame_progress = 0.10982978
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Door" unique_id=2089601538]
 position = Vector2(0, -9.505005)
@@ -159,7 +165,7 @@ texture = ExtResource("1_ieope")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2012084547]
 physics_interpolation_mode = 1
 top_level = true
-offset = Vector2(-1.9682453, -0.84775686)
+offset = Vector2(-0.30400133, -0.40548697)
 zoom = Vector2(1.1, 1.1)
 editor_draw_limits = true
 
