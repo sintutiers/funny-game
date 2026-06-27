@@ -9,8 +9,8 @@
 [ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="5_xntig"]
 [ext_resource type="Script" uid="uid://bhexx6mj1xv3q" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="6_4oqqy"]
 [ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="7_n054a"]
-[ext_resource type="Texture2D" uid="uid://crmih01m3g7fj" path="res://The Amazing Art Folder/obmil_entity.png" id="8_65tmj"]
 [ext_resource type="Script" uid="uid://b83wx8f1aq2t8" path="res://scripts/components/Interactable.gd" id="9_myafq"]
+[ext_resource type="Texture2D" uid="uid://dnr2v5rtuy68v" path="res://The Amazing Art Folder/broken_obmil_entity.png" id="10_5eg5d"]
 [ext_resource type="Script" uid="uid://bkmkeenkt520m" path="res://scripts/components/dialogue_component.gd" id="10_fms16"]
 [ext_resource type="Resource" uid="uid://bpgp06xbve3ue" path="res://assets/dialogue/entity1obmil.dialogue" id="11_wx4gp"]
 [ext_resource type="Script" uid="uid://cppwdxcogbwyt" path="res://scripts/components/transition_component.gd" id="12_5eg5d"]
@@ -165,9 +165,8 @@ script = ExtResource("1_avy7k")
 metadata/_custom_type_script = "uid://busd3yfk5p1mx"
 
 [node name="ObmilEntity" type="Sprite2D" parent="entity1" unique_id=1394960406]
-material = ExtResource("3_o5yvq")
 scale = Vector2(0.7, 0.7)
-texture = ExtResource("8_65tmj")
+texture = ExtResource("10_5eg5d")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="entity1" unique_id=115384067]
 shape = SubResource("CapsuleShape2D_daalc")
