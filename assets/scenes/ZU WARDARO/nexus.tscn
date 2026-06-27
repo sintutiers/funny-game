@@ -6,10 +6,11 @@
 [ext_resource type="Texture2D" uid="uid://bc4mx21fnd2hh" path="res://The Amazing Art Folder/nexus_placement.png" id="4_lf2id"]
 [ext_resource type="Script" uid="uid://busd3yfk5p1mx" path="res://addons/godot-rapier2d/custom_nodes/rapier_static_body_2d.gd" id="5_ahart"]
 [ext_resource type="Texture2D" uid="uid://c0pmx7qfytvwv" path="res://The Amazing Art Folder/door Chiel.png" id="7_xpwch"]
-[ext_resource type="Texture2D" uid="uid://dnr2v5rtuy68v" path="res://The Amazing Art Folder/broken_obmil_entity.png" id="8_ehllc"]
-[ext_resource type="Texture2D" uid="uid://crmih01m3g7fj" path="res://The Amazing Art Folder/obmil_entity.png" id="8_xk3sw"]
+[ext_resource type="Material" uid="uid://h4yrp14cnk0o" path="res://assets/material/inverst colours.tres" id="8_adtrb"]
+[ext_resource type="Texture2D" uid="uid://dt4ye673ct5og" path="res://The Amazing Art Folder/lamp_off.png" id="9_cwegb"]
 [ext_resource type="Texture2D" uid="uid://3ucay8xhxctg" path="res://The Amazing Art Folder/cassie_white1.png" id="11_450hu"]
 [ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="12_gdav5"]
+[ext_resource type="Texture2D" uid="uid://cexcf7xpv684h" path="res://The Amazing Art Folder/lamp_on.png" id="13_l6gor"]
 [ext_resource type="PackedScene" uid="uid://uqnuhcrw12d0" path="res://assets/scenes/player.tscn" id="13_vk3o7"]
 [ext_resource type="Texture2D" uid="uid://qmkkud72jx68" path="res://The Amazing Art Folder/cassie_white2.png" id="13_xk3sw"]
 [ext_resource type="Texture2D" uid="uid://bgx1slavir63w" path="res://The Amazing Art Folder/bed.png" id="14_xk3sw"]
@@ -132,24 +133,24 @@ shape = SubResource("RectangleShape2D_1e5pv")
 layer = -2
 follow_viewport_enabled = true
 
-[node name="Parallax2D2" type="Parallax2D" parent="background" unique_id=1233405741]
+[node name="background" type="Parallax2D" parent="background" unique_id=1233405741]
 scale = Vector2(4, 4)
 scroll_scale = Vector2(0, 0)
 repeat_size = Vector2(32, 32)
 autoscroll = Vector2(4, 2)
 repeat_times = 45
 
-[node name="Black2" type="Sprite2D" parent="background/Parallax2D2" unique_id=1079470608]
+[node name="sprite" type="Sprite2D" parent="background/background" unique_id=1079470608]
 texture = ExtResource("2_j2iih")
 
-[node name="Parallax2D" type="Parallax2D" parent="background" unique_id=528683819]
+[node name="platform" type="Parallax2D" parent="background" unique_id=528683819]
 scale = Vector2(4, 4)
 scroll_scale = Vector2(0, 0)
 repeat_size = Vector2(200, 100)
 repeat_times = 2
 follow_viewport = false
 
-[node name="NexusPlacement" type="Sprite2D" parent="background/Parallax2D" unique_id=396379387]
+[node name="NexusPlacement" type="Sprite2D" parent="background/platform" unique_id=396379387]
 texture_filter = 1
 texture = ExtResource("4_lf2id")
 
@@ -174,13 +175,14 @@ tween_resource = SubResource("Resource_4o74q")
 draw_limits = true
 
 [node name="broken_obmil" type="StaticBody2D" parent="." unique_id=963402036]
-position = Vector2(266.3333, -139)
+position = Vector2(266.333, -144.664)
 script = ExtResource("5_ahart")
 metadata/_custom_type_script = "uid://busd3yfk5p1mx"
 
 [node name="sprite" type="Sprite2D" parent="broken_obmil" unique_id=1792574468]
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("8_ehllc")
+material = ExtResource("8_adtrb")
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("9_cwegb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="broken_obmil" unique_id=736659769]
 shape = SubResource("CapsuleShape2D_cwegb")
@@ -197,13 +199,13 @@ script = ExtResource("16_adtrb")
 transition_name = &"pixelate_in"
 
 [node name="obmil" type="StaticBody2D" parent="." unique_id=1552011543]
-position = Vector2(-266.6667, 134.33333)
+position = Vector2(-266.667, 123.231)
 script = ExtResource("5_ahart")
 metadata/_custom_type_script = "uid://busd3yfk5p1mx"
 
 [node name="sprite" type="Sprite2D" parent="obmil" unique_id=921058078]
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("8_xk3sw")
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("13_l6gor")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="obmil" unique_id=696458496]
 shape = SubResource("CapsuleShape2D_ehllc")
@@ -228,7 +230,7 @@ metadata/_custom_type_script = "uid://busd3yfk5p1mx"
 scale = Vector2(0.216, 0.216)
 sprite_frames = SubResource("SpriteFrames_q1sf4")
 autoplay = "default"
-frame_progress = 0.6507546
+frame_progress = 0.058491133
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="bedroom" unique_id=2039023542]
 shape = SubResource("CapsuleShape2D_q1sf4")
@@ -252,7 +254,7 @@ metadata/_custom_type_script = "uid://busd3yfk5p1mx"
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="grief" unique_id=142445562]
 sprite_frames = SubResource("SpriteFrames_lfwmx")
 autoplay = "default"
-frame_progress = 0.6262668
+frame_progress = 0.034003798
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="grief" unique_id=596643424]
 shape = SubResource("CapsuleShape2D_adtrb")

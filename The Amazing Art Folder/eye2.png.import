@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://byq1u8vuu5udh"
-path="res://.godot/imported/cubething.png-995c608080abac3bfe05f670398a251b.ctex"
+uid="uid://q8xoy1wche2t"
+path="res://.godot/imported/eye2.png-20ce492445c41dda0b6a4ea36b37f332.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/material/images/cubething.png"
-dest_files=["res://.godot/imported/cubething.png-995c608080abac3bfe05f670398a251b.ctex"]
+source_file="res://The Amazing Art Folder/eye2.png"
+dest_files=["res://.godot/imported/eye2.png-20ce492445c41dda0b6a4ea36b37f332.ctex"]
 
 [params]
 

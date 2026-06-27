@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://c5fn63qpw4jdg"
+path="res://.godot/imported/entity2broken_obmil.dialogue-d913c3464e2a8da27937cc6ba0e56e48.tres"
+
+[deps]
+
+source_file="res://assets/dialogue/entity2broken_obmil.dialogue"
+dest_files=["res://.godot/imported/entity2broken_obmil.dialogue-d913c3464e2a8da27937cc6ba0e56e48.tres"]
+
+[params]
+
+defaults=true
