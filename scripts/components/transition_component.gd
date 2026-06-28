@@ -6,6 +6,7 @@ extends Node
 const TRANSITION_SCENE: String = "res://assets/scenes/ui/transition_handler.tscn"
 
 var transition_name: StringName = &"pixelate_in"
+@export var buffer_duration: float = 0.0
 
 func _get_property_list() -> Array[Dictionary]:
 	if not ResourceLoader.exists(TRANSITION_SCENE):
@@ -39,6 +40,8 @@ func play() -> void:
 	if not anim:
 		push_error("TransitionComponent: Handler AnimationPlayer not found")
 		return
+	if buffer_duration > 0.0:
+		await get_tree().create_timer(buffer_duration).timeout
 	if transition_name and anim.has_animation(transition_name):
 		anim.play(transition_name)
 		await anim.animation_finished
