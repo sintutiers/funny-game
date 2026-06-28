@@ -1,16 +1,15 @@
 ~ start
-Sunton: so you have come to disturb me? Again...
+Sunton: So you return to disturb me. Again.
 - yes
-	Sunton: Well beside me is a door to a place called the nexus.
-	Sunton: Are you familiar with it?
+	Sunton: Beside me is a door. It opens to the Nexus.
+	Sunton: Do you know it?
 	- yes
-		Sunton: Then i'll leave your jourey to your own.
+		Sunton: Then your journey is your own.
 	- no
-		Sunton: The nexus is a place where you could access different interactable worlds.
-		Sunton: With those worlds you could access more different worlds and go back to the other ones.
-		Sunton: Even here...
-		Sunton: Is that clear?
+		Sunton: The Nexus is a hinge. From it, worlds unfold, each leading to others, and back again.
+		Sunton: Even here.
+		Sunton: Understood?
 - no
-	Sunton: Then buzz off.
-Sunton: So long, annoying human.
+	Sunton: Then leave.
+Sunton: So long, bug.
 => END

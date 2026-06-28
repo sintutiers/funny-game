@@ -1,7 +1,7 @@
 ~ start
 white: You might want to go back from here.
 - yes
-	white: Good choice.
+	white: Good.
 - no
 	white: Think about it twice.
 => END
