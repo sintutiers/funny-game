@@ -42,6 +42,7 @@ func _physics_process(delta: float) -> void:
 			animation.play_idle()
 
 	body.move_and_slide()
+	body.position = body.position.round()#temp, should be improved
 
 
 func set_interacting(value: bool) -> void:
