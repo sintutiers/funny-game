@@ -174,7 +174,6 @@ offset = Vector2(12.528, -20.338)
 [node name="Camera2D" type="Camera2D" parent="." unique_id=560551855]
 physics_interpolation_mode = 1
 top_level = true
-editor_draw_limits = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=698717255]
 process_priority = 300
@@ -185,9 +184,8 @@ script = ExtResource("5_tiprx")
 top_level = true
 script = ExtResource("6_dgsyf")
 follow_mode = 2
-follow_target = NodePath("../PlayerRoot/PlayerBody")
+follow_target = NodePath("../PlayerRoot/PlayerBody/AnimatedSprite2D")
 tween_resource = SubResource("Resource_4o74q")
-draw_limits = true
 
 [node name="eye2" type="StaticBody2D" parent="." unique_id=331926917]
 position = Vector2(334, 1)

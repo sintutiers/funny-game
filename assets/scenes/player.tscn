@@ -3,15 +3,13 @@
 [ext_resource type="Script" uid="uid://c5qpdmvd63ugb" path="res://addons/godot-rapier2d/custom_nodes/rapier_character_body_2d.gd" id="2_wji7r"]
 [ext_resource type="PackedScene" uid="uid://dmr0fcamx7t56" path="res://addons/virtual_joystick/virtual_joystick_scene.tscn" id="3_vtqb1"]
 [ext_resource type="Texture2D" uid="uid://cpctxwhf7axcf" path="res://The Amazing Art Folder/prototype with animations.png" id="3_wji7r"]
+[ext_resource type="Texture2D" uid="uid://cfhujkg6kwln8" path="res://The Amazing Art Folder/final_prototype 1.png" id="4_60g6h"]
 [ext_resource type="Script" uid="uid://cburu6b4ckehs" path="res://addons/godot-rapier2d/custom_nodes/rapier_area_2d.gd" id="4_mxi64"]
 [ext_resource type="Texture2D" uid="uid://mkihoskon4ea" path="res://The Amazing Art Folder/being1.png" id="4_nsdob"]
 [ext_resource type="Script" uid="uid://cs0gkb6qc0b1q" path="res://scripts/components/movement_component.gd" id="5_yceh7"]
 [ext_resource type="Script" uid="uid://ca51k1w1oyhen" path="res://scripts/components/animation_component.gd" id="6_uovkd"]
 [ext_resource type="Script" uid="uid://wov8nmy4xjec" path="res://scripts/components/interaction_component_player.gd" id="7_tc801"]
 [ext_resource type="Shader" uid="uid://2k7xjk5ryfw1" path="res://assets/material/touch.gdshader" id="7_yceh7"]
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vtqb1"]
-height = 26.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uovkd"]
 atlas = ExtResource("3_wji7r")
@@ -45,13 +43,25 @@ region = Rect2(0, 35, 18, 35)
 atlas = ExtResource("3_wji7r")
 region = Rect2(18, 35, 18, 35)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_4kvvp"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_tc801"]
 atlas = ExtResource("3_wji7r")
-region = Rect2(0, 0, 18, 35)
+region = Rect2(0, 105, 18, 35)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_88hph"]
-atlas = ExtResource("3_wji7r")
-region = Rect2(18, 0, 18, 35)
+[sub_resource type="AtlasTexture" id="AtlasTexture_hrrj1"]
+atlas = ExtResource("4_60g6h")
+region = Rect2(0, 0, 21, 35)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c6vv5"]
+atlas = ExtResource("4_60g6h")
+region = Rect2(0, 35, 21, 35)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nh07x"]
+atlas = ExtResource("4_60g6h")
+region = Rect2(0, 70, 21, 35)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_00pic"]
+atlas = ExtResource("4_60g6h")
+region = Rect2(0, 105, 21, 35)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_wji7r"]
 animations = [{
@@ -62,7 +72,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_jeibo")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"down",
 "speed": 3.0
 }, {
@@ -73,7 +83,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_yceh7")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"idle",
 "speed": 2.0
 }, {
@@ -84,7 +94,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_e4n2f")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"left",
 "speed": 3.0
 }, {
@@ -95,21 +105,38 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_a44wv")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"right",
 "speed": 3.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_4kvvp")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_88hph")
+"texture": SubResource("AtlasTexture_tc801")
 }],
 "loop": 1,
+"name": &"start",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hrrj1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c6vv5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nh07x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_00pic")
+}],
+"loop": 0,
 "name": &"up",
 "speed": 3.0
 }]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vtqb1"]
+height = 26.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rug40"]
 size = Vector2(22, 36)
@@ -131,6 +158,11 @@ collision_mask = 3
 script = ExtResource("2_wji7r")
 metadata/_custom_type_script = "uid://c5qpdmvd63ugb"
 
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="PlayerBody" unique_id=1720223925]
+unique_name_in_owner = true
+sprite_frames = SubResource("SpriteFrames_wji7r")
+animation = &"up"
+
 [node name="ParallaxLayer" type="CanvasLayer" parent="PlayerBody" unique_id=792501613]
 layer = -2
 follow_viewport_enabled = true
@@ -138,11 +170,6 @@ follow_viewport_enabled = true
 [node name="PlayerCollision" type="CollisionShape2D" parent="PlayerBody" unique_id=907190697]
 position = Vector2(0, 4)
 shape = SubResource("CapsuleShape2D_vtqb1")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="PlayerBody" unique_id=1720223925]
-unique_name_in_owner = true
-sprite_frames = SubResource("SpriteFrames_wji7r")
-animation = &"down"
 
 [node name="InteractAreaPlayer" type="Area2D" parent="PlayerBody" unique_id=1979343329]
 unique_name_in_owner = true
@@ -155,6 +182,7 @@ shape = SubResource("RectangleShape2D_rug40")
 [node name="MovementComponent" type="Node" parent="PlayerBody" unique_id=1210537464]
 unique_name_in_owner = true
 script = ExtResource("5_yceh7")
+move_speed = 150
 
 [node name="AnimationComponent" type="Node" parent="PlayerBody" unique_id=1249936870]
 unique_name_in_owner = true
