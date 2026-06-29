@@ -14,9 +14,9 @@ ss2d/version="3.3.1"
 
 [application]
 
-config/name="Dream Diary gamejam"
-config/description="Dean, Chiel, and Duke
-very cool games"
+config/name="FEVER DREAM - Dream Diary gamejam"
+config/description="Dean, Chiel
+very cool game"
 config/version="0.0.101"
 run/main_scene="uid://dxiafdb8vqcc5"
 config/features=PackedStringArray("4.7", "GL Compatibility")
